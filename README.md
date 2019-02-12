@@ -23,16 +23,6 @@ This will create the `node_modules` directory and download all dev dependencies,
 setup & build the Pattern Lab environment, compile all SCSS into CSS, then move
 the generated CSS into the `/public` site.
 
-## Developing Vue apps
-
-In the docroot run:
-
-```sh
-npm run appdev
-```
-
-This will watch all changes in the `souce/app` directory and compile all JS into `source/js`, then move the generated JS into the `/public` site.
-
 ## Developing and styling patterns
 
 When working with the theme, there's a few development options available.
