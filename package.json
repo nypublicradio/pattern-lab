@@ -1,0 +1,40 @@
+{
+  "name": "nypr-design-system",
+  "version": "4.0.0",
+  "description": "NYPR Design System",
+  "contributors": [
+    "TJ Pitre <tpitre@southleft.com>"
+  ],
+  "homepage": "https://nypr.southleft.com",
+  "license": "ISC",
+  "scripts": {
+    "build": "npm install && composer install && gulp build-theme"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "babelrc": false
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sass-lint": "^1.3.4",
+    "gulp-sourcemaps": "^2.6.4",
+    "run-sequence": "^2.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/tpitre/design-system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpitre/design-system.git"
+  }
+}

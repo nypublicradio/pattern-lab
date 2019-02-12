@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    $BLOCKS
+\*------------------------------------*/
+
+.c-block {
+  &__image {
+    img {
+      width: rem(150);
+      height: rem(100);
+
+      @include media(">medium") {
+        width: rem(175);
+        height: rem(125);
+      }
+
+
+      @include media(">xxlarge") {
+        width: rem(200);
+        height: rem(150);
+      }
+    }
+  }
+}
+

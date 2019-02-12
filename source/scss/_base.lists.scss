@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * Definition Lists
+ */
+dl {
+  overflow: hidden;
+  margin: 0 0 $space;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.o-list {
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include p;
+  }
+
+  .u-icon {
+    display: flex;
+    margin-right: $space/2;
+
+    svg {
+      width: rem(25);
+      height: rem(25);
+    }
+  }
+}
+
+.o-list--numbered {
+  counter-reset: item;
+
+  li {
+    display: block;
+
+    &::before {
+      content: counter(item);
+      counter-increment: item;
+
+      color: $c-white;
+      padding: rem(10) rem(15);
+      border-radius: rem(3);
+      background-color: $c-black;
+      font-weight: bold;
+      margin-right: $space;
+      float: left;
+    }
+
+    > * {
+      overflow: hidden;
+    }
+
+    li {
+      counter-reset: item;
+
+      &::before {
+        content: "\002010";
+      }
+    }
+  }
+}
