@@ -13,12 +13,11 @@ patternStates:
     - inprogress
     - inreview
     - complete
-styleGuideExcludes: 'templates,pages'
 cacheBust: 'true'
 exportDir: export
 publicDir: public
 sourceDir: ./source
-defaultPattern: pages-start-page
+defaultPattern: docs-welcome
 defaultShowPatternInfo: false
 ishMinimum: '240'
 ishMaximum: '2600'

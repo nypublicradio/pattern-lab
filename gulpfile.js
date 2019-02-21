@@ -10,12 +10,12 @@ config.browserSync = {
 config.patternsDir = './source/_patterns';
 config.sass = {
   srcFiles: [
-    './source/scss/*.scss'
+    './source/scss/themes/**/*.scss'
   ],
   options: {
     outputStyle: 'compressed'
   },
-  destDir: './public/css'
+  destDir: './public/css/themes'
 };
 config.scripts = {
   srcFiles: [
@@ -72,7 +72,7 @@ gulp.task('watch', function () {
       open: true,
       notify: false
   });
-  gulp.watch('source/scss/*.scss', ['sass', 'copy-sgcss']);
+  gulp.watch('source/scss/**/*.scss', ['sass', 'copy-sgcss']);
   gulp.watch('source/js/*.js', ['scripts-change']);
   gulp.watch(['source/**/*.json', 'source/**/*.twig'], ['patterns-change']);
 });
@@ -112,8 +112,6 @@ gulp.task('sass', function () {
     .pipe(sass(config.sass.options).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
-    .pipe(concat('main.css'))
-    .pipe(concat('styleguide.min.css'))
     .pipe(gulp.dest(config.sass.destDir))
     .pipe(browserSync.stream({match: '**/*.css'}));
 });

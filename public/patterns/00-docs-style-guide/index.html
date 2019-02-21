@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="pl no-js" lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>NYPR</title>
+  <meta name="description" content="desc">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/themes/default/default.css?1550772835" media="all">
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- End Pattern Lab -->
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body class="body">
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="sg-main" role="main">
+  <!-- Patterns -->
+  <div id="sg-patterns">
+                  <div id="viewall-docs-style-guide" class="sg-subtype">
+  <h2>
+    <a href="../../patterns/00-docs-style-guide/index.html" class="patternLink" data-patternpartial="viewall-docs-style-guide">
+      style guide
+    </a>
+  </h2>
+  
+  <div class="sg-pattern-body">
+    
+  </div>
+</div>                        <div id="docs-colors-&amp;-text-styles" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-docs-style-guide-colors-&amp;-text-styles/00-docs-style-guide-colors-&amp;-text-styles.html" class="patternLink" data-patternpartial="docs-colors-&amp;-text-styles" title="Link to Pattern">
+        colors &amp; text styles
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="docs-colors-&amp;-text-styles" title="View Pattern Info" id="sg-pattern-extra-toggle-docs-colors-&amp;-text-styles" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-docs-colors-&amp;-text-styles"></div>
+    
+  <div class="sg-pattern-example">
+    
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-docs-colors-&amp;-text-styles" class="sg-pattern-data">
+    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"docs","patternSubtype":"style guide"},"patternDesc":"","patternExtension":"twig","patternName":"colors & text styles","patternPartial":"docs-colors-&-text-styles","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->            </div> <!--end #sg-patterns-->
+</div><!--end .sg-main-->  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="/js/script-min.js?1550772835" async></script>
+
+  <!-- PATTERN LAB SCRIPTS // DO NOT REMOVE FOR PATTERN LAB -->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"patternPartial":"viewall-docs-style-guide"}
+</script>
+
+<script>
+  /*!
+  * scriptLoader - v0.1
+  *
+  * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+  * Licensed under the MIT license
+  *
+  */
+  
+  var scriptLoader = {
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1550772835">
+  (function() {
+    if (self != top) {
+      var cb = '1550772835';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1550772835">
+  (function() {
+    if (self != top) {
+      var cb = '1550772835';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+  <!-- / END PATTERN LAB SCRIPTS -->
+  </body>
+</html>

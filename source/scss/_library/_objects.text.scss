@@ -1,0 +1,102 @@
+/*------------------------------------*\
+    $TEXT TYPES
+\*------------------------------------*/
+
+/**
+ * Font Families
+ */
+.u-font {
+  font-family: $ff-font;
+}
+
+.u-font--primary {
+  font-family: $ff-font--primary;
+}
+
+/**
+ * Text Sizes
+ */
+.u-font--xs {
+  font-size: var(--font-size-xs);
+}
+
+.u-font--s {
+  font-size: var(--font-size-s);
+}
+
+.u-font--m {
+  font-size: var(--font-size-m);
+}
+
+.u-font--l {
+  font-size: var(--font-size-l);
+}
+
+.u-font--xl {
+  font-size: var(--font-size-xl);
+}
+
+.u-font--xxl {
+  font-size: var(--font-size-xxl);
+}
+
+/**
+ * Primary type styles
+ */
+
+/**
+ * Text Transforms
+ */
+.u-text-transform--upper {
+  text-transform: uppercase;
+}
+
+.u-text-transform--lower {
+  text-transform: lowercase;
+}
+
+/**
+ * Text Styles
+ */
+.u-text-style--italic {
+  font-style: italic;
+}
+
+.u-font-weight--normal {
+  font-weight: normal;
+}
+
+/**
+ * Text Decorations
+ */
+.u-text-decoration--underline {
+  text-decoration: underline;
+}
+
+/**
+ * Passages of Text
+ */
+.o-text {
+  font-family: $ff-font;
+
+  > blockquote p,
+  > dl dd,
+  > dl dt,
+  > ol li,
+  > ul li,
+  > p {
+    @include p;
+  }
+
+  a {
+    color: $c-primary;
+    text-decoration: underline;
+  }
+
+  > h2:empty,
+  > h3:empty,
+  > p:empty {
+    display: none;
+  }
+}
+

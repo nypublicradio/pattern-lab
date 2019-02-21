@@ -1,0 +1,114 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+form ol,
+form ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+legend {
+  margin-bottom: rem(6);
+  font-weight: bold;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: $border-style;
+  padding: $space;
+  -webkit-appearance: none;
+  border-radius: rem(3);
+  outline: 0;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  outline: none;
+  margin: 0;
+  margin-right: rem(8);
+  height: rem(15);
+  width: rem(15);
+  line-height: rem(15);
+  background-size: rem(15);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  border: 1px solid $c-border-color;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+input[type=radio] + label,
+input[type=checkbox] + label {
+  display: inline-block;
+  top: rem(-2);
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0;
+}
+
+input[type=radio]:checked,
+input[type=checkbox]:checked {
+  border-color: $c-primary;
+  background: $c-primary url("../images/icons/icon-check.svg") center center no-repeat;
+  background-size: rem(10);
+}
+
+input[type=radio] {
+  border-radius: rem(50);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: "";
+  background: url("../images/icons/icon-arrow-down.svg") center left ($space / 2) no-repeat;
+  background-size: calc(20px - 5px) calc(20px - 5px);
+
+  // $space
+  padding-left: calc((20px * 2) - 5px);
+
+  // $space
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::placeholder {
+  color: $c-gray;
+}
+
