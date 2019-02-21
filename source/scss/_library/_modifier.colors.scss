@@ -41,6 +41,38 @@
 
 
 /**
+ * Background Colors
+ */
+.u-background-color--none {
+  background: none;
+}
+
+.u-background-color--black {
+  background-color: $c-black;
+}
+
+.u-background-color--gray {
+  background-color: $c-gray;
+}
+
+.u-background-color--gray--light {
+  background-color: $c-gray--light;
+}
+
+.u-background-color--white {
+  background-color: $c-white;
+}
+
+.u-background-color--primary {
+  background-color: $c-primary;
+}
+
+.u-background-color--secondary {
+  background-color: $c-secondary;
+}
+
+
+/**
  * SVG Fill Colors
  */
 .u-path-fill--black {

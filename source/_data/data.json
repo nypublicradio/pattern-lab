@@ -6,5 +6,28 @@
     "html_class": "pl",
     "body_class": "body",
     "description": "desc"
+  },
+
+  "break_m": "500",
+  "break_l": "800",
+  "img": {
+    "alt": "Alt Text",
+    "src": "http://picsum.photos/800/850?image=10",
+    "src_s": "http://picsum.photos/500/350?image=0",
+    "src_m": "http://picsum.photos/800/400?image=5",
+    "src_l": "http://picsum.photos/1100/700?image=15"
+  },
+
+  "headline": "This is a Content Headline",
+  "blockquote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam hic, explicabo, ea quos ducimus provident cumque eligendi voluptates dolore deleniti, similique impedit vitae voluptas asperiores, nihil labore facilis quaerat fugit!",
+  "pullquote": {
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "quote_author": "John Adams"
+  },
+  "datetime": "2018-07-07",
+  "time_string": "July 7, 2018",
+  "section_heading": "This is a Section Heading",
+  "byline": {
+    "author": "Matt Hendrix"
   }
 }
