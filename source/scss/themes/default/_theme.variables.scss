@@ -5,9 +5,8 @@
 /**
  * Grid & Baseline Setup
  */
-$max-width-px: 1260;
-$max-width: $max-width-px !default;
-
+$max-width: 960;
+$article-width: 760;
 
 /**
  * Theme Colors
@@ -54,6 +53,7 @@ $c-body-bgcolor: $c-white;
  */
 $ff-font: "Helvetica Neue", Helvetica, 'Arial', sans-serif;
 $ff-font--primary: 'Pragati Narrow', Helvetica, sans-serif;
+$ff-font--secondary: $ff-font;
 $ff-font--sans: $ff-font--primary;
 $ff-font--serif: 'Times New Roman', serif;
 $ff-font--monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
@@ -110,8 +110,17 @@ $border-style-thick: 3px solid $c-border-color;
 /**
  * Default Spacing/Padding
  */
-$space-mobile: 20px;
 $space: 20px;
+$space-quarter: $space/4;
+$space-half: $space/2;
+$space-and-half: $space*1.5;
+$space-double: $space*2;
+$space-triple: $space*3;
+$space-quad: $space*4;
+$pad: 15px;
+$pad-half: $pad/2;
+$pad-and-half: $pad*1.5;
+$pad-double: $pad*2;
 
 
 /**

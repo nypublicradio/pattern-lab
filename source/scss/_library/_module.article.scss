@@ -2,3 +2,17 @@
     $ARTICLE
 \*------------------------------------*/
 
+.c-article {
+  &__body {
+    max-width: $article-width + px;
+    margin-bottom: $space-quad;
+  }
+  &__meta-group {
+    > * {
+      display: inline-block;
+    }
+    .o-published-date {
+      margin-right: $space;
+    }
+  }
+}

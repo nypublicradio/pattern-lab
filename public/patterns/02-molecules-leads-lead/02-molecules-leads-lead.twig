@@ -1,15 +1,8 @@
-<div class="c-lead {{ classes }}">
-  {% if image %}
-    <div class="c-lead__image">
-      <a href="">{% include '@atoms/images/image.twig' %}</a>
-    </div>
-  {% endif %}
-  <div class="c-lead__text u-spacing--half">
-    <h3 class="c-lead__title"><a href="">{{ title }}</a></h3>
-    {% if dek %}
-      <div class="c-lead__dek o-text">
-        {{ dek }}
-      </div>
-    {% endif %}
+<div class="c-lead u-spacing--half{{ classes }}">
+  <div class="c-lead__image">
+    {% include '@atoms/images/picture.twig' %}
+  </div>
+  <div class="c-lead__caption u-spacing--half">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="o-credit">Getty Images</span></p>
   </div>
 </div>

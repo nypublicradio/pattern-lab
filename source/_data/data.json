@@ -29,5 +29,16 @@
   "section_heading": "This is a Section Heading",
   "byline": {
     "author": "Matt Hendrix"
-  }
+  },
+  "contributors": "WWOZ",
+  "kicker": "Category",
+  "caption": "Lorem ipsum dolor sit amet",
+  "breadcrumbs": [
+    {
+      "kicker": "Category"
+    },
+    {
+      "kicker": "SubCategory"
+    }
+  ]
 }

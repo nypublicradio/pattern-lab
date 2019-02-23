@@ -10,12 +10,12 @@ config.browserSync = {
 config.patternsDir = './source/_patterns';
 config.sass = {
   srcFiles: [
-    './source/scss/themes/**/*.scss'
+    './source/scss/**/*.scss'
   ],
   options: {
     outputStyle: 'compressed'
   },
-  destDir: './public/css/themes'
+  destDir: './public/css/'
 };
 config.scripts = {
   srcFiles: [
@@ -132,7 +132,7 @@ gulp.task('scripts', function () {
  * Copies Styleguide CSS files to Pattern Lab's public dir.
  */
 gulp.task('copy-sgcss', function () {
-  return gulp.src('public/css/styleguide.min.css')
+  return gulp.src('public/css/pl-specific/styleguide.min.css')
     .pipe(gulp.dest('public/styleguide/css/'))
     .pipe(browserSync.stream());
 });

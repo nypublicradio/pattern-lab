@@ -74,10 +74,10 @@
 }
 
 /**
- * Passages of Text
+ * Rich text editor text
  */
-.o-text {
-  font-family: $ff-font;
+.o-rte-text {
+  font-family: $ff-font--secondary;
 
   > blockquote p,
   > dl dd,
@@ -88,15 +88,173 @@
     @include p;
   }
 
+  dl dd,
+  dl dt,
+  ol li,
+  ul li,
+  li p,
+  > p {
+    @include p;
+    line-height: 1.65;
+  }
+
   a {
-    color: $c-primary;
     text-decoration: underline;
   }
 
-  > h2:empty,
-  > h3:empty,
-  > p:empty {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-top: $space;
+    font-family: $ff-font--primary;
+  }
+
+  h1 {
+    font-size: 34px;
+    font-weight: bold;
+    @include media('>large') {
+      font-size: 50px;
+    }
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 300;
+    @include media('>large') {
+      font-size: 36px;
+      line-height: 47px;
+      letter-spacing: -0.23px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    @include media('>large') {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 1.71px;
+    text-transform: uppercase;
+  }
+
+  h2:empty,
+  h3:empty,
+  p:empty {
     display: none;
+  }
+
+  // Heading + subheading lockup
+  h2 + h3 {
+    margin-top: 0;
+    padding-bottom: $pad-half;
+  }
+
+  > ul {
+    list-style: disc;
+    padding-left: $space;
+    margin-bottom: $space;
+    @include media('>large') {
+      margin-left: $space;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: $space-quarter;
+      > ul {
+        list-style: circle;
+        margin-top: $space-half;
+      }
+    }
+
+    ol,
+    ul {
+      list-style: disc;
+      padding-top: rem(6);
+      margin-bottom: 0;
+      padding-left: $space;
+    }
+
+    ol {
+      list-style: decimal;
+    }
+  }
+
+  > ol {
+    list-style: decimal;
+    padding-left: $space;
+    margin-bottom: $space;
+    @include media('>large') {
+      margin-left: $space;
+    }
+    li {
+      margin-bottom: $space-quarter;
+      > ul {
+        list-style: lower-alpha;
+        margin-top: $space-half;
+      }
+    }
+
+    ol,
+    ul {
+      list-style: decimal;
+      padding-top: rem(6);
+      margin-bottom: 0;
+      padding-left: $space;
+    }
+
+    ul {
+      list-style: disc;
+    }
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  hr {
+    margin-top: $space-and-half;
+    @include media('>large') {
+      margin-top: $space-double;
+      margin-bottom: $space-double;
+    }
+  }
+
+  code,
+  pre {
+    font-size: 125%;
   }
 }
 
+.o-breadcrumb {
+  .o-kicker {
+    display: inline-block;
+  }
+}

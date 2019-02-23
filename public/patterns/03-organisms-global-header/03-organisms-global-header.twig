@@ -1,3 +1,13 @@
-<header class="c-main-header">
-
+<header class="c-main-header u-spacing--quarter">
+  <div class="o-ad o-ad--leaderboard">
+    {%
+      include '@atoms/images/image.twig'
+      with {
+        "img": {
+          "src": "http://placehold.it/728x90"
+        }
+      }
+    %}
+  </div>
+  {% include '@organisms/global/main-navigation.twig' %}
 </header>

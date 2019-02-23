@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="pl no-js" lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>NYPR</title>
+  <meta name="description" content="desc">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/themes/default/default.css?1550940669" media="all">
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- End Pattern Lab -->
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body class="body">
+  <div class="o-container u-spacing--double">
+<div class="o-published-date">
+  <span class="o-published-date__label">Published on:</span>
+  <span class="o-published-date__time"><time datetime="2018-07-07">July 7, 2018</time>
+</span>
+</div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+      <script src="/js/script-min.js?1550940669" async></script>
+
+      <!-- PATTERN LAB SCRIPTS // DO NOT REMOVE FOR PATTERN LAB -->
+      <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"lineage":[{"lineagePattern":"atoms-time","lineagePath":"..\/..\/patterns\/02-molecules-text-published-date\/02-molecules-text-published-date.html"}],"lineageR":[{"lineagePattern":"molecules-article-meta","lineagePath":"..\/..\/patterns\/02-molecules-meta-article-meta\/02-molecules-meta-article-meta.html"}],"patternBreadcrumb":{"patternType":"molecules","patternSubtype":"text"},"patternDesc":"","patternExtension":"twig","patternName":"published date","patternPartial":"molecules-published-date","patternState":"","extraOutput":[]}
+</script>
+
+<script>
+  /*!
+  * scriptLoader - v0.1
+  *
+  * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+  * Licensed under the MIT license
+  *
+  */
+  
+  var scriptLoader = {
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1550940669">
+  (function() {
+    if (self != top) {
+      var cb = '1550940669';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1550940669">
+  (function() {
+    if (self != top) {
+      var cb = '1550940669';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+      <!-- / END PATTERN LAB SCRIPTS -->
+    </div>
+  </body>
+</html>
