@@ -18,6 +18,7 @@
     "src_l": "http://picsum.photos/1100/700?image=15"
   },
 
+  "button_text": "Button Text",
   "headline": "This is a Content Headline",
   "blockquote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam hic, explicabo, ea quos ducimus provident cumque eligendi voluptates dolore deleniti, similique impedit vitae voluptas asperiores, nihil labore facilis quaerat fugit!",
   "pullquote": {

@@ -33,6 +33,7 @@
  * Icons................Icon styles and settings.
  * Lists................Various site list styles.
  * Navs.................Site navigations.
+ * Touts................Promotional sections of content.
  * Sections.............Larger components of pages.
  * Forms................Specific form styling.
  *
@@ -106,6 +107,7 @@ $tests: true;
 @import "objects.icons";
 @import "objects.lists";
 @import "objects.navs";
+@import "objects.touts";
 @import "objects.sections";
 @import "objects.forms";
 

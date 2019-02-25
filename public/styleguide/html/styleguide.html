@@ -8,13 +8,13 @@
   <meta name="description" content="desc">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="/css/themes/default/default.css?1550940669" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/themes/default/default.css?1551132081" media="all">
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- End Pattern Lab -->
   <link rel="icon" href="/favicon.ico" />
 </head>
 <body class="body">
-  <div class="o-container u-spacing--double">
+  <div class="o-container">
 <!-- View All Patterns in a Pattern Sub-Type -->
 <div class="sg-main" role="main">
   <!-- Patterns -->
@@ -195,7 +195,7 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-button"></div>
     
   <div class="sg-pattern-example">
-    <a href="" role="button" class="o-button "></a>
+    <a class="o-button ">Button Text</a>
 
   </div>
   
@@ -1444,7 +1444,7 @@
     
   <div class="sg-pattern-example">
     <div class="c-article__meta u-spacing--half">
-  <span class="o-byline">By Matt Hendrix  with contributions by WWOZ </span>
+  <span class="o-byline">By <a href="" rel="author">Matt Hendrix</a>  with contributions by <a href="">WWOZ</a></span>
   <div class="c-article__meta-group">
     <div class="o-published-date">
   <span class="o-published-date__label">Published on:</span>
@@ -1532,7 +1532,7 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-byline"></div>
     
   <div class="sg-pattern-example">
-    <span class="o-byline">By Matt Hendrix  with contributions by WWOZ </span>
+    <span class="o-byline">By <a href="" rel="author">Matt Hendrix</a>  with contributions by <a href="">WWOZ</a></span>
 
   </div>
   
@@ -1703,7 +1703,7 @@
   </div>
   <h1 class="o-headline">This is a Content Headline</h1>
   <div class="c-article__meta u-spacing--half">
-  <span class="o-byline">By Matt Hendrix  with contributions by WWOZ </span>
+  <span class="o-byline">By <a href="" rel="author">Matt Hendrix</a>  with contributions by <a href="">WWOZ</a></span>
   <div class="c-article__meta-group">
     <div class="o-published-date">
   <span class="o-published-date__label">Published on:</span>
@@ -1719,6 +1719,52 @@
   
   <script type="text/json" id="sg-pattern-data-organisms-article-header" class="sg-pattern-data">
     {"lineage":[{"lineagePattern":"molecules-breadcrumb","lineagePath":"..\/..\/patterns\/03-organisms-article-article-header\/03-organisms-article-article-header.html"},{"lineagePattern":"atoms-headline","lineagePath":"..\/..\/patterns\/03-organisms-article-article-header\/03-organisms-article-article-header.html"},{"lineagePattern":"molecules-article-meta","lineagePath":"..\/..\/patterns\/03-organisms-article-article-header\/03-organisms-article-article-header.html"}],"lineageR":[{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/04-templates-article\/04-templates-article.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"article"},"patternDesc":"","patternExtension":"twig","patternName":"article header","patternPartial":"organisms-article-header","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="organisms-comments" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-organisms-article-comments/03-organisms-article-comments.html" class="patternLink" data-patternpartial="organisms-comments" title="Link to Pattern">
+        comments
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="organisms-comments" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-comments" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-comments"></div>
+    
+  <div class="sg-pattern-example">
+    <div class="c-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://gothamist.com/2019/02/25/gertie_williamsburg_luncheonette.php';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = '706536'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+      var d = document, s = d.createElement('script');
+
+      s.src = '//gothamist.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-organisms-comments" class="sg-pattern-data">
+    {"lineage":[],"lineageR":[{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/04-templates-article\/04-templates-article.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"article"},"patternDesc":"","patternExtension":"twig","patternName":"comments","patternPartial":"organisms-comments","patternState":""}
   </script>
 </div><!--end .sg-pattern-->                        <div id="viewall-organisms-global" class="sg-subtype">
   <h2>
@@ -1855,9 +1901,82 @@
   <script type="text/json" id="sg-pattern-data-organisms-main-navigation" class="sg-pattern-data">
     {"lineage":[],"lineageR":[{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/03-organisms-global-header\/03-organisms-global-header.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternDesc":"","patternExtension":"twig","patternName":"main navigation","patternPartial":"organisms-main-navigation","patternState":""}
   </script>
+</div><!--end .sg-pattern-->                        <div id="viewall-organisms-touts" class="sg-subtype">
+  <h2>
+    <a href="../../patterns/03-organisms-touts/index.html" class="patternLink" data-patternpartial="viewall-organisms-touts">
+      touts
+    </a>
+  </h2>
+  
+  <div class="sg-pattern-body">
+    
+  </div>
+</div>                        <div id="organisms-membership" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-organisms-touts-membership/03-organisms-touts-membership.html" class="patternLink" data-patternpartial="organisms-membership" title="Link to Pattern">
+        membership
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="organisms-membership" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-membership" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-membership"></div>
+    
+  <div class="sg-pattern-example">
+    <div class="c-membership-tout">
+  <div class="l-container u-spacing">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolore vero obcaecati aut, quis neque et sed facere odio ducimus illo voluptatum magni deserunt, velit, repellat adipisci mollitia quam laborum.</p>
+    <a class="o-button ">Donate</a>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-organisms-membership" class="sg-pattern-data">
+    {"lineage":[],"lineageR":[{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/04-templates-article\/04-templates-article.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"touts"},"patternDesc":"","patternExtension":"twig","patternName":"membership","patternPartial":"organisms-membership","patternState":""}
+  </script>
+</div><!--end .sg-pattern-->                        <div id="organisms-recirculation" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/03-organisms-touts-recirculation/03-organisms-touts-recirculation.html" class="patternLink" data-patternpartial="organisms-recirculation" title="Link to Pattern">
+        recirculation
+        
+              </a>
+    </h3>
+    
+    <div class="sg-pattern-breadcrumb">
+      
+    </div>
+    
+    <a href="#" data-patternpartial="organisms-recirculation" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-recirculation" class="sg-pattern-extra-toggle">
+      <span>&#9660;</span>
+    </a>
+  </div>
+  
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-recirculation"></div>
+    
+  <div class="sg-pattern-example">
+    <div class="c-recirc-tout u-spacing">
+  <p>Recirculation</p>
+</div>
+
+  </div>
+  
+  <script type="text/json" id="sg-pattern-data-organisms-recirculation" class="sg-pattern-data">
+    {"lineage":[],"lineageR":[{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/04-templates-article\/04-templates-article.html"}],"patternBreadcrumb":{"patternType":"organisms","patternSubtype":"touts"},"patternDesc":"","patternExtension":"twig","patternName":"recirculation","patternPartial":"organisms-recirculation","patternState":""}
+  </script>
 </div><!--end .sg-pattern-->            </div> <!--end #sg-patterns-->
 </div><!--end .sg-main-->      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-      <script src="/js/script-min.js?1550940669" async></script>
+      <script src="/js/script-min.js?1551132081" async></script>
 
       <!-- PATTERN LAB SCRIPTS // DO NOT REMOVE FOR PATTERN LAB -->
       <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
@@ -1895,10 +2014,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1550940669">
+<script id="pl-js-polyfill-insert-1551132081">
   (function() {
     if (self != top) {
-      var cb = '1550940669';
+      var cb = '1551132081';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -1908,10 +2027,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1550940669">
+<script id="pl-js-insert-1551132081">
   (function() {
     if (self != top) {
-      var cb = '1550940669';
+      var cb = '1551132081';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
