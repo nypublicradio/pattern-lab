@@ -3,6 +3,9 @@
 \*------------------------------------*/
 
 .c-article {
+  &__header {
+    padding-top: $pad-double;
+  }
   &__body {
     max-width: $article-width + px;
     margin-bottom: $space-quad;
