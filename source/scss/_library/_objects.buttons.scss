@@ -21,6 +21,7 @@ input[type="submit"] {
   letter-spacing: 2px;
   text-align: center;
   background-color: $c-tertiary;
+  appearance: none;
 
   &:hover {
     color: $c-white;
