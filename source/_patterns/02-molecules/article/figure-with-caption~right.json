@@ -1,0 +1,8 @@
+{
+  "figure_class": "u-alignright u-size--medium",
+  "img": {
+    "alt": "Alt Text",
+    "src_s": "https://picsum.photos/550/350?image=90"
+  },
+  "caption": "Lorem ipsum dolor sit amet."
+}

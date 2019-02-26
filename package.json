@@ -5,7 +5,7 @@
   "contributors": [
     "TJ Pitre <tpitre@southleft.com>"
   ],
-  "homepage": "https://nypr.southleft.com",
+  "homepage": "http://nypr.southleft.com",
   "license": "ISC",
   "scripts": {
     "build": "npm install && composer install && gulp build-theme"
@@ -31,10 +31,10 @@
     "run-sequence": "^2.2.1"
   },
   "bugs": {
-    "url": "https://github.com/tpitre/design-system/issues"
+    "url": "https://github.com/nypublicradio/pattern-lab/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tpitre/design-system.git"
+    "url": "https://github.com/nypublicradio/pattern-lab"
   }
 }

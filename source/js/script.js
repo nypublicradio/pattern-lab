@@ -54,4 +54,7 @@
     $this.parent().toggleClass('this-is-active');
   });
 
+  // Target article content.
+  $('.c-article__body').fitVids();
+
 })(jQuery);

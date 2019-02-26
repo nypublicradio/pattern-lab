@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+/**
+ * Validation
+ */
+.has-error {
+  border-color: $c-error !important;
+}
+
+.is-valid {
+  border-color: $c-valid !important;
+}

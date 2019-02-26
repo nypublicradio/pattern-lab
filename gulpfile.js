@@ -10,12 +10,12 @@ config.browserSync = {
 config.patternsDir = './source/_patterns';
 config.sass = {
   srcFiles: [
-    './source/scss/*.scss'
+    './source/scss/**/*.scss'
   ],
   options: {
     outputStyle: 'compressed'
   },
-  destDir: './public/css'
+  destDir: './public/css/'
 };
 config.scripts = {
   srcFiles: [
@@ -72,7 +72,7 @@ gulp.task('watch', function () {
       open: true,
       notify: false
   });
-  gulp.watch('source/scss/*.scss', ['sass', 'copy-sgcss']);
+  gulp.watch('source/scss/**/*.scss', ['sass', 'copy-sgcss']);
   gulp.watch('source/js/*.js', ['scripts-change']);
   gulp.watch(['source/**/*.json', 'source/**/*.twig'], ['patterns-change']);
 });
@@ -99,7 +99,7 @@ gulp.task('patterns-change', function () {
  * Task sequence generate theme and Pattern Lab files.
  */
 gulp.task('build-theme', function () {
-  runSequence('pl:generate', 'sass-change');
+  runSequence('pl:generate', 'sass-change', 'scripts-change');
 });
 
 /**
@@ -112,8 +112,6 @@ gulp.task('sass', function () {
     .pipe(sass(config.sass.options).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
-    .pipe(concat('main.css'))
-    .pipe(concat('styleguide.min.css'))
     .pipe(gulp.dest(config.sass.destDir))
     .pipe(browserSync.stream({match: '**/*.css'}));
 });
@@ -134,7 +132,7 @@ gulp.task('scripts', function () {
  * Copies Styleguide CSS files to Pattern Lab's public dir.
  */
 gulp.task('copy-sgcss', function () {
-  return gulp.src('public/css/styleguide.min.css')
+  return gulp.src('public/css/pl-specific/styleguide.min.css')
     .pipe(gulp.dest('public/styleguide/css/'))
     .pipe(browserSync.stream());
 });

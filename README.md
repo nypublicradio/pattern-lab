@@ -1,8 +1,5 @@
 # New York Public Radio Design System
 
-_Please note that theme-specific CSS files are not committed to the repository.
-They can be generated after installing development dependencies._
-
 ## Installation
 
 ### Prerequisites:

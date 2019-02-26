@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+.o-button,
+button,
+input[type="submit"] {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  line-height: 1.2;
+  color: $c-white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  font-family: $ff-font--primary;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: $c-tertiary;
+  appearance: none;
+
+  &:hover {
+    color: $c-white;
+    background-position: left 0 bottom 0;
+  }
+}
