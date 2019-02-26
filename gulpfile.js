@@ -99,7 +99,7 @@ gulp.task('patterns-change', function () {
  * Task sequence generate theme and Pattern Lab files.
  */
 gulp.task('build-theme', function () {
-  runSequence('pl:generate', 'sass-change');
+  runSequence('pl:generate', 'sass-change', 'scripts-change');
 });
 
 /**
