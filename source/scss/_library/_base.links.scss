@@ -3,9 +3,29 @@
 \*------------------------------------*/
 
 a {
-  //text-decoration: none;
+  text-decoration: none;
   color: $c-link-color;
   transition: all 0.25s ease-in-out;
   display: inline-block;
 }
 
+.u-has-dots {
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 2px dotted $c-body-color;
+
+  &--banana-yellow {
+    color: $c-banana-yellow;
+    border-bottom-color: $c-banana-yellow;
+  }
+
+  &--white {
+    color: $c-white;
+    border-bottom-color: $c-white;
+  }
+
+  &--brick-red {
+    color: $c-brick-red;
+    border-bottom-color: $c-brick-red;
+  }
+}

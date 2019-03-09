@@ -5,8 +5,16 @@
 /**
  * Icon Sizing
  */
-.u-icon {
+.o-icon {
   display: inline-block;
+}
+
+.o-text-with-icon {
+  display: inline-flex;
+  align-items: center;
+  > *:last-child {
+    margin-left: $pad-half;
+  }
 }
 
 .u-icon--xs {

@@ -2,29 +2,48 @@
     $BUTTONS
 \*------------------------------------*/
 
-.o-button,
 button,
 input[type="submit"] {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}
+
+.o-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 25px;
-  line-height: 1.2;
+  padding: $space $space 18px;
+  line-height: 22px;
   color: $c-white;
   cursor: pointer;
   transition: all 0.5s ease;
   overflow: hidden;
-  font-family: $ff-font--primary;
+  font-family: $ff-font--monospace;
   text-transform: uppercase;
   border: none;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
-  background-color: $c-tertiary;
+  background-color: $c-primary;
   appearance: none;
 
   &:hover {
-    color: $c-white;
-    background-position: left 0 bottom 0;
+    //color: $c-white;
+  }
+
+  // Types
+  &--yellow {
+    background-color: $c-banana-yellow;
+    color: $c-body-color;
+  }
+
+  // Sizes
+  &--sm {
+    font-size: 14px;
+    padding: 11px 50px 10px;
   }
 }

@@ -34,12 +34,67 @@
   "contributors": "WWOZ",
   "kicker": "Category",
   "caption": "Lorem ipsum dolor sit amet",
+
   "breadcrumbs": [
     {
       "kicker": "Category"
     },
     {
       "kicker": "SubCategory"
+    }
+  ],
+
+  "primary_nav_items": [
+    {
+      "link": "News"
+    },
+    {
+      "link": "Arts & Entertainment"
+    },
+    {
+      "link": "Food"
+    },
+    {
+      "link": "Popular"
+    }
+  ],
+
+  "secondary_nav_items": [
+    {
+      "link": "Advertising"
+    },
+    {
+      "link": "Contact Us"
+    },
+    {
+      "link": "Newsletter"
+    },
+    {
+      "link": "RSS Feed"
+    },
+    {
+      "link": "Staff"
+    }
+  ],
+
+  "nypr_nav_items": [
+    {
+      "link": "WNYC"
+    },
+    {
+      "link": "New Sounds"
+    },
+    {
+      "link": "Gothamist"
+    },
+    {
+      "link": "NJPR"
+    },
+    {
+      "link": "WNYC Studios"
+    },
+    {
+      "link": "The Greene Space"
     }
   ]
 }

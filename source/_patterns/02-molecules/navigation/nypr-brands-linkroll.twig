@@ -1,0 +1,8 @@
+<nav class="c-nypr-nav js-stop-prop" role="navigation" aria-label="NYPR brands navigation">
+  <button class="c-nypr-nav__toggle js-toggle-parent u-font--mono u-font--xs u-color--white o-text-with-icon"><strong>View All Brands</strong> <span class="o-icon o-icon--caret u-icon--xs u-path-fill--white">{% include '@atoms/icons/icon-caret.twig' %}</span></button>
+  <ul class="c-nypr-nav__list">
+    {% for item in nypr_nav_items %}
+      <li class="c-nypr-nav__item"><a class="c-nypr-nav__link u-has-dots u-has-dots--brick-red" href="#">{{ item.link }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

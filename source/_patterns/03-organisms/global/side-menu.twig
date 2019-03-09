@@ -1,0 +1,70 @@
+<div class="c-side-menu">
+
+  <div class="c-side-menu__group">
+
+    <div class="c-side-menu__branding">
+      {% include '@atoms/images/gothamist-logo.twig' %}
+    </div>
+
+    {%
+      include '@atoms/buttons/button.twig'
+      with {
+        "button_text": "Donate",
+        "button_classes": "c-side-menu__donate"
+      }
+    %}
+
+    {%
+      include '@molecules/navigation/primary.twig'
+      with {
+        "primary_nav_classes": "c-primary-nav--side",
+        "primary_nav_link_classes": "u-has-dots u-has-dots--banana-yellow"
+      }
+    %}
+
+    {% include '@molecules/social/brand-social-links.twig' %}
+
+  </div>
+
+  <div class="c-side-menu__group">
+
+    {% include '@molecules/navigation/secondary.twig' %}
+
+    <div class="u-spacing">
+      {%
+        include '@molecules/forms/search-entry.twig'
+        with {
+          "search_classes": "c-search--side"
+        }
+      %}
+      {%
+        include '@atoms/buttons/button.twig'
+        with {
+          "button_text": "Send a Story Idea",
+          "button_classes": "c-side-menu__send-story o-button--yellow u-full-width"
+        }
+      %}
+    </div>
+
+    <div class="c-side-menu__nypr-logo">
+      {% include '@atoms/images/nypr-logo.twig' %}
+    </div>
+
+    {% include '@molecules/navigation/nypr-brands-linkroll.twig' %}
+
+  </div>
+
+  <div class="c-side-menu__group u-spacing--double">
+
+    <div class="c-side-menu__copyright">
+      <p class="u-font--mono u-font--xs u-color--white">&copy; 2019 New York Public Radio. All rights reserved.</p>
+    </div>
+
+    <div class="c-side-menu__terms-links">
+      <a href="" class="u-font--mono u-font--xs"><strong>Terms of Use</strong></a>
+      <a href="" class="u-font--mono u-font--xs"><strong>Privacy Policy</strong></a>
+    </div>
+
+  </div>
+
+</div>

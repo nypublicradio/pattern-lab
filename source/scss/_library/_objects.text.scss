@@ -13,31 +13,37 @@
   font-family: $ff-font--primary;
 }
 
+.u-font--mono {
+  font-family: $ff-font--monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 /**
  * Text Sizes
  */
 .u-font--xs {
-  font-size: var(--font-size-xs);
+  font-size: $font-size-xs;
 }
 
 .u-font--s {
-  font-size: var(--font-size-s);
+  font-size: $font-size-s;
 }
 
 .u-font--m {
-  font-size: var(--font-size-m);
+  font-size: $font-size-m;
 }
 
 .u-font--l {
-  font-size: var(--font-size-l);
+  font-size: $font-size-l;
 }
 
 .u-font--xl {
-  font-size: var(--font-size-xl);
+  font-size: $font-size-xl;
 }
 
 .u-font--xxl {
-  font-size: var(--font-size-xxl);
+  font-size: $font-size-xxl;
 }
 
 /**

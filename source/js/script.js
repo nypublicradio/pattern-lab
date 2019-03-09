@@ -5,6 +5,9 @@
 
 (function($) {
 
+  /**
+   * General helper function to support toggle functions.
+   */
   var toggleClasses = function(element) {
     var $this = element,
         $togglePrefix = $this.data('prefix') || 'this';
@@ -12,11 +15,17 @@
     // If the element you need toggled is relative to the toggle, add the
     // .js-this class to the parent element and "this" to the data-toggled attr.
     if ($this.data('toggled') == "this") {
-      var $toggled = $this.parents('.js-this');
-    } else {
+      var $toggled = $this.closest('.js-this');
+    }
+    else {
       var $toggled = $('.' + $this.data('toggled'));
     }
-
+    if ($this.attr('aria-expanded', 'true')) {
+      $this.attr('aria-expanded', 'true')
+    }
+    else {
+      $this.attr('aria-expanded', 'false')
+    }
     $this.toggleClass($togglePrefix + '-is-active');
     $toggled.toggleClass($togglePrefix + '-is-active');
 
@@ -52,6 +61,17 @@
     var $this = $(this);
     $this.toggleClass('this-is-active');
     $this.parent().toggleClass('this-is-active');
+  });
+
+  // Prevent bubbling to the body. Add this class to the element (or element
+  // container) that should allow the click event.
+  $('.js-stop-prop').on('click', function(e) {
+    e.stopPropagation();
+  });
+
+  // Remove active classes when the body is clicked/tapped.
+  $(document).click(function(e){
+    $('.this-is-active').removeClass('this-is-active');
   });
 
   // Target article content.
