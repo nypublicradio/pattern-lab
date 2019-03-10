@@ -17,15 +17,30 @@ a {
   &--banana-yellow {
     color: $c-banana-yellow;
     border-bottom-color: $c-banana-yellow;
+
+    &:hover {
+      color: lighten($c-banana-yellow, 20%);
+      border-bottom-color: lighten($c-banana-yellow, 20%);
+    }
   }
 
   &--white {
     color: $c-white;
     border-bottom-color: $c-white;
+
+    &:hover {
+      color: darken($c-white, 15%);
+      border-bottom-color: darken($c-white, 15%);
+    }
   }
 
   &--brick-red {
     color: $c-brick-red;
     border-bottom-color: $c-brick-red;
+
+    &:hover {
+      color: darken($c-brick-red, 10%);
+      border-bottom-color: darken($c-brick-red, 10%);
+    }
   }
 }

@@ -8,11 +8,15 @@
 .c-menu-toggle {
   position: absolute;
   z-index: 20;
-  left: $pad;
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
+
+  @include media('>xsmall') {
+    left: $pad;
+  }
 
   &__line,
   &__line:before,
@@ -66,6 +70,10 @@
  * Primary navigation (top)
  */
 .c-primary-nav--top {
+
+  @include media('<=xlarge') {
+    display: none;
+  }
 
   .c-primary-nav__item {
     display: inline-block;
@@ -141,6 +149,21 @@
 .c-nypr-nav {
   position: relative;
 
+  &__toggle {
+    position: relative;
+    &:before {
+      content: "";
+      bottom: -20px;
+      right: 0;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: $c-white;
+      transform: rotate(-45deg);
+      display: none;
+    }
+  }
+
   &__list {
     display: none;
     position: absolute;
@@ -151,16 +174,6 @@
     padding: 24px 24px 18px;
     background-color: $c-white;
     flex-wrap: wrap;
-    &:before {
-      content: "";
-      top: -5px;
-      right: 92px;
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      background-color: $c-white;
-      transform: rotate(-45deg);
-    }
   }
 
   &__item {
@@ -172,10 +185,18 @@
     font-size: 22px;
     margin-bottom: $space-half;
     line-height: 1;
+
+    @include media('<=xsmall') {
+      font-size: 18px;
+    }
+
   }
 }
 // Open
 .c-nypr-nav.this-is-active {
+  .c-nypr-nav__toggle:before {
+    display: block;
+  }
   .c-nypr-nav__list {
     display: flex;
   }

@@ -51,7 +51,7 @@
 
     @include media('>small') {
       &::before {
-        content: 'small: 500px';
+        content: 'small: 550px';
       }
 
       &::after,
@@ -73,7 +73,7 @@
 
     @include media('>large') {
       &::before {
-        content: 'large: 900px';
+        content: 'large: 850px';
       }
 
       &::after,
@@ -84,7 +84,7 @@
 
     @include media('>xlarge') {
       &::before {
-        content: 'xlarge: 1100px';
+        content: 'xlarge: 1024px';
       }
 
       &::after,
@@ -95,7 +95,7 @@
 
     @include media('>xxlarge') {
       &::before {
-        content: 'xxlarge: 1300px';
+        content: 'xxlarge: 1280px';
       }
 
       &::after,

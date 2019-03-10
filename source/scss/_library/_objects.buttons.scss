@@ -32,13 +32,17 @@ input[type="submit"] {
   appearance: none;
 
   &:hover {
-    //color: $c-white;
+    background-color: adjust-hue($c-primary, 20%);
   }
 
   // Types
   &--yellow {
     background-color: $c-banana-yellow;
     color: $c-body-color;
+
+    &:hover {
+      background-color: adjust-hue($c-banana-yellow, 5%);
+    }
   }
 
   // Sizes

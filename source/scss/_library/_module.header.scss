@@ -14,17 +14,25 @@
 
   &__inner {
     background-color: $c-heading-bgcolor;
-    padding: $space-half $space $space-half 70px;
+    padding: $space-half $space-half $space-half 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     height: 70px;
+
+    @include media('>xsmall') {
+      padding: $space-half $space $space-half 70px;
+    }
   }
 
   &__branding {
-    width: 150px;
+    width: 120px;
     transform: translateY(5px);
+
+    @include media('>xsmall') {
+      width: 150px;
+    }
   }
 
   &__right {
@@ -37,6 +45,12 @@
 
   &__donate {
     margin-right: $space;
+    @include media('<=small') {
+      margin-right: 0;
+      font-size: 12px;
+      padding-left: $pad;
+      padding-right: $pad;
+    }
   }
 }
 
@@ -44,6 +58,10 @@
   width: 40px;
   height: 40px;
   transform: translate(-5px, 2px);
+
+  @include media('<=small') {
+    display: none;
+  }
 
   &__icon {
     path {
@@ -77,18 +95,27 @@
  */
 .c-side-menu {
   position: absolute;
-  width: 360px;
+  width: 100%;
   background-color: $c-heading-bgcolor;
-  left: -360px;
+  left: -100%;
   top: 0;
   z-index: 10;
   padding-bottom: $space-double;
   transition: transform .3s $hard-ease-in;
   overflow: auto;
-  height: 100vh;
+  height: calc(100vh - 70px);
+
+  @include media('>small') {
+    max-width: 360px;
+    left: -360px;
+  }
 
   .side-menu-is-active & {
-    transform: translateX(360px);
+    transform: translateX(100%);
+
+    @include media('>small') {
+      transform: translateX(360px);
+    }
   }
 
   &__group {
@@ -109,6 +136,12 @@
   &__donate {
     width: calc(100% - #{$space});
     margin-bottom: $space;
+  }
+
+  &__send-story {
+    @include media('<=xsmall') {
+      font-size: 14px;
+    }
   }
 
   &__nypr-logo {
