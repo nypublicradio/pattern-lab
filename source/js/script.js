@@ -35,6 +35,13 @@
     }
   };
 
+  // Scroll the side menu back to top.
+  function sideMenuScrollTop() {
+    setTimeout(function() {
+      $('.c-side-menu').scrollTop(0);
+    }, 1000);
+  }
+
   /*
    * Toggle Active Classes
    *
@@ -53,6 +60,7 @@
   $('.js-toggle').on('click', function(e) {
     e.stopPropagation();
     toggleClasses($(this));
+    sideMenuScrollTop();
   });
 
   // Toggle parent class
@@ -70,8 +78,13 @@
   });
 
   // Remove active classes when the body is clicked/tapped.
-  $(document).click(function(e){
+  $('body').on('click', function(e) {
     $('.this-is-active').removeClass('this-is-active');
+  });
+
+  $('body, .c-content-overlay, .c-menu-toggle.side-menu-is-active').on('click', function(e){
+    $('.side-menu-is-active').removeClass('side-menu-is-active');
+    sideMenuScrollTop();
   });
 
   // Target article content.

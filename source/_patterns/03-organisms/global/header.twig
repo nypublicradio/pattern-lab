@@ -1,5 +1,5 @@
 <header class="c-main-header">
-  <div class="o-ad o-ad--leaderboard">
+  <div class="c-main-header__ad-unit o-ad o-ad--leaderboard">
     {%
       include '@atoms/images/image.twig'
       with {
@@ -10,7 +10,8 @@
     %}
   </div>
   <div class="c-main-header__inner js-stop-prop">
-    <button class="c-menu-toggle js-toggle-parent" id="menu-toggle" aria-expanded="false">
+
+    <button class="c-menu-toggle js-toggle" data-toggled="c-body" data-prefix="side-menu" id="menu-toggle" aria-expanded="false">
       <span class="is-vishidden">Menu</span>
       <span class="c-menu-toggle__line"></span>
     </button>
@@ -38,5 +39,6 @@
         <span class="c-search-toggle__icon o-icon o-icon--search u-icon--xs">{% include '@atoms/icons/icon-search.twig' %}</span>
       </button>
     </div>
+    <div class="c-content-overlay"></div>
   </div>
 </header>

@@ -12,3 +12,7 @@ body {
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
+
+body.side-menu-is-active {
+  overflow: hidden;
+}

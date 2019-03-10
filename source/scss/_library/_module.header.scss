@@ -6,6 +6,12 @@
   text-align: center;
   padding-top: 5px;
 
+  &__ad-unit {
+    position: relative;
+    z-index: 100;
+    background-color: $c-white;
+  }
+
   &__inner {
     background-color: $c-heading-bgcolor;
     padding: $space-half $space $space-half 70px;
@@ -42,6 +48,25 @@
   }
 }
 
+.c-content-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $c-white;
+  z-index: 5;
+  left: -100%;
+  top: 0;
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity .3s ease-out, transform .3s ease-out .4s;
+
+  .side-menu-is-active & {
+    opacity: .5;
+    transform: translateX(100vw);
+    transition: opacity .2s ease-in;
+  }
+}
+
 
 /**
  * Side menu
@@ -55,8 +80,10 @@
   z-index: 10;
   padding-bottom: $space-double;
   transition: transform .3s $hard-ease-in;
+  overflow: auto;
+  height: 100vh;
 
-  .this-is-active & {
+  .side-menu-is-active & {
     transform: translateX(360px);
   }
 

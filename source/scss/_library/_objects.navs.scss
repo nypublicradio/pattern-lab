@@ -14,11 +14,6 @@
   width: 40px;
   height: 40px;
 
-  &:focus {
-    outline: thin dotted;
-    outline-offset: -2px;
-  }
-
   &__line,
   &__line:before,
   &__line:after {
@@ -45,23 +40,23 @@
   &__line:after {
     transform: translate(-50%, 6px);
   }
+}
+// Side menu is active
+.side-menu-is-active {
 
-  &.this-is-active {
+  .c-menu-toggle__line {
+    visibility: hidden;
 
-    .c-menu-toggle__line {
-      visibility: hidden;
+    &:before {
+      visibility: visible;
+      top: auto;
+      transform: translateX(-50%) rotate(-45deg);
+    }
 
-      &:before {
-        visibility: visible;
-        top: auto;
-        transform: translateX(-50%) rotate(-45deg);
-      }
-
-      &:after {
-        visibility: visible;
-        bottom: auto;
-        transform: translateX(-50%) rotate(45deg);
-      }
+    &:after {
+      visibility: visible;
+      bottom: auto;
+      transform: translateX(-50%) rotate(45deg);
     }
   }
 }
