@@ -21,12 +21,14 @@
     <div class="c-main-header__branding">
       {% include '@atoms/images/gothamist-logo.twig' %}
     </div>
+
     {%
       include '@molecules/navigation/primary.twig'
       with {
         "primary_nav_classes": "c-primary-nav--top"
       }
     %}
+
     <div class="c-main-header__right">
       {%
         include '@atoms/buttons/button.twig'
@@ -35,9 +37,16 @@
           "button_classes": "c-main-header__donate o-button--sm"
         }
       %}
-      <button class="c-search-toggle js-toggle" id="search-toggle" aria-expanded="false">
+      <button class="c-search-toggle js-toggle" data-prefix="top-search" data-toggled="c-main-header__right" id="search-toggle" aria-expanded="false">
         <span class="c-search-toggle__icon o-icon o-icon--search u-icon--xs">{% include '@atoms/icons/icon-search.twig' %}</span>
       </button>
+      {%
+        include '@molecules/forms/search-entry.twig'
+        with {
+          "search_classes": "c-search--top",
+          "has_close": true
+        }
+      %}
     </div>
     <div class="c-content-overlay"></div>
   </div>

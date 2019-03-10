@@ -26,6 +26,55 @@
   }
 }
 
+// Heading search menu
+.c-search--top {
+  height: 50px;
+  width: 265px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+
+  .c-search__close {
+    position: absolute;
+    left: $space-half;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $c-gray--light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+    path {
+      fill: $c-reddish-orange;
+    }
+  }
+
+  .c-search__input {
+    width: calc(100% - 50px);
+    font-size: 14px;
+    padding-left: 45px;
+  }
+
+  .c-search__button {
+    min-width: 50px;
+    max-width: 50px;
+  }
+}
+// Top search entry is open
+.top-search-is-active {
+  .c-search--top {
+    display: flex;
+  }
+}
+
 // Side menu search
 .c-search--side {
   height: 60px;

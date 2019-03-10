@@ -1,5 +1,8 @@
 <form class="c-search {{ search_classes }}" role="dialog" action="">
   <label for="search" class="is-vishidden">Search this site</label>
+  {% if has_close %}
+    <button type="button" class="c-search__close o-icon js-toggle" data-remove="top-search-is-active">{% include '@atoms/icons/icon-close.twig' %}</button>
+  {% endif %}
   <input name="search" type="search" class="c-search__input" placeholder="Search">
   <button type="submit" class="o-button o-button--yellow c-search__button">
     <span class="c-search__icon o-icon o-icon--search u-icon--xs">{% include '@atoms/icons/icon-search.twig' %}</span>
