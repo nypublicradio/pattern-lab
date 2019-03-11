@@ -1,0 +1,7 @@
+<nav class="c-primary-nav {{ primary_nav_classes }}" role="navigation" aria-label="Primary navigation">
+  <ul>
+    {% for item in primary_nav_items %}
+      <li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link {{ primary_nav_link_classes }}">{{ item.link }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

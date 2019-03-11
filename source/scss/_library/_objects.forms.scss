@@ -12,3 +12,114 @@
 .is-valid {
   border-color: $c-valid !important;
 }
+
+/**
+ * Search entry
+ */
+.c-search {
+  display: flex;
+  justify-content: space-between;
+
+  &__button {
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+// Heading search menu
+.c-search--top {
+  height: 50px;
+  width: 265px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  transition: z-index .1s ease-out .5s;
+
+  @include media('<=small') {
+    display: none;
+  }
+
+  .c-search__close {
+    position: absolute;
+    left: $space-half;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    transform: translate(-40px, -50%);
+    border-radius: 50%;
+    background-color: $c-gray--light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .15s ease-out;
+    z-index: 10;
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+    path {
+      fill: $c-reddish-orange;
+    }
+  }
+
+  .c-search__input {
+    width: calc(100% - 50px);
+    font-size: 14px;
+    padding-left: 45px;
+    transform: translateX(calc(100% + 50px));
+    transition: transform .1s ease-out .15s;
+  }
+
+  .c-search__button {
+    min-width: 50px;
+    max-width: 50px;
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity .15s ease-out .3s;
+
+    &:hover {
+      background-color: $c-banana-yellow;
+    }
+  }
+}
+// Top search entry is open
+.top-search-is-active {
+  .c-search--top {
+    display: flex;
+    z-index: 10;
+    transition: z-index 0s;
+
+    @include media('<=small') {
+      display: none;
+    }
+  }
+  .c-search__close {
+    transform: translateY(-50%);
+    transition: transform .15s ease-out .3s;
+  }
+  .c-search__input {
+    transform: translateX(0);
+    transition: transform .15s ease-out .1s;
+  }
+  .c-search__button {
+    opacity: 1;
+    transition: opacity .1s ease-out;
+  }
+}
+
+// Side menu search
+.c-search--side {
+  height: 60px;
+
+  .c-search__input {
+    width: calc(100% - 60px);
+  }
+
+  .c-search__button {
+    min-width: 60px;
+    max-width: 60px;
+  }
+}

@@ -4,6 +4,187 @@
 
 .c-main-header {
   text-align: center;
-  background-color: $c-secondary;
-  padding-top: $pad;
+  padding-top: 5px;
+
+  &__ad-unit {
+    position: relative;
+    z-index: 100;
+    background-color: $c-white;
+  }
+
+  &__inner {
+    background-color: $c-heading-bgcolor;
+    padding: $space-half $space-half $space-half 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: #{$heading-height};
+
+    @include media('>xsmall') {
+      padding: $space-half $space $space-half 70px;
+    }
+  }
+
+  &__branding {
+    width: 120px;
+    transform: translateY(5px);
+
+    @include media('>xsmall') {
+      width: 150px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 100%;
+  }
+
+  &__donate {
+    margin-right: $space;
+    @include media('<=small') {
+      margin-right: 0;
+      font-size: 12px;
+      padding-left: $pad;
+      padding-right: $pad;
+    }
+  }
+}
+
+.c-search-toggle {
+  width: 40px;
+  height: 40px;
+  transform: translate(-5px, 2px);
+
+  @include media('<=small') {
+    display: none;
+  }
+
+  &__icon {
+    path {
+      fill: $c-white;
+    }
+  }
+}
+
+.c-content-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $c-white;
+  z-index: 5;
+  left: -100%;
+  top: 0;
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity .3s ease-out, transform .3s ease-out .4s;
+
+  .side-menu-is-active & {
+    opacity: .5;
+    transform: translateX(100vw);
+    transition: opacity .2s ease-in;
+  }
+}
+
+
+/**
+ * Side menu
+ */
+.c-side-menu {
+  position: absolute;
+  width: 100%;
+  background-color: $c-heading-bgcolor;
+  left: -100%;
+  top: 0;
+  z-index: 10;
+  padding-bottom: $space-double;
+  transition: transform .3s $hard-ease-in;
+  overflow: auto;
+  height: calc(100vh - #{$heading-height});
+
+  @include media('>small') {
+    max-width: 360px;
+    left: -360px;
+  }
+
+  .side-menu-is-active & {
+    transform: translateX(100%);
+
+    @include media('>small') {
+      transform: translateX(360px);
+    }
+  }
+
+  &__group {
+    padding: $space-and-half;
+    &:not(:last-child) {
+      background-image: linear-gradient(to right, transparent 50%, rgba($c-gray, .2) 50%);
+      background-position: center bottom;
+      background-size: 16px 1px;
+      background-repeat: repeat-x;
+    }
+  }
+
+  &__branding {
+    width: 180px;
+    margin: $space-half auto $space-half;
+  }
+
+  &__donate {
+    width: calc(100% - #{$space});
+    margin-bottom: $space;
+  }
+
+  &__send-story {
+    @include media('<=xsmall') {
+      font-size: 14px;
+    }
+  }
+
+  &__nypr-logo {
+    width: 120px;
+    margin: $space-double auto $space-half;
+    path,
+    polygon {
+      fill: $c-white;
+    }
+  }
+
+  &__copyright {
+    p {
+      line-height: 2.5;
+    }
+  }
+
+  &__terms-links {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+/**
+ * Brand social links in the side menu
+ */
+.c-brand-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__label {
+    margin-right: $space-half;
+  }
+
+  &__link {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 4px;
+    path {
+      fill: $c-white;
+    }
+  }
 }

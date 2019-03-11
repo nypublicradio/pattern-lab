@@ -24,11 +24,17 @@ input,
 select,
 textarea {
   width: 100%;
-  border: $border-style;
-  padding: $space;
+  border: none;
   appearance: none;
-  border-radius: 3px;
-  outline: 0;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=tel] {
+  font-size: 18px;
+  padding: $space $pad;
 }
 
 input[type=radio],
@@ -91,17 +97,8 @@ select {
   }
 }
 
-input[type="search"] {
-  appearance: none;
-  border-radius: 0;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  appearance: none;
-}
-
 ::placeholder {
-  color: $c-gray;
+  color: $c-brown-grey;
+  font-family: $ff-font--monospace;
 }
 

@@ -1,0 +1,7 @@
+<nav class="c-secondary-nav" role="navigation" aria-label="Secondary navigation">
+  <ul class="c-secondary-nav__list">
+    {% for item in secondary_nav_items %}
+      <li class="c-secondary-nav__item"><a class="c-secondary-nav__link u-font--mono u-font--xs u-color--white u-has-dots u-has-dots--white" href="#">{{ item.link }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

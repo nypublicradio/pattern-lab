@@ -11,15 +11,17 @@ $article-width: 760;
 /**
  * Theme Colors
  */
-$c-orange: #DE5E36;
-$c-wnyc-red: #DE1E3D;
-$c-tan: #f0eeea;
-$c-yellow: #ffc400;
-$c-navy: #244c84;
+$c-brick-red: #9c1e14;
+$c-fireengine-red: #de1e3d;
+$c-reddish-orange: #f25917;
+$c-banana-yellow: #ffc400;
+$c-taxicab-yellow: #e3d54a;
+$c-dusk-blue: #244c84;
+$c-brown-grey: #939393;
 
-$c-primary: $c-orange;
-$c-secondary: $c-yellow;
-$c-tertiary: $c-wnyc-red;
+$c-primary: $c-reddish-orange;
+$c-secondary: $c-dusk-blue;
+$c-tertiary: $c-fireengine-red;
 
 /**
  * Neutral Colors
@@ -47,6 +49,8 @@ $c-link-color: $c-primary;
 $c-button-color: $c-secondary;
 $c-border-color: $c-gray;
 $c-body-bgcolor: $c-white;
+$c-heading-bgcolor: $c-gray--dark;
+$c-main-nav-link-color: $c-white;
 
 /**
  * Typography
@@ -56,28 +60,35 @@ $ff-font--primary: 'Pragati Narrow', Helvetica, sans-serif;
 $ff-font--secondary: $ff-font;
 $ff-font--sans: $ff-font--primary;
 $ff-font--serif: 'Times New Roman', serif;
-$ff-font--monospace: Menlo, Monaco, "Courier New", "Courier", monospace;
+$ff-font--monospace: 'B612 Mono', Menlo, Monaco, "Courier New", "Courier", monospace;
+
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+$font-size-l: 20px;
+$font-size-xl: 25px;
+$font-size-xxl: 40px;
 
 
 /**
  * Icons
  */
-$icon-xsmall: rem(15);
-$icon-small: rem(20);
-$icon-medium: rem(30);
-$icon-large: rem(40);
-$icon-xlarge: rem(50);
+$icon-xsmall: 16px;
+$icon-small: 20px;
+$icon-medium: 30px;
+$icon-large: 40px;
+$icon-xlarge: 50px;
 
 
 /**
  * Common Breakpoints
  */
 $xsmall: 360px;
-$small: 500px;
+$small: 550px;
 $medium: 768px;
-$large: 900px;
-$xlarge: 1100px;
-$xxlarge: 1300px;
+$large: 850px;
+$xlarge: 1024px;
+$xxlarge: 1280px;
 $xxxlarge: 1500px;
 
 $breakpoints: (
@@ -94,7 +105,7 @@ $breakpoints: (
 /**
  * Animation
  */
-$cubic-bezier: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+$hard-ease-in: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 
 
 /**
@@ -124,37 +135,47 @@ $pad-double: $pad*2;
 
 
 /**
+ * Element specific
+ */
+$heading-height: 70px;
+
+
+/**
  * Native Custom Properties
  */
-:root {
-  --font-size-xs: 12px;
-  --font-size-s: 14px;
-  --font-size-m: 16px;
-  --font-size-l: 20px;
-  --font-size-xl: 25px;
-  --font-size-xxl: 40px;
-}
+// :root {
+//   --font-size-xs: 12px;
+//   --font-size-s: 14px;
+//   --font-size-m: 16px;
+//   --font-size-l: 20px;
+//   --font-size-xl: 25px;
+//   --font-size-xxl: 40px;
+// }
 
-// Small Breakpoint
-@media screen and (min-width: 500px) {
-  :root {
-    --font-size-xs: 14px;
-    --font-size-s: 16px;
-    --font-size-m: 18px;
-    --font-size-l: 25px;
-    --font-size-xl: 35px;
-    --font-size-xxl: 55px;
-  }
-}
+// // Small Breakpoint
+// @media screen and (min-width: 500px) {
+//   :root {
+//     --font-size-xs: 14px;
+//     --font-size-s: 16px;
+//     --font-size-m: 18px;
+//     --font-size-l: 25px;
+//     --font-size-xl: 35px;
+//     --font-size-xxl: 55px;
+//   }
+// }
 
-// Large Breakpoint
-@media screen and (min-width: 1100px) {
-  :root {
-    --font-size-xs: 15px;
-    --font-size-s: 19px;
-    --font-size-m: 20px;
-    --font-size-l: 30px;
-    --font-size-xl: 45px;
-    --font-size-xxl: 80px;
-  }
-}
+// // Large Breakpoint
+// @media screen and (min-width: 1100px) {
+//   :root {
+//     --font-size-xs: 15px;
+//     --font-size-s: 19px;
+//     --font-size-m: 20px;
+//     --font-size-l: 30px;
+//     --font-size-xl: 45px;
+//     --font-size-xxl: 80px;
+//   }
+// }
+
+
+// TEMP
+$main-nav-font-size: 18px;

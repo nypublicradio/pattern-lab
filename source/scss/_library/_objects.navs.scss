@@ -2,7 +2,202 @@
     $NAVIGATION
 \*------------------------------------*/
 
-.c-main-navigation {
-  padding: $pad;
-  background-color: $c-gray;
+/**
+ * Side menu toggle
+ */
+.c-menu-toggle {
+  position: absolute;
+  z-index: 20;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+
+  @include media('>xsmall') {
+    left: $pad;
+  }
+
+  &__line,
+  &__line:before,
+  &__line:after {
+    position: absolute;
+    background-color: $c-white;
+    height: 2px;
+    display: block;
+    left: 50%;
+    width: 14px;
+    transform: translateX(-50%);
+  }
+
+  &__line:before,
+  &__line:after {
+    content: "";
+    transform-origin: center;
+    transition: transform .1s ease-out;
+  }
+
+  &__line:before {
+    transform: translate(-50%, -6px);
+  }
+
+  &__line:after {
+    transform: translate(-50%, 6px);
+  }
+}
+// Side menu is active
+.side-menu-is-active {
+
+  .c-menu-toggle__line {
+    visibility: hidden;
+
+    &:before {
+      visibility: visible;
+      top: auto;
+      transform: translateX(-50%) rotate(-45deg);
+    }
+
+    &:after {
+      visibility: visible;
+      bottom: auto;
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+}
+
+
+/**
+ * Primary navigation (top)
+ */
+.c-primary-nav--top {
+
+  @include media('<=xlarge') {
+    display: none;
+  }
+
+  .c-primary-nav__item {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 2px;
+      height: 16.5px;
+      background-color: $c-white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+  .c-primary-nav__link {
+    display: inline-block;
+    padding: 0 $space;
+    color: $c-main-nav-link-color;
+    font-size: $main-nav-font-size;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
+
+/**
+ * Primary navigation (side)
+ */
+.c-primary-nav--side {
+  margin-bottom: $space-double;
+
+  .c-primary-nav__item {
+    margin-top: $space;
+  }
+
+  .c-primary-nav__link {
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+/**
+ * Secondary navigation
+ */
+.c-secondary-nav {
+  margin-bottom: $space;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &__item {
+    margin-bottom: $space-and-half;
+  }
+
+  &__link {
+    margin: 0 5px;
+  }
+}
+
+
+/**
+ * NYPR brand link roll navigation
+ */
+.c-nypr-nav {
+  position: relative;
+
+  &__toggle {
+    position: relative;
+    &:before {
+      content: "";
+      bottom: -20px;
+      right: 0;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: $c-white;
+      transform: rotate(-45deg);
+      display: none;
+    }
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    width: calc(100% + #{$space-double});
+    left: 50%;
+    transform: translate(-50%);
+    top: $space-and-half;
+    padding: 24px 24px 18px;
+    background-color: $c-white;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 50%;
+    text-align: left;
+  }
+
+  &__link {
+    font-size: 22px;
+    margin-bottom: $space-half;
+    line-height: 1;
+
+    @include media('<=xsmall') {
+      font-size: 18px;
+    }
+
+  }
+}
+// Open
+.c-nypr-nav.this-is-active {
+  .c-nypr-nav__toggle:before {
+    display: block;
+  }
+  .c-nypr-nav__list {
+    display: flex;
+  }
 }
