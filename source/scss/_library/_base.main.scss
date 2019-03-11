@@ -9,8 +9,7 @@ body {
   color: $c-body-color;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.side-menu-is-active {
