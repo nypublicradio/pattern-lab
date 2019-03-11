@@ -29,7 +29,6 @@ input[type="submit"] {
   letter-spacing: 2px;
   text-align: center;
   background-color: $c-primary;
-  appearance: none;
 
   &:hover {
     background-color: adjust-hue($c-primary, 20%);

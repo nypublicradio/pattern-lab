@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    height: 70px;
+    height: #{$heading-height};
 
     @include media('>xsmall') {
       padding: $space-half $space $space-half 70px;
@@ -103,7 +103,7 @@
   padding-bottom: $space-double;
   transition: transform .3s $hard-ease-in;
   overflow: auto;
-  height: calc(100vh - 70px);
+  height: calc(100vh - #{$heading-height});
 
   @include media('>small') {
     max-width: 360px;
