@@ -7,6 +7,7 @@
  */
 $max-width: 960;
 $article-width: 760;
+$heading-height: 70px;
 
 /**
  * Theme Colors
@@ -20,8 +21,12 @@ $c-dusk-blue: #244c84;
 $c-brown-grey: #939393;
 
 $c-primary: $c-reddish-orange;
-$c-secondary: $c-dusk-blue;
+$c-secondary: $c-brick-red;
 $c-tertiary: $c-fireengine-red;
+$c-quaternary: $c-banana-yellow;
+$c-quinary: $c-taxicab-yellow;
+$c-senary: $c-dusk-blue;
+$c-septenary: $c-brown-grey;
 
 /**
  * Neutral Colors
@@ -68,6 +73,11 @@ $font-size-m: 16px;
 $font-size-l: 20px;
 $font-size-xl: 25px;
 $font-size-xxl: 40px;
+
+/**
+ * Theme Type Elements
+ */
+$main-nav-font-size: 18px;
 
 
 /**
@@ -132,50 +142,3 @@ $pad: 15px;
 $pad-half: $pad/2;
 $pad-and-half: $pad*1.5;
 $pad-double: $pad*2;
-
-
-/**
- * Element specific
- */
-$heading-height: 70px;
-
-
-/**
- * Native Custom Properties
- */
-// :root {
-//   --font-size-xs: 12px;
-//   --font-size-s: 14px;
-//   --font-size-m: 16px;
-//   --font-size-l: 20px;
-//   --font-size-xl: 25px;
-//   --font-size-xxl: 40px;
-// }
-
-// // Small Breakpoint
-// @media screen and (min-width: 500px) {
-//   :root {
-//     --font-size-xs: 14px;
-//     --font-size-s: 16px;
-//     --font-size-m: 18px;
-//     --font-size-l: 25px;
-//     --font-size-xl: 35px;
-//     --font-size-xxl: 55px;
-//   }
-// }
-
-// // Large Breakpoint
-// @media screen and (min-width: 1100px) {
-//   :root {
-//     --font-size-xs: 15px;
-//     --font-size-s: 19px;
-//     --font-size-m: 20px;
-//     --font-size-l: 30px;
-//     --font-size-xl: 45px;
-//     --font-size-xxl: 80px;
-//   }
-// }
-
-
-// TEMP
-$main-nav-font-size: 18px;

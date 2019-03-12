@@ -138,7 +138,11 @@
   }
 
   &__link {
-    margin: 0 5px;
+    margin: 0 $space-half;
+
+    @include media('>medium') {
+      margin: 0 $space;
+    }
   }
 }
 

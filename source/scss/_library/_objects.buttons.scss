@@ -34,13 +34,13 @@ input[type="submit"] {
     background-color: adjust-hue($c-primary, 20%);
   }
 
-  // Types
-  &--yellow {
-    background-color: $c-banana-yellow;
+  // Types/Styles
+  &--c-quaternary {
+    background-color: $c-quaternary;
     color: $c-body-color;
 
     &:hover {
-      background-color: adjust-hue($c-banana-yellow, 5%);
+      background-color: adjust-hue($c-quaternary, 5%);
     }
   }
 

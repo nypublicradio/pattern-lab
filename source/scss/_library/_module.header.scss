@@ -110,11 +110,20 @@
     left: -360px;
   }
 
+  @include media('>medium') {
+    max-width: 500px;
+    left: -500px;
+  }
+
   .side-menu-is-active & {
     transform: translateX(100%);
 
     @include media('>small') {
       transform: translateX(360px);
+    }
+
+    @include media('>medium') {
+      transform: translateX(500px);
     }
   }
 
@@ -125,6 +134,11 @@
       background-position: center bottom;
       background-size: 16px 1px;
       background-repeat: repeat-x;
+    }
+
+    @include media('>medium') {
+      padding-left: $space-quad;
+      padding-right: $space-quad;
     }
   }
 

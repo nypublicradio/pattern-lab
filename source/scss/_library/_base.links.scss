@@ -9,18 +9,18 @@ a {
   display: inline-block;
 }
 
-.u-has-dots {
+.u-has-accent {
   display: inline-block;
   padding-bottom: 6px;
   border-bottom: 2px dotted $c-body-color;
 
-  &--banana-yellow {
-    color: $c-banana-yellow;
-    border-bottom-color: $c-banana-yellow;
+  &--quaternary {
+    color: $c-quaternary;
+    border-bottom-color: $c-quaternary;
 
     &:hover {
-      color: lighten($c-banana-yellow, 20%);
-      border-bottom-color: lighten($c-banana-yellow, 20%);
+      color: lighten($c-quaternary, 20%);
+      border-bottom-color: lighten($c-quaternary, 20%);
     }
   }
 
@@ -34,13 +34,13 @@ a {
     }
   }
 
-  &--brick-red {
-    color: $c-brick-red;
-    border-bottom-color: $c-brick-red;
+  &--secondary {
+    color: $c-secondary;
+    border-bottom-color: $c-secondary;
 
     &:hover {
-      color: darken($c-brick-red, 10%);
-      border-bottom-color: darken($c-brick-red, 10%);
+      color: darken($c-secondary, 10%);
+      border-bottom-color: darken($c-secondary, 10%);
     }
   }
 }
