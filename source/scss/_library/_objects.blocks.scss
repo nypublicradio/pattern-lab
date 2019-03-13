@@ -5,18 +5,18 @@
 .c-block {
   &__image {
     img {
-      width: rem(150);
-      height: rem(100);
+      width: 150px;
+      height: 100px;
 
       @include media(">medium") {
-        width: rem(175);
-        height: rem(125);
+        width: 175px;
+        height: 125px;
       }
 
 
       @include media(">xxlarge") {
-        width: rem(200);
-        height: rem(150);
+        width: 200px;
+        height: 150px;
       }
     }
   }

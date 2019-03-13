@@ -7,11 +7,11 @@
  */
 @mixin p {
   font-family: $ff-font;
-  font-size: rem(14);
+  font-size: 14px;
   line-height: 1.5;
 
   @media print {
-    font-size: rem(12);
+    font-size: 12px;
     line-height: 1.3;
   }
 }
