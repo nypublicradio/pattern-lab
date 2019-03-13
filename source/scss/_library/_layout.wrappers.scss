@@ -22,6 +22,7 @@
   max-width: $max-width + px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .l-container--content {
@@ -30,16 +31,19 @@
   margin-right: auto;
 }
 
-
 /**
  * Grid classes
  */
-.l-container--10col {
-  max-width: ($col-width * 10) + ($gutter * 8) + px;
-}
-.l-container--12col {
-  max-width: ($col-width * 12) + ($gutter * 10) + px;
-}
-.l-container--14col {
-  max-width: ($col-width * 14) + ($gutter * 12) + px;
+@for $i from 1 through $grid-columns {
+  .l-container--#{$i}col {
+    @if $i == 1 {
+      max-width: ($col-width * $i) + ($gutter * $i) + px;
+    }
+    @else if $i == 2 {
+      max-width: ($col-width * $i) + ($gutter * 1) + px;
+    }
+    @else {
+      max-width: ($col-width * $i) + ($gutter * ($i - 2)) + px;
+    }
+  }
 }

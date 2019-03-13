@@ -8,6 +8,7 @@ h1,
   font-size: $font-size-xl;
   line-height: 1;
   letter-spacing: 1px;
+  font-weight: bold;
 
   @include media('>large') {
     font-size: $font-size-xxl;
@@ -19,6 +20,7 @@ h2,
   font-family: $ff-font--primary;
   font-size: $font-size-l;
   line-height: 1.15;
+  font-weight: bold;
 
   @include media('>large') {
     font-size: $font-size-xl;
