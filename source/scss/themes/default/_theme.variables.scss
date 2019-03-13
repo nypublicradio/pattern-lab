@@ -130,15 +130,16 @@ $border-style-thick: 3px solid $c-border-color;
 
 /**
  * Default Spacing/Padding
+ * Maintain a spacing system divisible by 8
  */
-$space: 20px;
-$space-quarter: $space/4;
-$space-half: $space/2;
-$space-and-half: $space*1.5;
-$space-double: $space*2;
-$space-triple: $space*3;
-$space-quad: $space*4;
 $pad: 15px;
 $pad-half: $pad/2;
 $pad-and-half: $pad*1.5;
 $pad-double: $pad*2;
+$space:           16px;
+$space-quarter:   $space/4;   // 4
+$space-half:      $space/2;   // 8
+$space-and-half:  $space*1.5; // 24
+$space-double:    $space*2;   // 32
+$space-triple:    $space*3;   // 48
+$space-quad:      $space*4;   // 64
