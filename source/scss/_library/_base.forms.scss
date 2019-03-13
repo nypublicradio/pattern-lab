@@ -34,7 +34,7 @@ input[type=email],
 input[type=search],
 input[type=tel] {
   font-size: 18px;
-  padding: $space $pad;
+  padding: $space;
   font-family: $ff-font--monospace;
 }
 
@@ -102,4 +102,3 @@ select {
   color: $c-brown-grey;
   font-family: $ff-font--monospace;
 }
-
