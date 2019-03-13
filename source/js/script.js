@@ -82,6 +82,7 @@
     $('.this-is-active').removeClass('this-is-active');
   });
 
+  // Close side menu when other things are clicked outside the menu.
   $('body, .c-content-overlay, .c-menu-toggle.side-menu-is-active').on('click', function(e){
     $('.side-menu-is-active').removeClass('side-menu-is-active');
     sideMenuScrollTop();
@@ -89,5 +90,23 @@
 
   // Target article content.
   $('.c-article__body').fitVids();
+
+  // Top search entry specific functionality.
+  (function() {
+    // Focus input on toggle.
+    $('.c-search-toggle.js-toggle').on('click', function(e) {
+      setTimeout(function() {
+        $('.c-search--top .c-search__input').focus();
+      }, 500);
+    });
+    // If input has no value, close the form when submitted.
+    $('.c-search--top').on('submit', function(e) {
+      var thisInput = $(this).find('.c-search__input');
+      if (!thisInput.val()) {
+        e.preventDefault();
+        $('.top-search-is-active').removeClass('top-search-is-active');
+      }
+    });
+  })();
 
 })(jQuery);

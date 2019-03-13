@@ -25,10 +25,21 @@
 }
 
 .l-container--content {
-  max-width: $article-width + px;
+  max-width: $article-content-width + px;
   margin-left: auto;
   margin-right: auto;
 }
-.l-container--s {
-  max-width: 600px;
+
+
+/**
+ * Grid classes
+ */
+.l-container--10col {
+  max-width: ($col-width * 10) + ($gutter * 8) + px;
+}
+.l-container--12col {
+  max-width: ($col-width * 12) + ($gutter * 10) + px;
+}
+.l-container--14col {
+  max-width: ($col-width * 14) + ($gutter * 12) + px;
 }

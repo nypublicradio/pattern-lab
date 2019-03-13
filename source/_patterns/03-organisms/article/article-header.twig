@@ -1,5 +1,21 @@
-<header class="c-article__header u-spacing--half l-container--content l-wrap">
-  {% include '@molecules/navigation/breadcrumb.twig' %}
-  {% include '@atoms/text/headline.twig' %}
-  {% include '@molecules/meta/article-meta.twig' %}
+<header class="c-article__header u-spacing--and-half">
+  <div class="l-container l-container--12col u-spacing--and-half">
+    {% include '@molecules/navigation/breadcrumb.twig' %}
+    {%
+      include '@atoms/text/headline.twig'
+      with {
+        "headline_classes": "c-article__headline"
+      }
+    %}
+  </div>
+
+  <div class="l-container l-container--10col">
+    {% include '@molecules/meta/article-meta.twig' %}
+  </div>
+
+  <div class="l-container l-container--14col">
+    <div class="l-container l-container--10col">
+      {% include '@molecules/leads/lead.twig' %}
+    </div>
+  </div>
 </header>

@@ -6,8 +6,8 @@
  * Standard paragraph
  */
 @mixin p {
-  font-family: $ff-font;
-  font-size: 14px;
+  font-family: $ff-font--tertiary;
+  font-size: 18px;
   line-height: 1.5;
 
   @media print {

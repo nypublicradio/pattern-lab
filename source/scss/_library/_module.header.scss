@@ -4,12 +4,15 @@
 
 .c-main-header {
   text-align: center;
-  padding-top: 5px;
 
   &__ad-unit {
     position: relative;
     z-index: 100;
     background-color: $c-white;
+
+    img {
+      margin: 0 auto;
+    }
   }
 
   &__inner {
@@ -19,7 +22,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    height: #{$heading-height};
+    height: $heading-height + px;
 
     @include media('>xsmall') {
       padding: $space-half $space $space-half 70px;
@@ -115,6 +118,19 @@
     left: -500px;
   }
 
+  // &::-webkit-scrollbar-track {
+  //   background-color: transparent;
+  // }
+
+  // &::-webkit-scrollbar {
+  //   width: 8px;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   border-radius: 6px;
+  //   background-color: $c-gray;
+  // }
+
   .side-menu-is-active & {
     transform: translateX(100%);
 
@@ -197,6 +213,11 @@
     height: 30px;
     padding: 5px;
     margin: 0 4px;
+
+    @include media('>small') {
+      width: 40px;
+    }
+
     path {
       fill: $c-white;
     }

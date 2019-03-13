@@ -5,9 +5,20 @@
 /**
  * Grid & Baseline Setup
  */
+// Global
 $max-width: 960;
-$article-width: 760;
-$heading-height: 70px;
+$heading-height: 70;
+
+// Navigation
+$main-nav-font-size: 18;
+
+// Grid
+$col-width: 48.5;
+$gutter: 18;
+
+// Article
+$article-header-width: 764;
+$article-content-width: 634;
 
 /**
  * Theme Colors
@@ -33,7 +44,7 @@ $c-septenary: $c-brown-grey;
  */
 $c-black: #000000;
 $c-gray--dark: #333333;
-$c-gray: #E6E6E6;
+$c-gray: #afafaf;
 $c-gray--light: #f3f3f3;
 $c-white: #ffffff;
 
@@ -61,23 +72,22 @@ $c-main-nav-link-color: $c-white;
  * Typography
  */
 $ff-font: "Helvetica Neue", Helvetica, 'Arial', sans-serif;
-$ff-font--primary: 'Pragati Narrow', Helvetica, sans-serif;
-$ff-font--secondary: $ff-font;
-$ff-font--sans: $ff-font--primary;
+$ff-font--sans: $ff-font;
 $ff-font--serif: 'Times New Roman', serif;
 $ff-font--monospace: 'B612 Mono', Menlo, Monaco, "Courier New", "Courier", monospace;
 
-$font-size-xs: 12px;
-$font-size-s: 14px;
-$font-size-m: 16px;
-$font-size-l: 20px;
-$font-size-xl: 25px;
-$font-size-xxl: 40px;
+// Theme typefaces
+$ff-font--primary: 'Pragati Narrow', Helvetica, sans-serif;
+$ff-font--secondary: $ff-font--monospace;
+$ff-font--tertiary: 'Barlow', Helvetica, sans-serif;
 
-/**
- * Theme Type Elements
- */
-$main-nav-font-size: 18px;
+// Type sizing
+$font-size-xs: 12px;
+$font-size-s: 16px;
+$font-size-m: 28px;
+$font-size-l: 32px;
+$font-size-xl: 44px;
+$font-size-xxl: 56px;
 
 
 /**

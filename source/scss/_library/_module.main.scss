@@ -2,6 +2,10 @@
     $MAIN CONTENT AREA
 \*------------------------------------*/
 
+.c-main {
+  padding-top: $space-double;
+}
+
 .c-welcome-page {
   height: 100vh;
   display: flex;
