@@ -5,12 +5,7 @@
 /**
  * Side menu toggle
  */
-.c-menu-toggle {
-  position: absolute;
-  z-index: 20;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+.o-menu-toggle {
   width: 40px;
   height: 40px;
 
@@ -45,6 +40,15 @@
     transform: translate(-50%, 6px);
   }
 }
+
+.c-menu-toggle {
+  position: absolute;
+  z-index: 20;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 // Side menu is active
 .side-menu-is-active {
 
