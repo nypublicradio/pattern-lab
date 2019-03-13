@@ -11,43 +11,14 @@
   </div>
   <div class="c-main-header__inner js-stop-prop">
 
-    <button class="c-menu-toggle js-toggle" data-toggled="c-body" data-prefix="side-menu" id="menu-toggle" aria-expanded="false">
-      <span class="is-vishidden">Menu</span>
-      <span class="c-menu-toggle__line"></span>
-    </button>
+    {% if header == 'GALLERY_OVERLAY' %}
+      {% include '@molecules/meta/article-gallery-header-meta.twig' %}
+    {% elseif header == 'ARTICLE' %}
+      {% include '@molecules/meta/article-header-meta.twig' %}
+    {% else %}
+      {% include '@molecules/meta/header-meta.twig' %}
+    {% endif %}
 
-    {% include '@organisms/global/side-menu.twig' %}
-
-    <div class="c-main-header__branding">
-      {% include '@atoms/images/gothamist-logo.twig' %}
-    </div>
-
-    {%
-      include '@molecules/navigation/primary.twig'
-      with {
-        "primary_nav_classes": "c-primary-nav--top"
-      }
-    %}
-
-    <div class="c-main-header__right">
-      {%
-        include '@atoms/buttons/button.twig'
-        with {
-          "button_text": "Donate",
-          "button_classes": "c-main-header__donate o-button--sm"
-        }
-      %}
-      <button class="c-search-toggle js-toggle" data-prefix="top-search" data-toggled="c-main-header__right" id="search-toggle" aria-expanded="false">
-        <span class="c-search-toggle__icon o-icon o-icon--search u-icon--xs">{% include '@atoms/icons/icon-search.twig' %}</span>
-      </button>
-      {%
-        include '@molecules/forms/search-entry.twig'
-        with {
-          "search_classes": "c-search--top",
-          "has_close": true
-        }
-      %}
-    </div>
     <div class="c-content-overlay"></div>
   </div>
 </header>
