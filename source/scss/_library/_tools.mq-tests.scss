@@ -40,7 +40,7 @@
 
     @include media('>xsmall') {
       &::before {
-        content: 'xsmall: 350px';
+        content: 'xsmall: #{$xsmall}';
       }
 
       &::after,
@@ -51,7 +51,7 @@
 
     @include media('>small') {
       &::before {
-        content: 'small: 550px';
+        content: 'small: #{$small}';
       }
 
       &::after,
@@ -62,7 +62,7 @@
 
     @include media('>medium') {
       &::before {
-        content: 'medium: 700px';
+        content: 'medium: #{$medium}';
       }
 
       &::after,
@@ -73,7 +73,7 @@
 
     @include media('>large') {
       &::before {
-        content: 'large: 850px';
+        content: 'large: #{$large}';
       }
 
       &::after,
@@ -84,7 +84,7 @@
 
     @include media('>xlarge') {
       &::before {
-        content: 'xlarge: 1024px';
+        content: 'xlarge: #{$xlarge}';
       }
 
       &::after,
@@ -95,7 +95,7 @@
 
     @include media('>xxlarge') {
       &::before {
-        content: 'xxlarge: 1280px';
+        content: 'xxlarge: #{$xxlarge}';
       }
 
       &::after,
@@ -106,7 +106,7 @@
 
     @include media('>xxxlarge') {
       &::before {
-        content: 'xxxlarge: 1400px';
+        content: 'xxxlarge: #{$xxxlarge}';
       }
 
       &::after,
