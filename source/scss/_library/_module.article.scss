@@ -12,14 +12,6 @@
     }
   }
 
-  &__lead {
-
-  }
-
-  &__body {
-    margin-bottom: $space-quad;
-  }
-
   &__meta-group {
     > * {
       display: inline-block;
@@ -36,6 +28,11 @@
       }
     }
   }
+
+  &__body {
+    margin-bottom: $space-quad;
+  }
+
 }
 
 
@@ -62,13 +59,13 @@
   }
 
   &__link {
+    align-items: center;
+    justify-content: center;
 
     @include media('<=medium') {
       height: 36px;
       width: 40px;
       display: inline-flex;
-      align-items: center;
-      justify-content: center;
     }
 
     @include media('>medium') {
