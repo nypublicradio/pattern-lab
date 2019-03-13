@@ -31,7 +31,6 @@
 
   &__branding {
     width: 120px;
-    transform: translateY(5px);
 
     @include media('>xsmall') {
       width: 150px;
