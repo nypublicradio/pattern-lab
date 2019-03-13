@@ -48,8 +48,8 @@
     @include media('<=small') {
       margin-right: 0;
       font-size: 12px;
-      padding-left: $pad;
-      padding-right: $pad;
+      padding-left: $space;
+      padding-right: $space;
     }
   }
 }

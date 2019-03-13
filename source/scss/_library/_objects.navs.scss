@@ -15,7 +15,7 @@
   height: 40px;
 
   @include media('>xsmall') {
-    left: $pad;
+    left: $space;
   }
 
   &__line,
