@@ -16,7 +16,11 @@
   <div class="c-article__lead">
 
     <div class="l-container l-container--10col">
-      {% include '@molecules/social/share-tools.twig' %}
+
+      <div class="c-article__share">
+        {% include '@molecules/social/share-tools.twig' %}
+      </div>
+
       {%
         include '@molecules/leads/lead.twig'
         with {

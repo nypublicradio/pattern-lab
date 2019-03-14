@@ -39,7 +39,7 @@
 /**
  * Share tools
  */
-.c-share-tools {
+.c-article__share {
 
   @include media('<=medium') {
     margin-bottom: $space-and-half;
@@ -57,6 +57,8 @@
     background-size: 1px 16px;
     background-repeat: repeat-y;
   }
+}
+.c-share-tools {
 
   &__link {
     align-items: center;
