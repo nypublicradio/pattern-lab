@@ -1,0 +1,18 @@
+<div class="c-main-header__left u-color--white">
+
+  <div class="u-font--mono u-font--xs u-font--wide u-font--white">
+    {{photos}} photos
+  </div>
+
+</div>
+
+<div class="c-main-header__right">
+  <button type="button">
+    {%
+      include '@atoms/icons/icon-close.twig'
+      with {
+        icon_classes: "c-main-header__close"
+      }
+    %}
+  </button>
+</div>

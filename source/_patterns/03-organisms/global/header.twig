@@ -12,9 +12,9 @@
   <div class="c-main-header__inner js-stop-prop">
 
     {% if header == 'GALLERY_OVERLAY' %}
-      {% include '@molecules/meta/article-gallery-header-meta.twig' %}
+      {% include '@molecules/meta/header-overlay-gallery-meta.twig' %}
     {% elseif header == 'ARTICLE' %}
-      {% include '@molecules/meta/article-header-meta.twig' %}
+      {% include '@molecules/meta/header-article-meta.twig' %}
     {% else %}
       {% include '@molecules/meta/header-meta.twig' %}
     {% endif %}
