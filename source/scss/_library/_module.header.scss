@@ -59,6 +59,12 @@
       padding-right: $space;
     }
   }
+
+  &__close {
+    width: 17px;
+    height: 17px;
+    fill: white;
+  }
 }
 
 .c-search-toggle {
