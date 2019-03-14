@@ -23,8 +23,8 @@
 
     .c-lead__image {
       @include media('<=medium') {
-        margin-left: -$gutter + px;
-        margin-right: -$gutter + px;
+        margin-left: -$space;
+        margin-right: -$space;
       }
     }
   }

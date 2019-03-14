@@ -106,7 +106,8 @@
   padding-bottom: $space-double;
   transition: transform .3s $hard-ease-in;
   overflow: auto;
-  height: calc(100vh - #{$heading-height});
+  //height: calc(100vh - #{$heading-height});
+  height: 100vh;
 
   @include media('>small') {
     max-width: 360px;
