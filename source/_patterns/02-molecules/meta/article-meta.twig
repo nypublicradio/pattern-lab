@@ -1,7 +1,7 @@
-<div class="c-article__meta u-spacing--half">
+<div class="c-article__meta u-spacing--half u-font--secondary-style u-font--xs">
   {% include '@molecules/text/byline.twig' %}
   <div class="c-article__meta-group">
-    {% include '@molecules/text/published-date.twig' %}
-    <a href="">[#] Comments</a> &bull; <a href="">[#] Slides</a>
+    {% include '@molecules/text/published-date.twig' %} &bull;
+    <a href="" class="u-has-accent u-has-accent--secondary">24 Comments</a> {% if is_gallery %} &bull; <a href="" class="u-has-accent u-has-accent--secondary">16 Slides</a> {% endif %}
   </div>
 </div>

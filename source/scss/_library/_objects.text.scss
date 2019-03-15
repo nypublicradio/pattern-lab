@@ -13,10 +13,14 @@
   font-family: $ff-font--primary;
 }
 
-.u-font--mono {
-  font-family: $ff-font--monospace;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.u-font--secondary {
+  font-family: $ff-font--secondary;
+
+  &-style {
+    font-family: $ff-font--secondary;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 }
 
 /**
@@ -259,8 +263,47 @@
   }
 }
 
+
+/**
+ * Kicker (category eyebrow)
+ */
+.o-kicker {
+  display: inline-block;
+  padding: 2px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $c-senary;
+  background-color: $c-quaternary;
+  letter-spacing: 1px;
+  font-family: $ff-font--monospace;
+  font-size: $font-size-xs;
+}
+
+/**
+ * Breadcrumbs
+ */
 .o-breadcrumb {
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -4px;
+    top: 0;
+    background-image: linear-gradient(to right, transparent 50%, $c-gray 50%);
+    background-position: center center;
+    background-size: 16px 1px;
+    background-repeat: repeat-x;
+  }
+
   .o-kicker {
-    display: inline-block;
+    position: relative;
+    z-index: 5;
+
+    + * {
+      margin-left: $space;
+    }
   }
 }

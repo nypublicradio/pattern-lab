@@ -98,7 +98,7 @@
     display: inline-block;
     padding: 0 $space;
     color: $c-main-nav-link-color;
-    font-size: $main-nav-font-size;
+    font-size: $main-nav-font-size + px;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -138,10 +138,10 @@
   }
 
   &__link {
-    margin: 0 $space-half;
+    margin: 0 $space;
 
     @include media('>medium') {
-      margin: 0 $space;
+      margin: 0 $space-and-half;
     }
   }
 }

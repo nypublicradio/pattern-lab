@@ -13,20 +13,20 @@
   "img": {
     "alt": "Alt Text",
     "src": "http://picsum.photos/800/850?image=10",
-    "src_s": "http://picsum.photos/500/350?image=0",
-    "src_m": "http://picsum.photos/800/400?image=5",
+    "src_s": "http://picsum.photos/600/400?image=0",
+    "src_m": "http://picsum.photos/900/500?image=5",
     "src_l": "http://picsum.photos/1100/700?image=15"
   },
 
   "button_text": "Button Text",
-  "headline": "This is a Content Headline",
+  "headline": "Headline with Lots of Text Can Sit Here on Multiple Lines",
   "blockquote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam hic, explicabo, ea quos ducimus provident cumque eligendi voluptates dolore deleniti, similique impedit vitae voluptas asperiores, nihil labore facilis quaerat fugit!",
   "pullquote": {
     "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     "quote_author": "John Adams"
   },
   "datetime": "2018-07-07",
-  "time_string": "July 7, 2018",
+  "time_string": "Jan 7, 2019 1:25PM",
   "section_heading": "This is a Section Heading",
   "byline": {
     "author": "Matt Hendrix"
@@ -37,10 +37,10 @@
 
   "breadcrumbs": [
     {
-      "kicker": "Category"
+      "kicker": "News"
     },
     {
-      "kicker": "SubCategory"
+      "kicker": "Bronx"
     }
   ],
 
@@ -95,6 +95,18 @@
     },
     {
       "link": "The Greene Space"
+    }
+  ],
+
+  "related_items": [
+    {
+      "title": "Urban Organics Wants to Fix Food"
+    },
+    {
+      "title": "The Best Cycling Gear We Tested This Year"
+    },
+    {
+      "title": "The Biomechatronic Man"
     }
   ]
 }

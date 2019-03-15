@@ -1,8 +1,8 @@
-<div class="c-lead u-spacing--half{{ classes }}">
+<div class="c-lead {{ lead_classes }}">
   <div class="c-lead__image">
     {% include '@atoms/images/picture.twig' %}
   </div>
-  <div class="c-lead__caption u-spacing--half l-wrap">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="o-credit">Getty Images</span></p>
+  <div class="c-lead__caption u-spacing--half">
+    <p class="u-font--xs"><span class="o-icon o-icon--dashed-arrow u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="o-credit u-font--secondary-style u-font--xs u-color--septenary">[Getty Images]</span></p>
   </div>
 </div>

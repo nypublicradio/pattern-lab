@@ -11,8 +11,18 @@ a {
 
 .u-has-accent {
   display: inline-block;
-  padding-bottom: 6px;
+  padding-bottom: .3em;
   border-bottom: 2px dotted $c-body-color;
+
+  &--neutral {
+    color: $c-body-color;
+    border-bottom-color: $c-body-color;
+
+    &:hover {
+      color: lighten($c-body-color, 20%);
+      border-bottom-color: lighten($c-body-color, 20%);
+    }
+  }
 
   &--quaternary {
     color: $c-quaternary;
