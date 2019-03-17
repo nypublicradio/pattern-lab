@@ -3,7 +3,100 @@
 \*------------------------------------*/
 
 .c-main-footer {
-  text-align: center;
-  background-color: $c-secondary;
-  padding: 100px;
+  padding: $space-double 0;
+  background-image: linear-gradient(to bottom, white 0, $c-dark-bg 0%);
+  background-position: 100% 238px;
+  background-repeat: repeat-x;
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__col1 {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  &__branding {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    width: 150px;
+    margin-right: $space-triple;
+  }
+
+  &__send-story {
+    display: inline-block;
+    color: $c-body-color;
+    padding: $space 0;
+    margin-bottom: $space;
+  }
+
+  .gothamist-letters {
+    fill: $c-white;
+  }
+  .gothamist-buildings {
+    fill: $c-dark-bg;
+  }
+
+  &__slogan {
+
+    p {
+      color: $c-white;
+      font-size: 14px; // Not in the type scale
+    }
+  }
+
+  &__nav {
+
+    .c-secondary-nav__item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: $space-double;
+      }
+    }
+
+    .c-secondary-nav__link {
+      padding: $space-half 0;
+    }
+  }
+
+  &__nypr-logo {
+    width: 120px;
+    margin-right: $space-double;
+    path,
+    polygon {
+      fill: $c-white;
+    }
+  }
+
+  &__brand-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .c-nypr-nav__list {
+    min-width: 320px;
+    width: 100%;
+  }
+
+  &__bottom {
+    border-top: 1px dashed rgba($c-white, .5);
+    padding: $space-and-half 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__terms-links {
+
+    a {
+      margin-left: $space-and-half;
+    }
+  }
+
 }

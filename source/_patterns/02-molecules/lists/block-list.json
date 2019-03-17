@@ -1,0 +1,52 @@
+{
+  "blocks": [
+    {
+      "block_image": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=320"
+        },
+        "kicker": "Food"
+      },
+      "block_title": "Families Say NYPD Victim-Blaming Compounds Grief",
+      "block_meta": {
+         "author": "Terrance Pitre"
+      }
+    },
+    {
+      "block_image": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=310"
+        },
+        "kicker": "Arts & Ent"
+      },
+      "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
+      "block_meta": {
+         "author": "Salvadore Dali"
+      }
+    },
+    {
+      "block_image": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=325"
+        },
+        "kicker": "News"
+      },
+      "block_title": "Families Say NYPD Victim-Blaming Compounds Grief",
+      "block_meta": {
+         "author": "Drew Brees"
+      }
+    },
+    {
+      "block_image": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=360"
+        },
+        "kicker": "Lifestyle"
+      },
+      "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
+      "block_meta": {
+         "author": "Joe Rogan"
+      }
+    }
+  ]
+}

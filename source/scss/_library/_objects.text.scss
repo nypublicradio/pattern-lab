@@ -13,13 +13,16 @@
   font-family: $ff-font--primary;
 }
 
+@mixin font-secondary-style {
+  font-family: $ff-font--secondary;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .u-font--secondary {
   font-family: $ff-font--secondary;
 
   &-style {
-    font-family: $ff-font--secondary;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    @include font-secondary-style;
   }
 }
 
@@ -89,7 +92,6 @@
 .o-rte-text {
   font-family: $ff-font--secondary;
 
-  > blockquote p,
   > dl dd,
   > dl dt,
   > ol li,
@@ -98,18 +100,13 @@
     @include p;
   }
 
-  dl dd,
-  dl dt,
-  ol li,
-  ul li,
-  li p,
-  > p {
-    @include p;
-    line-height: 1.65;
-  }
-
   a {
-    text-decoration: underline;
+    border-bottom: 2px dotted $c-link-color;
+
+    &:hover {
+      color: darken($c-link-color, 10%);
+      border-bottom-color: darken($c-link-color, 10%);
+    }
   }
 
   h1,
@@ -119,7 +116,7 @@
   h5,
   h6 {
     padding-top: $space;
-    font-family: $ff-font--primary;
+    font-weight: normal;
   }
 
   h1 {
@@ -131,46 +128,20 @@
   }
 
   h2 {
-    font-size: 26px;
-    line-height: 28px;
-    font-weight: 300;
-    @include media('>large') {
-      font-size: 36px;
-      line-height: 47px;
-      letter-spacing: -0.23px;
-    }
+    font-size: $font-size-l;
   }
 
   h3 {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 22px;
-    @include media('>large') {
-      font-size: 24px;
-      line-height: 24px;
-    }
+    font-size: $font-size-m;
   }
 
   h4 {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 18px;
+    font-size: 26px; // Not in type styles
   }
 
-  h5 {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  h6 {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 16px;
-    letter-spacing: 1.71px;
-    text-transform: uppercase;
+  h5, h6 {
+    font-size: $font-size-xs;
+    @include font-secondary-style;
   }
 
   h2:empty,
@@ -185,68 +156,88 @@
     padding-bottom: $space-half;
   }
 
-  > ul {
-    list-style: disc;
+  > ul,
+  > ol {
+    position: relative;
+    list-style: none;
     padding-left: $space;
-    margin-bottom: $space;
+    padding-top: $space;
+    margin-bottom: $space-double;
+
     @include media('>large') {
       margin-left: $space;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
 
     li {
-      margin-bottom: $space-quarter;
-      > ul {
-        list-style: circle;
-        margin-top: $space-half;
-      }
+      margin-bottom: $space;
+      position: relative;
     }
 
-    ol,
-    ul {
-      list-style: disc;
-      padding-top: 6px;
-      margin-bottom: 0;
+    ul,
+    ol {
+      list-style: none;
+      margin-top: $space;
+      margin-bottom: $space-half;
       padding-left: $space;
     }
+  }
 
-    ol {
-      list-style: decimal;
+  > ul {
+
+    li {
+      &:before {
+        content: "";
+        position: absolute;
+        left: -$space-and-half;
+        top: .75em;
+        width: 7px;
+        height: 7px;
+        background-color: $c-secondary;
+        border-radius: 50%;
+      }
+
+      li {
+        &:before {
+          background-color: transparent;
+          border: 2px solid $c-secondary;
+          width: 4px;
+          height: 4px;
+        }
+      }
     }
   }
 
   > ol {
-    list-style: decimal;
-    padding-left: $space;
-    margin-bottom: $space;
-    @include media('>large') {
-      margin-left: $space;
-    }
+    counter-reset: counter;
+
     li {
-      margin-bottom: $space-quarter;
-      > ul {
-        list-style: lower-alpha;
-        margin-top: $space-half;
+
+      &:before {
+        counter-increment: counter;
+        content: counter(counter);
+        color: $c-secondary;
+        font-size: $font-size-l;
+        position: absolute;
+        left: -$space-double;
+        top: -.4em;
+        font-family: $ff-font--secondary;
+      }
+
+      > ol {
+        counter-reset: counter;
+
+        > li {
+          &:before {
+            counter-increment: counter;
+            content: counters(counter);
+          }
+        }
       }
     }
-
-    ol,
-    ul {
-      list-style: decimal;
-      padding-top: 6px;
-      margin-bottom: 0;
-      padding-left: $space;
-    }
-
-    ul {
-      list-style: disc;
-    }
-  }
-
-  p:last-of-type {
-    margin-bottom: 0;
   }
 
   hr {
@@ -265,6 +256,62 @@
 
 
 /**
+ * Pullquote (beefed up blockquote)
+ */
+.o-pullquote {
+  margin: auto ($col-width + $gutter) + px $space-triple;
+  text-align: center;
+
+  p {
+    font-weight: bold;
+    font-size: $font-size-xl;
+    line-height: 1.05;
+    background: none;
+    margin: $space 0 0;
+    display: inline-block;
+
+    span {
+      quotes: "\201C""\201D""\2018""\2019";
+
+      &:before,
+      &:after {
+        font-family: $ff-font--sans;
+      }
+
+      &:before {
+        content: open-quote;
+      }
+
+      &:after {
+        content: close-quote;
+      }
+    }
+  }
+
+  &__author {
+    color: $c-septenary;
+    font-size: $font-size-xs;
+    font-family: $ff-font--secondary;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+
+/**
+ * Text background accent
+ */
+.o-bg-text-accent {
+  background-image: linear-gradient(rgba($c-septenary, .1), rgba($c-septenary, .3));
+  background-position: center bottom .2em;
+  background-size: 100% .55em;
+  background-repeat: no-repeat;
+  padding: 0 $space-half;
+  box-decoration-break: clone;
+}
+
+
+/**
  * Kicker (category eyebrow)
  */
 .o-kicker {
@@ -279,31 +326,49 @@
   font-size: $font-size-xs;
 }
 
+
 /**
- * Breadcrumbs
+ * Caption & credit (used in leads and figures)
  */
-.o-breadcrumb {
-  position: relative;
+ .o-caption {
+   padding-top: $space-half;
 
-  &:before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: -4px;
-    top: 0;
-    background-image: linear-gradient(to right, transparent 50%, $c-gray 50%);
-    background-position: center center;
-    background-size: 16px 1px;
-    background-repeat: repeat-x;
-  }
+   p {
+     font-size: $font-size-xs;
+     font-family: $ff-font--tertiary;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     @include media('>medium') {
+       flex-wrap: nowrap;
+     }
+   }
 
-  .o-kicker {
-    position: relative;
-    z-index: 5;
+   .o-icon--dashed-arrow {
+     margin-right: $space-half;
+     fill: $c-primary;
+     transform: translateY(1px);
+   }
+ }
+ .o-credit {
+   margin-left: $space-half;
+   @include font-secondary-style;
+ }
 
-    + * {
-      margin-left: $space;
-    }
+
+ /**
+  * Back to top of page link
+  */
+.o-to-top {
+  width: 150px;
+  margin: $space-double auto;
+  display: flex;
+  align-items: center;
+
+  // Temporary until i can get the real icon
+  .o-icon--up-arrow {
+    transform: rotate(-90deg) translateX(4px);
+    margin-right: $space-half;
+    fill: $c-primary;
   }
 }

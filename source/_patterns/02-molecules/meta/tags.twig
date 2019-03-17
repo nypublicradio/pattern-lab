@@ -1,0 +1,5 @@
+<div class="o-tags {{ tags_classes }}">
+  {% for tag in tags %}
+    {% include '@atoms/text/kicker.twig' with tag %}
+  {% endfor %}
+</div>

@@ -3,28 +3,9 @@
 \*------------------------------------*/
 
 .c-lead {
-
-  &__caption {
-    margin-top: $space-half;
-
-    p {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      @include media('>medium') {
-        flex-wrap: nowrap;
-      }
-    }
-
-    .o-credit {
-      margin-left: $space-half;
-    }
-
-    .o-icon--dashed-arrow {
-      margin-right: $space-half;
-      fill: $c-primary;
-      transform: translateY(1px);
-    }
-  }
 }
 
+.o-figure__image,
+.c-lead__image {
+  border: 2px solid $c-black;
+}

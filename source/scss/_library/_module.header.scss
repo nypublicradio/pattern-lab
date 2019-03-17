@@ -106,8 +106,8 @@
   padding-bottom: $space-double;
   transition: transform .3s $hard-ease-in;
   overflow: auto;
-  //height: calc(100vh - #{$heading-height});
-  height: 100vh;
+  height: calc(100vh - #{$heading-height}px);
+  //height: 100vh;
 
   @include media('>small') {
     max-width: 360px;
@@ -147,10 +147,7 @@
   &__group {
     padding: $space-and-half;
     &:not(:last-child) {
-      background-image: linear-gradient(to right, transparent 50%, rgba($c-gray, .2) 50%);
-      background-position: center bottom;
-      background-size: 16px 1px;
-      background-repeat: repeat-x;
+      @include border-accent(right, center, rgba($c-gray, .2));
     }
 
     @include media('>medium') {
@@ -159,9 +156,39 @@
     }
   }
 
+  .c-brand-social {
+    justify-content: center;
+  }
+
   &__branding {
     width: 180px;
     margin: $space-half auto $space-half;
+  }
+
+  &__secondary-nav {
+
+    .c-secondary-nav {
+      margin-bottom: $space;
+
+      &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      &__item {
+        margin-bottom: $space-and-half;
+      }
+
+      &__link {
+        margin: 0 $space;
+
+        @include media('>medium') {
+          margin: 0 $space-and-half;
+        }
+      }
+    }
   }
 
   &__donate {
@@ -184,6 +211,16 @@
     }
   }
 
+  &__nypr-linkroll {
+
+    .c-nypr-nav {
+
+      &__list {
+        width: calc(100% + #{$space-double});
+      }
+    }
+  }
+
   &__copyright {
     p {
       line-height: 2.5;
@@ -202,7 +239,6 @@
  */
 .c-brand-social {
   display: flex;
-  justify-content: center;
   align-items: center;
 
   &__label {

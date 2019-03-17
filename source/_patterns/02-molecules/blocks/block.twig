@@ -1,0 +1,32 @@
+<div class="c-block {{ block_classes }}">
+
+  {% if block_image %}
+    <div class="c-block__image">
+      <a href="">{% include '@atoms/images/image.twig' with block_image %}</a>
+
+      <div class="c-block__category">
+        {% include '@atoms/text/kicker.twig' with block_image %}
+      </div>
+
+    </div>
+  {% endif %}
+
+  <div class="c-block__text u-spacing--quarter">
+
+    <h3 class="c-block__title"><a href="">{{ block_title }}</a></h3>
+
+    <div class="u-spacing">
+      {% if block_dek %}
+        <div class="c-block__dek o-rte-text">
+          <p>{{ block_dek }}</p>
+        </div>
+      {% endif %}
+
+      {% if block_meta %}
+        {% include '@molecules/meta/block-meta.twig' with block_meta %}
+      {% endif %}
+    </div>
+
+  </div>
+
+</div>

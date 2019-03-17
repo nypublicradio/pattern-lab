@@ -2,23 +2,93 @@
     $BLOCKS
 \*------------------------------------*/
 
+/**
+ * Standard block
+ */
 .c-block {
-  &__image {
-    img {
-      width: 150px;
-      height: 100px;
 
-      @include media(">medium") {
-        width: 175px;
-        height: 125px;
-      }
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-m;
 
+    a {
+      color: $c-black;
 
-      @include media(">xxlarge") {
-        width: 200px;
-        height: 150px;
+      &:hover {
+        color: $c-primary;
       }
     }
   }
+
+  &__text {
+    padding-top: $space-half;
+  }
 }
 
+
+/**
+ * Inline blocks (often used in lists)
+ */
+.c-block-item {
+  display: flex;
+  align-items: flex-start;
+
+  &__image {
+    min-width: 100px;
+    max-width: 100px;
+    overflow: hidden;
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-s-m;
+
+    a {
+      color: $c-black;
+
+      &:hover {
+        color: $c-primary;
+      }
+    }
+  }
+
+  &__text {
+    padding: $space-half 0 0 $space;
+    width: 100%;
+  }
+}
+
+
+/**
+ * Block meta
+ */
+.c-block-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__comments {
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+
+    &:hover {
+      color: $c-primary;
+
+      .o-icon--comment {
+        fill: $c-primary;
+      }
+    }
+
+    .o-icon--comment {
+      fill: $c-septenary;
+      transform: translateY(2px);
+      margin-right: $space-quarter;
+    }
+  }
+}

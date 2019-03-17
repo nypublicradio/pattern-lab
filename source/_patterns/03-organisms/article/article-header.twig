@@ -1,4 +1,5 @@
 <header class="c-article__header u-spacing--and-half l-container">
+
   <div class="l-container l-container--12col u-spacing--and-half">
     {% include '@molecules/navigation/breadcrumb.twig' %}
     {%
@@ -17,7 +18,7 @@
 
     <div class="l-container l-container--10col">
 
-      <div class="c-article__share">
+      <div class="c-article__share u-border-accent u-border-accent--right">
         {% include '@molecules/social/share-tools.twig' %}
       </div>
 
@@ -29,12 +30,15 @@
       %}
     </div>
 
-    {%
-      include '@organisms/article/related-content.twig'
-      with {
-        "related_classes": "c-related-content--wide-screens"
-      }
-    %}
+    <div class="c-article__related c-article__related--wide-screens u-border-accent u-border-accent--left">
+      {%
+        include '@organisms/article/related-content.twig'
+        with {
+          "related_classes": "c-related-content--wide-screens"
+        }
+      %}
+    </div>
 
   </div>
+
 </header>

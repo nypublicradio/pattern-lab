@@ -64,9 +64,10 @@ $c-overlay: rgba($c-black, 0.8);
 $c-body-color: $c-black;
 $c-link-color: $c-primary;
 $c-button-color: $c-secondary;
-$c-border-color: $c-gray;
+$c-border-color: $c-gray--dark;
 $c-body-bgcolor: $c-white;
 $c-heading-bgcolor: $c-gray--dark;
+$c-dark-bg: $c-gray--dark;
 $c-main-nav-link-color: $c-white;
 
 /**
@@ -85,6 +86,7 @@ $ff-font--tertiary: 'Barlow', Helvetica, sans-serif;
 // Type sizing
 $font-size-xs: 12px;
 $font-size-s: 16px;
+$font-size-s-m: 22px;
 $font-size-m: 28px;
 $font-size-l: 32px;
 $font-size-xl: 44px;

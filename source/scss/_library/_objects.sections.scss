@@ -2,3 +2,31 @@
     $PAGE SECTIONS
 \*------------------------------------*/
 
+.o-section {
+
+  &__heading {
+    font-size: $font-size-l;
+    display: inline-block;
+    padding-bottom: $space-half;
+    margin-left: -$space-half;
+  }
+}
+
+
+/**
+ * Recirculation
+ */
+.c-recirc-tout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: $space-double 0;
+
+  &__col1 {
+    width: calc(56% - #{$space});
+  }
+
+  &__col2 {
+    width: calc(44% - #{$space});
+  }
+}

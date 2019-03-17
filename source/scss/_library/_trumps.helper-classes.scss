@@ -25,3 +25,34 @@
 .u-full-width {
   width: 100%;
 }
+
+/**
+ * Border accents
+ */
+.u-border-accent {
+  @include border-accent;
+}
+.u-border-accent--right {
+  @include border-accent(bottom);
+}
+.u-border-accent--left {
+  @include border-accent(bottom, left);
+}
+
+
+/**
+ * Reversed out content
+ */
+.u-reversed-out {
+  background-color: $c-dark-bg;
+  color: $c-white;
+
+  a {
+    color: $c-quaternary;
+    border-bottom-color: $c-white;
+
+    &:hover {
+      color: $c-quinary;
+    }
+  }
+}
