@@ -129,29 +129,61 @@
  * Newsletter form
  */
 .c-newsletter-form {
-  padding-left: 120px;
+  padding-left: $space;
   position: relative;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media('>xlarge') {
+    padding-left: 120px;
+  }
 
   &__graphic {
     position: absolute;
-    width: 130px;
-    left: 0;
-    top: 38px;
+    width: 140px;
+    mix-blend-mode: difference;
+    top: -$space;
+    left: -$space;
     path {
       fill: $c-quinary;
+    }
+
+    @include media('>small') {
+      top: -60px;
+      left: -10px;
+    }
+
+    @include media('>medium') {
+      top: -40px;
+      left: -40px;
+    }
+
+    @include media('>xlarge') {
+      width: 130px;
+      left: 0;
+      top: 50px;
     }
   }
 
   &__inner {
     background-color: $c-quinary;
     border: 3px solid $c-border-color;
-    position: relative;
-    z-index: 5;
     padding: $space-double $space-and-half;
-    max-width: 340px;
+
+    @include media('>xlarge') {
+      position: relative;
+      z-index: 5;
+      max-width: 380px;
+    }
   }
 
   &__text {
+
+    @include media('<=xlarge') {
+      padding-left: 80px;
+    }
+
     p {
       font-size: 14px;
       line-height: 1.55;
@@ -166,6 +198,8 @@
   &__field-group {
     display: flex;
     border: 3px solid $c-border-color;
+    position: relative;
+    z-index: 5;
   }
 
   &__input {

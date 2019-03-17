@@ -2,6 +2,17 @@
   "article_body": {
     "join()": [
       "<p>Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla.  Risus leo, vitae pharetra ipsum. Sed placerat eros eget <u>elit iaculis</u> semper. Aliquam congue blandit orci ac pretium.<p>",
+      "<div class=\"c-article__related c-article__related--small-screens u-border-accent u-border-accent--left\">",
+      {
+        "include()": {
+          "pattern": "organisms-related-content",
+          "with": {
+            "related_classes": "u-border-accent u-border-accent--left"
+          }
+        }
+      },
+      "</div>",
+      "<p>Aenean vulputate vitae lorem ac tempor. Praesent pulvinar condimentum sagittis. Maecenas laoreet neque non eros consectetur fringilla.  Risus leo, vitae pharetra ipsum. Sed placerat eros eget <u>elit iaculis</u> semper. Aliquam congue blandit orci ac pretium.<p>",
       "atoms-blockquote",
       "<h2>Header Two</h2><p>Fusce ullamcorper <a href=\"\">condimentum condimentum proin</a> eget vehicula lorem, at lacinia arcu. Aenean vulputate vitae lorem ac tempor. Etiam semper eros vitae vestibulum ultricies. Praesent <em>pulvinar condimentum</em> sagittis. Maecenas laoreet neque non eros consectetur fringilla. Donec vitae risus leo, vitae pharetra ipsum. Sed placerat eros eget elit iaculis semper. Aliquam congue blandit orci ac pretium. In hac habitasse platea dictumst.</p>",
       "molecules-pullquote",

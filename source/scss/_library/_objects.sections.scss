@@ -17,16 +17,25 @@
  * Recirculation
  */
 .c-recirc-tout {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: $space-double 0;
 
+  @include media('>medium') {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   &__col1 {
-    width: calc(56% - #{$space});
+    margin-bottom: $space-triple;
+    @include media('>medium') {
+      margin-bottom: 0;
+      width: calc(56% - #{$space});
+    }
   }
 
   &__col2 {
-    width: calc(44% - #{$space});
+    @include media('>medium') {
+      width: calc(44% - #{$space});
+    }
   }
 }

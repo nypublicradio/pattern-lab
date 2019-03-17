@@ -100,14 +100,41 @@
 /**
  * Related content
  */
-.c-article__related {
-  max-width: ($col-width * 3) + $gutter + px;
+.c-related-content {
   padding: $space-quarter 0 $space-half $space;
+}
+.c-article__related {
+
+  a {
+    font-family: $ff-font--primary;
+  }
+
+  &--small-screens {
+
+    .c-related-content {
+      margin: $space-double 0;
+    }
+
+    a {
+      font-size: $font-size-s-m;
+    }
+
+    @include media('>xlarge') {
+      display: none;
+    }
+
+  }
 
   &--wide-screens {
-    position: absolute;
-    right: 0;
-    top: 0;
+    display: none;
+
+    @include media('>xlarge') {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: ($col-width * 3) + ($gutter * 2) + px;
+    }
   }
 }
 

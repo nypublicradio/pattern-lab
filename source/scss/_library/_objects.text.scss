@@ -109,17 +109,17 @@
     }
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
     padding-top: $space;
     font-weight: normal;
   }
 
-  h1 {
+  > h1 {
     font-size: 34px;
     font-weight: bold;
     @include media('>large') {
@@ -127,19 +127,19 @@
     }
   }
 
-  h2 {
+  > h2 {
     font-size: $font-size-l;
   }
 
-  h3 {
+  > h3 {
     font-size: $font-size-m;
   }
 
-  h4 {
+  > h4 {
     font-size: 26px; // Not in type styles
   }
 
-  h5, h6 {
+  > h5, > h6 {
     font-size: $font-size-xs;
     @include font-secondary-style;
   }
@@ -151,7 +151,7 @@
   }
 
   // Heading + subheading lockup
-  h2 + h3 {
+  > h2 + h3 {
     margin-top: 0;
     padding-bottom: $space-half;
   }
@@ -160,7 +160,7 @@
   > ol {
     position: relative;
     list-style: none;
-    padding-left: $space;
+    padding-left: 35px;
     padding-top: $space;
     margin-bottom: $space-double;
 
@@ -240,7 +240,7 @@
     }
   }
 
-  hr {
+  > hr {
     margin-top: $space-and-half;
     @include media('>large') {
       margin-top: $space-double;
@@ -334,7 +334,7 @@
    padding-top: $space-half;
 
    p {
-     font-size: $font-size-xs;
+     font-size: 14px; // Not in type scale
      font-family: $ff-font--tertiary;
      display: flex;
      align-items: center;
@@ -352,6 +352,7 @@
  }
  .o-credit {
    margin-left: $space-half;
+   color: $c-septenary;
    @include font-secondary-style;
  }
 

@@ -5,28 +5,62 @@
 .c-main-footer {
   padding: $space-double 0;
   background-image: linear-gradient(to bottom, white 0, $c-dark-bg 0%);
-  background-position: 100% 238px;
+  background-position: 100% 142px;
   background-repeat: repeat-x;
 
   &__inner {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+
+    @include media('>xlarge') {
+      margin-top: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
   }
 
   &__col1 {
     width: 100%;
     max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__branding {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
+
+    @include media('>xlarge') {
+      justify-content: flex-start;
+    }
+
+    .c-brand-social {
+
+      @include media('<=small') {
+        flex-wrap: wrap;
+        margin-bottom: -18px;
+
+        &__label {
+          width: 100%;
+          display: block;
+          margin-bottom: 2px;
+        }
+
+        &__link:first-of-type {
+          margin-left: -6px;
+        }
+      }
+    }
   }
 
   &__logo {
-    width: 150px;
-    margin-right: $space-triple;
+    min-width: 150px;
+    max-width: 150px;
+    margin-right: $space-and-half;
+
+    @include media('>small') {
+      margin-right: $space-triple;
+    }
   }
 
   &__send-story {
@@ -45,6 +79,10 @@
 
   &__slogan {
 
+    @include media('<=xlarge') {
+      text-align: center;
+    }
+
     p {
       color: $c-white;
       font-size: 14px; // Not in the type scale
@@ -53,11 +91,22 @@
 
   &__nav {
 
+    @include media('<=xlarge') {
+      text-align: center;
+      padding-bottom: $space-double;
+    }
+
     .c-secondary-nav__item {
       display: inline-block;
 
+      @include media('<=xlarge') {
+        margin: 0 $space $space-and-half;
+      }
+
       &:not(:last-child) {
-        margin-right: $space-double;
+        @include media('>xlarge') {
+          margin-right: $space-double;
+        }
       }
     }
 
@@ -68,7 +117,12 @@
 
   &__nypr-logo {
     width: 120px;
-    margin-right: $space-double;
+    margin: 0 auto $space;
+
+    @include media('>xlarge') {
+      margin: 0 $space-double 0 0;
+    }
+
     path,
     polygon {
       fill: $c-white;
@@ -76,8 +130,13 @@
   }
 
   &__brand-group {
-    display: flex;
-    align-items: center;
+    text-align: center;
+
+    @include media('>xlarge') {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
 
   .c-nypr-nav__list {
@@ -87,15 +146,33 @@
 
   &__bottom {
     border-top: 1px dashed rgba($c-white, .5);
-    padding: $space-and-half 0;
-    display: flex;
-    justify-content: space-between;
+    padding: $space-and-half $space;
+    text-align: center;
+    margin-left: -$space;
+    margin-right: -$space;
+
+    @include media('>xlarge') {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__terms-links {
 
+    @include media('<=large') {
+      margin-top: $space-double;
+    }
+
     a {
-      margin-left: $space-and-half;
+      margin: 0 $space;
+      @include media('>large') {
+        margin: 0 $space-double 0 0;
+      }
     }
   }
 

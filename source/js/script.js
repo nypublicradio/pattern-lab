@@ -109,4 +109,27 @@
     });
   })();
 
+
+  /**
+   * Simple function to detect if an element has entered the viewport.
+   */
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  // Pop out the donate tout.
+  $(window).on('scroll', function() {
+    $('.c-article__footer').each(function() {
+      if (isScrolledIntoView($(this))) {
+        $(this).find('.c-donate-tout').addClass('is-active');
+      }
+    });
+  });
+
 })(jQuery);
