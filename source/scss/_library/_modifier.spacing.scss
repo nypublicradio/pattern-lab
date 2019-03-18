@@ -39,3 +39,13 @@ $sides: ("": "", --top: "-top", --bottom: "-bottom", --left: "-left", --right: "
     margin-left: $space;
   }
 }
+
+
+/**
+ * Spacing between sections
+ */
+.u-section-spacing {
+  & > * + * {
+    margin-top: 40px;
+  }
+}
