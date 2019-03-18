@@ -7,6 +7,7 @@
 - [Node](https://nodejs.org/en/) (10+)
 - [npm](https://nodejs.org/) (6+)
 - [Composer](https://getcomposer.org/)
+- [Gulp](https://gulpjs.com/)
 
 ### Installing development dependencies
 
