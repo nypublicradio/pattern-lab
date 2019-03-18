@@ -4,10 +4,11 @@
     {% include '@organisms/article/article-header.twig' %}
     {% include '@organisms/article/article-body.twig' %}
     <div class="l-container--content u-spacing--double">
-      {% include '@organisms/article/comments.twig' %}
+      {% include '@organisms/article/article-footer.twig' %}
+    </div>
+    <div class="l-container l-container--14col">
       {% include '@organisms/touts/recirculation.twig' %}
     </div>
   </article>
-  {% include '@organisms/touts/membership.twig' %}
 </main>
 {% include '@organisms/global/footer.twig' %}

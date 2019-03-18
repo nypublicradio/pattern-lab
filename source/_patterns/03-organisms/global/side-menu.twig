@@ -21,13 +21,17 @@
       }
     %}
 
-    {% include '@molecules/social/brand-social-links.twig' %}
+    <div class="c-side-menu__social">
+      {% include '@molecules/social/brand-social-links.twig' %}
+    </div>
 
   </div>
 
   <div class="c-side-menu__group">
 
-    {% include '@molecules/navigation/secondary.twig' %}
+    <div class="c-side-menu__secondary-nav">
+      {% include '@molecules/navigation/secondary.twig' %}
+    </div>
 
     <div class="u-spacing">
       {%
@@ -49,7 +53,9 @@
       {% include '@atoms/images/nypr-logo.twig' %}
     </div>
 
-    {% include '@molecules/navigation/nypr-brands-linkroll.twig' %}
+    <div class="c-side-menu__nypr-linkroll">
+      {% include '@molecules/navigation/nypr-brands-linkroll.twig' %}
+    </div>
 
   </div>
 

@@ -78,9 +78,9 @@
   });
 
   // Remove active classes when the body is clicked/tapped.
-  $('body').on('click', function(e) {
-    $('.this-is-active').removeClass('this-is-active');
-  });
+  // $('body').on('click', function(e) {
+  //   $('.this-is-active').removeClass('this-is-active');
+  // });
 
   // Close side menu when other things are clicked outside the menu.
   $('body, .c-content-overlay, .c-menu-toggle.side-menu-is-active').on('click', function(e){
@@ -108,5 +108,28 @@
       }
     });
   })();
+
+
+  /**
+   * Simple function to detect if an element has entered the viewport.
+   */
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  // Pop out the donate tout.
+  $(window).on('scroll', function() {
+    $('.c-article__footer').each(function() {
+      if (isScrolledIntoView($(this))) {
+        $(this).find('.c-donate-tout').addClass('is-active');
+      }
+    });
+  });
 
 })(jQuery);

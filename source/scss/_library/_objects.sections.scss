@@ -2,3 +2,40 @@
     $PAGE SECTIONS
 \*------------------------------------*/
 
+.o-section {
+
+  &__heading {
+    font-size: $font-size-l;
+    display: inline-block;
+    padding-bottom: $space-half;
+    margin-left: -$space-half;
+  }
+}
+
+
+/**
+ * Recirculation
+ */
+.c-recirc-tout {
+  padding: $space-double 0;
+
+  @include media('>medium') {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__col1 {
+    margin-bottom: $space-triple;
+    @include media('>medium') {
+      margin-bottom: 0;
+      width: calc(56% - #{$space});
+    }
+  }
+
+  &__col2 {
+    @include media('>medium') {
+      width: calc(44% - #{$space});
+    }
+  }
+}

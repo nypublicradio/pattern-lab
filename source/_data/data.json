@@ -20,10 +20,10 @@
 
   "button_text": "Button Text",
   "headline": "Headline with Lots of Text Can Sit Here on Multiple Lines",
-  "blockquote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam hic, explicabo, ea quos ducimus provident cumque eligendi voluptates dolore deleniti, similique impedit vitae voluptas asperiores, nihil labore facilis quaerat fugit!",
+  "blockquote": "Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua undo.",
   "pullquote": {
-    "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "quote_author": "John Adams"
+    "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
+    "author": "John Adams"
   },
   "datetime": "2018-07-07",
   "time_string": "Jan 7, 2019 1:25PM",
@@ -34,6 +34,7 @@
   "contributors": "WWOZ",
   "kicker": "Category",
   "caption": "Lorem ipsum dolor sit amet",
+  "credit": "Getty Images",
 
   "breadcrumbs": [
     {
@@ -41,6 +42,21 @@
     },
     {
       "kicker": "Bronx"
+    }
+  ],
+
+   "tags": [
+    {
+      "kicker": "#Bronx"
+    },
+    {
+      "kicker": "#Police"
+    },
+    {
+      "kicker": "#Dogs"
+    },
+    {
+      "kicker": "Good News"
     }
   ],
 

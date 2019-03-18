@@ -1,5 +1,5 @@
 {
-  "figure_class": "u-aligncenter u-size--full",
+  "figure_classes": "u-aligncenter u-size--full",
   "img": {
     "alt": "Alt Text",
     "src_s": "https://picsum.photos/500/400",

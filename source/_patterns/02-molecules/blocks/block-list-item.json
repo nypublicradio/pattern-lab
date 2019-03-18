@@ -1,0 +1,15 @@
+{
+  "block_image": {
+    "img": {
+      "src": "https://picsum.photos/100/100?image=350",
+      "alt": "A Photo"
+    },
+    "kicker": "Food"
+  },
+
+  "block_title": "Families Say NYPD Victim-Blaming Compounds Grief",
+
+  "block_meta": {
+    "author": "Max Fox"
+  }
+}

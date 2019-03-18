@@ -2,15 +2,96 @@
     $TOUTS
 \*------------------------------------*/
 
-.c-membership-tout {
-  text-align: center;
-  padding: $space-double;
-  background-color: $c-gray;
+
+/**
+ * Contact/sent tip
+ */
+.c-contact-tout {
+  padding: $space $space-and-half;
 }
 
 
-.c-recirc-tout {
-  padding: 100px;
-  text-align: center;
-  background-color: $c-primary;
+/**
+ * Donate bar
+ */
+.c-donate-tout {
+  padding: $space-double;
+  background-color: $c-quinary;
+  position: relative;
+
+  @include media('<=xlarge') {
+    max-width: 270px;
+    width: 100%;
+    margin: 70px 0 0 auto;
+    position: fixed;
+    z-index: 1000;
+    right: -300px;
+    bottom: 50px;
+    transform: translateX(0);
+    transition: transform .2s $hard-ease-in;
+    box-shadow: 0 0 10px rgba($c-black, .2);
+
+    &.is-active {
+      transform: translateX(-310px);
+    }
+  }
+
+  @include media('>xlarge') {
+    margin-left: -($col-width * 3) + $gutter + px;
+    margin-right: -($col-width * 3) + $gutter + px;
+  }
+
+  &__inner {
+
+    @include media('>xlarge') {
+      padding: 0 $space-double 0 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    p {
+      @include media('>xlarge') {
+        width: calc(65% - #{$space});
+      }
+    }
+
+    .o-button {
+      width: 100%;
+      margin-top: $space;
+      @include media('>xlarge') {
+        margin-top: 0;
+        width: 35%;
+      }
+    }
+  }
+
+  &__graphic {
+    width: 120px;
+    height: 133px;
+    position: relative;
+    margin-left: -55px;
+    margin-top: -85px;
+    margin-right: $space-half;
+    float: left;
+    path {
+      fill: $c-senary;
+    }
+
+    @include media('>xlarge') {
+      float: none;
+      margin: 0;
+      position: absolute;
+      left: -$space;
+      top: -$space;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+  }
 }
