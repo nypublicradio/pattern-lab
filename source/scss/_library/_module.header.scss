@@ -25,7 +25,7 @@
     height: $heading-height + px;
 
     @include media('>xsmall') {
-      padding: $space-half $space $space-half $space-quad;
+      padding: $space-half $space-and-half $space-half $space-double;
     }
   }
 
