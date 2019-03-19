@@ -1,23 +1,2 @@
-<div class="c-block-item {{ block_classes }}">
-
-  {% if block_image %}
-    <div class="c-block-item__image">
-      <a href="">{% include '@atoms/images/image.twig' with block_image %}</a>
-
-      <div class="c-block__category">
-        {% include '@atoms/text/kicker.twig' with block_image %}
-      </div>
-
-    </div>
-  {% endif %}
-
-  <div class="c-block-item__text u-spacing">
-
-    <h3 class="c-block-item__title"><a href="">{{ block_title }}</a></h3>
-
-    {% if block_meta %}
-      {% include '@molecules/meta/block-meta.twig' with block_meta %}
-    {% endif %}
-
-  </div>
-</div>
+{% extends "block.twig" %}
+{% set block_classes = "c-block--item" %}

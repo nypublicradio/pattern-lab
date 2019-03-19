@@ -1,8 +1,12 @@
 {
-  "block_image": {
+  "block_media": {
     "img": {
-      "src": "https://picsum.photos/400/250?image=350"
-    },
+      "src": "https://picsum.photos/400/250?image=250",
+      "alt": "My Media"
+    }
+  },
+
+  "block_object": {
     "kicker": "Food"
   },
 
