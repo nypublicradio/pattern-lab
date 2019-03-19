@@ -374,8 +374,16 @@
   }
 }
 
-.o-truncate {
+.u-truncate {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+// truncating a flex child is weird
+// any flex items within which a truncated
+// item is is nested need to have min-width: 0;
+// https://css-tricks.com/flexbox-truncated-text/
+._u-truncate--flex {
+  min-width: 0;
 }
