@@ -66,6 +66,16 @@
     height: 17px;
     fill: white;
   }
+
+  &__title {
+    font-size: $font-size-s-m;
+    color: $c-white;
+    padding: 0 $space-double 0 $space;
+
+    @include media('>=medium') {
+      padding-left: $space-and-half;
+    }
+  }
 }
 
 .c-search-toggle {
