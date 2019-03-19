@@ -30,6 +30,7 @@
   }
 
   &__branding {
+    flex-shrink: 0;
     width: 120px;
 
     @include media('>xsmall') {
