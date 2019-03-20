@@ -20,7 +20,7 @@
     }
   }
 
-  &__text {
+  &__object {
     padding-top: $space-half;
   }
 }
@@ -29,11 +29,11 @@
 /**
  * Inline blocks (often used in lists)
  */
-.c-block-item {
+.c-block--item {
   display: flex;
   align-items: flex-start;
 
-  &__image {
+  .c-block__media {
     min-width: 100px;
     max-width: 100px;
     overflow: hidden;
@@ -44,20 +44,11 @@
     }
   }
 
-  &__title {
-    font-weight: bold;
+  .c-block__title {
     font-size: $font-size-s-m;
-
-    a {
-      color: $c-black;
-
-      &:hover {
-        color: $c-primary;
-      }
-    }
   }
 
-  &__text {
+  .c-block__object {
     padding: $space-half 0 0 $space;
     width: 100%;
   }
