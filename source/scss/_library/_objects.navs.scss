@@ -10,10 +10,6 @@
   width: 40px;
   height: 40px;
 
-  @include media('>xsmall') {
-    left: $space;
-  }
-
   &__line,
   &__line:before,
   &__line:after {
@@ -48,6 +44,9 @@
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
+  @include media('>xsmall') {
+    left: $space;
+  }
 }
 
 // Side menu is active
