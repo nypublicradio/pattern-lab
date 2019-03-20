@@ -30,7 +30,7 @@
   }
 
   &__branding {
-    flex-shrink: 0;
+    flex-shrink: 0; // prevent from shrinking in flex container
     width: 120px;
 
     @include media('>xsmall') {
