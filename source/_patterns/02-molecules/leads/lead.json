@@ -3,8 +3,8 @@
   "break_l": "800",
   "img": {
     "alt": "Alt Text",
-    "src_s": "http://picsum.photos/500/350?image=0",
-    "src_m": "http://picsum.photos/800/400?image=5",
-    "src_l": "http://picsum.photos/1100/700?image=15"
+    "src_s": "https://picsum.photos/500/350?image=0",
+    "src_m": "https://picsum.photos/800/400?image=5",
+    "src_l": "https://picsum.photos/1100/700?image=15"
   }
 }

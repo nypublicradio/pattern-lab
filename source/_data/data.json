@@ -12,10 +12,10 @@
   "break_l": "800",
   "img": {
     "alt": "Alt Text",
-    "src": "http://picsum.photos/800/850?image=10",
-    "src_s": "http://picsum.photos/600/400?image=0",
-    "src_m": "http://picsum.photos/900/500?image=5",
-    "src_l": "http://picsum.photos/1100/700?image=15"
+    "src": "https://picsum.photos/800/850?image=10",
+    "src_s": "https://picsum.photos/600/400?image=0",
+    "src_m": "https://picsum.photos/900/500?image=5",
+    "src_l": "https://picsum.photos/1100/700?image=15"
   },
 
   "button_text": "Button Text",
