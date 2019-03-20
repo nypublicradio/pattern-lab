@@ -39,11 +39,15 @@
 }
 
 .c-menu-toggle {
-  position: absolute;
   z-index: 20;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+
   @include media('>xsmall') {
     left: $space;
   }
