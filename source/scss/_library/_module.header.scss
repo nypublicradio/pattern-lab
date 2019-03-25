@@ -211,13 +211,10 @@
     }
   }
 
-  &__nypr-linkroll {
+  .c-nypr-nav {
 
-    .c-nypr-nav {
-
-      &__list {
-        width: calc(100% + #{$space-double});
-      }
+    &__list {
+      width: calc(100% + #{$space-double});
     }
   }
 

@@ -125,32 +125,9 @@
  * NYPR brand link roll navigation
  */
 .c-nypr-nav {
-  position: relative;
-
-  &__toggle {
-    position: relative;
-
-    &:before {
-      content: "";
-      bottom: -22px;
-      right: 0;
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      background-color: $c-white;
-      transform: rotate(-45deg);
-      display: none;
-    }
-  }
 
   &__list {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: $space-double;
-    padding: 24px 24px 18px;
-    background-color: $c-white;
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -164,15 +141,6 @@
     margin-bottom: $space-half;
     line-height: 1;
     padding-bottom: $space-quarter;
-  }
-}
-// Open
-.c-nypr-nav.this-is-active {
-  .c-nypr-nav__toggle:before {
-    display: block;
-  }
-  .c-nypr-nav__list {
-    display: flex;
   }
 }
 

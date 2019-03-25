@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+/**
+ * Toggle box container
+ */
+.c-toggle-box {
+  position: relative;
+
+  &__label {
+    position: relative;
+
+    &:before {
+      content: "";
+      bottom: -22px;
+      right: 0;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: $c-white;
+      transform: rotate(-45deg);
+      display: none;
+    }
+  }
+
+  &__label {
+    @include font-secondary-style;
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    top: $space-double;
+    padding: 24px 24px 18px;
+    background-color: $c-white;
+  }
+}
+// Open
+.c-toggle-box.this-is-active {
+  .c-toggle-box__label:before {
+    display: block;
+  }
+  .c-toggle-box__content {
+    display: block;
+  }
+}
+
+/**
+ * Toggle box with linkroll
+ */
+.c-toggle-box--linkroll {
+
+  .c-toggle-box__label {
+    color: $c-white;
+  }
+
+  .o-icon--caret path {
+    fill: $c-white;
+  }
+}
