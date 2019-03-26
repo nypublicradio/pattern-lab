@@ -19,7 +19,7 @@ styleGuideExcludes:
 cacheBusterOn: 'true'
 exportDir: export
 publicDir: public
-sourceDir: ./source
+sourceDir: source
 defaultPattern: docs-welcome
 defaultShowPatternInfo: false
 baseDir: /Users/tpitre/Sites/nypr/
