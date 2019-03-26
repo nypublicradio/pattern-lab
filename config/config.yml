@@ -22,11 +22,12 @@ publicDir: public
 sourceDir: ./source
 defaultPattern: docs-welcome
 defaultShowPatternInfo: false
-baseDir: /Users/tpitre/Sites/nypr/
 ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:
     - hay
+    - disco
+    - random
 styleguideKit: pattern-lab/styleguidekit-twig-default
 styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
 lineageMatch: '{%([ ]+)?(?:include|extends|embed)( |\()[&quot;\&#039;]([\/.@A-Za-z0-9-_]+)[&quot;\&#039;]([\s\S+]*?)%}'
