@@ -312,9 +312,11 @@
 
 
 /**
- * Kicker (category eyebrow)
+ * Kicker, Tags, and Breadcrumbs
  */
-.o-kicker {
+.o-tag,
+.o-kicker,
+.o-breadcrumb {
   display: inline-block;
   padding: 2px 5px;
   text-transform: uppercase;
@@ -324,6 +326,21 @@
   letter-spacing: 1px;
   font-family: $ff-font--monospace;
   font-size: $font-size-xs;
+}
+
+.o-tag,
+.o-breadcrumb {
+  &:hover {
+    background-color: $c-primary;
+    color: $c-white;
+  }
+}
+
+.o-tags {
+
+  .o-tag {
+    margin: 0 $space-quarter $space-half 0;
+  }
 }
 
 
@@ -336,11 +353,9 @@
    p {
      font-size: 14px; // Not in type scale
      font-family: $ff-font--tertiary;
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
+     line-height: 1.5;
      @include media('>medium') {
-       flex-wrap: nowrap;
+       //flex-wrap: nowrap;
      }
    }
 
@@ -348,12 +363,14 @@
      margin-right: $space-half;
      fill: $c-primary;
      transform: translateY(1px);
+     float: left;
    }
  }
  .o-credit {
    margin-left: $space-half;
    color: $c-septenary;
    font-size: $font-size-xs;
+   line-height: 1.8;
    @include font-secondary-style;
  }
 

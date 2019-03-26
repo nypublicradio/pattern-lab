@@ -148,7 +148,7 @@
 /**
  * Breadcrumb navigation
  */
-.o-breadcrumb {
+.o-breadcrumbs {
   position: relative;
 
   &:before {
@@ -161,7 +161,7 @@
     @include border-accent;
   }
 
-  .o-kicker {
+  .o-breadcrumb {
     position: relative;
     z-index: 5;
 

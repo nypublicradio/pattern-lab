@@ -1,5 +1,5 @@
-<div class="o-breadcrumb">
+<div class="o-breadcrumbs">
   {% for breadcrumb in breadcrumbs %}
-    {% include '@atoms/text/kicker.twig' with breadcrumb %}
+    <a class="o-breadcrumb" href="">{{ breadcrumb.kicker }}</a>
   {% endfor %}
 </div>

@@ -1,51 +1,55 @@
 {
   "blocks": [
     {
-      "block_image": {
+      "block_media": {
         "img": {
           "src": "https://picsum.photos/100/100?image=320"
-        },
-        "kicker": "Food"
+        }
       },
-      "block_title": "Families Say NYPD Victim-Blaming Compounds Grief",
+      "kicker": "News",
+      "block_title": "The Best Of Gothamist 2018",
+      "block_dek": false,
       "block_meta": {
-         "author": "Terrance Pitre"
+         "author": "Gothamist"
       }
     },
     {
-      "block_image": {
+      "block_media": {
         "img": {
           "src": "https://picsum.photos/100/100?image=310"
-        },
-        "kicker": "Arts & Ent"
+        }
       },
-      "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
+      "kicker": "Arts & Ent",
+      "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+      "block_dek": false,
       "block_meta": {
-         "author": "Salvadore Dali"
+         "author": "Ross Barkan"
       }
     },
     {
-      "block_image": {
+      "block_media": {
         "img": {
           "src": "https://picsum.photos/100/100?image=325"
-        },
-        "kicker": "News"
+        }
       },
-      "block_title": "Families Say NYPD Victim-Blaming Compounds Grief",
+      "kicker": "Food",
+      "block_title": "The 14 Best New Burgers In NYC",
+      "block_dek": false,
       "block_meta": {
-         "author": "Drew Brees"
+         "author": "Scott Lynch"
       }
     },
     {
-      "block_image": {
+      "block_media": {
         "img": {
           "src": "https://picsum.photos/100/100?image=360"
-        },
-        "kicker": "Lifestyle"
+        }
       },
-      "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
+      "kicker": "Lifestyle",
+      "block_title": "The 13 Best Avocado Dishes In NYC",
+      "block_dek": false,
       "block_meta": {
-         "author": "Joe Rogan"
+         "author": "Scott Lynch"
       }
     }
   ]

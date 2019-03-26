@@ -39,21 +39,18 @@
   "breadcrumbs": [
     {
       "kicker": "News"
-    },
-    {
-      "kicker": "Bronx"
     }
   ],
 
    "tags": [
     {
-      "kicker": "#Bronx"
+      "kicker": "Bronx"
     },
     {
-      "kicker": "#Police"
+      "kicker": "Police"
     },
     {
-      "kicker": "#Dogs"
+      "kicker": "Dogs"
     },
     {
       "kicker": "Good News"
