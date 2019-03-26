@@ -27,7 +27,7 @@
     "php": ">=5.4",
     "pattern-lab/patternengine-twig": "^2.0.0",
     "pattern-lab/styleguidekit-twig-default": "^3.0.0",
-    "aleksip/plugin-data-transform": "^1.2",
+    "aleksip/plugin-data-transform": "^1.3",
     "pattern-lab/plugin-data-inheritance": "^1.0"
   },
   "scripts": {

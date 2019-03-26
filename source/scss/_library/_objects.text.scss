@@ -104,8 +104,8 @@
     border-bottom: 2px dotted $c-link-color;
 
     &:hover {
-      color: darken($c-link-color, 10%);
-      border-bottom-color: darken($c-link-color, 10%);
+      color: $c-white;
+      background-color: $c-primary;
     }
   }
 
@@ -302,7 +302,7 @@
  * Text background accent
  */
 .o-bg-text-accent {
-  background-image: linear-gradient(rgba($c-septenary, .1), rgba($c-septenary, .3));
+  background-image: linear-gradient(rgba($c-septenary, .2), rgba($c-septenary, .2));
   background-position: center bottom .2em;
   background-size: 100% .55em;
   background-repeat: no-repeat;
@@ -353,6 +353,7 @@
  .o-credit {
    margin-left: $space-half;
    color: $c-septenary;
+   font-size: $font-size-xs;
    @include font-secondary-style;
  }
 

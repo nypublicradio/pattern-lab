@@ -8,7 +8,7 @@
   &__ad-unit {
     position: relative;
     z-index: 100;
-    background-color: $c-white;
+    background-color: $c-dark-bg;
 
     img {
       margin: 0 auto;
@@ -31,7 +31,6 @@
 
   &__branding {
     width: 120px;
-    transform: translateY(5px);
 
     @include media('>xsmall') {
       width: 150px;
@@ -48,6 +47,7 @@
 
   &__donate {
     margin-right: $space;
+
     @include media('<=small') {
       margin-right: 0;
       font-size: 12px;

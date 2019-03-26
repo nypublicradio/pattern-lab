@@ -55,6 +55,16 @@
     align-items: center;
     justify-content: center;
 
+    path {
+      transition: all 0.25s ease-in-out;
+    }
+
+    &:hover {
+      path {
+        fill: $c-primary;
+      }
+    }
+
     @include media('<=medium') {
       height: 36px;
       width: 40px;
@@ -107,6 +117,9 @@
 
   a {
     font-family: $ff-font--primary;
+    display: inline;
+    line-height: 1.85;
+    padding-bottom: 0;
   }
 
   &--small-screens {
@@ -148,4 +161,22 @@
   &.this-is-active {
     display: none;
   }
+}
+
+
+/**
+ * Article with overlay gallery
+ */
+.c-gallery-overlay {
+  position: fixed;
+  top: $heading-height + px;
+  left: 0;
+  background-color: $c-dark-bg;
+  color: $c-white;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 10;
+  padding-top: $space-quad;
+  border-top: 8px solid $c-gray;
 }
