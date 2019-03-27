@@ -1,11 +1,11 @@
-<div class="c-lead {{ lead_classes }}">
+<div class="c-lead {{ lead_classes }} {% if is_gallery %}c-lead-gallery{% endif %}">
 
   <div class="c-lead__image">
     {% include '@atoms/images/picture.twig' %}
   </div>
 
   {% if is_gallery %}
-    <div class="c-lead-gallery u-spacing">
+    <div class="u-spacing">
       <div class="c-lead-gallery__text">
   {% endif %}
 
@@ -19,18 +19,16 @@
   {% endblock %}
 
   {% if is_gallery %}
-        <h2 class="c-lead-gallery__title">Title of Slide</h2>
+        <h2 class="c-lead-gallery__title">{{ lead_slides_title }}</h2>
         <div class="c-lead-gallery__dek">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>{{ lead_slides_dek }}</p>
         </div>
       </div>
       <div class="c-lead-gallery__thumbs">
-        <a href="" class="c-lead-gallery__thumbs-thumb"><img src="https://picsum.photos/200/120?312"></a>
-        <a href="" class="c-lead-gallery__thumbs-thumb"><img src="https://picsum.photos/200/120?32"></a>
-        <a href="" class="c-lead-gallery__thumbs-thumb"><img src="https://picsum.photos/200/120?34"></a>
-        <a href="" class="c-lead-gallery__thumbs-thumb"><img src="https://picsum.photos/200/120?322"></a>
-        <a href="" class="c-lead-gallery__thumbs-thumb c-lead-gallery__thumbs-thumb-text u-font--secondary-style u-font--xs">View all <span>15</span></a>
+        {% for slide in lead_slides %}
+          <a href="" class="c-lead-gallery__thumbs-thumb"><img src="{{ slide.src }}" alt="{{ slide.lead_slides_title }}" data-caption="{{ slide.lead_slides_dek }}" data-image="{{ slide.src_l }}"></a>
+        {% endfor %}
+        <a href="" class="c-lead-gallery__thumbs-thumb c-lead-gallery__thumbs-thumb-text u-font--secondary-style u-font--xs js-toggle" data-toggled="c-main" data-prefix="gallery">View all <span>15</span></a>
       </div>
     </div>
   {% endif %}

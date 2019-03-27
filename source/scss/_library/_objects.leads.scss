@@ -8,6 +8,7 @@
 .o-figure__image,
 .c-lead__image {
   border: 2px solid $c-black;
+  margin-bottom: $space-half;
 }
 
 /**
@@ -15,9 +16,13 @@
  */
 .c-lead-gallery {
 
+  .c-lead__image {
+    margin-bottom: 0;
+  }
+
   &__text {
     background-color: $c-octonary;
-    padding: $space-quarter $space $space;
+    padding: $space-half $space $space;
   }
 
   &__title {
@@ -69,6 +74,10 @@
     justify-content: center;
     color: $c-white;
     white-space: nowrap;
+
+    &:hover {
+      background-color: $c-primary;
+    }
 
     span {
       display: block;

@@ -247,7 +247,9 @@
     }
   }
 
-  > hr {
+  > hr,
+  > div,
+  .o-ad {
     margin-top: $space-and-half;
     @include media('>large') {
       margin-top: $space-double;
@@ -364,6 +366,10 @@
     }
   }
 
+  &__text {
+    margin-right: $space-half;
+  }
+
   .o-icon--dashed-arrow {
     margin-right: $space-half;
     fill: $c-primary;
@@ -408,6 +414,7 @@
   .o-icon--prev-caret {
     margin-right: $space-quarter;
     transform: rotate(90deg);
+    min-width: 20px;
   }
 }
 

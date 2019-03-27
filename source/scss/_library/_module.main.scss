@@ -22,3 +22,40 @@
     margin: 0 auto;
   }
 }
+
+/**
+ * Ad styling (only for prototyping)
+ */
+.o-ad {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__label {
+    margin-top: $space-half;
+    display: block;
+    text-align: right;
+    width: 100%;
+  }
+
+  // Standard 300x250
+  &--300x250 {
+    width: 300px;
+  }
+
+  // Billboard progression
+  &--billboard {
+    width: 300px;
+
+    @include media('>750px') {
+      width: 728px;
+    }
+
+    @include media('>1000px') {
+      width: 970px;
+    }
+  }
+}

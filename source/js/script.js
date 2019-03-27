@@ -58,6 +58,7 @@
    *
    */
   $('.js-toggle').on('click', function(e) {
+    e.preventDefault();
     e.stopPropagation();
     toggleClasses($(this));
     sideMenuScrollTop();
@@ -130,6 +131,31 @@
         $(this).find('.c-donate-tout').addClass('is-active');
       }
     });
+  });
+
+  /**
+   * Lead photo gallery image swap.
+   */
+  (function() {
+    $('.c-lead-gallery__thumbs-thumb').on('click', function(e) {
+      e.preventDefault();
+
+      var $this = $(this),
+          $thisImg = $this.find('img'),
+          $thisTitle = $thisImg.attr('alt'),
+          $thisCaption = $thisImg.data('caption'),
+          $thisLargeImg = $thisImg.data('image');
+
+      // Swap content
+      $('.c-lead__image img').attr('src', $thisLargeImg)
+      $('.c-lead-gallery__title').text($thisTitle);
+      $('.c-lead-gallery__dek p').text($thisCaption);
+
+    });
+  })();
+
+  $('.c-lead-gallery__thumbs-thumb-text').on('click', function(e) {
+    $('html, body').animate({ scrollTop: 0 });
   });
 
 })(jQuery);

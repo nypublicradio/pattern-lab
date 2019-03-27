@@ -96,3 +96,18 @@ select {
   color: $c-brown-grey;
   font-family: $ff-font--monospace;
 }
+
+
+// don't apply hover effects to form buttons
+form {
+  .o-button {
+
+    &:before {
+      display: none;
+    }
+    &:hover {
+      transform: none;
+      background-color: $c-primary;
+    }
+  }
+}

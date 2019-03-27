@@ -16,6 +16,10 @@
     > * {
       display: inline-block;
     }
+
+    .o-icon {
+      vertical-align: text-bottom;
+    }
   }
 
   &__lead {
@@ -162,19 +166,28 @@
 /**
  * Article with overlay gallery (see _module.gallery.scss for gallery styles)
  */
-.c-article {
+.gallery-is-active .c-article {
   overflow: hidden;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .c-article__gallery {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   background-color: $c-dark-bg;
   width: 100%;
   z-index: 100;
+  height: 0;
+  opacity: 0;
   border-top: 8px solid $c-gray;
+  transition: opacity .2s ease;
+  overflow: hidden;
+}
+.gallery-is-active {
+  .c-article__gallery {
+    transform: translateX(100%);
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+  }
 }

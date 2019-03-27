@@ -48,12 +48,6 @@
     },
     {
       "kicker": "Police"
-    },
-    {
-      "kicker": "Dogs"
-    },
-    {
-      "kicker": "Good News"
     }
   ],
 
@@ -120,6 +114,36 @@
     },
     {
       "title": "The Biomechatronic Man"
+    }
+  ],
+
+  "lead_slides_title": "Mercado Little Spain",
+  "lead_slides_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+
+  "lead_slides": [
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-mobile.jpeg",
+      "lead_slides_title": "Mercado Little Spain",
+      "lead_slides_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/4d5380661hyfood-1-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/4d5380661hyfood-1-jpg-mobile.jpeg",
+      "lead_slides_title": "Fuku",
+      "lead_slides_dek": "uga impedit debitis eligendi, sint."
+    },
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/fad663e0chyfood-22-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/fad663e0chyfood-22-jpg-mobile.jpeg",
+      "lead_slides_title": "Inside the Shops & Restaurants at Hudson Yards",
+      "lead_slides_dek": "Maxime laudantium aut nam vitae, aspernatur iste quisquam debitis harum"
+    },
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/b491fd14chyfood-10-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/b491fd14chyfood-10-jpg-mobile.jpeg",
+      "lead_slides_title": "Queensyard",
+      "lead_slides_dek": "Ipsum dolor sit amet, consectetur adipisicing elit."
     }
   ]
 }
