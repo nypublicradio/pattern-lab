@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $GALLERY
+\*------------------------------------*/
+
+.c-gallery-overlay {
+  padding: $space-double 0 $space-quad;
+  color: $c-white;
+}
+
+.c-slide {
+
+  &__heading {
+    color: $c-quaternary;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

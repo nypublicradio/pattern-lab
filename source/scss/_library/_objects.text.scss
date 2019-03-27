@@ -80,6 +80,13 @@
 }
 
 /**
+ * Text Positioning
+ */
+.u-align--center {
+  text-align: center;
+}
+
+/**
  * Text Decorations
  */
 .u-text-decoration--underline {
@@ -337,7 +344,6 @@
 }
 
 .o-tags {
-
   .o-tag {
     margin: 0 $space-quarter $space-half 0;
   }
@@ -347,32 +353,30 @@
 /**
  * Caption & credit (used in leads and figures)
  */
- .o-caption {
-   padding-top: $space-half;
+.o-caption {
 
-   p {
-     font-size: 14px; // Not in type scale
-     font-family: $ff-font--tertiary;
-     line-height: 1.5;
-     @include media('>medium') {
-       //flex-wrap: nowrap;
-     }
-   }
+  p {
+    font-size: 14px; // Not in type scale
+    font-family: $ff-font--tertiary;
+    line-height: 1.5;
+    @include media('>medium') {
+      //flex-wrap: nowrap;
+    }
+  }
 
-   .o-icon--dashed-arrow {
-     margin-right: $space-half;
-     fill: $c-primary;
-     transform: translateY(1px);
-     float: left;
-   }
- }
- .o-credit {
-   margin-left: $space-half;
-   color: $c-septenary;
-   font-size: $font-size-xs;
-   line-height: 1.8;
-   @include font-secondary-style;
- }
+  .o-icon--dashed-arrow {
+    margin-right: $space-half;
+    fill: $c-primary;
+    transform: translateY(1px);
+    float: left;
+  }
+}
+.o-credit {
+  color: $c-septenary;
+  font-size: $font-size-xs;
+  line-height: 1.8;
+  @include font-secondary-style;
+}
 
 
  /**
@@ -389,5 +393,38 @@
     transform: rotate(-90deg) translateX(4px);
     margin-right: $space-half;
     fill: $c-primary;
+  }
+}
+
+/**
+ * Back to where you came from link
+ */
+.o-back-to-link {
+  font-size: $font-size-s-m;
+  display: inline-flex;
+  align-items: center;
+  margin-left: -$space-quarter;
+
+  .o-icon--prev-caret {
+    margin-right: $space-quarter;
+    transform: rotate(90deg);
+  }
+}
+
+/**
+ * End of content label
+ */
+.o-end-label {
+  display: block;
+  width: 34px;
+  text-align: center;
+  margin: $space auto;
+  padding: $space 0;
+
+  // Temporary until i can get the real icon
+  .o-icon--down-arrow {
+    transform: rotate(90deg);
+    fill: $c-gray;
+    margin-bottom: $space-half;
   }
 }

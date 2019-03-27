@@ -4,6 +4,8 @@
 
 .c-main-header {
   text-align: center;
+  position: relative;
+  z-index: 10000; // High enough to cover ads and any other overlay
 
   &__ad-unit {
     position: relative;

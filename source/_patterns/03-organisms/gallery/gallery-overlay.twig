@@ -1,0 +1,40 @@
+<div class="c-gallery-overlay l-wrap">
+
+  <div class="l-container l-container--10col u-spacing--double">
+
+    <a href="" class="o-back-to-link"><span class="o-icon o-icon--prev-caret u-path-fill--white u-icon--s">{% include '@atoms/icons/icon-caret.twig' %}</span> <span class="u-has-accent u-has-accent--white">{{ article_title }}</span></a>
+
+    <div class="u-spacing--quad">
+
+      {% for slide in slides %}
+        {% include 'molecules-slide'
+          with {
+            "slides": slide,
+            "index": loop.index,
+            "total": loop.length,
+            "slide_title": slide.slide_title,
+            "img": {
+              "src_s": slide.img.src_s
+            },
+            "credit": slide.credit,
+            "slide_dek": slide.slide_dek
+          }
+        %}
+      {% endfor %}
+
+      <span class="o-end-label u-font--secondary-style u-font--xs u-color--gray"><span class="o-icon o-icon--down-arrow u-icon--m">{% include 'atoms-icon-dashed-arrow' %}</span> End</span>
+
+    </div>
+
+    <div class="u-align--center">
+      {%
+        include '@atoms/buttons/button.twig'
+        with {
+          "button_text": "Back to Article",
+          "button_classes": "c-gallery-overlay__back o-button--c-quaternary"
+        }
+      %}
+    </div>
+
+  </div>
+</div>

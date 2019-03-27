@@ -44,6 +44,7 @@
  *
  * PAGE STRUCTURE
  * Article..............Post-type pages with styled text.
+ * Gallery..............Styles for all things gallery.
  * Footer...............The main page footer.
  * Header...............The main page header.
  * Main.................Content area styles.
@@ -119,6 +120,7 @@ $tests: true;
     $PAGE STRUCTURE
 \*------------------------------------*/
 @import "module.article";
+@import "module.gallery";
 @import "module.footer";
 @import "module.header";
 @import "module.main";

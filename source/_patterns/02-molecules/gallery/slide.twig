@@ -1,0 +1,34 @@
+<div class="c-slide u-spacing--and-half">
+
+  <div class="c-slide__header u-spacing--half">
+    <h2 class="c-slide__heading u-font--l">{{ slide_title }}</h2>
+    <div class="c-slide__count u-font--secondary-style u-color--gray--light u-font--xs">Slide {{ index }} of {{ total }}</div>
+  </div>
+
+  <div class="c-slide__content u-spacing">
+
+    <div class="c-slide__media">
+
+      <div class="c-slide__image">
+        {% include 'atoms-picture' %}
+      </div>
+      <div class="c-slide__meta">
+        {%
+          include 'molecules-caption'
+          with {
+            "caption": false
+          }
+        %}
+
+        {% include 'molecules-share-toggle' %}
+      </div>
+
+    </div>
+
+    <div class="c-slide__dek o-rte-text">
+      <p>{{ slide_dek }}</p>
+    </div>
+
+  </div>
+
+</div>

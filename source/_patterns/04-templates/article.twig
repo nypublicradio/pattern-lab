@@ -13,6 +13,8 @@
     </article>
   </div>
   {% if is_gallery %}
-    {% include 'organisms-gallery-overlay' %}
+    <div class="c-article__gallery">
+      {% include 'organisms-gallery-overlay' %}
+    </div>
   {% endif %}
 {% endblock %}
