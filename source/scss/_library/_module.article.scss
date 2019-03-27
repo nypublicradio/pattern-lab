@@ -184,10 +184,15 @@
   overflow: hidden;
 }
 .gallery-is-active {
+
   .c-article__gallery {
     transform: translateX(100%);
     height: auto;
     overflow: auto;
     opacity: 1;
+  }
+
+  .c-article__donate {
+    display: none;
   }
 }

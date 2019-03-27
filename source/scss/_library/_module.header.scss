@@ -64,6 +64,12 @@
   height: 40px;
   transform: translate(-5px, 2px);
 
+  &:hover {
+    path {
+      fill: $c-primary;
+    }
+  }
+
   @include media('<=small') {
     display: none;
   }
@@ -71,6 +77,7 @@
   &__icon {
     path {
       fill: $c-white;
+      transition: all 0.25s ease-in-out;
     }
   }
 }

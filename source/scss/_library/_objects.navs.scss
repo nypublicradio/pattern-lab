@@ -44,6 +44,16 @@
   &__line:after {
     transform: translate(-50%, 6px);
   }
+
+  &:hover {
+    .c-menu-toggle__line,
+    .c-menu-toggle__line:before,
+    .c-menu-toggle__line:after {
+      background-color: $c-primary;
+      transition: background-color .2s ease-out;
+    }
+  }
+
 }
 // Side menu is active
 .side-menu-is-active {
@@ -61,6 +71,14 @@
       visibility: visible;
       bottom: auto;
       transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+  &:hover {
+    .c-menu-toggle__line,
+    .c-menu-toggle__line:before,
+    .c-menu-toggle__line:after {
+      background-color: $c-white;
     }
   }
 }
@@ -101,6 +119,10 @@
     font-size: $main-nav-font-size + px;
     font-weight: bold;
     letter-spacing: 1px;
+
+    &:hover {
+      color: $c-primary;
+    }
   }
 }
 
