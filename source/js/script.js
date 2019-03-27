@@ -42,6 +42,13 @@
     }, 1000);
   }
 
+  // Adjust the height of the side menu depending on the header ad unit size.
+  $(window).resize(resizeFrame).resize();
+  function resizeFrame() {
+    var headerHeight = $('.c-main-header__ad-unit').height();
+    $('.c-side-menu').css('height', 'calc(100vh - ' + headerHeight + 'px)');
+  }
+
   /*
    * Toggle Active Classes
    *

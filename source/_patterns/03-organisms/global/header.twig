@@ -1,11 +1,8 @@
 <header class="c-main-header">
-  <div class="c-main-header__ad-unit o-ad o-ad--leaderboard">
-    {%
-      include '@atoms/images/image.twig'
+  <div class="c-main-header__ad-unit">
+    {% include 'molecules-billboard'
       with {
-        "img": {
-          "src": "https://placehold.it/728x90"
-        }
+        "hide_label": true
       }
     %}
   </div>
