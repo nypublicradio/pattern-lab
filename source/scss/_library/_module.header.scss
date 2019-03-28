@@ -220,8 +220,10 @@
   opacity: 0;
   transform: translateX(0);
   transition: opacity .3s ease-out, transform .3s ease-out .4s;
-
-  .side-menu-is-active & {
+}
+// side menu is open
+.js-this.side-menu-is-active {
+  .c-content-overlay {
     opacity: .5;
     transform: translateX(100vw);
     transition: opacity .2s ease-in;
@@ -253,18 +255,6 @@
   @include media('>medium') {
     max-width: 500px;
     left: -500px;
-  }
-
-  .side-menu-is-active & {
-    transform: translateX(100%);
-
-    @include media('>small') {
-      transform: translateX(360px);
-    }
-
-    @include media('>medium') {
-      transform: translateX(500px);
-    }
   }
 
   &__group {
@@ -350,6 +340,22 @@
   &__terms-links {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+// Side menu is active
+.js-this.side-menu-is-active {
+
+  .c-side-menu {
+    transform: translateX(100%);
+
+    @include media('>small') {
+      transform: translateX(360px);
+    }
+
+    @include media('>medium') {
+      transform: translateX(500px);
+    }
   }
 }
 

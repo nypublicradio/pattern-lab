@@ -90,6 +90,11 @@
   //   $('.this-is-active').removeClass('this-is-active');
   // });
 
+  $('.o-menu-toggle').on('click', function(e) {
+    e.preventDefault();
+    $('body').addClass('side-menu-is-active');
+  });
+
   // Close side menu when other things are clicked outside the menu.
   $('body, .c-content-overlay, .c-menu-toggle.side-menu-is-active').on('click', function(e){
     $('.side-menu-is-active').removeClass('side-menu-is-active');
@@ -207,6 +212,7 @@
     $window.scroll(function() {
       if ($window.scrollTop() >= distance) {
         $('.c-floating-header').addClass('is-visible');
+        $('.o-container > .side-menu-is-active').removeClass('side-menu-is-active');
       }
       else {
         $('.c-floating-header').removeClass('is-visible');

@@ -38,14 +38,13 @@
   }
 
   &:hover {
-    .c-menu-toggle__line,
-    .c-menu-toggle__line:before,
-    .c-menu-toggle__line:after {
+    .o-menu-toggle__line,
+    .o-menu-toggle__line:before,
+    .o-menu-toggle__line:after {
       background-color: $c-primary;
       transition: background-color .2s ease-out;
     }
   }
-
 }
 
 .c-menu-toggle {
@@ -54,7 +53,6 @@
   top: 0;
   bottom: 0;
   left: 5px;
-
   display: flex;
   align-items: center;
 
@@ -87,9 +85,9 @@
   }
 
   &:hover {
-    .c-menu-toggle__line,
-    .c-menu-toggle__line:before,
-    .c-menu-toggle__line:after {
+    .o-menu-toggle__line,
+    .o-menu-toggle__line:before,
+    .o-menu-toggle__line:after {
       background-color: $c-white;
     }
   }
