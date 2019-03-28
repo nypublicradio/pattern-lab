@@ -18,6 +18,8 @@
     "src_l": "https://picsum.photos/1100/700?image=15"
   },
 
+  "has_ad": true,
+
   "ads": {
     "small": "https://s0.2mdn.net/5188901/TINCUP_OUTSIDEONLINE_300x50.jpg",
     "medium": "https://tpc.googlesyndication.com/simgad/3866766746825522936",

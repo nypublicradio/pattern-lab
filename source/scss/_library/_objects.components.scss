@@ -97,3 +97,30 @@
     width: 45%;
   }
 }
+
+
+/**
+ * Progress bar
+ */
+.o-progress {
+  position: absolute;
+  left: 0;
+  bottom: -$space-half;
+  width: 100%;
+  height: $space-half;
+  appearance: none;
+  border: none;
+  background-color: $c-gray--light;
+  color: $c-quaternary;
+  z-index: 5;
+
+  &::-webkit-progress-bar {
+    background-color: $c-gray--light;
+  }
+  &::-webkit-progress-value {
+    background-color: $c-quaternary;
+  }
+  &::-moz-progress-bar {
+    background-color: $c-quaternary;
+  }
+}

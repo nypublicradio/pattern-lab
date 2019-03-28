@@ -104,7 +104,7 @@
     // Focus input on toggle.
     $('.c-search-toggle.js-toggle').on('click', function(e) {
       setTimeout(function() {
-        $('.c-search--top .c-search__input').focus();
+        $(this).parents('.c-search--top').find('.c-search__input').focus();
       }, 500);
     });
     // If input has no value, close the form when submitted.
@@ -112,7 +112,7 @@
       var thisInput = $(this).find('.c-search__input');
       if (!thisInput.val()) {
         e.preventDefault();
-        $('.top-search-is-active').removeClass('top-search-is-active');
+        $(this).parents('.top-search-is-active').removeClass('top-search-is-active');
       }
     });
   })();
@@ -161,8 +161,57 @@
     });
   })();
 
+  // Scroll to top of article when gallery is opened and closed.
+  $('[data-remove="gallery-is-active"]').on('click', function(e) {
+    e.preventDefault();
+    $(window).scrollTop(0);
+  });
   $('.c-lead-gallery__thumbs-thumb-text').on('click', function(e) {
     $('html, body').animate({ scrollTop: 0 });
   });
+
+  // Scrollbar progress
+  (function() {
+    var winHeight = $(window).height(),
+        docHeight = $(document).height(),
+        progressBar = $('.o-progress'),
+        max, value;
+
+    /* Set the max scrollable area */
+    max = docHeight - winHeight;
+    progressBar.attr('max', max);
+
+    $(document).on('scroll', function(){
+       value = $(window).scrollTop();
+       progressBar.attr('value', value);
+    });
+
+    $(window).on('resize', function() {
+      winHeight = $(window).height(),
+      docHeight = $(document).height();
+
+      max = docHeight - winHeight;
+      progressBar.attr('max', max);
+
+      value =  $(window).scrollTop();
+      progressBar.attr('value', value);
+    });
+  })();
+
+
+  // Slide in headers
+  (function() {
+    var distance = $('.c-article').offset().top,
+        $window = $(window);
+
+    $window.scroll(function() {
+      if ($window.scrollTop() >= distance) {
+        $('.c-floating-header').addClass('is-visible');
+      }
+      else {
+        $('.c-floating-header').removeClass('is-visible');
+      }
+    });
+  })();
 
 })(jQuery);

@@ -1,4 +1,4 @@
-<header class="c-main-header">
+<header class="c-main-header {{ main_header_classes }}">
 
   {% if has_ad %}
     <div class="c-main-header__ad-unit">
@@ -18,4 +18,8 @@
 
     <div class="c-content-overlay"></div>
   </div>
+
+  {% if has_progress_bar %}
+    {% include 'molecules-progress-bar' %}
+  {% endif %}
 </header>

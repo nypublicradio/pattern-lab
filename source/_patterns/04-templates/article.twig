@@ -1,5 +1,11 @@
 {% extends "main.twig" %}
 {% block main %}
+  <div class="c-floating-header">
+    {% include 'organisms-header-article' %}
+    {% if is_gallery %}
+      {% include 'organisms-header-gallery-overlay' %}
+    {% endif %}
+  </div>
   <div class="u-section-spacing l-container l-wrap">
     <article class="c-article l-container u-spacing--double">
       {% include 'organisms-article-header' %}

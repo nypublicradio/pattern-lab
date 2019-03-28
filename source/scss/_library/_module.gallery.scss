@@ -42,6 +42,15 @@
 // Gallery is active
 .gallery-is-active {
 
+  // Hide the article floating header when in the gallery overlay
+  .c-main-header--article {
+    display: none;
+  }
+
+  .c-main-header--gallery {
+    display: block;
+  }
+
   .c-slide {
     opacity: 1;
     transform: translateY(0);
