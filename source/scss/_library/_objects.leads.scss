@@ -8,4 +8,82 @@
 .o-figure__image,
 .c-lead__image {
   border: 2px solid $c-black;
+  margin-bottom: $space-half;
+}
+
+/**
+ * Gallery version of a lead
+ */
+.c-lead-gallery {
+
+  .c-lead__image {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    background-color: $c-octonary;
+    padding: $space-half $space $space;
+  }
+
+  &__title {
+    padding-top: $space-half;
+    font-size: $font-size-m;
+  }
+
+  &__thumbs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__thumbs-thumb {
+    display: inline-block;
+    max-width: calc(20% - #{$space});
+    min-width: calc(20% - #{$space});
+    border: $border-style-m;
+
+    @include media('<=medium') {
+      max-width: calc(25% - #{$space});
+      min-width: calc(25% - #{$space});
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    @include media('<=small') {
+      max-width: calc(33.3333% - #{$space-half});
+      min-width: calc(33.3333% - #{$space-half});
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__thumbs-thumb-text {
+    padding: $space $space-half $space-half;
+    background-color: $c-dark-bg;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: $c-white;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $c-primary;
+    }
+
+    span {
+      display: block;
+      font-size: $font-size-l;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }

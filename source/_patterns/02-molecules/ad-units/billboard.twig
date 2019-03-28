@@ -1,0 +1,10 @@
+<div class="o-ad o-ad--billboard {{ ad_classes }}">
+  <picture>
+    <source media="(min-width: 1000px)" srcset="{{ ads.large }}">
+    <source media="(min-width: 750px)" srcset="{{ ads.medium }}">
+    <img src="{{ ads.small }}" alt="">
+  </picture>
+  {% if not hide_label %}
+    <span class="o-ad__label u-font--secondary-style u-font--xs u-color--gray">Advertisement</span>
+  {% endif %}
+</div>

@@ -4,11 +4,13 @@
 
 .c-main-header {
   text-align: center;
+  position: relative;
+  z-index: 10000; // High enough to cover ads and any other overlay
 
   &__ad-unit {
     position: relative;
     z-index: 100;
-    background-color: $c-white;
+    background-color: $c-dark-bg;
 
     img {
       margin: 0 auto;
@@ -53,6 +55,7 @@
 
   &__donate {
     margin-right: $space;
+
     @include media('<=small') {
       margin-right: 0;
       font-size: 12px;
@@ -84,6 +87,12 @@
   height: 40px;
   transform: translate(-5px, 2px);
 
+  &:hover {
+    path {
+      fill: $c-primary;
+    }
+  }
+
   @include media('<=small') {
     display: none;
   }
@@ -91,6 +100,7 @@
   &__icon {
     path {
       fill: $c-white;
+      transition: all 0.25s ease-in-out;
     }
   }
 }
@@ -233,13 +243,10 @@
     }
   }
 
-  &__nypr-linkroll {
+  .c-nypr-nav {
 
-    .c-nypr-nav {
-
-      &__list {
-        width: calc(100% + #{$space-double});
-      }
+    &__list {
+      width: calc(100% + #{$space-double});
     }
   }
 

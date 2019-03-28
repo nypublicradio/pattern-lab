@@ -1,23 +1,20 @@
 <header class="c-main-header">
-  <div class="c-main-header__ad-unit o-ad o-ad--leaderboard">
-    {%
-      include '@atoms/images/image.twig'
-      with {
-        "img": {
-          "src": "https://placehold.it/728x90"
+
+  {% if has_ad %}
+    <div class="c-main-header__ad-unit">
+      {% include 'molecules-leaderboard'
+        with {
+          "hide_label": true
         }
-      }
-    %}
-  </div>
+      %}
+    </div>
+  {% endif %}
+
   <div class="c-main-header__inner js-stop-prop">
 
-    {% if header == 'GALLERY_OVERLAY' %}
-      {% include '@molecules/meta/header-overlay-gallery-meta.twig' %}
-    {% elseif header == 'ARTICLE' %}
-      {% include '@molecules/meta/header-article-meta.twig' %}
-    {% else %}
-      {% include '@molecules/meta/header-meta.twig' %}
-    {% endif %}
+    {% block header_type %}
+      {% include 'molecules-header-meta' %}
+    {% endblock %}
 
     <div class="c-content-overlay"></div>
   </div>

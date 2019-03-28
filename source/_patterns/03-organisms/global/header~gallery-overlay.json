@@ -1,4 +1,4 @@
 {
-  "header": "GALLERY_OVERLAY",
-  "photos": 28
+  "is_gallery": true,
+  "photos": 16
 }

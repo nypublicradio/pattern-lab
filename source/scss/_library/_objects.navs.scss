@@ -36,6 +36,16 @@
   &__line:after {
     transform: translate(-50%, 6px);
   }
+
+  &:hover {
+    .c-menu-toggle__line,
+    .c-menu-toggle__line:before,
+    .c-menu-toggle__line:after {
+      background-color: $c-primary;
+      transition: background-color .2s ease-out;
+    }
+  }
+
 }
 
 .c-menu-toggle {
@@ -73,6 +83,14 @@
       visibility: visible;
       bottom: auto;
       transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+  &:hover {
+    .c-menu-toggle__line,
+    .c-menu-toggle__line:before,
+    .c-menu-toggle__line:after {
+      background-color: $c-white;
     }
   }
 }
@@ -113,6 +131,10 @@
     font-size: $main-nav-font-size + px;
     font-weight: bold;
     letter-spacing: 1px;
+
+    &:hover {
+      color: $c-primary;
+    }
   }
 }
 
@@ -137,32 +159,9 @@
  * NYPR brand link roll navigation
  */
 .c-nypr-nav {
-  position: relative;
-
-  &__toggle {
-    position: relative;
-
-    &:before {
-      content: "";
-      bottom: -22px;
-      right: 0;
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      background-color: $c-white;
-      transform: rotate(-45deg);
-      display: none;
-    }
-  }
 
   &__list {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: $space-double;
-    padding: 24px 24px 18px;
-    background-color: $c-white;
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -178,21 +177,12 @@
     padding-bottom: $space-quarter;
   }
 }
-// Open
-.c-nypr-nav.this-is-active {
-  .c-nypr-nav__toggle:before {
-    display: block;
-  }
-  .c-nypr-nav__list {
-    display: flex;
-  }
-}
 
 
 /**
  * Breadcrumb navigation
  */
-.o-breadcrumb {
+.o-breadcrumbs {
   position: relative;
 
   &:before {
@@ -205,7 +195,7 @@
     @include border-accent;
   }
 
-  .o-kicker {
+  .o-breadcrumb {
     position: relative;
     z-index: 5;
 

@@ -1,9 +1,9 @@
 <header class="c-article__header u-spacing--and-half l-container">
 
   <div class="l-container l-container--12col u-spacing--and-half">
-    {% include '@molecules/navigation/breadcrumb.twig' %}
+    {% include 'molecules-breadcrumb' %}
     {%
-      include '@atoms/text/headline.twig'
+      include 'atoms-headline'
       with {
         "headline_classes": "c-article__headline"
       }
@@ -11,7 +11,7 @@
   </div>
 
   <div class="l-container l-container--10col">
-    {% include '@molecules/meta/article-meta.twig' %}
+    {% include 'molecules-article-meta' %}
   </div>
 
   <div class="c-article__lead">
@@ -19,11 +19,11 @@
     <div class="l-container l-container--10col">
 
       <div class="c-article__share u-border-accent u-border-accent--right">
-        {% include '@molecules/social/share-tools.twig' %}
+        {% include 'molecules-share-tools' %}
       </div>
 
       {%
-        include '@molecules/leads/lead.twig'
+        include 'molecules-lead'
         with {
           "lead_classes": "c-article__lead"
         }
@@ -32,7 +32,7 @@
 
     <div class="c-article__related c-article__related--wide-screens">
       {%
-        include '@organisms/article/related-content.twig'
+        include 'organisms-related-content'
         with {
           "related_classes": "u-border-accent u-border-accent--left"
         }

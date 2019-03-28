@@ -1,0 +1,15 @@
+<div class="c-toggle-box js-stop-prop {{ toggle_box_classes }}">
+
+  <button class="c-toggle-box__label js-toggle-parent o-text-with-icon {{ toggle_box_label_classes }}"><strong>{{ toggle_box_label }}</strong> <span class="o-icon o-icon--caret u-icon--xs">{% include '@atoms/icons/icon-caret.twig' %}</span></button>
+
+  <div class="c-toggle-box__content">
+
+    {% block toggle_content %}
+      <div class="c-toggle-box__content-inner">
+        <p>Toggled content</p>
+      </div>
+    {% endblock %}
+
+  </div>
+
+</div>
