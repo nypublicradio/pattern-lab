@@ -92,11 +92,11 @@
 
   $('.o-menu-toggle').on('click', function(e) {
     e.preventDefault();
-    $('body').addClass('side-menu-is-active');
+    $('body').toggleClass('side-menu-is-active');
   });
 
   // Close side menu when other things are clicked outside the menu.
-  $('body, .c-content-overlay, .c-menu-toggle.side-menu-is-active').on('click', function(e){
+  $('body, .c-content-overlay, .o-menu-toggle.side-menu-is-active').on('click', function(e){
     $('.side-menu-is-active').removeClass('side-menu-is-active');
     sideMenuScrollTop();
   });

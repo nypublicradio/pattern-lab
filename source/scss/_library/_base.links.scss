@@ -6,7 +6,8 @@ a {
   text-decoration: none;
   color: $c-link-color;
   transition: all 0.25s ease-in-out;
-  > span {
+  > span,
+  path {
     transition: all 0.25s ease-in-out;
   }
 }
@@ -40,5 +41,11 @@ a {
   &--secondary {
     color: $c-secondary;
     border-bottom-color: $c-secondary;
+
+    &:hover {
+      path {
+        fill: $c-white;
+      }
+    }
   }
 }
