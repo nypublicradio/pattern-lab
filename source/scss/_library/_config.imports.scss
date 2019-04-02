@@ -38,6 +38,7 @@
  * Touts................Promotional sections of content.
  * Sections.............Larger components of pages.
  * Forms................Specific form styling.
+ * Media................Specific media objects, e.g. figures
  *
  * TEXT
  * Text.................Various text-specific class definitions.
@@ -115,6 +116,7 @@ $tests: true;
 @import "objects.touts";
 @import "objects.sections";
 @import "objects.forms";
+@import "objects.media";
 
 /*------------------------------------*\
     $PAGE STRUCTURE

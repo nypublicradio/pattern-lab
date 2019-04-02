@@ -5,32 +5,25 @@
 .c-lead {
 }
 
-.o-figure__image,
-.c-lead__image {
-  border: 2px solid $c-black;
-  margin-bottom: $space-half;
-
-  img {
-    width: 100%;
-  }
-}
-
 /**
  * Gallery version of a lead
  */
 .c-lead-gallery {
 
-  .c-lead__image {
-    margin-bottom: 0;
+  &__top {
+    background-color: $c-octonary;
+    margin-bottom: $space;
+  }
+
+  figcaption.o-caption {
+    padding: 0 $space;
   }
 
   &__text {
-    background-color: $c-octonary;
     padding: $space-half $space $space;
   }
 
   &__title {
-    padding-top: $space-half;
     font-size: $font-size-m;
   }
 

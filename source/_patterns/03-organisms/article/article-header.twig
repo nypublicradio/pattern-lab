@@ -22,12 +22,11 @@
         {% include 'molecules-share-tools' %}
       </div>
 
-      {%
-        include 'molecules-lead'
-        with {
-          "lead_classes": "c-article__lead"
-        }
-      %}
+      {% if is_gallery %}
+        {% include 'molecules-lead-gallery' %}
+      {% else %}
+        {% include 'molecules-lead' %}
+      {% endif %}
     </div>
 
     <div class="c-article__related c-article__related--wide-screens">
