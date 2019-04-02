@@ -10,17 +10,20 @@
  */
 .c-lead-gallery {
 
+  &__top {
+    background-color: $c-octonary;
+    margin-bottom: $space;
+  }
+
   figcaption.o-caption {
     padding: 0 $space;
   }
 
   &__text {
-    background-color: $c-octonary;
     padding: $space-half $space $space;
   }
 
   &__title {
-    padding-top: $space-half;
     font-size: $font-size-m;
   }
 
