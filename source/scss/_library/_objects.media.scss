@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $MEDIA OBJECTS
+\*------------------------------------*/
+
+.o-figure {
+  display: block;
+}
+
+.o-figure__image {
+  border: 2px solid $c-black;
+  margin-bottom: $space-half;
+
+  img {
+    width: 100%;
+  }
+}
