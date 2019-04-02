@@ -10,8 +10,8 @@
  */
 .c-lead-gallery {
 
-  .c-lead__image {
-    margin-bottom: 0;
+  figcaption.o-caption {
+    padding: 0 $space;
   }
 
   &__text {
