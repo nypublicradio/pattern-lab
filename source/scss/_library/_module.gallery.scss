@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    $GALLERY
+\*------------------------------------*/
+
+.c-gallery-overlay {
+  padding: $space-double 0 $space-quad;
+  color: $c-white;
+
+  .l-wrap {
+    @include media('>medium') {
+      padding: 0;
+    }
+  }
+}
+
+.c-slide {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.5s $hard-ease-in .2s;
+
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{$i * 4 + "00"}ms;
+    }
+  }
+
+  &:nth-child(1) {
+    transition-delay: .15s;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+// Gallery is active
+.gallery-is-active {
+
+  // Hide the article floating header when in the gallery overlay
+  .c-main-header--article {
+    display: none;
+  }
+
+  .c-main-header--gallery {
+    display: block;
+  }
+
+  .c-slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

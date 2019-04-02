@@ -1,0 +1,8 @@
+{% extends "header.twig" %}
+{% set main_header_classes = 'c-main-header--gallery' %}
+{% set has_ad = false %}
+{% set has_progress_bar = true %}
+
+{% block header_type %}
+  {% include 'molecules-header-gallery-overlay-meta' %}
+{% endblock %}

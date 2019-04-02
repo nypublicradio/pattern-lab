@@ -32,10 +32,11 @@
   width: 265px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50%;
   z-index: -1;
   overflow: hidden;
   transition: z-index .1s ease-out .5s;
+  transform: translateY(-50%);
 
   @include media('<=small') {
     display: none;
@@ -210,6 +211,7 @@
     width: 60px;
     height: 60px;
     background-color: $c-dark-bg;
+    padding: 0;
   }
 
   &__submit-icon {

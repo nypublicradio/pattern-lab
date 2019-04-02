@@ -4,11 +4,13 @@
 
 .c-main-header {
   text-align: center;
+  position: relative;
+  z-index: 10000; // High enough to cover ads and any other overlay
 
   &__ad-unit {
     position: relative;
     z-index: 100;
-    background-color: $c-white;
+    background-color: $c-dark-bg;
 
     img {
       margin: 0 auto;
@@ -25,17 +27,25 @@
     height: $heading-height + px;
 
     @include media('>xsmall') {
-      padding: $space-half $space $space-half $space-quad;
+      padding: $space-half $space $space-half $space-double;
+    }
+    @include media('>small') {
+      padding-right: $space-and-half;
     }
   }
 
   &__branding {
+    flex-shrink: 0; // prevent from shrinking in flex container
     width: 120px;
-    transform: translateY(5px);
 
     @include media('>xsmall') {
       width: 150px;
     }
+  }
+
+  &__left {
+    display: flex;
+    align-items: flex-end;
   }
 
   &__right {
@@ -48,6 +58,7 @@
 
   &__donate {
     margin-right: $space;
+
     @include media('<=small') {
       margin-right: 0;
       font-size: 12px;
@@ -55,12 +66,136 @@
       padding-right: $space;
     }
   }
+
+  &__close {
+    width: 17px;
+    height: 17px;
+    fill: white;
+  }
+
+  &__title {
+    font-size: $font-size-s-m;
+    color: $c-white;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 0 $space-double 0 $space;
+
+    @include media('>medium') {
+      padding-left: $space-and-half;
+    }
+
+    @include media('<=large') {
+      display: none;
+    }
+  }
+
+  &__share {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 150px;
+
+    @include media('>xsmall') {
+      width: 190px;
+    }
+
+    @include media('>small') {
+      width: 200px;
+    }
+
+    > span {
+      @include media('<=xsmall') {
+        display: none;
+      }
+    }
+
+    .c-share-tools {
+      width: 100%;
+    }
+
+    .c-share-tools__group {
+      display: flex;
+      padding: 0 $space-half 0 $space-half;
+
+      @include media('>small') {
+        padding: 0 $space 0 $space-half;
+      }
+    }
+
+    .c-share-tools__link {
+      display: inline-flex;
+
+      @include media('<=small') {
+        width: $space-double;
+      }
+      path {
+        fill: $c-white;
+      }
+    }
+  }
+
+  &--article,
+  &--gallery {
+    .c-side-menu {
+      height: 100vh !important; // For prototype purposes to override an inline style
+    }
+  }
+
+  // Article header type
+  &--article {
+
+    .c-main-header__branding {
+      @include media('<=medium') {
+        display: none;
+      }
+    }
+  }
+
+  // Gallery overlay header type
+  &--gallery {
+    display: none;
+
+    .c-main-header__inner {
+      padding-left: $space;
+
+      @include media('>small') {
+        padding-left: $space-and-half;
+      }
+    }
+
+    .c-main-header__left {
+      align-items: center;
+    }
+  }
 }
+
+/**
+ * Floating headers
+ */
+.c-floating-header {
+  position: fixed;
+  top: -$heading-height - $space-half;
+  width: 100%;
+  z-index: 100000;
+  transform: translateY(0);
+  transition: transform .25s $hard-ease-in;
+
+  &.is-visible {
+    transform: translateY(#{$heading-height + $space-half});
+  }
+}
+
 
 .c-search-toggle {
   width: 40px;
   height: 40px;
   transform: translate(-5px, 2px);
+
+  &:hover {
+    path {
+      fill: $c-primary;
+    }
+  }
 
   @include media('<=small') {
     display: none;
@@ -69,6 +204,7 @@
   &__icon {
     path {
       fill: $c-white;
+      transition: all 0.25s ease-in-out;
     }
   }
 }
@@ -84,8 +220,10 @@
   opacity: 0;
   transform: translateX(0);
   transition: opacity .3s ease-out, transform .3s ease-out .4s;
-
-  .side-menu-is-active & {
+}
+// side menu is open
+.js-this.side-menu-is-active {
+  .c-content-overlay {
     opacity: .5;
     transform: translateX(100vw);
     transition: opacity .2s ease-in;
@@ -117,31 +255,6 @@
   @include media('>medium') {
     max-width: 500px;
     left: -500px;
-  }
-
-  // &::-webkit-scrollbar-track {
-  //   background-color: transparent;
-  // }
-
-  // &::-webkit-scrollbar {
-  //   width: 8px;
-  // }
-
-  // &::-webkit-scrollbar-thumb {
-  //   border-radius: 6px;
-  //   background-color: $c-gray;
-  // }
-
-  .side-menu-is-active & {
-    transform: translateX(100%);
-
-    @include media('>small') {
-      transform: translateX(360px);
-    }
-
-    @include media('>medium') {
-      transform: translateX(500px);
-    }
   }
 
   &__group {
@@ -227,6 +340,22 @@
   &__terms-links {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+// Side menu is active
+.js-this.side-menu-is-active {
+
+  .c-side-menu {
+    transform: translateX(100%);
+
+    @include media('>small') {
+      transform: translateX(360px);
+    }
+
+    @include media('>medium') {
+      transform: translateX(500px);
+    }
   }
 }
 

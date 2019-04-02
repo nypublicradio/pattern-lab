@@ -15,12 +15,11 @@ input[type="submit"] {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: $space $space 17px;
+  padding: 20px $space-double 18px;
   line-height: 22px;
   color: $c-white;
   cursor: pointer;
-  transition: all 0.5s ease;
-  overflow: hidden;
+  transition: all 0.3s $hard-ease-in;
   font-family: $ff-font--monospace;
   text-transform: uppercase;
   border: none;
@@ -29,18 +28,36 @@ input[type="submit"] {
   letter-spacing: 2px;
   text-align: center;
   background-color: $c-primary;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid $c-primary;
+    transform: translate(0, 0);
+    transition: all 0.3s $hard-ease-in;
+  }
 
   &:hover {
-    background-color: adjust-hue($c-primary, 20%);
+    transform: translate(10px, -10px);
+
+    &:before {
+      transform: translate(-10px, 10px);
+    }
   }
 
   // Types/Styles
   &--c-quaternary {
-    background-color: $c-quaternary;
     color: $c-body-color;
+    background-color: $c-quaternary;
 
-    &:hover {
-      background-color: adjust-hue($c-quaternary, 5%);
+    &:before {
+      border-color: $c-quaternary;
     }
   }
 

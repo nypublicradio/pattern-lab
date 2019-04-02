@@ -35,24 +35,10 @@
     left: 50%;
     transform: translate(-50%);
     top: $space-double;
-    padding: 24px 24px 18px;
+    padding: $space;
     background-color: $c-white;
+    z-index: 10;
   }
-}
-// Open
-.c-toggle-box.this-is-active {
-  .c-toggle-box__label:before {
-    display: block;
-  }
-  .c-toggle-box__content {
-    display: block;
-  }
-}
-
-/**
- * Toggle box with linkroll
- */
-.c-toggle-box--linkroll {
 
   .c-toggle-box__label {
     color: $c-white;
@@ -60,5 +46,63 @@
 
   .o-icon--caret path {
     fill: $c-white;
+  }
+}
+// Open
+.c-toggle-box.this-is-active {
+
+  .c-toggle-box__label:before {
+    display: block;
+  }
+
+  .c-toggle-box__content {
+    display: block;
+  }
+}
+
+/**
+ * Share toggle box
+ */
+.c-toggle-box--share {
+
+  .c-toggle-box__content {
+    width: 115px;
+  }
+
+  .c-share-tools__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .c-share-tools__link {
+    width: 45%;
+  }
+}
+
+
+/**
+ * Progress bar
+ */
+.o-progress {
+  position: absolute;
+  left: 0;
+  bottom: -$space-half;
+  width: 100%;
+  height: $space-half;
+  appearance: none;
+  border: none;
+  background-color: $c-gray--light;
+  color: $c-quaternary;
+  z-index: 5;
+
+  &::-webkit-progress-bar {
+    background-color: $c-gray--light;
+  }
+  &::-webkit-progress-value {
+    background-color: $c-quaternary;
+  }
+  &::-moz-progress-bar {
+    background-color: $c-quaternary;
   }
 }

@@ -18,6 +18,14 @@
     "src_l": "https://picsum.photos/1100/700?image=15"
   },
 
+  "has_ad": true,
+
+  "ads": {
+    "small": "https://s0.2mdn.net/5188901/TINCUP_OUTSIDEONLINE_300x50.jpg",
+    "medium": "https://tpc.googlesyndication.com/simgad/3866766746825522936",
+    "large": "https://s0.2mdn.net/8766144/CWDisplayAds_OutsideHPTO_970x250.jpg"
+  },
+
   "button_text": "Button Text",
   "headline": "Headline with Lots of Text Can Sit Here on Multiple Lines",
   "blockquote": "Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua undo.",
@@ -39,24 +47,15 @@
   "breadcrumbs": [
     {
       "kicker": "News"
-    },
-    {
-      "kicker": "Bronx"
     }
   ],
 
    "tags": [
     {
-      "kicker": "#Bronx"
+      "kicker": "Bronx"
     },
     {
-      "kicker": "#Police"
-    },
-    {
-      "kicker": "#Dogs"
-    },
-    {
-      "kicker": "Good News"
+      "kicker": "Police"
     }
   ],
 
@@ -123,6 +122,36 @@
     },
     {
       "title": "The Biomechatronic Man"
+    }
+  ],
+
+  "lead_slides_title": "Mercado Little Spain",
+  "lead_slides_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+
+  "lead_slides": [
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-mobile.jpeg",
+      "lead_slides_title": "Mercado Little Spain",
+      "lead_slides_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/4d5380661hyfood-1-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/4d5380661hyfood-1-jpg-mobile.jpeg",
+      "lead_slides_title": "Fuku",
+      "lead_slides_dek": "uga impedit debitis eligendi, sint."
+    },
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/fad663e0chyfood-22-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/fad663e0chyfood-22-jpg-mobile.jpeg",
+      "lead_slides_title": "Inside the Shops & Restaurants at Hudson Yards",
+      "lead_slides_dek": "Maxime laudantium aut nam vitae, aspernatur iste quisquam debitis harum"
+    },
+    {
+      "src": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/b491fd14chyfood-10-jpg-square.jpeg",
+      "src_l": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/b491fd14chyfood-10-jpg-mobile.jpeg",
+      "lead_slides_title": "Queensyard",
+      "lead_slides_dek": "Ipsum dolor sit amet, consectetur adipisicing elit."
     }
   ]
 }

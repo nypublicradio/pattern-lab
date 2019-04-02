@@ -6,42 +6,36 @@ a {
   text-decoration: none;
   color: $c-link-color;
   transition: all 0.25s ease-in-out;
-  //display: inline-block;
+  > span,
+  path {
+    transition: all 0.25s ease-in-out;
+  }
 }
 
 .u-has-accent {
   display: inline-block;
-  padding-bottom: .3em;
+  padding-bottom: 3px;
   border-bottom: 2px dotted $c-body-color;
+  box-decoration-break: clone;
+
+  &:hover {
+    color: $c-white;
+    background-color: $c-primary;
+  }
 
   &--neutral {
     color: $c-body-color;
     border-bottom-color: $c-body-color;
-
-    &:hover {
-      color: lighten($c-body-color, 20%);
-      border-bottom-color: lighten($c-body-color, 20%);
-    }
   }
 
   &--quaternary {
     color: $c-quaternary;
     border-bottom-color: $c-quaternary;
-
-    &:hover {
-      color: lighten($c-quaternary, 20%);
-      border-bottom-color: lighten($c-quaternary, 20%);
-    }
   }
 
   &--white {
     color: $c-white;
     border-bottom-color: $c-white;
-
-    &:hover {
-      color: darken($c-white, 15%);
-      border-bottom-color: darken($c-white, 15%);
-    }
   }
 
   &--secondary {
@@ -49,8 +43,9 @@ a {
     border-bottom-color: $c-secondary;
 
     &:hover {
-      color: darken($c-secondary, 10%);
-      border-bottom-color: darken($c-secondary, 10%);
+      path {
+        fill: $c-white;
+      }
     }
   }
 }

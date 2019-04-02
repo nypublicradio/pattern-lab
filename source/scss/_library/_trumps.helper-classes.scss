@@ -26,19 +26,6 @@
   width: 100%;
 }
 
-/**
- * Border accents
- */
-.u-border-accent {
-  @include border-accent;
-}
-.u-border-accent--right {
-  @include border-accent(bottom);
-}
-.u-border-accent--left {
-  @include border-accent(bottom, left);
-}
-
 
 /**
  * Reversed out content

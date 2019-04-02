@@ -18,33 +18,34 @@
   padding: $space-double;
   background-color: $c-quinary;
   position: relative;
+  width: 100%;
+  max-width: ($col-width * 14) + ($gutter * 12) + px;
+  margin: 70px 0 0 auto;
+  position: fixed;
+  z-index: 1000;
+  right: -#{($col-width * 15) + ($gutter * 13) + px};
+  bottom: 50px;
+  transform: translateX(0);
+  transition: transform .2s $hard-ease-in;
+  box-shadow: 0 0 10px rgba($c-black, .2);
+
+  &.is-active {
+    transform: translateX(-#{($col-width * 15) + ($gutter * 13) + $space});
+  }
 
   @include media('<=xlarge') {
     max-width: 270px;
-    width: 100%;
-    margin: 70px 0 0 auto;
-    position: fixed;
-    z-index: 1000;
-    right: -300px;
-    bottom: 50px;
-    transform: translateX(0);
-    transition: transform .2s $hard-ease-in;
-    box-shadow: 0 0 10px rgba($c-black, .2);
+    right: -#{($col-width * 6) + ($gutter * 4) + px};
 
     &.is-active {
-      transform: translateX(-310px);
+      transform: translateX(-#{($col-width * 6) + ($gutter * 5) + px});
     }
-  }
-
-  @include media('>xlarge') {
-    margin-left: -($col-width * 3) + $gutter + px;
-    margin-right: -($col-width * 3) + $gutter + px;
   }
 
   &__inner {
 
     @include media('>xlarge') {
-      padding: 0 $space-double 0 100px;
+      padding: 0 $space 0 100px;
       display: flex;
       align-items: center;
       justify-content: space-between;

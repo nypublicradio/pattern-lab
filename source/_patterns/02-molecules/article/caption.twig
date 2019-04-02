@@ -1,0 +1,3 @@
+<{{ is_figure ? "figcaption" : "div" }} class="o-caption {{ caption_classes }}">
+  <p>{% if caption %}<span class="o-icon o-icon--dashed-arrow u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span> <span class="o-caption__text">{{ caption }}</span>{% endif %} {% if credit %}<span class="o-credit">{{ credit }}</span>{% endif %}</p>
+</{{ is_figure ? "figcaption" : "div" }}>

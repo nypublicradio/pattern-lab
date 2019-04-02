@@ -80,6 +80,13 @@
 }
 
 /**
+ * Text Positioning
+ */
+.u-align--center {
+  text-align: center;
+}
+
+/**
  * Text Decorations
  */
 .u-text-decoration--underline {
@@ -104,8 +111,8 @@
     border-bottom: 2px dotted $c-link-color;
 
     &:hover {
-      color: darken($c-link-color, 10%);
-      border-bottom-color: darken($c-link-color, 10%);
+      color: $c-white;
+      background-color: $c-primary;
     }
   }
 
@@ -240,7 +247,9 @@
     }
   }
 
-  > hr {
+  > hr,
+  > div,
+  .o-ad {
     margin-top: $space-and-half;
     @include media('>large') {
       margin-top: $space-double;
@@ -302,7 +311,7 @@
  * Text background accent
  */
 .o-bg-text-accent {
-  background-image: linear-gradient(rgba($c-septenary, .1), rgba($c-septenary, .3));
+  background-image: linear-gradient(rgba($c-septenary, .2), rgba($c-septenary, .2));
   background-position: center bottom .2em;
   background-size: 100% .55em;
   background-repeat: no-repeat;
@@ -312,9 +321,11 @@
 
 
 /**
- * Kicker (category eyebrow)
+ * Kicker, Tags, and Breadcrumbs
  */
-.o-kicker {
+.o-tag,
+.o-kicker,
+.o-breadcrumb {
   display: inline-block;
   padding: 2px 5px;
   text-transform: uppercase;
@@ -326,35 +337,52 @@
   font-size: $font-size-xs;
 }
 
+.o-tag,
+.o-breadcrumb {
+  &:hover {
+    background-color: $c-primary;
+    color: $c-white;
+  }
+}
+
+.o-tags {
+  .o-tag {
+    margin: 0 $space-quarter $space-half 0;
+  }
+}
+
 
 /**
  * Caption & credit (used in leads and figures)
  */
- .o-caption {
-   padding-top: $space-half;
+.o-caption {
 
-   p {
-     font-size: 14px; // Not in type scale
-     font-family: $ff-font--tertiary;
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     @include media('>medium') {
-       flex-wrap: nowrap;
-     }
-   }
+  p {
+    font-size: 14px; // Not in type scale
+    font-family: $ff-font--tertiary;
+    line-height: 1.5;
+    @include media('>medium') {
+      //flex-wrap: nowrap;
+    }
+  }
 
-   .o-icon--dashed-arrow {
-     margin-right: $space-half;
-     fill: $c-primary;
-     transform: translateY(1px);
-   }
- }
- .o-credit {
-   margin-left: $space-half;
-   color: $c-septenary;
-   @include font-secondary-style;
- }
+  &__text {
+    margin-right: $space-half;
+  }
+
+  .o-icon--dashed-arrow {
+    margin-right: $space-half;
+    fill: $c-primary;
+    transform: translateY(1px);
+    float: left;
+  }
+}
+.o-credit {
+  color: $c-septenary;
+  font-size: $font-size-xs;
+  line-height: 1.8;
+  @include font-secondary-style;
+}
 
 
  /**
@@ -372,4 +400,64 @@
     margin-right: $space-half;
     fill: $c-primary;
   }
+}
+
+.u-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+// truncating a flex child is weird
+// any flex items within which a truncated
+// item is nested need to have min-width: 0;
+// https://css-tricks.com/flexbox-truncated-text/
+._u-truncate--flex {
+  min-width: 0;
+}
+
+/**
+ * Back to where you came from link
+ */
+.o-back-to-link {
+  font-size: $font-size-s-m;
+  display: inline-flex;
+  align-items: center;
+  margin-left: -$space-quarter;
+
+  .o-icon--prev-caret {
+    margin-right: $space-quarter;
+    transform: rotate(90deg);
+    min-width: 20px;
+  }
+}
+
+/**
+ * End of content label
+ */
+.o-end-label {
+  display: block;
+  width: 34px;
+  text-align: center;
+  margin: $space auto;
+  padding: $space 0;
+
+  // Temporary until i can get the real icon
+  .o-icon--down-arrow {
+    transform: rotate(90deg);
+    fill: $c-gray;
+    margin-bottom: $space-half;
+  }
+}
+
+/**
+ * Border accents
+ */
+.u-border-accent {
+  @include border-accent;
+}
+.u-border-accent--right {
+  @include border-accent(bottom);
+}
+.u-border-accent--left {
+  @include border-accent(bottom, left);
 }

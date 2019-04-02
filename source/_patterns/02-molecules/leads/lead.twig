@@ -1,8 +1,36 @@
-<div class="c-lead {{ lead_classes }}">
+<div class="c-lead {{ lead_classes }} {% if is_gallery %}c-lead-gallery{% endif %}">
+
   <div class="c-lead__image">
     {% include '@atoms/images/picture.twig' %}
   </div>
-  <div class="c-lead__caption o-caption u-spacing--half">
-    <p><span class="o-icon o-icon--dashed-arrow u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span> {{ caption }} <span class="o-credit">{{ credit }}</span></p>
-  </div>
+
+  {% if is_gallery %}
+    <div class="u-spacing">
+      <div class="c-lead-gallery__text">
+  {% endif %}
+
+  {% block lead_caption %}
+    {%
+      include '@molecules/article/caption.twig'
+      with {
+        "caption_classes": "c-lead__caption"
+      }
+    %}
+  {% endblock %}
+
+  {% if is_gallery %}
+        <h2 class="c-lead-gallery__title">{{ lead_slides_title }}</h2>
+        <div class="c-lead-gallery__dek">
+          <p>{{ lead_slides_dek }}</p>
+        </div>
+      </div>
+      <div class="c-lead-gallery__thumbs">
+        {% for slide in lead_slides %}
+          <a href="" class="c-lead-gallery__thumbs-thumb"><img src="{{ slide.src }}" alt="{{ slide.lead_slides_title }}" data-caption="{{ slide.lead_slides_dek }}" data-image="{{ slide.src_l }}"></a>
+        {% endfor %}
+        <a href="" class="c-lead-gallery__thumbs-thumb c-lead-gallery__thumbs-thumb-text u-font--secondary-style u-font--xs js-toggle" data-toggled="c-main" data-prefix="gallery">View all <span>15</span></a>
+      </div>
+    </div>
+  {% endif %}
+
 </div>
