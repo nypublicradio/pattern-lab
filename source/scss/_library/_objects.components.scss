@@ -106,3 +106,29 @@
     background-color: $c-quaternary;
   }
 }
+
+.c-share-tools {
+
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 4px;
+
+
+    path {
+      transition: all 0.25s ease-in-out;
+    }
+
+    &:hover {
+      path {
+        fill: $c-primary;
+      }
+    }
+  }
+}
