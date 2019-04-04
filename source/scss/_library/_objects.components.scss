@@ -108,6 +108,12 @@
 }
 
 .c-share-tools {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: $space-half;
+  }
 
   &__group {
     display: flex;
