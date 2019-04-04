@@ -135,6 +135,7 @@
 
     a {
       font-size: $font-size-s-m;
+      line-height: 1.2;
     }
 
     @include media('>xlarge') {

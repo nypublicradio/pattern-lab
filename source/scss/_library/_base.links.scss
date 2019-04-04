@@ -12,7 +12,8 @@ a {
   }
 }
 
-.u-has-accent {
+.u-has-accent,
+.o-rte-text .u-has-accent {
   display: inline-block;
   padding-bottom: 3px;
   border-bottom: 2px dotted $c-body-color;
