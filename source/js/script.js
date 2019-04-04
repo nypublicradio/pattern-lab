@@ -159,7 +159,7 @@
           $thisLargeImg = $thisImg.data('image');
 
       // Swap content
-      $('.c-lead__image img').attr('src', $thisLargeImg)
+      $('.c-lead-gallery__top img').attr('src', $thisLargeImg)
       $('.c-lead-gallery__title').text($thisTitle);
       $('.c-lead-gallery__dek p').text($thisCaption);
 

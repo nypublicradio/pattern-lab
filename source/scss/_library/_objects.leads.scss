@@ -3,6 +3,13 @@
 \*------------------------------------*/
 
 .c-lead {
+
+  .o-caption {
+    @include media('<=medium') {
+      padding-left: $space;
+      padding-right: $space;
+    }
+  }
 }
 
 /**
