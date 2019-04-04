@@ -166,13 +166,24 @@
     });
   })();
 
+  var url = document.location.href;
+
   // Scroll to top of article when gallery is opened and closed.
   $('[data-remove="gallery-is-active"]').on('click', function(e) {
     e.preventDefault();
     $(window).scrollTop(0);
+    history.pushState(null, null, url);
   });
+
+  window.onpopstate = function() {
+    $(window).scrollTop(0);
+    $('.gallery-is-active').removeClass('gallery-is-active');
+    history.pushState(null, null, url);
+  }
+
   $('.js-gallery-toggle').on('click', function(e) {
     $('html, body').animate({ scrollTop: 0 });
+    history.pushState(null, null, url + '/gallery');
   });
 
   // Scrollbar progress

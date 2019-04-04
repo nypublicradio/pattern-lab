@@ -113,7 +113,7 @@
  */
 .c-article__gallery {
   position: absolute;
-  top: 0;
+  top: -100%;
   left: -100%;
   background-color: $c-dark-bg;
   width: 100%;
@@ -123,14 +123,14 @@
   transform: translateX(0);
   transition: transform .2s ease .5s, opacity .2s ease;
 }
+
 // Gallery is active
 .gallery-is-active {
-
   .c-article__gallery {
     transform: translateX(100%);
     height: auto;
-    overflow: auto;
     opacity: 1;
+    top: 0;
     transition: opacity .2s ease;
   }
 
