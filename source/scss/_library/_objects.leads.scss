@@ -10,6 +10,10 @@
       padding-right: $space;
     }
   }
+
+  &-gallery__image img {
+    cursor: pointer;
+  }
 }
 
 /**

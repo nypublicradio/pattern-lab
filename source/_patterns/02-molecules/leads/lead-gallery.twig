@@ -2,7 +2,9 @@
 
   <div class="c-lead-gallery__top">
 
-    {% include '@molecules/article/figure-with-caption.twig' %}
+    <div class="c-lead-gallery__image js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">
+      {% include '@molecules/article/figure-with-caption.twig' %}
+    </div>
 
     <div class="c-lead-gallery__text">
       <h2 class="c-lead-gallery__title">{{ lead_slides_title }}</h2>
@@ -17,7 +19,7 @@
     {% for slide in lead_slides %}
       <a href="" class="c-lead-gallery__thumbs-thumb"><img src="{{ slide.src }}" alt="{{ slide.lead_slides_title }}" data-caption="{{ slide.lead_slides_dek }}" data-image="{{ slide.src_l }}"></a>
     {% endfor %}
-    <a href="" class="c-lead-gallery__thumbs-thumb c-lead-gallery__thumbs-thumb-text u-font--secondary-style u-font--xs js-toggle" data-toggled="c-main" data-prefix="gallery">View all <span>15</span></a>
+    <a href="" class="c-lead-gallery__thumbs-thumb c-lead-gallery__thumbs-thumb-text u-font--secondary-style u-font--xs js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">View all <span>15</span></a>
   </div>
 
 </div>

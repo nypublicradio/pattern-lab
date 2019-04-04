@@ -171,7 +171,7 @@
     e.preventDefault();
     $(window).scrollTop(0);
   });
-  $('.c-lead-gallery__thumbs-thumb-text').on('click', function(e) {
+  $('.js-gallery-toggle').on('click', function(e) {
     $('html, body').animate({ scrollTop: 0 });
   });
 
