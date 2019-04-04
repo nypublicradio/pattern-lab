@@ -206,7 +206,8 @@
 
   // Slide in headers
   (function() {
-    var distance = $('.c-article').offset().top,
+    var offset = $('.c-article').offset(),
+        distance = offset ? offset.top : 0,
         $window = $(window);
 
     $window.scroll(function() {
@@ -218,6 +219,23 @@
         $('.c-floating-header').removeClass('is-visible');
       }
     });
+  })();
+
+  // switch share tools orientation in article header
+  (function() {
+    const BREAKPOINT = '(min-width: 769px)'; // <= 768px
+    let toolsInHeader = document.querySelector('.c-article__header .c-share-tools');
+    if (!toolsInHeader) {
+      return;
+    }
+
+    const toggle = e => toolsInHeader.classList.toggle('c-share-tools--vertical', e.matches);
+    const mql = window.matchMedia(BREAKPOINT);
+
+    // when the screen crosses the breakpoint, toggle the vertical orientation based on whether
+    // the media query matches or not
+    mql.addListener(toggle);
+    toggle(mql);
   })();
 
 })(jQuery);

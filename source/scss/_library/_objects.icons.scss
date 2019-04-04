@@ -7,6 +7,11 @@
  */
 .o-icon {
   display: inline-block;
+
+  svg,
+  path {
+    fill: inherit;
+  }
 }
 
 .o-text-with-icon {

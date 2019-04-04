@@ -22,7 +22,10 @@
     %}
 
     <div class="c-side-menu__social">
-      {% include '@molecules/social/brand-social-links.twig' %}
+      {%
+        include '@molecules/social/share-tools.twig'
+        with { label: 'Follow Us' }
+      %}
     </div>
 
   </div>
