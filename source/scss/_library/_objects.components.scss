@@ -13,13 +13,13 @@
 
     &:before {
       content: "";
-      bottom: -22px;
-      right: 0;
+      bottom: -15px;
+      right: -5px;
       position: absolute;
-      width: 15px;
-      height: 15px;
-      background-color: $c-white;
-      transform: rotate(-45deg);
+      width: 0;
+      height: 0;
+      border: 12px solid transparent;
+      border-bottom-color: $c-white;
       display: none;
     }
   }
