@@ -43,7 +43,7 @@
   @include media('<=medium') {
     background: none;
     margin-bottom: $space-and-half;
-    margin-left: -13px; // Arbitrary number to adjust for left alignment - https://cl.ly/4286d2bc8efc
+    margin-left: -6px; // Arbitrary number to adjust for left alignment - https://cl.ly/4286d2bc8efc
   }
 
   @include media('>medium') {
