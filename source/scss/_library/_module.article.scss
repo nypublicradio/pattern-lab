@@ -25,7 +25,7 @@
   &__lead {
     position: relative;
 
-    figure.o-figure {
+    .o-figure {
       @include media('<=medium') {
         margin-left: -$space;
         margin-right: -$space;

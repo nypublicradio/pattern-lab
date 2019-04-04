@@ -10,10 +10,6 @@
       padding-right: $space;
     }
   }
-
-  &-gallery__image img {
-    cursor: pointer;
-  }
 }
 
 /**
@@ -26,8 +22,19 @@
     margin-bottom: $space;
   }
 
-  figcaption.o-caption {
+  .o-caption {
     padding: 0 $space;
+  }
+
+  &__image {
+
+    figure.o-figure {
+      margin: 0;
+    }
+
+    img {
+      cursor: pointer;
+    }
   }
 
   &__text {
