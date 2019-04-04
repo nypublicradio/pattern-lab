@@ -137,4 +137,15 @@
       }
     }
   }
+
+  &--vertical {
+    .c-share-tools__group {
+      flex-wrap: wrap;
+    }
+
+    .c-share-tools__link {
+      flex-basis: 100%;
+      margin: 4px 0;
+    }
+  }
 }
