@@ -206,7 +206,8 @@
 
   // Slide in headers
   (function() {
-    var distance = $('.c-article').offset().top,
+    var offset = $('.c-article').offset(),
+        distance = offset ? offset.top : 0,
         $window = $(window);
 
     $window.scroll(function() {
