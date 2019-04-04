@@ -1,0 +1,15 @@
+<figure class="o-figure {{ figure_classes }}">
+
+  {% block top_caption %}
+    {{ top_caption }}
+  {% endblock %}
+
+  <div class="o-figure__image">
+    {% include '@atoms/images/picture.twig' %}
+  </div>
+
+  {% block bottom_caption %}
+    {% include '@molecules/article/caption.twig' %}
+  {% endblock %}
+
+</figure>

@@ -18,12 +18,7 @@
 .c-lead-gallery {
 
   &__top {
-    background-color: $c-octonary;
     margin-bottom: $space;
-  }
-
-  .o-caption {
-    padding: 0 $space;
   }
 
   &__image {
@@ -37,8 +32,13 @@
     }
   }
 
+  .o-figure__image {
+    margin-bottom: 0;
+  }
+
   &__text {
-    padding: $space-half $space $space;
+    padding: $space;
+    background-color: $c-octonary;
   }
 
   &__title {
