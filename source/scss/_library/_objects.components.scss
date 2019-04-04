@@ -127,6 +127,10 @@
     margin: 0 4px;
 
 
+    @include media('>small') {
+      width: 40px;
+    }
+
     path {
       transition: all 0.25s ease-in-out;
     }
@@ -135,6 +139,31 @@
       path {
         fill: $c-primary;
       }
+    }
+  }
+
+  @include media('<=small') {
+    flex-wrap: wrap;
+
+    &__label {
+      flex-basis: 100%;
+      margin: 0 0 2px 0;
+
+      + .c-share-tools__group > .c-share-tools__link:first-of-type {
+        margin-left: -5px; // align first icon with label if present
+      }
+    }
+
+    &__link {
+      margin: 0;
+    }
+
+    &__group {
+      flex-wrap: wrap;
+    }
+
+    &__group > * + * {
+      margin: 0 0 0 $space-quarter;
     }
   }
 
