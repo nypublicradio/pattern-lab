@@ -269,13 +269,16 @@
     }
   }
 
-  .c-brand-social {
-    justify-content: center;
-  }
-
   &__branding {
     width: 180px;
     margin: $space-half auto $space-half;
+  }
+
+  &__social {
+    .c-share-tools {
+      fill: white;
+      justify-content: center;
+    }
   }
 
   &__secondary-nav {
@@ -355,34 +358,6 @@
 
     @include media('>medium') {
       transform: translateX(500px);
-    }
-  }
-}
-
-
-/**
- * Brand social links in the side menu
- */
-.c-brand-social {
-  display: flex;
-  align-items: center;
-
-  &__label {
-    margin-right: $space-half;
-  }
-
-  &__link {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    margin: 0 4px;
-
-    @include media('>small') {
-      width: 40px;
-    }
-
-    path {
-      fill: $c-white;
     }
   }
 }
