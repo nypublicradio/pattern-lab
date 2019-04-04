@@ -22,11 +22,6 @@
   }
 
   &__image {
-
-    figure.o-figure {
-      margin: 0;
-    }
-
     img {
       cursor: pointer;
     }
@@ -36,8 +31,14 @@
     margin-bottom: 0;
   }
 
+  .o-caption__text,
+  .o-credit {
+    display: block;
+    margin-bottom: $space-half;
+  }
+
   &__text {
-    padding: $space;
+    padding: $space-half $space $space;
     background-color: $c-octonary;
   }
 

@@ -3,10 +3,17 @@
   <div class="c-lead-gallery__top">
 
     <div class="c-lead-gallery__image js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">
-      {% include 'molecules-figure-top-caption' %}
+      {%
+        include 'molecules-figure'
+        with {
+          caption: false,
+          credit: false
+        }
+      %}
     </div>
 
     <div class="c-lead-gallery__text">
+      {% include 'molecules-credit' %}
       <h2 class="c-lead-gallery__title">{{ lead_slides_title }}</h2>
       <div class="c-lead-gallery__dek">
         <p>{{ lead_slides_dek }}</p>
