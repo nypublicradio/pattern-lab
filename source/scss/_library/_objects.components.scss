@@ -167,6 +167,14 @@
     }
   }
 
+
+  &:not(&--vertical) {
+    .c-share-tools__link {
+    }
+    .c-share-tools__group {
+    }
+  }
+
   &--vertical {
     .c-share-tools__group {
       flex-wrap: wrap;
