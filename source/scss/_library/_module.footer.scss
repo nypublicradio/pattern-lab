@@ -34,22 +34,8 @@
       justify-content: flex-start;
     }
 
-    .c-brand-social {
-
-      @include media('<=small') {
-        flex-wrap: wrap;
-        margin-bottom: -18px;
-
-        &__label {
-          width: 100%;
-          display: block;
-          margin-bottom: 2px;
-        }
-
-        &__link:first-of-type {
-          margin-left: -6px;
-        }
-      }
+    .c-share-tools {
+      fill: white;
     }
   }
 
