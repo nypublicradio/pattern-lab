@@ -4,9 +4,15 @@
     {{ top_caption }}
   {% endblock %}
 
-  <div class="o-figure__image">
+  <div class="o-figure__image {{ is_gallery ? 'js-toggle js-gallery-toggle' }}" {% if is_gallery %}data-toggled="c-main" data-prefix="gallery"{% endif %}>
     {% include '@atoms/images/picture.twig' %}
   </div>
+
+  {% block gallery_credit %}
+    {% if gallery_credit %}
+      {% include 'molecules-credit' %}
+    {% endif %}
+  {% endblock %}
 
   {% block bottom_caption %}
     {% include '@molecules/article/caption.twig' %}
