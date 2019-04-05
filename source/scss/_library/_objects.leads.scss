@@ -43,8 +43,13 @@
     font-size: $font-size-m;
   }
 
-  &__caption p {
-    font-size: $font-size-s;
+  &__caption {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: $font-size-s;
+    }
   }
 
   &__thumbs {
