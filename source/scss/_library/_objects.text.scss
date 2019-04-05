@@ -361,9 +361,6 @@
     font-size: 14px; // Not in type scale
     font-family: $ff-font--tertiary;
     line-height: 1.5;
-    @include media('>medium') {
-      //flex-wrap: nowrap;
-    }
   }
 
   &__text {
@@ -376,11 +373,16 @@
     transform: translateY(1px);
     float: left;
   }
+
+  .o-credit:not(:first-child) {
+    margin-left: $space-half;
+  }
 }
 .o-credit {
   color: $c-septenary;
   font-size: $font-size-xs;
   line-height: 1.8;
+  display: inline-block;
   @include font-secondary-style;
 }
 

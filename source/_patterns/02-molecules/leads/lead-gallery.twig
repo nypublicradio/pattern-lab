@@ -1,30 +1,32 @@
+{% set lead_caption %}
+  <h2 class="c-lead-gallery__title">{{ lead_slides_title }}</h2>
+  <div class="c-lead-gallery__caption">
+    <span class="o-icon o-icon--dashed-arrow u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span>
+    <p>{{ lead_slides_caption }}</p>
+  </div>
+{% endset %}
+
 <div class="c-lead c-lead-gallery {{ lead_classes }}">
 
   <div class="c-lead-gallery__top">
 
-    <div class="c-lead-gallery__image js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">
+    <div class="c-lead-gallery__image">
       {%
         include 'molecules-figure'
         with {
-          caption: false,
-          credit: false
+          gallery_credit: true,
+          caption: lead_caption,
+          caption_arrow: false,
+          figcaption_credit: false
         }
       %}
-    </div>
-
-    <div class="c-lead-gallery__text">
-      {% include 'molecules-credit' %}
-      <h2 class="c-lead-gallery__title">{{ lead_slides_title }}</h2>
-      <div class="c-lead-gallery__dek">
-        <p>{{ lead_slides_dek }}</p>
-      </div>
     </div>
 
   </div>
 
   <div class="c-lead-gallery__thumbs">
     {% for slide in lead_slides %}
-      <a href="" class="c-lead-gallery__thumbs-thumb"><img src="{{ slide.src }}" alt="{{ slide.lead_slides_title }}" data-caption="{{ slide.lead_slides_dek }}" data-image="{{ slide.src_l }}"></a>
+      <a href="" class="c-lead-gallery__thumbs-thumb"><img src="{{ slide.src }}" alt="{{ slide.lead_slides_title }}" data-caption="{{ slide.lead_slides_caption }}" data-image="{{ slide.src_l }}"></a>
     {% endfor %}
     <a href="" class="c-lead-gallery__thumbs-thumb c-lead-gallery__thumbs-thumb-text u-font--secondary-style u-font--xs js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">View all <span>15</span></a>
   </div>

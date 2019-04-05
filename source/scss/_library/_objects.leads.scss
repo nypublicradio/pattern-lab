@@ -27,23 +27,29 @@
     }
   }
 
-  .o-figure__image {
-    margin-bottom: 0;
-  }
-
-  .o-caption__text,
-  .o-credit {
-    display: block;
-    margin-bottom: $space-half;
-  }
-
-  &__text {
-    padding: $space-half $space $space;
+  .o-figure {
     background-color: $c-octonary;
+  }
+
+  .o-credit {
+    padding: 0 $space $space-half;
+    color: $c-gray--dark;
+  }
+  .o-caption {
+    padding: 0 $space $space;
   }
 
   &__title {
     font-size: $font-size-m;
+  }
+
+  &__caption {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: $font-size-s;
+    }
   }
 
   &__thumbs {

@@ -6,5 +6,6 @@
     "src_s": "https://picsum.photos/500/350?image=0",
     "src_m": "https://picsum.photos/800/400?image=5",
     "src_l": "https://picsum.photos/1100/700?image=15"
-  }
+  },
+  "figcaption_credit": true
 }
