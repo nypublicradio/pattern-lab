@@ -154,6 +154,8 @@
  * NYPR brand link roll navigation
  */
 .c-nypr-nav {
+  // ember compat
+  max-width: 380px;
 
   &__list {
     display: flex;
