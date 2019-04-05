@@ -4,5 +4,13 @@
 {% set has_progress_bar = true %}
 
 {% block header_type %}
-  {% include 'molecules-header-gallery-overlay-meta' %}
+  {%
+    include 'molecules-header-article-meta'
+    with {
+      headline: false,
+      has_donate: false,
+      has_search: false,
+      has_close: true
+    }
+  %}
 {% endblock %}

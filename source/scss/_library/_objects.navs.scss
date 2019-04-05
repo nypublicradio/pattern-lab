@@ -55,10 +55,7 @@
   left: 5px;
   display: flex;
   align-items: center;
-
-  @include media('>xsmall') {
-    left: $space;
-  }
+  left: $space;
 
   + * {
     margin-left: $space-double;

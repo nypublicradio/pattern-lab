@@ -423,11 +423,21 @@
 .o-back-to-link {
   font-size: $font-size-s-m;
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   margin-left: -$space-quarter;
 
+  &__text {
+    display: flex;
+  }
+
+  &__label {
+    margin-right: 6px;
+    white-space: nowrap;
+    border-bottom-color: transparent;
+  }
+
   .o-icon--prev-caret {
-    margin-right: $space-quarter;
+    margin: 6px $space-quarter 0 0;
     transform: rotate(90deg);
     min-width: 20px;
   }

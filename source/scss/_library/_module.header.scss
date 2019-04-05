@@ -19,7 +19,7 @@
 
   &__inner {
     background-color: $c-heading-bgcolor;
-    padding: $space-half $space-half $space-half $space-triple;
+    padding: $space-half $space-half $space-half $space-double;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,6 +61,9 @@
 
     @include media('<=small') {
       margin-right: 0;
+    }
+
+    @include media('<=medium') {
       font-size: 12px;
       padding-left: $space;
       padding-right: $space;
@@ -82,6 +85,11 @@
 
     @include media('>medium') {
       padding-left: $space-and-half;
+      padding-right: 50px;
+    }
+
+    @include media('>xlarge') {
+      padding-right: 100px;
     }
 
     @include media('<=large') {
@@ -93,18 +101,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 150px;
+    width: 170px;
 
     @include media('>xsmall') {
-      width: 190px;
-    }
-
-    @include media('>small') {
-      width: 200px;
+      margin-right: $space-half;
     }
 
     > span {
-      @include media('<=xsmall') {
+      @include media('<=small') {
         display: none;
       }
     }
@@ -115,15 +119,13 @@
 
     .c-share-tools__group {
       display: flex;
+      justify-content: space-between;
+      width: 100%;
       padding: 0 $space-half 0 $space-half;
-
-      @include media('>small') {
-        padding: 0 $space 0 $space-half;
-      }
     }
 
     .c-share-tools__link {
-      display: inline-flex;
+      margin: 0;
 
       @include media('<=small') {
         width: $space-double;
@@ -134,18 +136,32 @@
     }
   }
 
+  // Gallery and Article floating header specific styles
   &--article,
   &--gallery {
+
     .c-side-menu {
       height: 100vh !important; // For prototype purposes to override an inline style
     }
+
+    .c-main-header__branding path {
+      @include media('<=medium') {
+        display: none;
+      }
+    }
+
+    .c-main-header__share > span,
+    .c-search-toggle {
+      @include media('<=small') {
+        display: none;
+      }
+    }
   }
 
-  // Article header type
+  // Article overlay header type
   &--article {
-
     .c-main-header__branding {
-      @include media('<=medium') {
+      @include media('<=small') {
         display: none;
       }
     }
@@ -154,18 +170,6 @@
   // Gallery overlay header type
   &--gallery {
     display: none;
-
-    .c-main-header__inner {
-      padding-left: $space;
-
-      @include media('>small') {
-        padding-left: $space-and-half;
-      }
-    }
-
-    .c-main-header__left {
-      align-items: center;
-    }
   }
 }
 

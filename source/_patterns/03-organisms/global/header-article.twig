@@ -4,5 +4,11 @@
 {% set has_progress_bar = true %}
 
 {% block header_type %}
-  {% include 'molecules-header-article-meta' %}
+  {%
+    include 'molecules-header-article-meta'
+    with {
+      has_donate: true,
+      has_search: true
+    }
+  %}
 {% endblock %}

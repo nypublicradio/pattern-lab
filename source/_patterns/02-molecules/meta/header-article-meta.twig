@@ -9,7 +9,9 @@
     {% include '@atoms/images/gothamist-logo.twig' %}
   </div>
 
-  <h1 class="c-main-header__title u-truncate">{{ headline }}</h1>
+  {% if headline %}
+    <h1 class="c-main-header__title u-truncate">{{ headline }}</h1>
+  {% endif %}
 
 </div>
 
@@ -20,21 +22,37 @@
     {% include 'molecules-share-tools' %}
   </div>
 
-  {%
-    include '@atoms/buttons/button.twig'
-    with {
-      "button_text": "Donate",
-      "button_classes": "c-main-header__donate o-button--sm"
-    }
-  %}
-  <button class="c-search-toggle js-toggle" data-prefix="top-search" data-toggled="c-main-header__right" id="search-toggle" aria-expanded="false">
-    <span class="c-search-toggle__icon o-icon o-icon--search u-icon--xs">{% include '@atoms/icons/icon-search.twig' %}</span>
-  </button>
-  {%
-    include '@molecules/forms/search-entry.twig'
-    with {
-      "search_classes": "c-search--top",
-      "has_close": true
-    }
-  %}
+  {% if has_donate %}
+    {%
+      include '@atoms/buttons/button.twig'
+      with {
+        "button_text": "Donate",
+        "button_classes": "c-main-header__donate o-button--sm"
+      }
+    %}
+  {% endif %}
+
+  {% if has_search %}
+    <button class="c-search-toggle js-toggle" data-prefix="top-search" data-toggled="c-main-header__right" id="search-toggle" aria-expanded="false">
+      <span class="c-search-toggle__icon o-icon o-icon--search u-icon--xs">{% include '@atoms/icons/icon-search.twig' %}</span>
+    </button>
+    {%
+      include '@molecules/forms/search-entry.twig'
+      with {
+        "search_classes": "c-search--top",
+        "has_close": true
+      }
+    %}
+  {% endif %}
+
+  {% if has_close %}
+    <button type="button" class="u-padding--half js-toggle" data-remove="gallery-is-active">
+      {%
+        include '@atoms/icons/icon-close.twig'
+        with {
+          icon_classes: "c-main-header__close"
+        }
+      %}
+    </button>
+  {% endif %}
 </div>
