@@ -37,6 +37,12 @@
   }
   .o-caption {
     padding: 0 $space $space;
+
+    // ember compat
+    > .o-credit {
+      padding: 0;
+      display: block;
+    }
   }
 
   &__title {
