@@ -59,3 +59,17 @@
     }
   }
 }
+
+.annotation-tip {
+  color: $c-white;
+  background-color: $c-primary;
+  padding: 3px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}

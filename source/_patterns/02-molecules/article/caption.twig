@@ -1,3 +1,22 @@
-<{{ is_figure ? "figcaption" : "div" }} class="o-caption {{ caption_classes }}">
-  <p>{% if caption %}<span class="o-icon o-icon--dashed-arrow u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span> <span class="o-caption__text">{{ caption }}</span>{% endif %} {% if credit %}<span class="o-credit">{{ credit }}</span>{% endif %}</p>
-</{{ is_figure ? "figcaption" : "div" }}>
+<figcaption class="o-caption {{ caption_classes }}">
+
+  {% block caption %}
+    {% if caption %}
+      {% if caption_arrow %}
+        <span class="o-icon o-icon--dashed-arrow u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span>
+      {% endif %}
+
+      <div class="o-caption__text">
+        <span>{{ caption }}</span>
+
+        {% block figcaption_credit %}
+          {% if figcaption_credit %}
+            {% include 'molecules-credit' %}
+          {% endif %}
+        {% endblock %}
+
+      </div>
+    {% endif %}
+  {% endblock %}
+
+</figcaption>

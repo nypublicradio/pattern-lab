@@ -159,7 +159,7 @@
           $thisLargeImg = $thisImg.data('image');
 
       // Swap content
-      $('.c-lead__image img').attr('src', $thisLargeImg)
+      $('.c-lead-gallery__top img').attr('src', $thisLargeImg)
       $('.c-lead-gallery__title').text($thisTitle);
       $('.c-lead-gallery__dek p').text($thisCaption);
 
@@ -171,7 +171,7 @@
     e.preventDefault();
     $(window).scrollTop(0);
   });
-  $('.c-lead-gallery__thumbs-thumb-text').on('click', function(e) {
+  $('.js-gallery-toggle').on('click', function(e) {
     $('html, body').animate({ scrollTop: 0 });
   });
 

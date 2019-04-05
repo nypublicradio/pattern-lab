@@ -73,10 +73,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
   }
 
   .c-share-tools__link {
-    width: 45%;
+    width: 40%;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: $space-half;
+    }
   }
 }
 

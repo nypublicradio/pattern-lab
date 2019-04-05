@@ -25,7 +25,7 @@
   &__lead {
     position: relative;
 
-    figure.o-figure {
+    .o-figure {
       @include media('<=medium') {
         margin-left: -$space;
         margin-right: -$space;
@@ -78,6 +78,7 @@
 
     a {
       font-size: $font-size-s-m;
+      line-height: 1.2;
     }
 
     @include media('>xlarge') {

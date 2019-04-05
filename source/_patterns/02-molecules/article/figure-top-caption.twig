@@ -1,0 +1,12 @@
+{% extends "figure.twig" %}
+{% set figure_classes = 'o-figure--with-top-caption' %}
+
+{% block top_caption %}
+  {%
+    include 'molecules-caption'
+    with {
+      credit: false
+    }
+  %}
+{% endblock %}
+{% block bottom_caption %}{% endblock %}

@@ -3,6 +3,13 @@
 \*------------------------------------*/
 
 .c-lead {
+
+  .o-caption {
+    @include media('<=medium') {
+      padding-left: $space;
+      padding-right: $space;
+    }
+  }
 }
 
 /**
@@ -11,20 +18,38 @@
 .c-lead-gallery {
 
   &__top {
-    background-color: $c-octonary;
     margin-bottom: $space;
   }
 
-  figcaption.o-caption {
-    padding: 0 $space;
+  &__image {
+    img {
+      cursor: pointer;
+    }
   }
 
-  &__text {
-    padding: $space-half $space $space;
+  .o-figure {
+    background-color: $c-octonary;
+  }
+
+  .o-credit {
+    padding: 0 $space $space-half;
+    color: $c-gray--dark;
+  }
+  .o-caption {
+    padding: 0 $space $space;
   }
 
   &__title {
     font-size: $font-size-m;
+  }
+
+  &__caption {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: $font-size-s;
+    }
   }
 
   &__thumbs {
