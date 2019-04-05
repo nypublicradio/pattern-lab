@@ -37,7 +37,7 @@
     top: $space-double;
     padding: $space;
     background-color: $c-white;
-    z-index: 10;
+    z-index: $z-index-toggle-box-content;
   }
 
   .c-toggle-box__label {
@@ -100,7 +100,7 @@
   border: none;
   background-color: $c-gray--light;
   color: $c-quaternary;
-  z-index: 5;
+  z-index: $z-index-progress-bar;
 
   &::-webkit-progress-bar {
     background-color: $c-gray--light;

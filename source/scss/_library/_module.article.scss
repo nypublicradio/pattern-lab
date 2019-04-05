@@ -117,7 +117,7 @@
   left: -100%;
   background-color: $c-dark-bg;
   width: 100%;
-  z-index: 100;
+  z-index: $z-index-article-gallery;
   height: 0;
   opacity: 0;
   transform: translateX(0);
