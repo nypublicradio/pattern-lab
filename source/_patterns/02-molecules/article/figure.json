@@ -4,5 +4,6 @@
     "alt": "Alt Text",
     "src_s": "https://picsum.photos/550/350?image=90"
   },
-  "caption": "Lorem ipsum dolor sit amet."
+  "caption": "Lorem ipsum dolor sit amet.",
+  "figcaption_credit": true
 }

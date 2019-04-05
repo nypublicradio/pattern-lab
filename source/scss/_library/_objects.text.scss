@@ -363,8 +363,10 @@
     line-height: 1.5;
   }
 
+  // ember compat
   &__text {
-    margin-right: $space-half;
+    display: flex;
+    align-items: center;
   }
 
   .o-icon--dashed-arrow {

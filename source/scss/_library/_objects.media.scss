@@ -13,4 +13,8 @@
   img {
     width: 100%;
   }
+
+  .c-lead-gallery & {
+    margin-bottom: $space;
+  }
 }
