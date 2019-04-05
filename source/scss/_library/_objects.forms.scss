@@ -111,6 +111,31 @@
   }
 }
 
+// top search is open
+// for ember compat
+.c-search--top.is-open {
+  display: flex;
+  z-index: $z-index-search-top-show;
+  transition: z-index 0s;
+
+  @include media('<=small') {
+    display: none;
+  }
+
+  .c-search__close {
+    transform: translateY(-50%);
+    transition: transform .15s ease-out .3s;
+  }
+  .c-search__input {
+    transform: translateX(0);
+    transition: transform .15s ease-out .1s;
+  }
+  .c-search__button {
+    opacity: 1;
+    transition: opacity .1s ease-out;
+  }
+}
+
 // Side menu search
 .c-search--side {
   height: 60px;
