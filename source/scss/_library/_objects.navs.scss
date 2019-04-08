@@ -107,12 +107,15 @@
 
     &:after {
       content: "";
+      display: block;
       width: 2px;
       height: 16.5px;
       background-color: $c-white;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 100%;
     }
 
     &:last-child:after {
