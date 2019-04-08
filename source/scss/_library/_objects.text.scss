@@ -428,16 +428,6 @@
   align-items: flex-start;
   margin-left: -$space-quarter;
 
-  &__text {
-    display: flex;
-  }
-
-  &__label {
-    margin-right: 6px;
-    white-space: nowrap;
-    border-bottom-color: transparent;
-  }
-
   .o-icon--prev-caret {
     margin: 6px $space-quarter 0 0;
     transform: rotate(90deg);
