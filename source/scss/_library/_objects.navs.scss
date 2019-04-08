@@ -103,6 +103,7 @@
   .c-primary-nav__item {
     display: inline-block;
     position: relative;
+    margin: 0; // ember lab compat
 
     &:after {
       content: "";
@@ -149,6 +150,14 @@
   }
 }
 
+.c-primary-nav {
+  &.c-primary-nav--top,
+  &.c-primary-nav--side {
+    ul {
+      margin: 0;
+    }
+  }
+}
 
 /**
  * NYPR brand link roll navigation
