@@ -48,7 +48,7 @@
 }
 
 .c-menu-toggle {
-  z-index: 20;
+  z-index: $z-index-menu-toggle;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -154,6 +154,8 @@
  * NYPR brand link roll navigation
  */
 .c-nypr-nav {
+  // ember compat
+  max-width: 380px;
 
   &__list {
     display: flex;
@@ -192,7 +194,7 @@
 
   .o-breadcrumb {
     position: relative;
-    z-index: 5;
+    z-index: $z-index-breadcrumb;
 
     + * {
       margin-left: $space;

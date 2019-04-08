@@ -5,11 +5,11 @@
 .c-main-header {
   text-align: center;
   position: relative;
-  z-index: 10000; // High enough to cover ads and any other overlay
+  z-index: $z-index-header;
 
   &__ad-unit {
     position: relative;
-    z-index: 100;
+    z-index: $z-index-header-ad;
     background-color: $c-dark-bg;
 
     img {
@@ -37,6 +37,8 @@
   &__branding {
     flex-shrink: 0; // prevent from shrinking in flex container
     width: 120px;
+
+    fill: white;
 
     @include media('>xsmall') {
       width: 150px;
@@ -180,7 +182,7 @@
   position: fixed;
   top: -$heading-height - $space-half;
   width: 100%;
-  z-index: 100000;
+  z-index: $z-index-floating-header;
   transform: translateY(0);
   transition: transform .25s $hard-ease-in;
 
@@ -218,7 +220,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $c-white;
-  z-index: 5;
+  z-index: $z-index-content-overlay;
   left: -100%;
   top: 0;
   opacity: 0;
@@ -226,7 +228,7 @@
   transition: opacity .3s ease-out, transform .3s ease-out .4s;
 }
 // side menu is open
-.js-this.side-menu-is-active {
+.side-menu-is-active {
   .c-content-overlay {
     opacity: .5;
     transform: translateX(100vw);
@@ -244,7 +246,7 @@
   background-color: $c-heading-bgcolor;
   left: -100%;
   top: 0;
-  z-index: 10;
+  z-index: $z-index-side-menu;
   padding-bottom: $space-double;
   transition: transform .3s $hard-ease-in;
   overflow: auto;
@@ -276,6 +278,8 @@
   &__branding {
     width: 180px;
     margin: $space-half auto $space-half;
+
+    fill: white;
   }
 
   &__social {
@@ -351,7 +355,7 @@
 }
 
 // Side menu is active
-.js-this.side-menu-is-active {
+.side-menu-is-active {
 
   .c-side-menu {
     transform: translateX(100%);

@@ -3,6 +3,7 @@
  *
  * SETTINGS
  * Variables............Globally-available variables and config.
+ * Z-Index..............Semantic z-index manifest
  *
  * TOOLS
  * Mixins...............Useful mixins.
@@ -65,6 +66,7 @@
 \*------------------------------------*/
 //@import "fonts.css";
 //@import "settings.variables";
+@import "settings.z-index";
 
 /*------------------------------------*\
     $TOOLS

@@ -22,7 +22,7 @@
   max-width: ($col-width * 14) + ($gutter * 12) + px;
   margin: 70px 0 0 auto;
   position: fixed;
-  z-index: 1000;
+  z-index: $z-index-donate-tout;
   right: -#{($col-width * 15) + ($gutter * 13) + px};
   bottom: 50px;
   transform: translateX(0);
