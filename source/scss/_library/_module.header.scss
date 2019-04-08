@@ -6,6 +6,7 @@
   text-align: center;
   position: relative;
   z-index: $z-index-header;
+  fill: white;
 
   &__ad-unit {
     position: relative;
@@ -37,8 +38,6 @@
   &__branding {
     flex-shrink: 0; // prevent from shrinking in flex container
     width: 120px;
-
-    fill: white;
 
     @include media('>xsmall') {
       width: 150px;
@@ -278,8 +277,6 @@
   &__branding {
     width: 180px;
     margin: $space-half auto $space-half;
-
-    fill: white;
   }
 
   &__social {
