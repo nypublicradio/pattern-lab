@@ -1,0 +1,8 @@
+{% extends "block-list-group.twig" %}
+{% set block_group_classes = "c-block-group--with-ad" %}
+
+{% block feature_first_block %}{% endblock %}
+{% block feature_last_block %}{% endblock %}
+{% block ad_unit %}
+  {% include '@molecules/ad-units/300x600-flex.twig' %}
+{% endblock %}

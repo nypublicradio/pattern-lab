@@ -1,0 +1,27 @@
+<section class="c-block-group o-section {{ block_group_classes }}">
+
+  <div class="c-block-group__col1 u-spacing--and-half">
+
+    {% block feature_first_block %}
+      {% include '@molecules/blocks/block.twig' %}
+    {% endblock %}
+
+    {% block link_list %}
+      {% include '@molecules/lists/block-list.twig' %}
+    {% endblock %}
+
+    {% block feature_last_block %}
+      {% include '@molecules/blocks/block.twig' %}
+    {% endblock %}
+
+  </div>
+
+  <div class="c-block-group__col2 u-spacing--and-half">
+
+    {% block ad_unit %}
+      {% include '@molecules/ad-units/300x250.twig' %}
+    {% endblock %}
+
+  </div>
+
+</section>

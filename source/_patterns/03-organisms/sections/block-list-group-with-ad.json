@@ -1,0 +1,88 @@
+{
+  "blocks": [
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=320"
+        }
+      },
+      "kicker": "News",
+      "block_title": "The Best Of Gothamist 2018",
+      "block_meta": {
+         "author": "Gothamist"
+      }
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=310"
+        }
+      },
+      "kicker": "Arts & Ent",
+      "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+      "block_meta": {
+         "author": "Ross Barkan"
+      }
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=325"
+        }
+      },
+      "kicker": "Food",
+      "block_title": "The 14 Best New Burgers In NYC",
+      "block_meta": {
+         "author": "Scott Lynch"
+      }
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=360"
+        }
+      },
+      "kicker": "Lifestyle",
+      "block_title": "The 13 Best Avocado Dishes In NYC",
+      "block_meta": {
+         "author": "Scott Lynch"
+      }
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=310"
+        }
+      },
+      "kicker": "Arts & Ent",
+      "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+      "block_meta": {
+         "author": "Ross Barkan"
+      }
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=325"
+        }
+      },
+      "kicker": "Food",
+      "block_title": "The 14 Best New Burgers In NYC",
+      "block_meta": {
+         "author": "Scott Lynch"
+      }
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/100/100?image=360"
+        }
+      },
+      "kicker": "Lifestyle",
+      "block_title": "The 13 Best Avocado Dishes In NYC",
+      "block_meta": {
+         "author": "Scott Lynch"
+      }
+    }
+  ]
+}

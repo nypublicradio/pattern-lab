@@ -38,3 +38,35 @@
     }
   }
 }
+
+
+/**
+ * Block group
+ */
+.c-block-group {
+  padding: $space-double 0;
+
+  @include media('>medium') {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+
+  // Two columns with ad unit
+  .c-block-group__col1 {
+    margin-bottom: $space-triple;
+    @include media('>medium') {
+      padding-right: $gutter + px;
+      width: calc((100% - 300px) - #{$gutter}px);
+    }
+  }
+
+  .c-block-group__col2 {
+    @include media('>medium') {
+      width: 300px;
+      top: 0;
+      position: sticky;
+    }
+  }
+}

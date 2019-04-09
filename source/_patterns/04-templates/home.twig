@@ -1,0 +1,20 @@
+{% extends "main.twig" %}
+{% block main %}
+  <div class="u-section-spacing l-container l-wrap">
+    <div class="l-container l-container--14col">
+      {% block block_section_1 %}
+        {% include '@organisms/sections/block-list-group-with-ad.twig' with block_section_1 %}
+      {% endblock %}
+    </div>
+    <div class="l-container l-container--14col">
+      {% block block_section_2 %}
+        {% include '@organisms/sections/block-list-group-with-footer-block-and-ad.twig' with block_section_2 %}
+      {% endblock %}
+    </div>
+    <div class="l-container l-container--14col">
+      {% block block_section_4 %}
+        {% include '@organisms/sections/block-list-group-with-300x600-ad.twig' with block_section_4 %}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}

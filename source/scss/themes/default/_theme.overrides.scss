@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    $THEME OVERRIDES
+\*------------------------------------*/
+
+.c-main-header {
+  // Header with full stacked logo
+  &--emphasis {
+
+    .c-main-header__branding {
+      width: 135px;
+      position: relative;
+      bottom: -$space-half;
+      align-self: bottom;
+      z-index: $z-index-heading-logo;
+
+      @include media('>xlarge') {
+        left: $col-width + $gutter + px;
+      }
+    }
+
+    .gothamist-buildings {
+      fill: $c-white;
+    }
+  }
+}
