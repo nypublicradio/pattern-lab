@@ -184,6 +184,7 @@
 .c-floating-header {
   position: fixed;
   top: -$heading-height - $space-half;
+  left: 0;
   width: 100%;
   z-index: $z-index-floating-header;
   transform: translateY(0);
