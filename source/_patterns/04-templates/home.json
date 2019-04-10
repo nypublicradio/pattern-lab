@@ -96,6 +96,83 @@
       {
         "block_media": {
           "img": {
+            "src": "https://picsum.photos/100/100?image=520"
+          }
+        },
+        "kicker": "News",
+        "block_title": "NY Nurses Say A Strike Is Needed To Keep Patients Safe",
+        "block_meta": {
+           "author": "Gothamist"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=610"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_meta": {
+           "author": "Ross Barkan"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=525"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
+        "block_meta": {
+           "author": "Scott Lynch"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=860"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
+        "block_meta": {
+           "author": "Scott Lynch"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=370"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_meta": {
+           "author": "Ross Barkan"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=425"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "Vessel Changes Terms & Conditions After Extreme Photo Policy Controversy, Lawyers Still Find It 'Troubling'",
+        "block_meta": {
+           "author": "Scott Lynch"
+        }
+      }
+    ]
+  },
+
+  "block_section_3": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
             "src": "https://picsum.photos/100/100?image=325"
           }
         },
@@ -168,5 +245,133 @@
     ]
   },
 
-  "block_section_4": {}
+  "block_section_4": {},
+
+  "featured_blocks_primary": {
+    "featured_list": {
+      "blocks": [
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=200"
+            }
+          },
+          "kicker": "Lifestyle",
+          "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
+          "block_meta": {
+             "author": "Scott Lynch"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=201"
+            }
+          },
+          "kicker": "Arts & Entertainment",
+          "block_title": "The 13 Best Avocado Dishes In NYC",
+          "block_meta": {
+             "author": "Ross Barkan"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=202"
+            }
+          },
+          "kicker": "Food",
+          "block_title": "NYPD: Man Bit Off Bouncer's Finger Because Bar Closed",
+          "block_meta": {
+             "author": "Scott Lynch"
+          }
+        }
+      ]
+    },
+
+    "featured_block": {
+      "has_picture": true,
+      "block_media": {
+        "break_m": "500",
+        "break_l": false,
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "https://picsum.photos/500/400?image=105",
+          "src_m": "https://picsum.photos/700/460?image=106",
+          "src_l": false
+        }
+      },
+      "block_object": {
+        "kicker": "Food"
+      },
+      "block_title": "LES And Chinatown Community Groups Sue City Over Two Bridges",
+      "block_dek": "A coalition of community groups are suing the city to stop a multi-billion dollar mega development of four high-rise towers that some locals fear will greatly exacerbate gentrification.",
+      "block_meta": {
+        "author": "Paula Mejia"
+      }
+    }
+  },
+
+  "featured_blocks_secondary": {
+    "featured_list": {
+      "blocks": [
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=102"
+            }
+          },
+          "kicker": false,
+          "block_title": "Push For Stronger NY Rent Laws Goes Up Against Powerful Landlord Lobby",
+          "block_meta": {
+             "author": "Scott Lynch"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=101"
+            }
+          },
+          "kicker": false,
+          "block_title": "Should The East Village Michael Jackson Mural Be Taken Down?",
+          "block_meta": {
+             "author": "Ross Barkan"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=100"
+            }
+          },
+          "kicker": false,
+          "block_title": "Sketchy Interviews: New Yorker Cartoonist Mort Gerberg",
+          "block_meta": {
+             "author": "Scott Lynch"
+          }
+        }
+      ]
+    },
+
+    "featured_block": {
+      "has_picture": true,
+      "block_media": {
+        "break_m": "500",
+        "break_l": false,
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "https://picsum.photos/500/400?image=111",
+          "src_m": "https://picsum.photos/700/460?image=110",
+          "src_l": false
+        }
+      },
+      "kicker": false,
+      "block_title": "British Prime Minister Theresa May Faces New Pressure To Quit As Brexit Deadline Looms",
+      "block_dek": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+      "block_meta": {
+        "author": "Paula Mejia"
+      }
+    }
+  }
 }

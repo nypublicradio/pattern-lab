@@ -1,0 +1,25 @@
+<section class="c-featured-blocks o-section {{ featured_block_classes }}">
+
+  {% block featured_heading %}
+    <h2 class="c-featured-blocks__heading">Featured</h2>
+  {% endblock %}
+
+  <div class="c-featured-blocks__inner">
+    <div class="c-featured-blocks__col1 u-spacing--and-half">
+      {% block featured_block %}
+        {% include '@molecules/blocks/block.twig' with featured_block %}
+      {% endblock %}
+    </div>
+
+    <div class="c-featured-blocks__col2 u-spacing--double">
+      {% block featured_list %}
+        {% include '@molecules/lists/block-list.twig' with featured_list %}
+      {% endblock %}
+
+      {% block featured_cta %}
+        {{ featured_cta }}
+      {% endblock %}
+    </div>
+  </div>
+
+</section>

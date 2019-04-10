@@ -1,0 +1,12 @@
+{% extends "featured-block-list.twig" %}
+{% set featured_block_classes = "c-featured-blocks--secondary" %}
+
+{% block featured_cta %}
+  {%
+    include '@atoms/buttons/button.twig'
+    with {
+      "button_text": "Read More on WNYC",
+      "button_classes": "c-featured-blocks__cta o-button--c-quaternary u-full-width"
+    }
+  %}
+{% endblock %}

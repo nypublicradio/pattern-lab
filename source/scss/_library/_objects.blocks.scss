@@ -7,6 +7,10 @@
  */
 .c-block {
 
+  &__media {
+    margin-bottom: $space-half;
+  }
+
   &__title {
     font-weight: bold;
     font-size: $font-size-m;
@@ -37,6 +41,7 @@
     min-width: 100px;
     max-width: 100px;
     overflow: hidden;
+    margin-bottom: 0;
 
     img {
       height: 100px;

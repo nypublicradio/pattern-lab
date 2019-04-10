@@ -1,0 +1,8 @@
+{% extends "block-list-group.twig" %}
+{% set block_group_classes = "c-block-group--with-ad c-block-group--single-col" %}
+
+{% block feature_first_block %}
+  {% include '@molecules/blocks/block.twig' with feature_first_block %}
+{% endblock %}
+{% block feature_last_block %}{% endblock %}
+{% block ad_unit %}{% endblock %}

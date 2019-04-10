@@ -3,7 +3,13 @@
   {% block block_media %}
     {% if block_media %}
       <div class="c-block__media">
-        <a href="">{% include '@atoms/images/image.twig' with block_media %}</a>
+        <a href="">
+          {% if has_picture %}
+            {% include '@atoms/images/picture.twig' with block_media %}
+          {% else %}
+            {% include '@atoms/images/image.twig' with block_media %}
+          {% endif %}
+        </a>
       </div>
     {% endif %}
   {% endblock %}
@@ -11,9 +17,11 @@
   {% block block_object %}
     <div class="c-block__object u-spacing--half">
 
-      <div class="c-block__eyebrow">
-        {% include '@atoms/text/kicker.twig' %}
-      </div>
+      {% if kicker %}
+        <div class="c-block__eyebrow">
+          {% include '@atoms/text/kicker.twig' %}
+        </div>
+      {% endif %}
 
       <h3 class="c-block__title"><a href="">{{ block_title }}</a></h3>
 
@@ -24,9 +32,11 @@
           </div>
         {% endif %}
 
-        {% if block_meta %}
-          {% include '@molecules/meta/block-meta.twig' with block_meta %}
-        {% endif %}
+        {% block block_meta %}
+          {% if block_meta %}
+            {% include '@molecules/meta/block-meta.twig' with block_meta %}
+          {% endif %}
+        {% endblock %}
       </div>
 
     </div>
