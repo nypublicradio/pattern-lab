@@ -6,8 +6,11 @@
   text-align: center;
   position: relative;
   z-index: $z-index-header;
-  fill: white;
   font-family: $ff-font--primary;
+
+  svg {
+    fill: white;
+  }
 
   &__ad-unit {
     position: relative;
