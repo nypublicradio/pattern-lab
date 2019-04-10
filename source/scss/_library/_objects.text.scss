@@ -317,6 +317,10 @@
   background-repeat: no-repeat;
   padding: 0 $space-half;
   box-decoration-break: clone;
+
+  &--senary {
+    background-image: linear-gradient(rgba($c-senary, .2), rgba($c-senary, .2));
+  }
 }
 
 

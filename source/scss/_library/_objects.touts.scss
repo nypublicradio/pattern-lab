@@ -150,3 +150,46 @@
     margin-right: $space-and-half;
   }
 }
+
+
+/**
+ * Newsletter signup tout
+ */
+.c-newsletter-tout {
+  padding: $space-triple $space-quad;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 11px;
+    border: 3px solid $c-dark-bg;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__media {
+    margin-right: $space-and-half;
+  }
+
+  .c-newsletter-form__field-group {
+    max-width: 424px;
+  }
+
+  .c-newsletter-form__terms {
+    padding-left: $space-double;
+
+    .o-checkbox {
+      background-color: $c-primary;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+}

@@ -235,8 +235,11 @@
   &__button {
     width: 60px;
     height: 60px;
-    background-color: $c-dark-bg;
     padding: 0;
+  }
+
+  .c-newsletter-form__button {
+    background-color: $c-dark-bg;
   }
 
   &__submit-icon {
