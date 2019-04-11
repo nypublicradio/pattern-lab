@@ -232,7 +232,7 @@
   transition: opacity .3s ease-out, transform .3s ease-out .4s;
 }
 // side menu is open
-.side-menu-is-active {
+.c-main-header.side-menu-is-active {
   .c-content-overlay {
     opacity: .5;
     transform: translateX(100vw);
@@ -357,7 +357,7 @@
 }
 
 // Side menu is active
-.side-menu-is-active {
+.c-main-header.side-menu-is-active {
 
   .c-side-menu {
     transform: translateX(100%);
