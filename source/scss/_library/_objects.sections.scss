@@ -133,8 +133,8 @@
   }
   &__col2 {
     @include media('>medium') {
-      width: 360px;
-      margin-right: $space;
+      width: 380px;
+      margin-right: $space-double;
     }
   }
 
@@ -146,6 +146,7 @@
       .c-block__title {
         @include media('>medium') {
           font-size: $font-size-xl;
+          line-height: 1.15;
         }
       }
     }

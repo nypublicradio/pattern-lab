@@ -1,5 +1,9 @@
 {
   "featured_block_classes": "c-featured-blocks--primary",
+  "block_meta": {
+    "author": false,
+    "timestamp": "2 hours ago"
+  },
   "featured_list": {
     "blocks": [
       {
@@ -9,10 +13,7 @@
           }
         },
         "kicker": "Lifestyle",
-        "block_title": "The 13 Best Avocado Dishes In NYC",
-        "block_meta": {
-           "author": "Scott Lynch"
-        }
+        "block_title": "The 13 Best Avocado Dishes In NYC"
       },
       {
         "block_media": {
@@ -21,10 +22,7 @@
           }
         },
         "kicker": "Arts & Ent",
-        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
-        "block_meta": {
-           "author": "Ross Barkan"
-        }
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy"
       },
       {
         "block_media": {
@@ -33,10 +31,7 @@
           }
         },
         "kicker": "Food",
-        "block_title": "The 14 Best New Burgers In NYC",
-        "block_meta": {
-           "author": "Scott Lynch"
-        }
+        "block_title": "The 14 Best New Burgers In NYC"
       }
     ]
   },
@@ -57,9 +52,6 @@
       "kicker": "Food"
     },
     "block_title": "A Brief History Of The White Horse Tavern, NYC's Legendary Literary Watering Hole",
-    "block_dek": "The building housing the White Horse Tavern, a historic, no-fuss dive located at 567 Hudson Street in Greenwich Village.",
-    "block_meta": {
-      "author": "Paula Mejia"
-    }
+    "block_dek": "The building housing the White Horse Tavern, a historic, no-fuss dive located at 567 Hudson Street in Greenwich Village."
   }
 }

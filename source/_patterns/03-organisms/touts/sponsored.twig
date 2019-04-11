@@ -5,7 +5,7 @@
   {% endblock %}
 
   {% block sponsored_block %}
-    {% include '@molecules/blocks/block.twig' %}
+    {% include '@molecules/blocks/block.twig' with { "comment_count": false } %}
   {% endblock %}
 
 </div>

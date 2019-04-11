@@ -10,7 +10,7 @@
       width: 135px;
       position: relative;
       bottom: -$space-half;
-      align-self: bottom;
+      align-self: flex-bottom;
       z-index: $z-index-heading-logo;
 
       @include media('>xlarge') {
@@ -18,6 +18,9 @@
       }
     }
 
+    .gothamist-letters {
+      fill: $c-black;
+    }
     .gothamist-buildings {
       fill: $c-white;
     }
