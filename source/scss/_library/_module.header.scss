@@ -6,6 +6,11 @@
   text-align: center;
   position: relative;
   z-index: $z-index-header;
+  font-family: $ff-font--primary;
+
+  svg {
+    fill: white;
+  }
 
   &__ad-unit {
     position: relative;
@@ -37,8 +42,6 @@
   &__branding {
     flex-shrink: 0; // prevent from shrinking in flex container
     width: 120px;
-
-    fill: white;
 
     @include media('>xsmall') {
       width: 150px;
@@ -181,6 +184,7 @@
 .c-floating-header {
   position: fixed;
   top: -$heading-height - $space-half;
+  left: 0;
   width: 100%;
   z-index: $z-index-floating-header;
   transform: translateY(0);
@@ -278,8 +282,6 @@
   &__branding {
     width: 180px;
     margin: $space-half auto $space-half;
-
-    fill: white;
   }
 
   &__social {
