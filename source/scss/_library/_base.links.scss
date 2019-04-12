@@ -29,6 +29,11 @@ a {
     border-bottom-color: $c-body-color;
   }
 
+  &--primary {
+    color: $c-primary;
+    border-bottom-color: $c-primary;
+  }
+
   &--quaternary {
     color: $c-quaternary;
     border-bottom-color: $c-quaternary;

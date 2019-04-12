@@ -3,15 +3,22 @@
 \*------------------------------------*/
 
 .c-main-header {
+
   // Header with full stacked logo
   &--emphasis {
 
     .c-main-header__branding {
-      width: 135px;
+      width: 110px;
       position: relative;
-      bottom: -$space-half;
+      bottom: -$space;
       align-self: flex-bottom;
       z-index: $z-index-heading-logo;
+      left: $space-half;
+
+      @include media('>medium') {
+        width: 135px;
+        bottom: -$space-half;
+      }
 
       @include media('>xlarge') {
         left: $col-width + $gutter + px;
@@ -24,5 +31,14 @@
     .gothamist-buildings {
       fill: $c-white;
     }
+  }
+}
+
+.c-main-footer {
+  .gothamist-letters {
+    fill: $c-white;
+  }
+  .gothamist-buildings {
+    fill: $c-dark-bg;
   }
 }

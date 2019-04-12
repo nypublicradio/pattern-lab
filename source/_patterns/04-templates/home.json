@@ -241,6 +241,7 @@
             "src": "https://picsum.photos/100/100?image=330"
           }
         },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Arts & Ent",
         "block_title": "Fairway's Cashierless App Can't Trust New Yorkers Because Of 'Diversity,' Fired Rep Says",
         "block_meta": {
@@ -283,6 +284,7 @@
             "src": "https://picsum.photos/100/100?image=161"
           }
         },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Arts & Entertainment",
         "block_title": "Ask A Native New Yorker: Why Do New Yorkers Complain So Much?",
         "block_meta": {
@@ -307,6 +309,7 @@
             "src": "https://picsum.photos/100/100?image=164"
           }
         },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Lifestyle",
         "block_title": "Meet The Brooklyn Man Who Has A Mug Shot Museum In His Apartment",
         "block_meta": {
@@ -319,6 +322,7 @@
             "src": "https://picsum.photos/100/100?image=165"
           }
         },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Arts & Ent",
         "block_title": "Meet The Brooklyn Man Who Has A Mug Shot Museum In His Apartment",
         "comment_count": "33",
@@ -378,7 +382,7 @@
               "src": "https://picsum.photos/100/100?image=202"
             }
           },
-          "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
           "kicker": "Food",
           "comment_count": "15",
           "block_title": "NYPD: Man Bit Off Bouncer's Finger Because Bar Closed",
@@ -397,7 +401,7 @@
         "break_l": false,
         "img": {
           "alt": "Alt Text",
-          "src_s": "https://picsum.photos/500/400?image=105",
+          "src_s": "https://picsum.photos/500/400?image=109",
           "src_m": "https://picsum.photos/700/460?image=106",
           "src_l": false
         }
@@ -424,6 +428,7 @@
               "src": "https://picsum.photos/100/100?image=102"
             }
           },
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
           "kicker": false,
           "block_title": "Push For Stronger NY Rent Laws Goes Up Against Powerful Landlord Lobby",
           "block_meta": {
@@ -436,6 +441,7 @@
               "src": "https://picsum.photos/100/100?image=101"
             }
           },
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
           "kicker": false,
           "block_title": "Should The East Village Michael Jackson Mural Be Taken Down?",
           "block_meta": {
@@ -472,6 +478,7 @@
         }
       },
       "kicker": false,
+      "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
       "block_title": "British Prime Minister Theresa May Faces New Pressure To Quit As Brexit Deadline Looms",
       "block_dek": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
       "block_meta": {

@@ -42,7 +42,7 @@
 
   {% include 'organisms-donate' with { "donate_classes": "c-donate-tout--static" } %}
 
-  <div class="c-home__sections u-section-spacing l-container l-wrap">
+  <div class="c-home__sections u-spacing--quad l-container l-wrap">
 
     <div class="l-container l-container--14col u-spacing">
       {% block block_section_4 %}
@@ -60,5 +60,10 @@
       {% endblock %}
     </div>
 
+    <div class="l-container l-container--14col">
+      {% include '@molecules/navigation/read-more.twig' %}
+    </div>
+
   </div>
+
 {% endblock %}

@@ -56,11 +56,10 @@
     margin-bottom: $space;
   }
 
-  .gothamist-letters {
-    fill: $c-white;
-  }
-  .gothamist-buildings {
-    fill: $c-dark-bg;
+  &__utility {
+    @include media('<=small') {
+      margin-bottom: -18px;
+    }
   }
 
   &__slogan {

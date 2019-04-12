@@ -29,28 +29,6 @@
   transition: transform .2s $hard-ease-in;
   box-shadow: 0 0 10px rgba($c-black, .2);
 
-  &--static {
-    box-shadow: none;
-    max-width: none;
-    position: static;
-
-    .c-donate-tout__inner {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      max-width: ($col-width * 14) + ($gutter * 12) + px;
-    }
-
-    .c-donate-tout__graphic {
-      top: -56px;
-      left: -$space-double;
-    }
-
-    .c-donate-tout__close {
-      display: none;
-    }
-  }
-
   &.is-active {
     transform: translateX(-#{($col-width * 15) + ($gutter * 13) + $space});
   }
@@ -117,6 +95,34 @@
     width: 40px;
     height: 40px;
   }
+
+  // Non-fly-in version
+  &--static {
+    box-shadow: none;
+    max-width: none;
+    position: static;
+    max-width: none;
+
+    .c-donate-tout__inner {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      max-width: ($col-width * 14) + ($gutter * 12) + px;
+    }
+
+    .c-donate-tout__graphic {
+      margin-top: -105px;
+      margin-left: -30px;
+
+      @include media('>xlarge') {
+        margin-top: -40px;
+      }
+    }
+
+    .c-donate-tout__close {
+      display: none;
+    }
+  }
 }
 
 
@@ -130,6 +136,13 @@
   background-color: $c-octonary;
   position: relative;
 
+  @include media('<=medium') {
+    margin-right: -$space;
+    margin-left: -$space;
+    padding: $space-triple $space;
+    width: 100vw;
+  }
+
   &__heading {
     position: absolute;
     top: -.6em;
@@ -140,14 +153,24 @@
   }
 
   .c-block {
-    display: flex;
-    align-items: flex-start;
+    @include media('>medium') {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .o-kicker {
+    background-color: $c-sponsor-color;
+    color: $c-white;
   }
 
   .c-block__media {
     width: 100%;
-    max-width: 328px;
-    margin-right: $space-and-half;
+
+    @include media('>medium') {
+      max-width: 328px;
+      margin-right: $space-and-half;
+    }
   }
 }
 
@@ -158,6 +181,12 @@
 .c-newsletter-tout {
   padding: $space-triple $space-quad;
   position: relative;
+
+  @include media('<=medium') {
+    padding: $space-double $space-and-half;
+    margin-right: -$space;
+    margin-left: -$space-half;
+  }
 
   &:before {
     content: "";
@@ -171,11 +200,18 @@
   }
 
   &__inner {
-    display: flex;
+    @include media('>medium') {
+      display: flex;
+    }
   }
 
   &__media {
-    margin-right: $space-and-half;
+    padding: $space $space-and-half $space;
+
+    @include media('>medium') {
+      padding: 0;
+      margin-right: $space-and-half;
+    }
   }
 
   .c-newsletter-form__field-group {

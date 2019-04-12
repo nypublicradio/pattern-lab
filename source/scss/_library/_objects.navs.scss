@@ -224,3 +224,67 @@
     }
   }
 }
+
+
+/**
+ * Read More navigation
+ */
+.c-read-more-nav {
+  padding: $space-and-half $space;
+  border: 2px dashed $c-gray;
+  text-align: center;
+
+  @include media('<=medium') {
+    margin-left: -$space;
+    margin-right: -$space;
+    width: 100vw;
+    padding: $space-and-half $space-double;
+  }
+
+  @include media('>medium') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-right: $space;
+
+    @include media('<=medium') {
+      margin-bottom: $space-half;
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:nth-child(3) {
+      @include media('<=medium') {
+        &:before {
+          content: "";
+        }
+      }
+    }
+
+    + * {
+      &:before {
+        content: "•";
+        display: inline-block;
+        margin: 0 $space;
+        color: $c-gray;
+      }
+    }
+  }
+
+  &__link {
+    font-size: $font-size-s-m;
+    padding-bottom: 0;
+
+    @include media('<=medium') {
+      margin-bottom: $space-half;
+    }
+  }
+}
