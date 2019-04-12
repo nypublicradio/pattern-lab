@@ -167,6 +167,11 @@
   .c-block__media {
     width: 100%;
 
+    @include media('>small', '<=medium') {
+      margin-bottom: $space;
+      max-width: 360px;
+    }
+
     @include media('>medium') {
       max-width: 328px;
       margin-right: $space-and-half;
@@ -207,6 +212,12 @@
 
   &__media {
     padding: $space $space-and-half $space;
+
+    @include media('>small', '<=medium') {
+      padding: 0;
+      margin-bottom: $space;
+      max-width: 360px;
+    }
 
     @include media('>medium') {
       padding: 0;
