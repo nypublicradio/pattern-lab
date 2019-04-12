@@ -261,14 +261,6 @@
   &__item {
     display: inline-block;
 
-    &:nth-child(3) {
-      @include media('<=medium') {
-        &:before {
-          content: "";
-        }
-      }
-    }
-
     + * {
       &:before {
         content: "•";
