@@ -16,9 +16,22 @@
     position: relative;
     z-index: $z-index-header-ad;
     background-color: $c-dark-bg;
+    text-align: center;
 
     img {
       margin: 0 auto;
+    }
+  }
+
+  .o-ad--leaderboard {
+    display: inline-block;
+    position: static;
+    transform: none;
+  }
+
+  .o-ad__label {
+    @include media('<=small') {
+      display: none;
     }
   }
 
