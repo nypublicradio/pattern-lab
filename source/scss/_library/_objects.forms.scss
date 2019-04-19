@@ -199,7 +199,6 @@
 
     @include media('>xlarge') {
       position: relative;
-      z-index: $z-index-newsletter-inner;
       max-width: 380px;
     }
   }
