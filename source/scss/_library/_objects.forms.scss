@@ -225,7 +225,6 @@
     display: flex;
     border: 3px solid $c-border-color;
     position: relative;
-    z-index: $z-index-newsletter-fields;
   }
 
   &__input {
