@@ -17,8 +17,12 @@
 <div class="c-main-header__right">
 
   <div class="c-main-header__share">
-    <span class="u-font--secondary-style u-color--white u-font--xs">Share</span>
-    {% include 'molecules-share-tools' %}
+    {%
+      include 'molecules-share-tools'
+      with {
+        "label": "Share"
+      }
+    %}
   </div>
 
   {% if has_donate %}

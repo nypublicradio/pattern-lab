@@ -125,6 +125,10 @@
       margin-right: $space-half;
     }
 
+    @include media('>small') {
+      width: 230px;
+    }
+
     > span {
       @include media('<=small') {
         display: none;
@@ -168,7 +172,7 @@
       }
     }
 
-    .c-main-header__share > span,
+    .c-share-tools__label,
     .c-search-toggle {
       @include media('<=small') {
         display: none;
