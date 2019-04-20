@@ -114,20 +114,10 @@
 .c-featured-blocks {
   border: 3px solid $c-black;
   position: relative;
-  margin-right: -$space;
-  margin-left: -$space;
   margin-bottom: 50px;
 
   @include media('>medium') {
-    margin-left: 0;
-    margin-right: 0;
     margin-bottom: 100px;
-  }
-
-  @include media('<=medium') {
-    margin-left: -$space;
-    margin-right: -$space;
-    margin-bottom: 50px;
   }
 
   &__heading {

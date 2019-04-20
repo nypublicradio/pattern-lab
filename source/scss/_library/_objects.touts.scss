@@ -137,8 +137,6 @@
   position: relative;
 
   @include media('<=medium') {
-    margin-right: -$space;
-    margin-left: -$space;
     padding: $space-triple $space;
     width: 100vw;
   }
@@ -190,7 +188,7 @@
   @include media('<=medium') {
     padding: $space-double $space-and-half;
     margin-right: -$space;
-    margin-left: -$space-half;
+    margin-left: -6px;
   }
 
   &:before {

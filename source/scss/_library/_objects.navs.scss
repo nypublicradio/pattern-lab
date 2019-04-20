@@ -235,8 +235,6 @@
   text-align: center;
 
   @include media('<=medium') {
-    margin-left: -$space;
-    margin-right: -$space;
     width: 100vw;
     padding: $space-and-half $space-double;
   }

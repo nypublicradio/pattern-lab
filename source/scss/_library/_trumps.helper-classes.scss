@@ -47,3 +47,13 @@
 .u-align-center {
   text-align: center;
 }
+
+/**
+ * Breakout content
+ */
+.u-breakout {
+  @include media('<=medium') {
+    margin-right: -$space;
+    margin-left: -$space;
+  }
+}
