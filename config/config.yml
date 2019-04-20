@@ -24,6 +24,16 @@ defaultPattern: docs-welcome
 defaultShowPatternInfo: false
 ishMinimum: '240'
 ishMaximum: '2600'
+ishViewportRange:
+    s:
+    - 360
+    - 360
+    m:
+    - 1024
+    - 1024
+    l:
+    - 1280
+    - 1280
 ishControlsHide:
     - hay
     - disco
