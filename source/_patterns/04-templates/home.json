@@ -454,7 +454,7 @@
               "src": "https://picsum.photos/100/100?image=100"
             }
           },
-          "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
           "kicker": false,
           "block_title": "Sketchy Interviews: New Yorker Cartoonist Mort Gerberg",
           "block_meta": {

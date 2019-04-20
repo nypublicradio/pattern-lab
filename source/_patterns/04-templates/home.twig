@@ -1,6 +1,16 @@
 {% extends "main.twig" %}
 {% block main %}
-  <div class="c-home__sections u-section-spacing l-container l-container--xl l-wrap">
+  <div class="c-floating-header">
+    {%
+      include 'organisms-header'
+      with {
+        "has_ad": false,
+        "main_header_classes": false,
+        "has_stacked_logo": false,
+      }
+    %}
+  </div>
+  <div class="c-home__sections u-section-spacing l-container l-container--xl l-wrap u-trigger-floating-header">
 
     {% block featured_blocks_primary %}
       {% include '@organisms/sections/featured-block-list.twig' with featured_blocks_primary %}

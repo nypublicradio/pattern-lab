@@ -138,7 +138,8 @@
 
   @include media('<=medium') {
     padding: $space-triple $space;
-    width: 100vw;
+    width: calc(100vw + 4px);
+    left: -2px;
   }
 
   &__heading {
@@ -148,6 +149,10 @@
     left: $space-quad;
     background-color: $c-white;
     padding: 0 $space-half;
+
+    @include media('<=medium') {
+      left: $space;
+    }
   }
 
   .c-block {

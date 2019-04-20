@@ -14,6 +14,8 @@
       align-self: flex-bottom;
       z-index: $z-index-heading-logo;
       left: $space-half;
+      opacity: 1;
+      transition: opacity .15s $hard-ease-in;
 
       @include media('>medium') {
         width: 135px;
@@ -32,7 +34,14 @@
       fill: $c-white;
     }
   }
+
+  &.side-menu-is-active {
+    .c-main-header__branding {
+      opacity: 0;
+    }
+  }
 }
+
 
 .c-main-footer {
   .gothamist-letters {

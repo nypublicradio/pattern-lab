@@ -1,4 +1,9 @@
-{% include '@organisms/global/header.twig' %}
+{%
+  include '@organisms/global/header.twig'
+  with {
+    "is_stationary": true
+  }
+%}
 <main class="c-main">
   {% block main %}
     <p>Content Placeholder</p>

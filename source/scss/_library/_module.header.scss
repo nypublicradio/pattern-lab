@@ -45,10 +45,7 @@
     height: $heading-height + px;
 
     @include media('>xsmall') {
-      padding: $space-half $space $space-half $space-double;
-    }
-    @include media('>small') {
-      padding-right: $space-and-half;
+      padding: $space-half $space-half $space-half $space-double;
     }
   }
 
@@ -209,6 +206,10 @@
 
   &.is-visible {
     transform: translateY(#{$heading-height + $space-half});
+  }
+
+  .c-side-menu {
+    height: 100vh;
   }
 }
 
