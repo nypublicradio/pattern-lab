@@ -158,6 +158,10 @@
           $thisCaption = $thisImg.data('caption'),
           $thisLargeImg = $thisImg.data('image');
 
+      // Highlight active thumbnail
+      $('.c-lead-gallery__thumbs-thumb').removeClass('is-active');
+      $this.addClass('is-active');
+
       // Swap content
       $('.c-lead-gallery__top img').attr('src', $thisLargeImg)
       $('.c-lead-gallery__title').text($thisTitle);

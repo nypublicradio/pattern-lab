@@ -69,6 +69,10 @@
     min-width: calc(20% - #{$space});
     border: $border-style-m;
 
+    &.is-active {
+      border-color: $c-primary;
+    }
+
     @include media('<=medium') {
       max-width: calc(25% - #{$space});
       min-width: calc(25% - #{$space});
