@@ -114,11 +114,6 @@
 .c-featured-blocks {
   border: 3px solid $c-black;
   position: relative;
-  margin-bottom: 50px;
-
-  @include media('>medium') {
-    margin-bottom: 100px;
-  }
 
   &__heading {
     position: absolute;
