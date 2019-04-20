@@ -1,0 +1,10 @@
+{% extends "block-list-group.twig" %}
+{% set block_group_classes = "c-block-group--with-ad c-block-group--with-footer-block" %}
+
+{% block feature_first_block %}{% endblock %}
+{% block feature_last_block %}
+  {% include '@molecules/blocks/block.twig' %}
+{% endblock %}
+{% block ad_unit %}
+  {% include '@molecules/ad-units/300x600-flex.twig' %}
+{% endblock %}

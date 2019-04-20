@@ -5,7 +5,13 @@
   </div>
 
   <div class="c-main-header__branding">
-    <a href="">{% include '@atoms/images/gothamist-logo.twig' %}</a>
+    <a href="">
+      {% if has_stacked_logo %}
+      {% include '@atoms/images/gothamist-logo--stacked.twig' %}
+      {% else %}
+        {% include '@atoms/images/gothamist-logo.twig' %}
+      {% endif %}
+    </a>
   </div>
 </div>
 

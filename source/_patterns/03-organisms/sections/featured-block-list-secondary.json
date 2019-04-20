@@ -1,0 +1,64 @@
+{
+  "featured_list": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=102"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+        "block_meta": {
+           "author": "Scott Lynch"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=101"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+        "block_meta": {
+           "author": "Ross Barkan"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=100"
+          }
+        },
+        "kicker": false,
+        "block_title": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+        "block_meta": {
+           "author": "Scott Lynch"
+        }
+      }
+    ]
+  },
+
+  "featured_block": {
+    "has_picture": true,
+    "block_media": {
+      "break_m": "500",
+      "break_l": false,
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "https://picsum.photos/500/400?image=111",
+        "src_m": "https://picsum.photos/700/460?image=110",
+        "src_l": false
+      }
+    },
+    "block_object": {
+      "kicker": false
+    },
+    "block_title": "British Prime Minister Theresa May Faces New Pressure To Quit As Brexit Deadline Looms",
+    "block_dek": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+    "block_meta": {
+      "author": "Paula Mejia"
+    }
+  }
+}

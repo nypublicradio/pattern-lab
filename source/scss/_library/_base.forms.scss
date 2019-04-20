@@ -70,7 +70,9 @@ input[type=checkbox] + label {
 
 input[type=radio]:checked,
 input[type=checkbox]:checked {
-  background: $c-dark-bg url("/images/icons/icon-check.svg") center center no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M26.08,3.56l-2,1.95L10.61,19l-5-4L3.47,13.29,0,17.62l2.17,1.73L9.1,24.9,11,26.44l1.77-1.76L28.05,9.43,30,7.48Z' fill='%23ffffff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: 10px;
 }
 

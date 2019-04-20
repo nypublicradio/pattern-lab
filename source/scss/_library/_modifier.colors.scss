@@ -29,6 +29,11 @@
   color: $c-white !important;
 }
 
+.u-color--meta,
+.u-color--meta a {
+  color: $c-meta-color;
+}
+
 .u-color--primary,
 .u-color--primary a {
   color: $c-primary;
@@ -112,5 +117,11 @@
 .u-path-fill--secondary {
   path {
     fill: $c-secondary;
+  }
+}
+
+.u-path-fill--quaternary {
+  path {
+    fill: $c-quaternary;
   }
 }

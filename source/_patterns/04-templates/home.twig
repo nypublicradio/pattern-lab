@@ -1,0 +1,69 @@
+{% extends "main.twig" %}
+{% block main %}
+  <div class="c-home__sections u-section-spacing l-container l-container--xl l-wrap">
+
+    {% block featured_blocks_primary %}
+      {% include '@organisms/sections/featured-block-list.twig' with featured_blocks_primary %}
+    {% endblock %}
+
+    <div class="l-container l-container--16col">
+      {% block block_sponsored %}
+        {% include '@organisms/touts/sponsored.twig' %}
+      {% endblock %}
+    </div>
+
+    <div class="l-container l-container--14col">
+      {% block block_section_1 %}
+        {% include '@organisms/sections/block-list-group-with-ad.twig' with block_section_1 %}
+      {% endblock %}
+    </div>
+
+    <div class="l-container l-container--14col">
+      {% include '@organisms/touts/newsletter-signup.twig' %}
+    </div>
+
+    <div class="l-container l-container--11col">
+      {% block block_section_2 %}
+        {% include '@organisms/sections/block-list-group-1col-with-heading-block.twig' with block_section_2 %}
+      {% endblock %}
+    </div>
+
+    {% block featured_blocks_secondary %}
+      {% include '@organisms/sections/featured-block-list-secondary.twig' with featured_blocks_secondary %}
+    {% endblock %}
+
+    <div class="l-container l-container--14col">
+      {% block block_section_3 %}
+        {% include '@organisms/sections/block-list-group-with-footer-block-and-ad.twig' with block_section_3 %}
+      {% endblock %}
+    </div>
+
+  </div>
+
+  {% include 'organisms-donate' with { "donate_classes": "c-donate-tout--static" } %}
+
+  <div class="c-home__sections u-spacing--quad l-container l-wrap">
+
+    <div class="l-container l-container--14col u-spacing">
+      {% block block_section_4 %}
+        {% include '@organisms/sections/block-list-group-with-300x600-ad.twig' with block_section_4 %}
+
+        <div class="u-align-center">
+          {%
+            include '@atoms/buttons/button.twig'
+            with {
+              "button_text": "More Results",
+              "button_classes": "o-button--c-quaternary o-button--extra"
+            }
+          %}
+        </div>
+      {% endblock %}
+    </div>
+
+    <div class="l-container l-container--14col">
+      {% include '@molecules/navigation/read-more.twig' %}
+    </div>
+
+  </div>
+
+{% endblock %}

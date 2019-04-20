@@ -1,0 +1,16 @@
+{% extends "featured-block-list.twig" %}
+{% set featured_block_classes = "c-featured-blocks--secondary" %}
+
+{% block featured_heading %}
+  <h2 class="c-featured-blocks__heading c-featured-blocks__heading--wnyc"><span class="o-bg-text-accent">New From <img src="/images/wnyc-logo.svg" alt="WNYC logo"></span></h2>
+{% endblock %}
+
+{% block featured_cta %}
+  {%
+    include '@atoms/buttons/button.twig'
+    with {
+      "button_text": "Read More on WNYC",
+      "button_classes": "c-featured-blocks__cta o-button--c-quaternary u-full-width"
+    }
+  %}
+{% endblock %}

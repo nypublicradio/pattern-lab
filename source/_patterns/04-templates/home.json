@@ -1,0 +1,489 @@
+{
+  "main_header_classes": "c-main-header--emphasis",
+  "has_stacked_logo": true,
+  "block_meta": {
+    "author": false
+  },
+  "block_section_1": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=320"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "News",
+        "block_title": "The Best Of Gothamist 2018",
+        "comment_count": "77",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=310"
+          }
+        },
+        "kicker": "Arts & Entertainment",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_meta": {
+          "timestamp": "Just Now"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=325"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "The 14 Best New Burgers In NYC",
+        "block_meta": {
+          "timestamp": "1 hour ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=360"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "The 13 Best Avocado Dishes In NYC",
+        "comment_count": "90",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=310"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=325"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "The 14 Best New Burgers In NYC",
+        "comment_count": "51",
+        "block_meta": {
+          "timestamp": "3 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=360"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "The 13 Best Avocado Dishes In NYC",
+        "block_meta": {
+          "timestamp": "4 hours ago"
+        }
+      }
+    ]
+  },
+
+  "block_section_2": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=520"
+          }
+        },
+        "kicker": "News",
+        "block_title": "NY Nurses Say A Strike Is Needed To Keep Patients Safe",
+        "comment_count": "87",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=610"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Arts & Ent",
+        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_meta": {
+          "timestamp": "3 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=525"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
+        "comment_count": "17",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=860"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=370"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "comment_count": "56",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=425"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "Vessel Changes Terms & Conditions After Extreme Photo Policy Controversy, Lawyers Still Find It 'Troubling'",
+        "block_meta": {
+          "timestamp": "4 hours ago"
+        }
+      }
+    ]
+  },
+
+  "block_section_3": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=325"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "News",
+        "block_title": "City Councilmembers Propose $100,000 Fine For 'Hideous' LED Billboard Boats",
+        "comment_count": "35",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=390"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "Mueller Report Summary Changes Nobody's Mind",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=225"
+          }
+        },
+        "kicker": "News",
+        "block_title": "'No Collusion!': Trump Supporters Rally Outside Trump Tower As Attorney General Reviews Mueller Report",
+        "comment_count": "22",
+        "block_meta": {
+          "timestamp": "3 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=365"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "LES And Chinatown Community Groups Sue City Over Two Bridges ",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=330"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+        "kicker": "Arts & Ent",
+        "block_title": "Fairway's Cashierless App Can't Trust New Yorkers Because Of 'Diversity,' Fired Rep Says",
+        "block_meta": {
+          "timestamp": "2 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=225"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "Behold, NYC's Old Subway Cars At The Bottom Of The Ocean",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      }
+    ]
+  },
+
+  "block_section_4": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=160"
+          }
+        },
+        "kicker": "News",
+        "block_title": "West Village Locals Hold Rally And Irish Wake For The White Horse Tavern",
+        "comment_count": "87",
+        "block_meta": {
+           "timestamp": "Just now"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=161"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+        "kicker": "Arts & Entertainment",
+        "block_title": "Ask A Native New Yorker: Why Do New Yorkers Complain So Much?",
+        "block_meta": {
+          "timestamp": "1 hour ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=163"
+          }
+        },
+        "kicker": "News",
+        "block_title": "'UPDATE: LGBTQ+ Center Cancels Right-Wing Event Amid Uproar ",
+        "block_meta": {
+          "timestamp": "3 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=164"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+        "kicker": "Lifestyle",
+        "block_title": "Meet The Brooklyn Man Who Has A Mug Shot Museum In His Apartment",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=165"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+        "kicker": "Arts & Ent",
+        "block_title": "Meet The Brooklyn Man Who Has A Mug Shot Museum In His Apartment",
+        "comment_count": "33",
+        "block_meta": {
+          "timestamp": "2 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=166"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "De Blasio's Attempt To Pour More Money Into Ferries Blocked For Being 'Inexplicable'",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      }
+    ]
+  },
+
+  "featured_blocks_primary": {
+    "comment_count": "23",
+    "featured_list": {
+      "blocks": [
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=200"
+            }
+          },
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+          "kicker": "Lifestyle",
+          "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
+          "comment_count": "54",
+          "block_meta": {
+            "timestamp": "1 Day hours ago"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=201"
+            }
+          },
+          "kicker": "Arts & Entertainment",
+          "media_tag": "Hot Topic",
+          "block_title": "The 13 Best Avocado Dishes In NYC",
+          "block_meta": {
+            "timestamp": "2 hours ago"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=202"
+            }
+          },
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+          "kicker": "Food",
+          "comment_count": "15",
+          "block_title": "NYPD: Man Bit Off Bouncer's Finger Because Bar Closed",
+          "block_meta": {
+            "timestamp": "1 Day ago"
+          }
+        }
+      ]
+    },
+
+    "featured_block": {
+      "comment_count": "15",
+      "has_picture": true,
+      "block_media": {
+        "break_m": "500",
+        "break_l": false,
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "https://picsum.photos/500/400?image=109",
+          "src_m": "https://picsum.photos/700/460?image=106",
+          "src_l": false
+        }
+      },
+      "block_object": {
+        "kicker": "Food"
+      },
+      "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+      "block_title": "LES And Chinatown Community Groups Sue City Over Two Bridges",
+      "block_dek": "A coalition of community groups are suing the city to stop a multi-billion dollar mega development of four high-rise towers that some locals fear will greatly exacerbate gentrification.",
+      "block_meta": {
+        "timestamp": "Just Now"
+      }
+    }
+  },
+
+  "featured_blocks_secondary": {
+    "comment_count": "56",
+    "featured_list": {
+      "blocks": [
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=102"
+            }
+          },
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+          "kicker": false,
+          "block_title": "Push For Stronger NY Rent Laws Goes Up Against Powerful Landlord Lobby",
+          "block_meta": {
+            "timestamp": "2 hours ago"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=101"
+            }
+          },
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+          "kicker": false,
+          "block_title": "Should The East Village Michael Jackson Mural Be Taken Down?",
+          "block_meta": {
+            "timestamp": "1 hours ago"
+          }
+        },
+        {
+          "block_media": {
+            "img": {
+              "src": "https://picsum.photos/100/100?image=100"
+            }
+          },
+          "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+          "kicker": false,
+          "block_title": "Sketchy Interviews: New Yorker Cartoonist Mort Gerberg",
+          "block_meta": {
+            "timestamp": "3 hours ago"
+          }
+        }
+      ]
+    },
+
+    "featured_block": {
+      "comment_count": "87",
+      "has_picture": true,
+      "block_media": {
+        "break_m": "500",
+        "break_l": false,
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "https://picsum.photos/500/400?image=111",
+          "src_m": "https://picsum.photos/700/460?image=110",
+          "src_l": false
+        }
+      },
+      "kicker": false,
+      "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
+      "block_title": "British Prime Minister Theresa May Faces New Pressure To Quit As Brexit Deadline Looms",
+      "block_dek": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+      "block_meta": {
+        "timestamp": "2 hours ago"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<div class="c-newsletter-tout u-reversed-out">
+
+  <div class="c-newsletter-tout__inner">
+
+    <div class="c-newsletter-tout__media">
+      {%
+        include '@atoms/images/image.twig'
+        with {
+          "img": {
+            "src": "https://picsum.photos/500/500?image=66",
+            "alt": "Gothamist Newsletter"
+          }
+        }
+      %}
+    </div>
+
+    <div class="c-newsletter-tout__content u-spacing">
+
+      <div class="c-newsletter-tout__text u-spacing">
+        <h3 class="c-newsletter-tout__heading "><strong class="o-bg-text-accent">Sign Up for We The Commuters</strong></h3>
+        <div class="c-newsletter-tout__dek o-rte-text">
+          <p>You already read our words, now you can read them in email form too! Read a quick bite-sized list of content! </p>
+        </div>
+      </div>
+
+      <form action="" class="c-newsletter-tout__form u-spacing">
+        <div class="c-newsletter-form__field-group">
+          <label for="newsletter" class="is-vishidden">Newsletter signup</label>
+          <input required name="newsletter" type="email" class="c-newsletter-form__input" placeholder="your@email.com">
+          <button type="submit" class="o-button c-newsletter-form__button">
+            <span class="c-newsletter-form__submit-icon o-icon o-icon--newsletter-tout">{% include '@atoms/icons/icon-skinny-arrow.twig' %}</span>
+            <span class="is-vishidden">Submit email</span>
+          </button>
+        </div>
+
+        <div class="c-newsletter-form__terms">
+          <label class="c-newsletter-form__terms-checkbox">
+            <input class="o-checkbox" type="checkbox" checked>
+            <p class="u-font--xs">By submitting your information, you're agreeing to receive communications from New York Public Radio in accordance with our Terms</p>
+          </label>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

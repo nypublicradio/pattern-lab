@@ -2,12 +2,16 @@
 
   <div class="c-recirc-tout__col1 u-spacing--and-half">
     <h2 class="o-section__heading o-bg-text-accent">Recent Stories</h2>
-    {% include '@molecules/lists/block-list.twig' %}
+    {% block recirc_list %}
+      {% include '@molecules/lists/block-list.twig' with recirc_list %}
+    {% endblock %}
   </div>
 
   <div class="c-recirc-tout__col2 u-spacing--and-half">
     <h2 class="o-section__heading o-bg-text-accent">Featured Story</h2>
-    {% include '@molecules/blocks/block.twig' %}
+    {% block recirc_block %}
+      {% include '@molecules/blocks/block.twig' with recirc_block %}
+    {% endblock %}
   </div>
 
 </section>

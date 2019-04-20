@@ -16,9 +16,22 @@
     position: relative;
     z-index: $z-index-header-ad;
     background-color: $c-dark-bg;
+    text-align: center;
 
     img {
       margin: 0 auto;
+    }
+  }
+
+  .o-ad--leaderboard {
+    display: inline-block;
+    position: static;
+    transform: none;
+  }
+
+  .o-ad__label {
+    @include media('<=small') {
+      display: none;
     }
   }
 
@@ -112,6 +125,10 @@
       margin-right: $space-half;
     }
 
+    @include media('>small') {
+      width: 230px;
+    }
+
     > span {
       @include media('<=small') {
         display: none;
@@ -155,7 +172,7 @@
       }
     }
 
-    .c-main-header__share > span,
+    .c-share-tools__label,
     .c-search-toggle {
       @include media('<=small') {
         display: none;
@@ -281,7 +298,7 @@
 
   &__branding {
     width: 180px;
-    margin: $space-half auto $space-half;
+    margin: $space-half auto $space;
   }
 
   &__social {

@@ -1,0 +1,57 @@
+{
+  "featured_block_classes": "c-featured-blocks--primary",
+  "block_meta": {
+    "author": false,
+    "timestamp": "2 hours ago"
+  },
+  "featured_list": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=360"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "The 13 Best Avocado Dishes In NYC"
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=310"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy"
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=325"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "The 14 Best New Burgers In NYC"
+      }
+    ]
+  },
+
+  "featured_block": {
+    "has_picture": true,
+    "block_media": {
+      "break_m": "500",
+      "break_l": false,
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "https://picsum.photos/500/400?image=67",
+        "src_m": "https://picsum.photos/700/460?image=98",
+        "src_l": false
+      }
+    },
+    "block_object": {
+      "kicker": "Food"
+    },
+    "block_title": "A Brief History Of The White Horse Tavern, NYC's Legendary Literary Watering Hole",
+    "block_dek": "The building housing the White Horse Tavern, a historic, no-fuss dive located at 567 Hudson Street in Greenwich Village."
+  }
+}
