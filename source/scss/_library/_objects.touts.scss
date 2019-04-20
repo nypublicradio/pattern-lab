@@ -135,8 +135,6 @@
   padding: $space-triple $space-quad;
   background-color: $c-octonary;
   position: relative;
-  // Adjusted vertical spacing because of the 10px shadow border.
-  margin-top: calc(#{$space-triple} + .6em);
 
   @include media('<=medium') {
     padding: $space-triple $space;

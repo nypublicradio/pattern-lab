@@ -115,6 +115,11 @@
   border: 3px solid $c-black;
   position: relative;
 
+  @include media('>medium') {
+    // Adjusted vertical spacing because of the bottom content break through.
+    margin-bottom: calc(#{$space-triple} * 2);
+  }
+
   &__heading {
     position: absolute;
     top: -.6em;
