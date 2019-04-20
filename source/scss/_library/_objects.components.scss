@@ -32,12 +32,17 @@
     display: none;
     position: absolute;
     width: 100%;
-    left: 50%;
-    transform: translate(-50%);
+    right: -$space-half;
     top: $space-double;
     padding: $space;
     background-color: $c-white;
     z-index: $z-index-toggle-box-content;
+
+    @include media('>medium') {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
 
   .c-toggle-box__label {
