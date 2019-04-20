@@ -18,7 +18,8 @@
     margin-bottom: $space-half;
     text-align: right;
 
-    &:hover + .c-block__object .c-block__title-link {
+    &:hover + .c-block__object .c-block__title-link,
+    &:hover .c-block__title-link {
       @include block-hover;
     }
   }
@@ -73,6 +74,25 @@
 
   &__object {
     padding-top: $space-half;
+  }
+
+  &__dek {
+    p {
+      line-height: 1.45;
+
+      @include media('<=medium') {
+        font-size: $font-size-s;
+      }
+    }
+  }
+
+  // Block with title on top
+  &--top-title {
+
+    .c-block__title {
+      margin-bottom: $space-half;
+      text-align: left;
+    }
   }
 }
 
@@ -141,3 +161,4 @@
     }
   }
 }
+

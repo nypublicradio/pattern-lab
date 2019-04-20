@@ -53,3 +53,12 @@ $sides: ("": "", --top: "-top", --bottom: "-bottom", --left: "-left", --right: "
     }
   }
 }
+.u-section-spacing--wide {
+  & > * + * {
+    margin-top: 40px;
+
+    @include media('>medium') {
+      margin-top: 50px;
+    }
+  }
+}

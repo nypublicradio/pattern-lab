@@ -1,4 +1,4 @@
-<div class="c-block-list">
+<div class="c-block-list {{ block_list_classes }}">
   <ul class="u-spacing--and-half">
     {% for item in blocks %}
       <li>{% include 'molecules-block-list-item' with item %}</li>

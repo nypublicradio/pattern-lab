@@ -1,18 +1,17 @@
 {
-  "block_meta": {
-    "author": false
-  },
+  "block_list_classes": "c-block-list--large",
   "block_section_1": {
     "blocks": [
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=320"
+            "src": "https://picsum.photos/360/240?image=320"
           }
         },
         "kicker": "News",
-        "block_title": "The Best Of Gothamist 2018",
-        "comment_count": "77",
+        "block_title": "Inside The Influencer Hour At The OMG Dessert Goals",
+        "block_dek": "OMG Dessert Goals, is a curated food event that focuses on sweet treats.",
+        "comment_count": "16",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -20,13 +19,27 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=310"
+            "src": "https://picsum.photos/360/240?image=310"
           }
         },
         "kicker": "Arts & Entertainment",
-        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_title": "New York's Newest Hottest Bird Is [Needs Name]",
+        "block_dek": "Central Park's Great Blue Heron —has gone mainstream (it's even got a song).",
         "block_meta": {
-          "timestamp": "Just Now"
+          "timestamp": "Mar 20, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=315"
+          }
+        },
+        "kicker": "Arts & Entertainment",
+        "block_title": "What's Going On With Moishe's Bake Shop?",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "block_meta": {
+          "timestamp": "Feb 19, 2019"
         }
       }
     ]
@@ -37,7 +50,7 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=520"
+            "src": "https://picsum.photos/360/240?image=520"
           }
         },
         "kicker": "News",
@@ -50,7 +63,7 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=610"
+            "src": "https://picsum.photos/360/240?image=610"
           }
         },
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
@@ -63,7 +76,7 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=525"
+            "src": "https://picsum.photos/360/240?image=525"
           }
         },
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
@@ -77,103 +90,13 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=860"
+            "src": "https://picsum.photos/360/240?image=860"
           }
         },
         "kicker": "Lifestyle",
         "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
         "block_meta": {
           "timestamp": "2 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/100/100?image=370"
-          }
-        },
-        "kicker": "Arts & Ent",
-        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
-        "comment_count": "56",
-        "block_meta": {
-          "timestamp": "2 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/100/100?image=425"
-          }
-        },
-        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
-        "kicker": "Food",
-        "block_title": "Vessel Changes Terms & Conditions After Extreme Photo Policy Controversy, Lawyers Still Find It 'Troubling'",
-        "block_meta": {
-          "timestamp": "4 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/100/100?image=325"
-          }
-        },
-        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
-        "kicker": "Food",
-        "block_title": "The 14 Best New Burgers In NYC",
-        "block_meta": {
-          "timestamp": "1 hour ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/100/100?image=360"
-          }
-        },
-        "kicker": "Lifestyle",
-        "block_title": "The 13 Best Avocado Dishes In NYC",
-        "comment_count": "90",
-        "block_meta": {
-          "timestamp": "2 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/100/100?image=310"
-          }
-        },
-        "kicker": "Arts & Ent",
-        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
-        "block_meta": {
-          "timestamp": "2 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/100/100?image=325"
-          }
-        },
-        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
-        "kicker": "Food",
-        "block_title": "The 14 Best New Burgers In NYC",
-        "comment_count": "51",
-        "block_meta": {
-          "timestamp": "3 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/100/100?image=360"
-          }
-        },
-        "kicker": "Lifestyle",
-        "block_title": "The 13 Best Avocado Dishes In NYC",
-        "block_meta": {
-          "timestamp": "4 hours ago"
         }
       }
     ]

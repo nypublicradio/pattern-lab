@@ -44,19 +44,15 @@
  * Block group
  */
 .c-block-group {
-  padding: $space-double 0 $space;
-
   @include media('>medium') {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: $space-double 0;
   }
 
 
   // Two columns with ad unit
   .c-block-group__col1 {
-    margin-bottom: $space-triple;
     @include media('>medium') {
       padding-right: $gutter + px;
       width: calc((100% - 300px) - #{$gutter}px);
@@ -96,6 +92,28 @@
       }
     }
   }
+
+  // Two even columns
+  &--2up {
+
+    .c-block-group__inner {
+      @include media('>small') {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .c-block-group__col {
+      width: 100%;
+      padding: 0;
+      margin-bottom: $space-triple;
+
+      @include media('>small') {
+        margin-bottom: 0;
+        max-width: calc(50% - #{$space-half});
+      }
+    }
+  }
 }
 
 .c-home {
@@ -108,6 +126,7 @@
   }
 }
 
+
 /**
  * Featured block groups
  */
@@ -117,7 +136,7 @@
 
   @include media('>medium') {
     // Adjusted vertical spacing because of the bottom content break through.
-    margin-bottom: calc(#{$space-triple} * 2);
+    margin-bottom: 120px;
   }
 
   &__heading {
@@ -166,6 +185,7 @@
   &__col1 {
     margin-bottom: $space-double;
     background-color: $c-white;
+
     @include media('>medium') {
       max-width: 620px;
       padding: 0 $space;
@@ -183,10 +203,6 @@
   // Main featured block group
   &--primary {
 
-    @include media('>medium') {
-      margin-bottom: 150px;
-    }
-
     .c-featured-blocks__col1 {
       .c-block__title {
         @include media('>medium') {
@@ -199,6 +215,7 @@
 
   // Secondary featured block group
   &--secondary {
+
     .c-featured-blocks__col1,
     .c-featured-blocks__col2 {
       @include media('>medium') {
@@ -208,4 +225,29 @@
     }
   }
 
+}
+
+
+/**
+ * Section listing header
+ */
+.c-listing__header {
+  padding: $space-double $space;
+  background-color: $c-quaternary;
+  text-align: center;
+  margin-bottom: $space-double;
+
+  @include media('>medium') {
+    padding: $space-triple $space;
+    margin-bottom: $space-quad;
+  }
+}
+.c-listing__heading {
+  font-weight: normal;
+  font-size: $font-size-m;
+  letter-spacing: 3px;
+
+  @include media('>medium') {
+    font-size: $font-size-xl;
+  }
 }

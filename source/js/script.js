@@ -253,4 +253,17 @@
     toggle(mql);
   })();
 
+  // Swap block heading placement for blocks that have titles above media for
+  // smaller viewports, then below at larger viewports. This is gross.
+  (function() {
+    const breakpointSmall = 551; // <= 550px
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    if ($('.c-block--top-title').length && viewportWidth < breakpointSmall) {
+      $('.c-block--top-title').each(function() {
+        console.log($(this).closest('.c-block').find('.c-block__media'));
+        $(this).find('.c-block__title').prependTo($(this).closest('.c-block').find('.c-block__media'));
+      })
+    }
+  })();
+
 })(jQuery);

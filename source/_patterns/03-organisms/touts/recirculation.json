@@ -1,5 +1,6 @@
 {
   "recirc_list": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {

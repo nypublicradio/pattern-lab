@@ -1,4 +1,5 @@
 {
+  "block_dek": false,
   "blocks": [
     {
       "block_media": {
@@ -73,19 +74,27 @@
       }
     }
   ],
-  "block_media": {
-    "img": {
-      "src": "https://picsum.photos/600/430?image=260",
-      "alt": "My Media"
-    }
-  },
 
-  "block_object": {
-    "kicker": "Food"
-  },
-  "block_title": "Photos: Inside The Influencer Hour At OMG Dessert Goals  ",
-  "block_dek": "Now in its seventh iteration, the small-business food festival took place in Long Island City,  and was sold out all weekend.",
-  "block_meta": {
-    "author": "Paula Mejia"
+  "feature_first_block": {
+    "has_picture": true,
+    "is_h2": true,
+    "block_media": {
+      "break_m": "500",
+      "break_l": false,
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "https://picsum.photos/500/400?image=67",
+        "src_m": "https://picsum.photos/700/460?image=98",
+        "src_l": false
+      },
+      "block_object": {
+        "kicker": "Arts & Entertainment"
+      },
+      "block_title": "Brooklyn Landlord Wants To Install Facial Recognition Tech At Rent-Stabilized Complex",
+      "block_dek": "A roughly 700-unit rent-stabilized complex, raising alarm among tenants. Lorem Ipsum Dolor maxiumus latinus writingus wrappingum textium.",
+      "block_meta": {
+        "author": "Paula Mejia"
+      }
+    }
   }
 }

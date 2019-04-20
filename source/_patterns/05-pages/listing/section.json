@@ -1,0 +1,19 @@
+{
+  "main_classes": "u-no-spacing",
+  "listing_heading": "Food",
+  "block_section_1": {
+    "blocks": [
+      { "kicker": false },
+      { "kicker": false },
+      { "kicker": false }
+    ]
+  },
+  "block_section_2": {
+    "blocks": [
+      { "kicker": false },
+      { "kicker": false },
+      { "kicker": false },
+      { "kicker": false }
+    ]
+  }
+}

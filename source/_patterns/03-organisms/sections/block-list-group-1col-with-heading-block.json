@@ -1,6 +1,8 @@
 {
+  "block_dek": false,
   "feature_first_block": {
     "has_picture": true,
+    "is_h2": true,
     "block_media": {
       "break_m": "500",
       "break_l": false,

@@ -5,6 +5,7 @@
     "author": false
   },
   "block_section_1": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -100,6 +101,7 @@
   },
 
   "block_section_2": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -183,6 +185,7 @@
   },
 
   "block_section_3": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -264,6 +267,7 @@
   },
 
   "block_section_4": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -346,6 +350,7 @@
   },
 
   "featured_blocks_primary": {
+    "block_dek": false,
     "comment_count": "23",
     "featured_list": {
       "blocks": [
@@ -421,6 +426,7 @@
   "featured_blocks_secondary": {
     "comment_count": "56",
     "featured_list": {
+      "block_dek": false,
       "blocks": [
         {
           "block_media": {

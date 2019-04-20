@@ -1,0 +1,45 @@
+{
+  "featured_block_1": {
+    "has_top_title": true,
+    "has_picture": true,
+    "is_h2": true,
+    "block_media": {
+      "break_m": "500",
+      "break_l": false,
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "https://picsum.photos/500/400?image=125",
+        "src_m": "https://picsum.photos/800/500?image=126",
+        "src_l": "https://picsum.photos/500/400?image=127"
+      }
+    },
+    "kicker": false,
+    "block_meta": {
+      "timestamp": "10 mins ago"
+    },
+    "block_title": "Former Momofuku Ko Chef Opens Golden Diner In Two Bridges",
+    "block_dek": "Though the utilitarian greasy spoon diner can seem like an endangered species in parts of NYC"
+  },
+
+  "featured_block_2": {
+    "has_top_title": true,
+    "has_picture": true,
+    "is_h2": true,
+    "block_media": {
+      "break_m": "500",
+      "break_l": false,
+      "img": {
+        "alt": "Alt Text",
+        "src_s": "https://picsum.photos/500/400?image=128",
+        "src_m": "https://picsum.photos/800/500?image=129",
+        "src_l": "https://picsum.photos/500/400?image=130"
+      }
+    },
+    "kicker": false,
+    "block_meta": {
+      "timestamp": "2 hours ago"
+    },
+    "block_title": "Soufflé Pancakes, Waygu Sushi & Hangover Sandwiches: First Look At Smorgasburg",
+    "block_dek": "Smorgasburg Season officially begins on Saturday, April 6th, when 100 small business vendors roll into Williamsburg."
+  }
+}

@@ -491,3 +491,7 @@ a.o-kicker {
 .u-border-accent--left {
   @include border-accent(bottom, left);
 }
+
+hr.u-border-accent {
+  background-color: transparent;
+}
