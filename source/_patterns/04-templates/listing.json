@@ -1,0 +1,181 @@
+{
+  "block_meta": {
+    "author": false
+  },
+  "block_section_1": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=320"
+          }
+        },
+        "kicker": "News",
+        "block_title": "The Best Of Gothamist 2018",
+        "comment_count": "77",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=310"
+          }
+        },
+        "kicker": "Arts & Entertainment",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_meta": {
+          "timestamp": "Just Now"
+        }
+      }
+    ]
+  },
+
+  "block_section_2": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=520"
+          }
+        },
+        "kicker": "News",
+        "block_title": "NY Nurses Say A Strike Is Needed To Keep Patients Safe",
+        "comment_count": "87",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=610"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Arts & Ent",
+        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_meta": {
+          "timestamp": "3 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=525"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
+        "comment_count": "17",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=860"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=370"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "comment_count": "56",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=425"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "Vessel Changes Terms & Conditions After Extreme Photo Policy Controversy, Lawyers Still Find It 'Troubling'",
+        "block_meta": {
+          "timestamp": "4 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=325"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "The 14 Best New Burgers In NYC",
+        "block_meta": {
+          "timestamp": "1 hour ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=360"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "The 13 Best Avocado Dishes In NYC",
+        "comment_count": "90",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=310"
+          }
+        },
+        "kicker": "Arts & Ent",
+        "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=325"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "The 14 Best New Burgers In NYC",
+        "comment_count": "51",
+        "block_meta": {
+          "timestamp": "3 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/100/100?image=360"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "The 13 Best Avocado Dishes In NYC",
+        "block_meta": {
+          "timestamp": "4 hours ago"
+        }
+      }
+    ]
+  }
+}

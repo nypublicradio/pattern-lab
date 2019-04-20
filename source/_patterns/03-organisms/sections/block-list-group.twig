@@ -16,12 +16,10 @@
 
   </div>
 
-  <div class="c-block-group__col2 u-spacing--and-half">
-
-    {% block ad_unit %}
+  {% block ad_unit %}
+    <div class="c-block-group__col2 u-spacing--and-half">
       {% include '@molecules/ad-units/300x250.twig' %}
-    {% endblock %}
-
-  </div>
+    </div>
+  {% endblock %}
 
 </section>
