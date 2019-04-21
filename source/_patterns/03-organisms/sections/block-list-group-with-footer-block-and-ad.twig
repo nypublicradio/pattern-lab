@@ -3,7 +3,7 @@
 
 {% block feature_first_block %}{% endblock %}
 {% block feature_last_block %}
-  {% include '@molecules/blocks/block.twig' %}
+  {% include '@molecules/blocks/block.twig' with feature_last_block %}
 {% endblock %}
 {% block ad_unit %}
   <div class="c-block-group__col2 u-spacing--and-half">

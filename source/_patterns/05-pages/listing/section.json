@@ -1,19 +1,100 @@
 {
-  "main_classes": "u-no-spacing",
-  "listing_heading": "Food",
   "block_section_1": {
     "blocks": [
-      { "kicker": false },
-      { "kicker": false },
-      { "kicker": false }
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=320"
+          }
+        },
+        "block_title": "Inside The Influencer Hour At The OMG Dessert Goals",
+        "block_dek": "OMG Dessert Goals, is a curated food event that focuses on sweet treats.",
+        "comment_count": "16",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=310"
+          }
+        },
+        "block_title": "New York's Newest Hottest Bird Is [Needs Name]",
+        "block_dek": "Central Park's Great Blue Heron —has gone mainstream (it's even got a song).",
+        "block_meta": {
+          "timestamp": "Mar 20, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=315"
+          }
+        },
+        "block_title": "What's Going On With Moishe's Bake Shop?",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "block_meta": {
+          "timestamp": "Feb 19, 2019"
+        }
+      }
     ]
   },
+
   "block_section_2": {
     "blocks": [
-      { "kicker": false },
-      { "kicker": false },
-      { "kicker": false },
-      { "kicker": false }
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=620"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "block_meta": {
+          "timestamp": "3 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=610"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_dek": "Asking strangers for a favor is incredibly unpleasant.",
+        "block_meta": {
+          "timestamp": "3 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=525"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
+        "block_dek": "The versatile avocado remains a menu mainstay all over the city.",
+        "comment_count": "17",
+        "block_meta": {
+          "timestamp": "2 weeks ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=860"
+          }
+        },
+        "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
+        "block_dek": "A bouncer at a Queens bar was attacked, police say.",
+        "block_meta": {
+          "timestamp": "March 4, 2019"
+        }
+      }
     ]
   }
 }

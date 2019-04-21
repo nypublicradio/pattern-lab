@@ -1,18 +1,19 @@
 {
+  "is_h2": true,
+  "block_media": {
+    "break_m": "500",
+    "img": {
+      "alt": "Alt Text",
+      "src_s": "https://picsum.photos/500/400?image=128",
+      "src_m": "https://picsum.photos/800/500?image=129",
+      "src_l": "https://picsum.photos/500/400?image=130"
+    }
+  },
+  "kicker": false,
+
   "featured_block_1": {
     "has_top_title": true,
     "has_picture": true,
-    "is_h2": true,
-    "block_media": {
-      "break_m": "500",
-      "break_l": false,
-      "img": {
-        "alt": "Alt Text",
-        "src_s": "https://picsum.photos/500/400?image=125",
-        "src_m": "https://picsum.photos/800/500?image=126",
-        "src_l": "https://picsum.photos/500/400?image=127"
-      }
-    },
     "kicker": false,
     "block_meta": {
       "timestamp": "10 mins ago"
@@ -24,18 +25,13 @@
   "featured_block_2": {
     "has_top_title": true,
     "has_picture": true,
-    "is_h2": true,
     "block_media": {
-      "break_m": "500",
-      "break_l": false,
       "img": {
-        "alt": "Alt Text",
-        "src_s": "https://picsum.photos/500/400?image=128",
-        "src_m": "https://picsum.photos/800/500?image=129",
-        "src_l": "https://picsum.photos/500/400?image=130"
+        "src_s": "https://picsum.photos/500/400?image=131",
+        "src_m": "https://picsum.photos/800/500?image=132",
+        "src_l": "https://picsum.photos/500/400?image=133"
       }
     },
-    "kicker": false,
     "block_meta": {
       "timestamp": "2 hours ago"
     },

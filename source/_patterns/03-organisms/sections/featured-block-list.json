@@ -22,7 +22,7 @@
             "src": "https://picsum.photos/100/100?image=310"
           }
         },
-        "kicker": "Arts & Ent",
+        "kicker": "Arts & Entertainment",
         "block_title": "NY's Marijuana Legalization Push Is In Jeopardy"
       },
       {
@@ -45,14 +45,12 @@
       "break_l": false,
       "img": {
         "alt": "Alt Text",
-        "src_s": "https://picsum.photos/500/400?image=67",
-        "src_m": "https://picsum.photos/700/460?image=98",
+        "src_s": "https://picsum.photos/500/400?image=222",
+        "src_m": "https://picsum.photos/700/460?image=223",
         "src_l": false
       }
     },
-    "block_object": {
-      "kicker": "Food"
-    },
+    "kicker": "Food",
     "block_title": "A Brief History Of The White Horse Tavern, NYC's Legendary Literary Watering Hole",
     "block_dek": "The building housing the White Horse Tavern, a historic, no-fuss dive located at 567 Hudson Street in Greenwich Village."
   }

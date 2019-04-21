@@ -9,7 +9,7 @@
       "kicker": "News",
       "block_title": "The Best Of Gothamist 2018",
       "block_meta": {
-         "author": "Gothamist"
+        "author": "Gothamist"
       }
     },
     {
@@ -21,7 +21,7 @@
       "kicker": "Arts & Ent",
       "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
       "block_meta": {
-         "author": "Ross Barkan"
+        "author": "Ross Barkan"
       }
     },
     {
@@ -33,7 +33,7 @@
       "kicker": "Food",
       "block_title": "The 14 Best New Burgers In NYC",
       "block_meta": {
-         "author": "Scott Lynch"
+        "author": "Scott Lynch"
       }
     },
     {
@@ -45,7 +45,7 @@
       "kicker": "Lifestyle",
       "block_title": "The 13 Best Avocado Dishes In NYC",
       "block_meta": {
-         "author": "Scott Lynch"
+        "author": "Scott Lynch"
       }
     }
   ]

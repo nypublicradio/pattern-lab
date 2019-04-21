@@ -1,104 +1,21 @@
 {
+  "main_classes": "u-no-spacing",
+  "listing_heading": "Food",
   "block_list_classes": "c-block-list--large",
   "block_section_1": {
     "blocks": [
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/360/240?image=320"
-          }
-        },
-        "kicker": "News",
-        "block_title": "Inside The Influencer Hour At The OMG Dessert Goals",
-        "block_dek": "OMG Dessert Goals, is a curated food event that focuses on sweet treats.",
-        "comment_count": "16",
-        "block_meta": {
-          "timestamp": "2 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/360/240?image=310"
-          }
-        },
-        "kicker": "Arts & Entertainment",
-        "block_title": "New York's Newest Hottest Bird Is [Needs Name]",
-        "block_dek": "Central Park's Great Blue Heron —has gone mainstream (it's even got a song).",
-        "block_meta": {
-          "timestamp": "Mar 20, 2019"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/360/240?image=315"
-          }
-        },
-        "kicker": "Arts & Entertainment",
-        "block_title": "What's Going On With Moishe's Bake Shop?",
-        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
-        "block_meta": {
-          "timestamp": "Feb 19, 2019"
-        }
-      }
+      { },
+      { },
+      { }
     ]
   },
 
   "block_section_2": {
     "blocks": [
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/360/240?image=520"
-          }
-        },
-        "kicker": "News",
-        "block_title": "NY Nurses Say A Strike Is Needed To Keep Patients Safe",
-        "comment_count": "87",
-        "block_meta": {
-          "timestamp": "2 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/360/240?image=610"
-          }
-        },
-        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
-        "kicker": "Arts & Ent",
-        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
-        "block_meta": {
-          "timestamp": "3 days ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/360/240?image=525"
-          }
-        },
-        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
-        "kicker": "Food",
-        "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
-        "comment_count": "17",
-        "block_meta": {
-          "timestamp": "2 hours ago"
-        }
-      },
-      {
-        "block_media": {
-          "img": {
-            "src": "https://picsum.photos/360/240?image=860"
-          }
-        },
-        "kicker": "Lifestyle",
-        "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
-        "block_meta": {
-          "timestamp": "2 hours ago"
-        }
-      }
+      { },
+      { },
+      { },
+      { }
     ]
   }
 }
