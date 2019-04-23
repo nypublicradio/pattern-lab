@@ -46,7 +46,7 @@
   $(window).resize(resizeFrame).resize();
   function resizeFrame() {
     var headerHeight = $('.c-main-header__ad-unit').height();
-    $('.c-side-menu').css('height', 'calc(100vh - ' + headerHeight + 'px)');
+    $('.c-main-header--stationary .c-side-menu').css('height', 'calc(100vh - ' + headerHeight + 'px)');
   }
 
   /*
@@ -221,7 +221,7 @@
 
   // Slide in headers
   (function() {
-    var offset = $('.c-article').offset(),
+    var offset = $('.u-trigger-floating-header').offset(),
         distance = offset ? offset.top : 0,
         $window = $(window);
 

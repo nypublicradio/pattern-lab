@@ -344,6 +344,12 @@
   font-family: $ff-font--monospace;
   font-size: $font-size-xs;
 }
+a.o-kicker {
+  &:hover {
+    background-color: $c-primary;
+    color: $c-white;
+  }
+}
 
 .o-tag,
 .o-breadcrumb {
@@ -408,9 +414,20 @@
 
   // Temporary until i can get the real icon
   .o-icon--up-arrow {
-    transform: rotate(-90deg) translateX(4px);
     margin-right: $space-half;
     fill: $c-primary;
+  }
+
+  svg {
+    transform: rotate(-90deg) translateX(4px);
+  }
+
+  &:hover {
+    color: $c-primary;
+
+    .o-icon--up-arrow {
+      animation: bounce .8s 0s ease-in-out infinite;
+    }
   }
 }
 
@@ -440,6 +457,7 @@
     margin: 6px $space-quarter 0 0;
     transform: rotate(90deg);
     min-width: 20px;
+
   }
 }
 

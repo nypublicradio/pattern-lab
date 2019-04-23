@@ -171,6 +171,7 @@
     mix-blend-mode: difference;
     top: -$space;
     left: -$space;
+
     path {
       fill: $c-quinary;
     }
@@ -189,6 +190,7 @@
       width: 130px;
       left: 0;
       top: 50px;
+      mix-blend-mode: normal;
     }
   }
 

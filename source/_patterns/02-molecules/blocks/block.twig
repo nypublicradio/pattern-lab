@@ -11,7 +11,7 @@
           {% endif %}
         </a>
         {% if media_tag %}
-          <div class="c-block__tag o-kicker">{{ media_tag }}</div>
+          <a href="" class="c-block__tag o-kicker">{{ media_tag }}</a>
         {% endif %}
       </div>
     {% endif %}
@@ -26,7 +26,7 @@
         </div>
       {% endif %}
 
-      <h3 class="c-block__title {{ block_title_classes }}"><a href="">{{ block_title }}</a></h3>
+      <h3 class="c-block__title {{ block_title_classes }}"><a class="c-block__title-link" href="">{{ block_title }}</a></h3>
 
       <div class="u-spacing">
         {% if block_dek %}

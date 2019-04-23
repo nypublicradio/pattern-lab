@@ -138,7 +138,8 @@
 
   @include media('<=medium') {
     padding: $space-triple $space;
-    width: 100vw;
+    width: calc(100vw + 4px);
+    left: -2px;
   }
 
   &__heading {
@@ -148,6 +149,10 @@
     left: $space-quad;
     background-color: $c-white;
     padding: 0 $space-half;
+
+    @include media('<=medium') {
+      left: $space;
+    }
   }
 
   .c-block {
@@ -184,6 +189,8 @@
 .c-newsletter-tout {
   padding: $space-triple $space-quad;
   position: relative;
+  // Adjusted vertical spacing because of the 10px shadow border.
+  margin-bottom: $space-triple + 10px;
 
   @include media('<=medium') {
     padding: $space-double $space-and-half;

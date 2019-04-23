@@ -1,4 +1,4 @@
-<header class="c-main-header js-this {{ main_header_classes }}">
+<header class="c-main-header js-this {{ main_header_classes }} {{ is_stationary ? 'c-main-header--stationary' }}">
 
   {% if has_ad %}
     <div class="c-main-header__ad-unit">
@@ -20,4 +20,5 @@
   {% if has_progress_bar %}
     {% include 'molecules-progress-bar' %}
   {% endif %}
+
 </header>

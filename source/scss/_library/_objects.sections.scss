@@ -65,8 +65,8 @@
   .c-block-group__col2 {
     @include media('>medium') {
       width: 300px;
-      top: 0;
-      position: sticky;
+      // top: 0;
+      // position: sticky;
     }
   }
 
@@ -114,10 +114,10 @@
 .c-featured-blocks {
   border: 3px solid $c-black;
   position: relative;
-  margin-bottom: 50px;
 
   @include media('>medium') {
-    margin-bottom: 100px;
+    // Adjusted vertical spacing because of the bottom content break through.
+    margin-bottom: calc(#{$space-triple} * 2);
   }
 
   &__heading {
