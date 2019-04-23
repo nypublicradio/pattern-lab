@@ -1,6 +1,6 @@
 {
   "main_classes": "u-no-spacing",
-  "listing_heading": "Food",
+  "section_heading": "Food",
   "block_list_classes": "c-block-list--large",
   "block_section_1": {
     "blocks": [

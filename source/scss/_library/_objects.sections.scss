@@ -231,7 +231,7 @@
 /**
  * Section listing header
  */
-.c-listing__header {
+.c-section__header {
   padding: $space-double $space;
   background-color: $c-quaternary;
   text-align: center;
@@ -242,13 +242,34 @@
     margin-bottom: $space-quad;
   }
 }
-.c-listing__heading {
+.c-section__heading {
   font-weight: normal;
   font-size: $font-size-m;
   letter-spacing: 3px;
 
   @include media('>medium') {
     font-size: $font-size-xl;
+  }
+}
+
+
+/**
+ * Tag listing header
+ */
+.c-tag-listing {
+
+  &__heading {
+    background-color: $c-senary;
+    display: inline-block;
+    font-weight: normal;
+    padding: $space-half $space;
+    margin: $space-half 0;
+    color: $c-white;
+    font-size: $font-size-m;
+
+    @include media('>medium') {
+      font-size: $font-size-xl;
+    }
   }
 }
 
