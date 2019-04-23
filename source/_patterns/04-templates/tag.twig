@@ -1,0 +1,20 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  <div class="c-floating-header">
+    {%
+      include 'organisms-header'
+      with {
+        "has_ad": false
+      }
+    %}
+  </div>
+
+  {% block listing_header %}
+    <header class="c-listing__header">
+      <h1 class="c-listing__heading u-font--secondary-style u-font--secondary">{{ listing_heading }}</h1>
+    </header>
+  {% endblock %}
+
+
+{% endblock %}

@@ -27,7 +27,9 @@
   &--large {
 
     li {
-      padding-bottom: $space;
+      @include media('<=medium') {
+        padding-bottom: $space-half;
+      }
     }
 
     .c-block__media {

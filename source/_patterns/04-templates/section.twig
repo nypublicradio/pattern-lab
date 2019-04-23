@@ -10,19 +10,17 @@
     %}
   </div>
 
-  {% block listing_header %}
-    <header class="c-listing__header">
-      <h1 class="c-listing__heading u-font--secondary-style u-font--secondary">{{ listing_heading }}</h1>
-    </header>
-  {% endblock %}
+  <header class="c-listing__header u-trigger-floating-header">
+    <h1 class="c-listing__heading u-font--secondary-style u-font--secondary">{{ listing_heading }}</h1>
+  </header>
 
-  <div class="c-listing__sections u-section-spacing l-container l-container--14col l-wrap u-trigger-floating-header">
+  <div class="c-listing__sections u-section-spacing l-container l-container--14col l-wrap">
 
     {% block feature_section_1 %}
       {% include '@organisms/sections/block-group-2up.twig' %}
     {% endblock %}
 
-    <hr class="u-border-accent">
+    <hr class="u-border-accent u-hide-until--m">
 
     {% block block_section_1 %}
       <section class="c-listing__section o-section">
@@ -30,13 +28,13 @@
       </section>
     {% endblock %}
 
-    <hr class="u-border-accent">
+    <hr class="u-border-accent u-hide-until--m">
 
     <div class="c-listing__ad">
       {% include '@molecules/ad-units/300x250.twig' %}
     </div>
 
-    <hr class="u-border-accent">
+    <hr class="u-border-accent u-hide-until--m">
 
     <div class="u-spacing--quad">
 
