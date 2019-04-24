@@ -36,6 +36,8 @@ input[type=tel] {
   font-size: 18px;
   padding: $space;
   font-family: $ff-font--monospace;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 input[type=radio],
