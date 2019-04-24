@@ -8,8 +8,6 @@
     "description": "desc"
   },
 
-  "break_m": "500",
-  "break_l": "800",
   "img": {
     "alt": "Alt Text",
     "src": "https://picsum.photos/800/850?image=10",

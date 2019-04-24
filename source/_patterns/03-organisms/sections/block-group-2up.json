@@ -13,7 +13,6 @@
 
   "featured_block_1": {
     "has_top_title": true,
-    "has_picture": true,
     "kicker": false,
     "block_meta": {
       "timestamp": "10 mins ago"
@@ -24,7 +23,6 @@
 
   "featured_block_2": {
     "has_top_title": true,
-    "has_picture": true,
     "block_media": {
       "img": {
         "src_s": "https://picsum.photos/500/400?image=131",

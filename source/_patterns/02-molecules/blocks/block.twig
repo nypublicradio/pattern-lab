@@ -9,11 +9,7 @@
       <div class="c-block__media">
 
         <a href="">
-          {% if has_picture %}
-            {% include '@atoms/images/picture.twig' with block_media %}
-          {% else %}
-            {% include '@atoms/images/image.twig' with block_media %}
-          {% endif %}
+          {% include '@atoms/images/picture.twig' with block_media %}
         </a>
 
         {% if media_tag %}

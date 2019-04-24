@@ -1,7 +1,6 @@
 {
   "block_dek": false,
   "feature_first_block": {
-    "has_picture": true,
     "block_media": {
       "break_m": "500",
       "break_l": false,
@@ -20,7 +19,6 @@
     }
   },
   "feature_last_block": {
-    "has_picture": true,
     "block_media": {
       "break_m": "500",
       "break_l": false,

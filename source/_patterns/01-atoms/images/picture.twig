@@ -1,18 +1,18 @@
-  <picture class="o-picture">
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    {% if break_xl %}
-      <source srcset="{{ img.src_xl }}" media="(min-width: {{ break_xl }}px)">
-    {% endif %}
-    {% if break_l %}
-      <source srcset="{{ img.src_l }}" media="(min-width: {{ break_l }}px)">
-    {% endif %}
-    {% if break_m %}
-      <source srcset="{{ img.src_m }}" media="(min-width: {{ break_m }}px)">
-    {% endif %}
-    <!--[if IE 9]></video><![endif]-->
-    {% if img.lazy %}
-      <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ img.src_s }}" itemprop="image" alt="{{ img.alt }}" />
-    {% else %}
-      <img src="{{ img.src_s }}" itemprop="image" alt="{{ img.alt }}" />
-    {% endif %}
-  </picture>
+<picture class="o-picture">
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  {% if break_xl %}
+    <source srcset="{{ img.src_xl }}" media="(min-width: {{ break_xl }}px)">
+  {% endif %}
+  {% if break_l %}
+    <source srcset="{{ img.src_l }}" media="(min-width: {{ break_l }}px)">
+  {% endif %}
+  {% if break_m %}
+    <source srcset="{{ img.src_m }}" media="(min-width: {{ break_m }}px)">
+  {% endif %}
+  <!--[if IE 9]></video><![endif]-->
+  {% if img.lazy %}
+    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ img.src_s }}" itemprop="image" alt="{{ img.alt }}" />
+  {% else %}
+    <img src="{{ img.src_s ? img.src_s : img.src }}" itemprop="image" alt="{{ img.alt }}" />
+  {% endif %}
+</picture>
