@@ -96,11 +96,9 @@
   // Two even columns
   &--2up {
 
-    .c-block-group__inner {
-      @include media('>small') {
-        display: flex;
-        justify-content: space-between;
-      }
+    @include media('>small') {
+      display: flex;
+      justify-content: space-between;
     }
 
     .c-block-group__col {

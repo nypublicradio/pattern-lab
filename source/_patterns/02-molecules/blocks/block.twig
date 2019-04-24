@@ -1,5 +1,9 @@
 <div class="c-block {{ block_classes }} {{ has_top_title ? 'c-block--top-title' }}">
 
+  {% if has_top_title %}
+    <{{ is_h2 ? 'h2' : 'h3' }} class="c-block__title {{ block_title_classes }}"><a class="c-block__title-link" href="">{{ block_title }}</a></{{ is_h2 ? 'h2' : 'h3' }}>
+  {% endif %}
+
   {% block block_media %}
     {% if block_media %}
       <div class="c-block__media">
@@ -29,7 +33,9 @@
         </div>
       {% endif %}
 
-      <{{ is_h2 ? 'h2' : 'h3' }} class="c-block__title {{ block_title_classes }}"><a class="c-block__title-link" href="">{{ block_title }}</a></{{ is_h2 ? 'h2' : 'h3' }}>
+      {% if not has_top_title %}
+        <{{ is_h2 ? 'h2' : 'h3' }} class="c-block__title {{ block_title_classes }}"><a class="c-block__title-link" href="">{{ block_title }}</a></{{ is_h2 ? 'h2' : 'h3' }}>
+      {% endif %}
 
       <div class="u-spacing">
         {% if block_dek %}

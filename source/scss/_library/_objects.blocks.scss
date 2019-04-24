@@ -93,6 +93,24 @@
       margin-bottom: $space-half;
       text-align: left;
     }
+
+    // Swap order of the title
+    @include media('>small') {
+      display: flex;
+      flex-wrap: wrap;
+
+      .c-block__media {
+        order: 1;
+      }
+      .c-block__title {
+        order: 2;
+      }
+      .c-block__object {
+        order: 3;
+      }
+
+    }
+
   }
 
 }
