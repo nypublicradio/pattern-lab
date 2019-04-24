@@ -94,6 +94,7 @@
       text-align: left;
     }
   }
+
 }
 
 
@@ -123,6 +124,34 @@
   .c-block__object {
     padding: 0 0 0 $space;
     width: 100%;
+  }
+
+  // Larger versions of horizontal blocks
+  &--large {
+
+    .c-block__media {
+      @include media('>medium') {
+        min-width: 360px;
+        max-width: 360px;
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+
+    .c-block__title {
+      @include media('>medium') {
+        font-size: $font-size-l;
+      }
+    }
+
+    .c-block__object {
+      @include media('>medium') {
+        padding-left: $space-and-half;
+      }
+    }
   }
 }
 
