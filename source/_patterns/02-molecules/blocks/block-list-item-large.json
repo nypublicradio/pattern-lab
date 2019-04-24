@@ -1,0 +1,20 @@
+{
+  "block_media": {
+    "img": {
+      "src": "https://picsum.photos/360/240?image=160",
+      "alt": "A Photo"
+    }
+  },
+
+  "block_object": {
+    "kicker": "Food"
+  },
+
+  "block_title": "Families Say NYPD Victim-Blaming Compounds Grief",
+
+  "block_dek": "Central Park's Great Blue Heron —has gone mainstream (it's even got a song).",
+
+  "block_meta": {
+    "author": "Max Fox"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "tag_heading": "Cronuts",
+  "block_list_classes": "c-block-list--large",
+  "block_section_1": {
+    "blocks": [
+      { },
+      { },
+      { }
+    ]
+  },
+
+  "block_section_2": {
+    "blocks": [
+      { },
+      { },
+      { }
+    ]
+  },
+
+  "block_section_3": {
+    "blocks": [
+      { },
+      { },
+      { },
+      { },
+      { },
+      { }
+    ]
+  }
+}

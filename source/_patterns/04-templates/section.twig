@@ -1,0 +1,61 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  <div class="c-floating-header">
+    {%
+      include 'organisms-header'
+      with {
+        "has_ad": false
+      }
+    %}
+  </div>
+
+  <header class="c-section__header u-trigger-floating-header">
+    <h1 class="c-section__heading u-font--secondary-style u-font--secondary">{{ section_heading }}</h1>
+  </header>
+
+  <div class="c-listing__sections u-section-spacing l-container l-container--14col l-wrap">
+
+    {% block feature_section_1 %}
+      {% include '@organisms/sections/block-group-2up.twig' %}
+    {% endblock %}
+
+    <hr class="u-border-accent u-hide-until--m">
+
+    {% block block_section_1 %}
+      <section class="c-listing__section o-section">
+        {% include '@molecules/lists/block-list-large.twig' with block_section_1 %}
+      </section>
+    {% endblock %}
+
+    <hr class="u-border-accent u-hide-until--m">
+
+    <div class="c-listing__ad">
+      {% include '@molecules/ad-units/300x250.twig' %}
+    </div>
+
+    <hr class="u-border-accent u-hide-until--m">
+
+    <div class="u-spacing--quad">
+
+      {% block block_section_2 %}
+        <section class="c-listing__section o-section">
+          {% include '@molecules/lists/block-list-large.twig' with block_section_2 %}
+        </section>
+      {% endblock %}
+
+      <div class="u-align-center">
+        {%
+          include '@atoms/buttons/button.twig'
+          with {
+            "button_text": "More Results",
+            "button_classes": "o-button--c-quaternary o-button--extra"
+          }
+        %}
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,8 +1,13 @@
-<div class="c-block {{ block_classes }}">
+<div class="c-block {{ block_classes }} {{ has_top_title ? 'c-block--top-title' }}">
+
+  {% if has_top_title %}
+    <{{ is_h2 ? 'h2' : 'h3' }} class="c-block__title {{ block_title_classes }}"><a class="c-block__title-link" href="">{{ block_title }}</a></{{ is_h2 ? 'h2' : 'h3' }}>
+  {% endif %}
 
   {% block block_media %}
     {% if block_media %}
       <div class="c-block__media">
+
         <a href="">
           {% if has_picture %}
             {% include '@atoms/images/picture.twig' with block_media %}
@@ -10,9 +15,11 @@
             {% include '@atoms/images/image.twig' with block_media %}
           {% endif %}
         </a>
+
         {% if media_tag %}
           <a href="" class="c-block__tag o-kicker">{{ media_tag }}</a>
         {% endif %}
+
       </div>
     {% endif %}
   {% endblock %}
@@ -26,7 +33,9 @@
         </div>
       {% endif %}
 
-      <h3 class="c-block__title {{ block_title_classes }}"><a class="c-block__title-link" href="">{{ block_title }}</a></h3>
+      {% if not has_top_title %}
+        <{{ is_h2 ? 'h2' : 'h3' }} class="c-block__title {{ block_title_classes }}"><a class="c-block__title-link" href="">{{ block_title }}</a></{{ is_h2 ? 'h2' : 'h3' }}>
+      {% endif %}
 
       <div class="u-spacing">
         {% if block_dek %}

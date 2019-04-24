@@ -1,5 +1,6 @@
 {
   "featured_list": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -8,9 +9,9 @@
           }
         },
         "kicker": "Lifestyle",
-        "block_title": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+        "block_title": "Former Momofuku Ko Chef Opens Golden Diner In Two Bridges",
         "block_meta": {
-           "author": "Scott Lynch"
+          "timestamp": "2 hours ago"
         }
       },
       {
@@ -19,10 +20,10 @@
             "src": "https://picsum.photos/100/100?image=101"
           }
         },
-        "kicker": "Arts & Ent",
-        "block_title": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+        "kicker": "Food",
+        "block_title": "What's Going On With Moishe's Bake Shop?",
         "block_meta": {
-           "author": "Ross Barkan"
+          "author": "Ross Barkan"
         }
       },
       {
@@ -32,9 +33,9 @@
           }
         },
         "kicker": false,
-        "block_title": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
+        "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
         "block_meta": {
-           "author": "Scott Lynch"
+          "timestamp": "4 hours ago"
         }
       }
     ]
@@ -42,6 +43,7 @@
 
   "featured_block": {
     "has_picture": true,
+    "is_h2": true,
     "block_media": {
       "break_m": "500",
       "break_l": false,
@@ -52,9 +54,7 @@
         "src_l": false
       }
     },
-    "block_object": {
-      "kicker": false
-    },
+    "kicker": false,
     "block_title": "British Prime Minister Theresa May Faces New Pressure To Quit As Brexit Deadline Looms",
     "block_dek": "Theresa May is facing new challenges to her leadership the day after protesters packed the streets of London",
     "block_meta": {

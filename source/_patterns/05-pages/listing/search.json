@@ -1,0 +1,142 @@
+{
+  "block_section_1": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=160"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "Lobsters, Burgers & Unlimited Fries Come In A Tower At New Midtown Restaurant",
+        "block_dek": "London based chain Burger & Lobster made us cry 'hell to the yeah!' (cringe).",
+        "comment_count": "6",
+        "block_meta": {
+          "timestamp": "2 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=161"
+          }
+        },
+        "kicker": "Lifestyle",
+        "block_title": "The 14 Best New Burgers In NYC",
+        "block_dek": "It's been three years since we last wolfed our way through mountains of meat in search of the best burgers in town.",
+        "block_meta": {
+          "timestamp": "3 hours ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=162"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "Umami Burger To Give Breakfast Sandwiches A Go At Hudson Hotel",
+        "block_dek": "A bouncer at a Queens bar was attacked, police say.",
+        "block_meta": {
+          "timestamp": "Feb 19, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=163"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "Scotch Egg Burgers & Juicy Lucys Top This Year's Annual Burger Week",
+        "block_dek": "The annual Burger Week festivities commence on May 1st, the start of a week's worth of special burger collaborations and events.",
+        "comment_count": "11",
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "block_meta": {
+          "timestamp": "Feb 9, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=164"
+          }
+        },
+        "kicker": "Arts & Entertainment",
+        "block_title": "Jackson Hole Shutters After 42 Years ",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "block_meta": {
+          "timestamp": "Jan 19, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=165"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "This Chrome Extension Swaps Pictures Of Trump's Face With Pictures Of Burgers",
+        "block_dek": "Many of us thought we'd never have to see Donald Trump's bloated face again after the election. ",
+        "block_meta": {
+          "timestamp": "Feb 19, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=166"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "What's Going On With Moishe's Bake Shop?",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "comment_count": "76",
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "block_meta": {
+          "timestamp": "Jan 2, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=167"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "The 14 Best New Burgers In NYC",
+        "block_dek": "It's been three years since we last wolfed our way through mountains of meat in search of the best burgers in town.",
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "block_meta": {
+          "timestamp": "Dec 22, 2018"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=168"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "Umami Burger To Give Breakfast Sandwiches A Go At Hudson Hotel",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "block_meta": {
+          "timestamp": "Feb 19, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=169"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "What's Going On With Moishe's Bake Shop?",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "block_meta": {
+          "timestamp": "Feb 19, 2018"
+        }
+      }
+    ]
+  }
+}

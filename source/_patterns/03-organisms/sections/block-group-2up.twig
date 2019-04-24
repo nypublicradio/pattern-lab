@@ -1,0 +1,15 @@
+<section class="c-block-group c-block-group--2up o-section {{ block_group_classes }}">
+
+  <div class="c-block-group__col c-block-group__col1">
+    {% block featured_block_1 %}
+      {% include '@molecules/blocks/block.twig' with featured_block_1 %}
+    {% endblock %}
+  </div>
+
+  <div class="c-block-group__col c-block-group__col2">
+    {% block featured_block_2 %}
+      {% include '@molecules/blocks/block.twig' with featured_block_2 %}
+    {% endblock %}
+  </div>
+
+</section>

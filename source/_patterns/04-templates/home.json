@@ -5,6 +5,7 @@
     "author": false
   },
   "block_section_1": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -100,6 +101,7 @@
   },
 
   "block_section_2": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -183,6 +185,7 @@
   },
 
   "block_section_3": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -260,10 +263,33 @@
           "timestamp": "2 hours ago"
         }
       }
-    ]
+    ],
+    "feature_last_block": {
+      "has_picture": true,
+      "is_h2": true,
+      "block_media": {
+        "break_m": "500",
+        "break_l": false,
+        "img": {
+          "alt": "Alt Text",
+          "src_s": "https://picsum.photos/500/400?image=67",
+          "src_m": "https://picsum.photos/700/460?image=98",
+          "src_l": false
+        },
+        "block_object": {
+          "kicker": "Arts & Entertainment"
+        },
+        "block_title": "Brooklyn Landlord Wants To Install Facial Recognition Tech At Rent-Stabilized Complex",
+        "block_dek": "A roughly 700-unit rent-stabilized complex, raising alarm among tenants. Lorem Ipsum Dolor maxiumus latinus writingus wrappingum textium.",
+        "block_meta": {
+          "author": "Paula Mejia"
+        }
+      }
+    }
   },
 
   "block_section_4": {
+    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -346,6 +372,7 @@
   },
 
   "featured_blocks_primary": {
+    "block_dek": false,
     "comment_count": "23",
     "featured_list": {
       "blocks": [
@@ -421,6 +448,7 @@
   "featured_blocks_secondary": {
     "comment_count": "56",
     "featured_list": {
+      "block_dek": false,
       "blocks": [
         {
           "block_media": {

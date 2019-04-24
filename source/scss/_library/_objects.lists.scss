@@ -17,3 +17,20 @@
     }
   }
 }
+
+/**
+ * Block lists
+ */
+.c-block-list {
+
+  // Standard block list with enlarged block list items
+  &--large {
+
+    li {
+      @include media('<=medium') {
+        padding-bottom: $space-half;
+      }
+    }
+
+  }
+}

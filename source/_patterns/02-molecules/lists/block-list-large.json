@@ -3,7 +3,7 @@
     {
       "block_media": {
         "img": {
-          "src": "https://picsum.photos/100/100?image=320"
+          "src": "https://picsum.photos/360/240?image=320"
         }
       },
       "kicker": "News",
@@ -15,7 +15,7 @@
     {
       "block_media": {
         "img": {
-          "src": "https://picsum.photos/100/100?image=310"
+          "src": "https://picsum.photos/360/240?image=310"
         }
       },
       "kicker": "Arts & Ent",
@@ -27,7 +27,7 @@
     {
       "block_media": {
         "img": {
-          "src": "https://picsum.photos/100/100?image=325"
+          "src": "https://picsum.photos/360/240?image=325"
         }
       },
       "kicker": "Food",
@@ -39,7 +39,7 @@
     {
       "block_media": {
         "img": {
-          "src": "https://picsum.photos/100/100?image=360"
+          "src": "https://picsum.photos/360/240?image=360"
         }
       },
       "kicker": "Lifestyle",

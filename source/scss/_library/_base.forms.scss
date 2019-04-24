@@ -36,6 +36,8 @@ input[type=tel] {
   font-size: 18px;
   padding: $space;
   font-family: $ff-font--monospace;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 input[type=radio],
@@ -89,6 +91,14 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* removes the blue background on Chrome's autocomplete */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
 
 select {
   appearance: none;

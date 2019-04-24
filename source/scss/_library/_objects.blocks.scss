@@ -18,7 +18,8 @@
     margin-bottom: $space-half;
     text-align: right;
 
-    &:hover + .c-block__object .c-block__title-link {
+    &:hover + .c-block__object .c-block__title-link,
+    &:hover .c-block__title-link {
       @include block-hover;
     }
   }
@@ -74,13 +75,51 @@
   &__object {
     padding-top: $space-half;
   }
+
+  &__dek {
+    p {
+      line-height: 1.45;
+
+      @include media('<=medium') {
+        font-size: $font-size-s;
+      }
+    }
+  }
+
+  // Block with title on top
+  &--top-title {
+
+    .c-block__title {
+      margin-bottom: $space-half;
+      text-align: left;
+    }
+
+    // Swap order of the title
+    @include media('>small') {
+      display: flex;
+      flex-wrap: wrap;
+
+      .c-block__media {
+        order: 1;
+      }
+      .c-block__title {
+        order: 2;
+      }
+      .c-block__object {
+        order: 3;
+      }
+
+    }
+
+  }
+
 }
 
 
 /**
  * Inline blocks (often used in lists)
  */
-.c-block--item {
+.c-block--horizontal {
   display: flex;
   align-items: flex-start;
 
@@ -103,6 +142,34 @@
   .c-block__object {
     padding: 0 0 0 $space;
     width: 100%;
+  }
+
+  // Larger versions of horizontal blocks
+  &--large {
+
+    .c-block__media {
+      @include media('>medium') {
+        min-width: 360px;
+        max-width: 360px;
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+
+    .c-block__title {
+      @include media('>medium') {
+        font-size: $font-size-l;
+      }
+    }
+
+    .c-block__object {
+      @include media('>medium') {
+        padding-left: $space-and-half;
+      }
+    }
   }
 }
 
@@ -141,3 +208,4 @@
     }
   }
 }
+

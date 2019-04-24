@@ -1,0 +1,55 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  <div class="c-floating-header">
+    {%
+      include 'organisms-header'
+      with {
+        "has_ad": false
+      }
+    %}
+  </div>
+
+  <div class="u-spacing--quad c-search-results u-trigger-floating-header">
+
+    <div class="l-container l-container--14col l-wrap">
+      <header class="c-search-results__header u-spacing">
+        <h1 class="is-vishidden">Search results</h1>
+        <div class="c-search-results__result-number u-font--secondary-style u-font--secondary"><strong>187</strong> Results for:</div>
+        {%
+          include '@molecules/forms/search-entry.twig'
+          with {
+            "search_classes": "c-search-results__form",
+            "search_value": "Burger"
+          }
+        %}
+      </header>
+    </div>
+
+    <div class="c-listing__sections u-section-spacing l-container l-container--14col l-wrap">
+
+      <div class="u-spacing--quad">
+
+        {% block block_section_1 %}
+          <section class="c-listing__section o-section">
+            {% include '@molecules/lists/block-list-large.twig' with block_section_1 %}
+          </section>
+        {% endblock %}
+
+        <div class="u-align-center">
+          {%
+            include '@atoms/buttons/button.twig'
+            with {
+              "button_text": "More Results",
+              "button_classes": "o-button--c-quaternary o-button--extra"
+            }
+          %}
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

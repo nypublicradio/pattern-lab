@@ -11,6 +11,10 @@ img, video, object, svg, iframe {
   display: block;
 }
 
+img {
+  height: auto;
+}
+
 svg {
   max-height: 100%;
 }
