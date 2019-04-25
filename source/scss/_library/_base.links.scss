@@ -5,10 +5,9 @@
 a {
   text-decoration: none;
   color: $c-link-color;
-  transition: all 0.25s ease-in-out;
-  > span,
-  path {
-    transition: all 0.25s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  > span {
+    transition: all 0.15s ease-in-out;
   }
 }
 

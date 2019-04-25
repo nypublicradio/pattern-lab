@@ -377,10 +377,12 @@ a.o-kicker {
     line-height: 1.5;
   }
 
-  // ember compat
+  // ember compat <-- I see this is for Ember compatibility, but I had a bug
+  // regarding captions and this is what was breaking it. Perhaps there's
+  // another way to achieve compatibility - TJ
   &__text {
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
   }
 
   .o-icon--dashed-arrow {

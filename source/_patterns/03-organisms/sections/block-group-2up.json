@@ -24,6 +24,7 @@
   "featured_block_2": {
     "has_top_title": true,
     "block_media": {
+      "break_m": "500",
       "img": {
         "src_s": "https://picsum.photos/500/400?image=131",
         "src_m": "https://picsum.photos/800/500?image=132",

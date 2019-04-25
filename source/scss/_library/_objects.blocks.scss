@@ -7,6 +7,10 @@
   color: $c-primary;
   text-decoration: underline;
   text-decoration-style: dotted;
+  // background-image: linear-gradient(to right, $c-primary 50%, transparent 50%);
+  // background-position: left bottom .22em;
+  // background-repeat: repeat-x;
+  // background-size: 12px 2px;
 }
 
 /**
@@ -27,6 +31,7 @@
   &__tag {
     color: $c-white;
     background-color: $c-primary;
+    vertical-align: text-top;
 
     &:hover {
       background-color: $c-tertiary;
@@ -51,20 +56,24 @@
     // @TODO: Get the colors to populate using the sass vars.
     &--is-gallery {
       &:after {
+        margin-bottom: .2em;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Ctitle%3EGallery Icon%3C/title%3E%3Cpath d='M7.37,7.61l-4.29.45a.62.62,0,0,0-.58.6V22.1a.63.63,0,0,0,.65.61h23.7a.63.63,0,0,0,.65-.61V12.54H16.05C12.15,12.54,9,10.77,7.37,7.61ZM7.88,5a.63.63,0,0,1,.19,0c1.88-.13,3.77-.21,5.65-.23q4.35,0,8.72.28l4.73.49A3.16,3.16,0,0,1,30,8.66V22.1a3.17,3.17,0,0,1-3.15,3.18H3.15A3.17,3.17,0,0,1,0,22.1V8.66A3.18,3.18,0,0,1,2.83,5.5L7.58,5l.3,0ZM27.46,8.72a.63.63,0,0,0-.58-.61l-4.77-.5a95.3,95.3,0,0,0-11.83-.17,7.05,7.05,0,0,0,5.77,2.5H27.46Zm-11,9A1.44,1.44,0,0,0,15,16.23h0a1.44,1.44,0,0,0-1.42,1.45h0a1.42,1.42,0,1,0,2.84,0Zm2.84,0A4.26,4.26,0,1,1,15,13.31,4.32,4.32,0,0,1,19.26,17.68ZM5.05,16.32a1.49,1.49,0,0,1-1.47-1.51h0a1.49,1.49,0,0,1,1.47-1.5H9.44a1.51,1.51,0,0,1,0,3H5.05Z' fill='%23f25917' fill-rule='evenodd'/%3E%3C/svg%3E");
       }
     }
 
     &--is-outbound-link {
       &:after {
+        width: $icon-xsmall;
+        height: $icon-xsmall;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15.46,3.45V0H30V14.54H26.55V5.89L17,15.44,14.56,13l9.55-9.56Z'/%3E%3Cpath d='M20,26.38V14.56h3.62V30H0V6.43H15.44v3.62H3.62V26.38Z'/%3E%3C/svg%3E%0A");
         opacity: .5;
-        vertical-align: top;
+        margin-bottom: .3em;
       }
     }
 
     a {
       color: $c-black;
+      transition: none;
 
       &:hover {
         @include block-hover;
@@ -85,34 +94,6 @@
       }
     }
   }
-
-  // Block with title on top
-  &--top-title {
-
-    .c-block__title {
-      margin-bottom: $space-half;
-      text-align: left;
-    }
-
-    // Swap order of the title
-    @include media('>small') {
-      display: flex;
-      flex-wrap: wrap;
-
-      .c-block__media {
-        order: 1;
-      }
-      .c-block__title {
-        order: 2;
-      }
-      .c-block__object {
-        order: 3;
-      }
-
-    }
-
-  }
-
 }
 
 
@@ -187,6 +168,8 @@
       display: inline-block;
       margin-right: $space-half;
       color: $c-gray;
+      font-size: 18px;
+      transform: translateY(.08em);
     }
   }
 
@@ -205,6 +188,7 @@
 
     .o-icon--comment {
       margin-right: $space-quarter;
+      fill: $c-body-color;
     }
   }
 }
