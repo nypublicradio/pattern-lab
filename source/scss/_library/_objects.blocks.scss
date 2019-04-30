@@ -13,6 +13,15 @@
   // background-size: 12px 2px;
 }
 
+@mixin dot-divider {
+  content: "•";
+  display: inline-block;
+  margin-right: $space-half;
+  color: $c-gray;
+  font-size: 18px;
+  transform: translateY(.08em);
+}
+
 /**
  * Standard block
  */
@@ -164,12 +173,7 @@
 
   > * + * {
     &:before {
-      content: "•";
-      display: inline-block;
-      margin-right: $space-half;
-      color: $c-gray;
-      font-size: 18px;
-      transform: translateY(.08em);
+      @include dot-divider;
     }
   }
 
@@ -193,3 +197,121 @@
   }
 }
 
+
+/**
+ * Author block
+ */
+$author-media-width-s: 250;
+$author-media-width-l: 360;
+.c-author-block {
+  position: relative;
+  overflow: auto;
+
+  &__meta {
+    position: relative;
+    margin-bottom: $space-half;
+
+    @include media('>small') {
+      margin-top: $space-half;
+    }
+  }
+
+  &__title {
+    @include media('>large') {
+      font-size: $font-size-l;
+    }
+  }
+
+  &__role {
+
+    &:after {
+      @include media('>small') {
+        @include dot-divider;
+        margin: 0 $space-half;
+      }
+    }
+  }
+
+  &__social {
+
+    @include media('>small') {
+      margin-left: -$space-half;
+      margin-bottom: $space-half;
+    }
+    .c-share-tools__link {
+      margin-right: $space-half;
+    }
+  }
+
+  &__details {
+    @include media('<=small') {
+      position: absolute;
+      right: 0;
+      bottom: $space-half;
+    }
+  }
+
+  &__media {
+    margin-bottom: $space-half;
+
+    @include media('>small') {
+      max-width: $author-media-width-s + px;
+      float: left;
+    }
+
+    @include media('>large') {
+      max-width: $author-media-width-l + px;
+    }
+  }
+
+  &__meta,
+  &__object {
+    @include media('>small') {
+      width: calc(100% - #{$author-media-width-s}px - #{$space});
+      float: right;
+    }
+
+    @include media('>large') {
+      width: calc(100% - #{$author-media-width-l}px - #{$space});
+    }
+  }
+
+  &__dek {
+
+    p {
+      display: inline;
+
+      &:not(:first-child) {
+        display: none;
+      }
+    }
+
+    .o-icon {
+      width: 12px;
+      height: 12px;
+      fill: $c-secondary;
+    }
+
+    &.this-is-active {
+      p {
+        display: block;
+      }
+    }
+  }
+
+  .c-author-block__dek-toggle {
+    margin: 0;
+  }
+
+  &__dek-toggle {
+    align-items: center;
+
+    &.this-is-active {
+      display: inline-flex;
+
+      .o-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

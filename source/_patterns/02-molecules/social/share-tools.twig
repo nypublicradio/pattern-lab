@@ -3,10 +3,11 @@
     <span class="c-share-tools__label u-font--secondary-style u-font--xs u-color--white">{{ label }}</span>
   {% endif %}
   <div class="c-share-tools__group">
-    <a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-facebook.twig' %}</a>
-    <a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-twitter.twig' %}</a>
-    <a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-reddit.twig' %}</a>
-    <a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-email.twig' %}</a>
+    {% if has_facebook %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-facebook.twig' %}</a>{% endif %}
+    {% if has_twitter %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-twitter.twig' %}</a>{% endif %}
+    {% if has_instagram %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-instagram.twig' %}</a>{% endif %}
+    {% if has_reddit %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-reddit.twig' %}</a>{% endif %}
+    {% if has_email %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-email.twig' %}</a>{% endif %}
   </div>
   {#
     <div class="c-share-tools__extra">

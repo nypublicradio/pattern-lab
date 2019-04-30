@@ -57,6 +57,28 @@
   margin: 0;
 }
 
+
+/**
+ * Active on/off states
+ */
+.u-active--off {
+  display: none;
+}
+[class*="-is-active"].js-toggle-parent,
+[class*="-is-active"].js-toggle {
+  .u-active--on {
+    display: none;
+  }
+  .u-active--off {
+    display: block;
+  }
+}
+[class*="-is-active"] {
+  .u-hide-on-active {
+    display: none;
+  }
+}
+
 /**
  * Breakout content
  */
@@ -64,5 +86,35 @@
   @include media('<=medium') {
     margin-right: -$space;
     margin-left: -$space;
+  }
+}
+
+
+/**
+ * Multiple line clamping
+ */
+.u-multi-line-clamp {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  margin-right: -1em;
+  padding-right: 1em;
+
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
   }
 }

@@ -481,6 +481,44 @@ a.o-kicker {
   }
 }
 
+
+/**
+ * 3D Box
+ */
+.o-3d-heading {
+  padding: 0 .25em;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+  background-color: $c-white;
+  left: 10px;
+
+  @include media('<=medium') {
+    font-size: $font-size-xl;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 3px solid $c-dark-bg;
+    background-color: $c-white;
+  }
+  &:before {
+    z-index: -2;
+    left: -10px;
+    top: 10px;
+  }
+  &:after {
+    z-index: -1;
+  }
+}
+
+
 /**
  * Border accents
  */

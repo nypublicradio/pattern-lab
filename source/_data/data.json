@@ -44,6 +44,11 @@
   "caption_arrow": true,
   "credit": "Getty Images",
 
+  "has_twitter": true,
+  "has_reddit": true,
+  "has_email": true,
+  "has_facebook": true,
+
   "breadcrumbs": [
     {
       "kicker": "News"
