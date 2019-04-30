@@ -200,30 +200,6 @@
     {
       "block_media": {
         "img": {
-          "src": "https://picsum.photos/100/100?image=360"
-        }
-      },
-      "kicker": "Lifestyle",
-      "block_title": "The 13 Best Avocado Dishes In NYC",
-      "block_meta": {
-         "author": "Scott Lynch"
-      }
-    },
-    {
-      "block_media": {
-        "img": {
-          "src": "https://picsum.photos/100/100?image=310"
-        }
-      },
-      "kicker": "Arts & Ent",
-      "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
-      "block_meta": {
-         "author": "Ross Barkan"
-      }
-    },
-    {
-      "block_media": {
-        "img": {
           "src": "https://picsum.photos/100/100?image=325"
         }
       },

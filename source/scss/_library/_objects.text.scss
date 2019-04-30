@@ -127,7 +127,7 @@
   > h5,
   > h6 {
     padding-top: $space;
-    font-weight: normal;
+    //font-weight: normal;
   }
 
   > h1 {
@@ -483,15 +483,16 @@ a.o-kicker {
 
 
 /**
- * 3D Box
+ * 3D box effect for headings
  */
 .o-3d-heading {
-  padding: 0 .25em;
+  padding: .1em .25em;
   display: inline-block;
   position: relative;
   z-index: 5;
   background-color: $c-white;
   left: 10px;
+  margin-right: $space;
 
   @include media('<=medium') {
     font-size: $font-size-xl;

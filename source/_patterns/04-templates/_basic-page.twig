@@ -1,0 +1,27 @@
+<div class="c-floating-header">
+  {%
+    include 'organisms-header'
+    with {
+      "has_ad": false
+    }
+  %}
+</div>
+
+<div class="u-spacing--quad c-basic-page u-trigger-floating-header">
+
+  <div class="c-listing__sections u-section-spacing l-container l-wrap {{ basic_page_classes }}">
+
+    <header class="c-basic__header u-spacing">
+      {% if basic_page_kicker %}<strong class="c-basic__header-kicker u-font--secondary-style u-font--xs">{{ basic_page_kicker }}</strong>{% endif %}
+      <h1 class="c-basic__heading o-3d-heading">{{ basic_page_title }}</h1>
+    </header>
+
+    {% block basic_page_content %}
+      <div class="c-basic-page__content">
+        {{ basic_page_content }}
+      </div>
+    {% endblock %}
+
+  </div>
+
+</div>

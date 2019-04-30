@@ -1,29 +1,15 @@
 {% extends "main.twig" %}
 {% block main %}
 
-  <div class="c-floating-header">
-    {%
-      include 'organisms-header'
-      with {
-        "has_ad": false
-      }
-    %}
-  </div>
+  {% embed '_basic-page.twig' %}
+    {% set basic_page_classes = "l-container--14col" %}
+    {% set basic_page_title = "Our Team" %}
 
-  <div class="u-spacing--quad c-staff u-trigger-floating-header">
-
-    <div class="c-listing__sections u-section-spacing l-container l-container--14col l-wrap">
-
-      <header class="c-staff__header">
-        <h1 class="c-staff__heading o-3d-heading">Our Team</h1>
-      </header>
-
+    {% block basic_page_content %}
       <section class="c-listing__section o-section">
         {% include '@molecules/lists/author-block-list.twig' %}
       </section>
-
-    </div>
-
-  </div>
+    {% endblock %}
+  {% endembed %}
 
 {% endblock %}

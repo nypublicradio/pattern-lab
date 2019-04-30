@@ -346,19 +346,21 @@
 
 
 /**
- * Staff flat listing page
+ * Basic "flat" pages
  */
-.c-staff__header {
-  padding: $space 0;
-  position: relative;
+.c-basic {
+  &__header {
+    padding: $space 0;
+    position: relative;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 1px;
-    @include border-accent;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      @include border-accent;
+    }
   }
 }
 

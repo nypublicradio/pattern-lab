@@ -1,0 +1,41 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  {% embed '_basic-page.twig' %}
+    {% set basic_page_classes = "l-container--11col" %}
+    {% set basic_page_kicker = "400 Page Error" %}
+    {% set basic_page_title = "The page you’re looking for doesn’t appear to exist." %}
+
+    {% block basic_page_content %}
+      <div class="c-basic-page__content u-spacing--and-half">
+        <div class="c-basic-page__lead">
+          {%
+            include 'molecules-lead'
+            with {
+              "lead_classes": "u-breakout",
+              "img": {
+                "src": "https://i.ytimg.com/vi/bkzrNQ1GS-g/maxresdefault.jpg"
+              }
+            }
+          %}
+        </div>
+        <div class="u-spacing--triple">
+          <div class="c-article__body o-rte-text u-spacing">
+            <p>Welcome! The Gothamist page you&apos;re looking for doesn&apos;t appear to exist. Would you like to visit our <a href="">homepage</a>?  Or you can <a href="">search</a> for what you&apos;re looking for.</p>
+          </div>
+          <section class="c-basic-page__recirc u-spacing--and-half">
+            {%
+              include '@molecules/lists/block-list.twig'
+              with {
+                "block_list_classes": "u-spacing",
+                "block_list_heading": "Popular"
+              }
+            %}
+          </section>
+        </div>
+      </div>
+    {% endblock %}
+
+  {% endembed %}
+
+{% endblock %}
