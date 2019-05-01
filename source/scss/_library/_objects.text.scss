@@ -397,11 +397,19 @@ a.o-kicker {
   }
 }
 .o-credit {
-  color: $c-septenary;
   font-size: $font-size-xs;
   line-height: 1.8;
   display: inline-block;
   @include font-secondary-style;
+
+  > a {
+    padding-bottom: 0;
+    &:hover {
+      color: $c-secondary;
+      background-color: transparent;
+      border-color: $c-secondary;
+    }
+  }
 }
 
 
