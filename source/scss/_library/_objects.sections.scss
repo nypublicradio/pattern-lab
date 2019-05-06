@@ -299,6 +299,10 @@
   &__header {
     padding-top: $space;
     border-bottom: 3px solid $c-black;
+
+    &--no-border {
+      border-bottom: none;
+    }
   }
 
   &__form {
@@ -340,6 +344,13 @@
         height: $icon-medium;
       }
     }
+  }
+
+  &__term {
+    font-family: $ff-font--tertiary;
+    font-size: $font-size-xl;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
 }
