@@ -405,11 +405,6 @@ a.o-kicker {
 
   > a {
     padding-bottom: 0;
-    &:hover {
-      color: $c-secondary;
-      background-color: transparent;
-      border-color: $c-secondary;
-    }
   }
 }
 
