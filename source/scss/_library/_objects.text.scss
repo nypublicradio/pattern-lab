@@ -334,8 +334,7 @@
 .o-tag,
 .o-kicker,
 .o-breadcrumb {
-  display: inline-block;
-  padding: 2px 5px;
+  padding: 2px 6px 3px;
   text-transform: uppercase;
   font-weight: bold;
   color: $c-senary;
@@ -345,6 +344,7 @@
   font-size: $font-size-xs;
 }
 a.o-kicker {
+  box-decoration-break: clone;
   &:hover {
     background-color: $c-primary;
     color: $c-white;
@@ -353,6 +353,7 @@ a.o-kicker {
 
 .o-tag,
 .o-breadcrumb {
+  display: inline-block;
   &:hover {
     background-color: $c-primary;
     color: $c-white;
@@ -413,9 +414,9 @@ a.o-kicker {
 }
 
 
- /**
-  * Back to top of page link
-  */
+/**
+ * Back to top of page link
+ */
 .o-to-top {
   width: 150px;
   margin: $space-double auto;
