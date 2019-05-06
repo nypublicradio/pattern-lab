@@ -51,3 +51,11 @@
     fill: $c-dark-bg;
   }
 }
+
+// Standard repeating dashed border
+.o-border-accent {
+  background-image: repeating-linear-gradient(to right, $c-black 0%, $c-black 44%, transparent 44%, transparent 100%), repeating-linear-gradient(to right, $c-black 0%, $c-black 44%, transparent 44%, transparent 100%), repeating-linear-gradient(to bottom, $c-black 0%, $c-black 44%, transparent 44%, transparent 100%), repeating-linear-gradient(to bottom, $c-black 0%, $c-black 44%, transparent 44%, transparent 100%);
+  background-position: left top, left bottom, left top, right top;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 18px 2px, 18px 2px, 2px 18px, 2px 18px;
+}

@@ -57,6 +57,28 @@
   margin: 0;
 }
 
+
+/**
+ * Active on/off states
+ */
+.u-active--off {
+  display: none;
+}
+[class*="-is-active"].js-toggle-parent,
+[class*="-is-active"].js-toggle {
+  .u-active--on {
+    display: none;
+  }
+  .u-active--off {
+    display: block;
+  }
+}
+[class*="-is-active"] {
+  .u-hide-on-active {
+    display: none;
+  }
+}
+
 /**
  * Breakout content
  */

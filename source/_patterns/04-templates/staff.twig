@@ -1,0 +1,15 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  {% embed '_basic-page.twig' %}
+    {% set basic_page_classes = "l-container--14col" %}
+    {% set basic_page_title = "Our Team" %}
+
+    {% block basic_page_content %}
+      <section class="c-listing__section o-section">
+        {% include '@molecules/lists/author-block-list.twig' %}
+      </section>
+    {% endblock %}
+  {% endembed %}
+
+{% endblock %}

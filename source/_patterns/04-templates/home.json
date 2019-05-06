@@ -265,7 +265,6 @@
       }
     ],
     "feature_last_block": {
-      "has_picture": true,
       "is_h2": true,
       "block_media": {
         "break_m": "500",
@@ -387,7 +386,7 @@
           "block_title": "Ask A Native New Yorker: Who Deserves A Subway Seat More Than Me?",
           "comment_count": "54",
           "block_meta": {
-            "timestamp": "1 Day hours ago"
+            "timestamp": "1 hour ago"
           }
         },
         {
@@ -422,7 +421,6 @@
 
     "featured_block": {
       "comment_count": "15",
-      "has_picture": true,
       "block_media": {
         "break_m": "500",
         "break_l": false,
@@ -494,7 +492,6 @@
 
     "featured_block": {
       "comment_count": "87",
-      "has_picture": true,
       "block_media": {
         "break_m": "500",
         "break_l": false,

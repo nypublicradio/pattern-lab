@@ -1,0 +1,38 @@
+{
+  "blocks": [
+    { },
+    {
+      "author_block_media": {
+        "img": {
+          "src": "https://picsum.photos/600/400?image=159"
+        }
+      },
+      "author_block_role": "Editorial Director",
+      "author_block_title": "John Del Signore",
+      "author_block_dek": "<p>Enumit lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, vitae, voluptates! Sapiente voluptatum soluta<span class=\"u-hide-on-active\">...</span></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, vitae, voluptates! Sapiente voluptatum nihil voluptatem soluta minima culpa harum numquam fugit sit veniam sed, aperiam nulla ut quia repellat magnam.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti nemo, repellendus error, debitis dolore. Blanditiis voluptatem sed iste, adipisci deleniti tenetur eius perferendis natus dolores fugit? Sequi, sapiente aliquid. Alias libero consectetur iste, consequuntur aliquam perspiciatis voluptatum officia nobis quis et minima expedita excepturi, quo sequi!</p>"
+    },
+    {
+      "author_block_media": {
+        "img": {
+          "src": "https://picsum.photos/600/400?image=152"
+        }
+      },
+      "author_block_role": "Executive Co-Founder",
+      "author_block_title": "Thomas Jackson",
+      "author_block_dek": "<p>Enim, vitae, voluptates! Sapiente voluptatum nihil voluptatem soluta minima culpa harum numquam fugit sit veniam sed. Sapiente voluptatum soluta<span class=\"u-hide-on-active\">...</span></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, vitae, voluptates! Sapiente voluptatum nihil voluptatem soluta minima culpa harum numquam fugit sit veniam sed, aperiam nulla ut quia repellat magnam.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti nemo, repellendus error, debitis dolore. Blanditiis voluptatem sed iste, adipisci deleniti tenetur eius perferendis natus dolores fugit? Sequi, sapiente aliquid. Alias libero consectetur iste, consequuntur aliquam perspiciatis voluptatum officia nobis quis et minima expedita excepturi, quo sequi!</p>"
+    },
+    {
+      "author_block_media": {
+        "img": {
+          "src": "https://picsum.photos/600/400?image=201"
+        }
+      },
+      "author_block_role": "VP of Design",
+      "author_block_title": "David Pottington",
+      "author_block_dek": "<p>Enumit lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, vitae, voluptates! Sapiente voluptatum soluta<span class=\"u-hide-on-active\">...</span></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, vitae, voluptates! Sapiente voluptatum nihil voluptatem soluta minima culpa harum numquam fugit sit veniam sed, aperiam nulla ut quia repellat magnam.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti nemo, repellendus error, debitis dolore. Blanditiis voluptatem sed iste, adipisci deleniti tenetur eius perferendis natus dolores fugit? Sequi, sapiente aliquid. Alias libero consectetur iste, consequuntur aliquam perspiciatis voluptatum officia nobis quis et minima expedita excepturi, quo sequi!</p>"
+    },
+    { },
+    { },
+    { }
+  ]
+}

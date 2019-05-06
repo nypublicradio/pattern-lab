@@ -1,0 +1,24 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  {% embed '_basic-page.twig' %}
+    {% set basic_page_classes = "l-container--14col" %}
+    {% set basic_page_title = "Contact Us" %}
+
+    {% block basic_page_content %}
+      <div class="c-basic-page__content">
+        <div class="c-article__body o-rte-text u-spacing l-container--content">
+          <p>Gothamist appreciates feedback from readers, advertisers, and the press. Please direct your question to the appropriate person using the menu below.</p>
+          <h2>Via Email</h2>
+          <p>To submit story ideas/tips/leads, or general editorial inquiries, including questions, compliments, or complaints on particular stories, please contact <a href="">tips@gothamist.com</a>.</p>
+          <p>For advertising and partnership inquiries please contact <a href="">sales@gothamist.com</a>.</p>
+          <h2>Via Regular Mail</h2>
+          <p><strong>Note:</strong> If you want us to post about something, send us an email, and use an electronic attachment. If you must send us a package, email us so we know that it&apos;s coming and can look out for it.</p>
+          <p><strong>Gothamist</strong><br>New York Public Radio<br>160 Varick Street, 8th Floor<br>New York, NY 10013</p>
+        </div>
+      </div>
+    {% endblock %}
+
+  {% endembed %}
+
+{% endblock %}

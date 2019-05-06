@@ -1,0 +1,42 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  {% embed '_basic-page.twig' %}
+    {% set basic_page_classes = "l-container--11col" %}
+    {% set basic_page_kicker = "500 Page Error" %}
+    {% set basic_page_title = "Our servers are having a problem right now..." %}
+
+    {% block basic_page_content %}
+      <div class="c-basic-page__content u-spacing--and-half">
+        <div class="c-basic-page__lead">
+          {%
+            include 'molecules-lead'
+            with {
+              "lead_classes": "u-breakout",
+              "caption": "Realize the key to Zubaz is wearing them high. No need to rock these low. They do the work for you.",
+              "img": {
+                "src": "https://cl.ly/e342fc6cecbe/download/tkukPLLA.jpg"
+              }
+            }
+          %}
+        </div>
+        <div class="u-spacing--triple">
+          <div class="c-article__body o-rte-text u-spacing">
+            <p>Hello! Our servers are having a problem right now - we are working hard to fix them. Please come back soon!</p>
+          </div>
+          <section class="c-basic-page__recirc u-spacing--and-half">
+            {%
+              include '@molecules/lists/block-list.twig'
+              with {
+                "block_list_classes": "u-spacing",
+                "block_list_heading": "Popular"
+              }
+            %}
+          </section>
+        </div>
+      </div>
+    {% endblock %}
+
+  {% endembed %}
+
+{% endblock %}

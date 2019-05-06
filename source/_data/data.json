@@ -8,8 +8,6 @@
     "description": "desc"
   },
 
-  "break_m": "500",
-  "break_l": "800",
   "img": {
     "alt": "Alt Text",
     "src": "https://picsum.photos/800/850?image=10",
@@ -45,6 +43,11 @@
   "caption": "Lorem ipsum dolor sit amet",
   "caption_arrow": true,
   "credit": "Getty Images",
+
+  "has_twitter": true,
+  "has_reddit": true,
+  "has_email": true,
+  "has_facebook": true,
 
   "breadcrumbs": [
     {
@@ -192,30 +195,6 @@
       "block_title": "The 14 Best New Burgers In NYC",
       "block_meta": {
          "author": "Scott Lynch"
-      }
-    },
-    {
-      "block_media": {
-        "img": {
-          "src": "https://picsum.photos/100/100?image=360"
-        }
-      },
-      "kicker": "Lifestyle",
-      "block_title": "The 13 Best Avocado Dishes In NYC",
-      "block_meta": {
-         "author": "Scott Lynch"
-      }
-    },
-    {
-      "block_media": {
-        "img": {
-          "src": "https://picsum.photos/100/100?image=310"
-        }
-      },
-      "kicker": "Arts & Ent",
-      "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
-      "block_meta": {
-         "author": "Ross Barkan"
       }
     },
     {

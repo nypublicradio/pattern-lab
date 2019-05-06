@@ -38,7 +38,6 @@
   },
 
   "featured_block": {
-    "has_picture": true,
     "is_h2": true,
     "block_media": {
       "break_m": "500",

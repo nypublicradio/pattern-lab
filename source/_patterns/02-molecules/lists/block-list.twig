@@ -1,4 +1,7 @@
 <div class="c-block-list {{ block_list_classes }}">
+  {% if block_list_heading %}
+    <h2 class="o-section__heading o-bg-text-accent">{{ block_list_heading }}</h2>
+  {% endif %}
   <ul class="u-spacing--and-half">
     {% for item in blocks %}
       {% block list_type %}

@@ -1,0 +1,50 @@
+<div class="c-author-block {{ author_block_classes }}">
+
+  {% block author_block_meta %}
+    <div class="c-author-block__meta u-spacing--half">
+
+      <h3 class="c-author-block__title c-block__title">{{ author_block_title }}</h3>
+
+      <div class="c-author-block__info">
+        {% if author_block_role %}
+          <span class="c-author-block__role u-font--secondary-style u-color--gray u-font--xs"><strong>{{ author_block_role }}</strong></span>
+        {% endif %}
+        <a href="" class="c-author-block__details u-font--secondary-style u-has-accent u-has-accent--secondary u-font--xs">Articles</a>
+      </div>
+
+      <div class="c-author-block__social">
+        {%
+          include 'molecules-share-tools'
+          with {
+            "has_instagram": true,
+            "has_facebook": false,
+            "has_reddit": false
+          }
+        %}
+      </div>
+
+    </div>
+  {% endblock %}
+
+  {% block author_block_media %}
+    {% if author_block_media %}
+      <div class="c-author-block__media">
+        {% include '@atoms/images/picture.twig' with author_block_media %}
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {% block author_block_content %}
+    <div class="c-author-block__object u-spacing--half">
+
+      {% if author_block_dek %}
+        <div class="c-author-block__dek o-rte-text u-spacing js-clamp--3">
+          {{ author_block_dek }}
+          <button class="c-author-block__dek-toggle js-toggle-parent o-text-with-icon u-font--secondary-style u-has-accent u-has-accent--secondary u-font--xs">Read&nbsp;<span class="u-active--on">More</span><span class="u-active--off">Less</span><span class="o-icon o-icon--caret">{% include '@atoms/icons/icon-caret.twig' %}</span></button>
+        </div>
+      {% endif %}
+
+    </div>
+  {% endblock %}
+
+</div>
