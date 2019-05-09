@@ -156,6 +156,7 @@
 
     a {
       margin: 0 $space;
+      color: $c-quaternary;
       @include media('>large') {
         margin: 0 $space-double 0 0;
       }
