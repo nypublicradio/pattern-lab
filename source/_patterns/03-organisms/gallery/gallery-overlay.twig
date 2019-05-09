@@ -1,41 +1,47 @@
-<div class="c-gallery-overlay">
+{% if show_active %}
+  <div class="gallery-is-active">
+{% endif %}
+  <div class="c-gallery-overlay">
 
-  <div class="l-container l-container--content u-spacing--double">
+    <div class="l-container l-container--content u-spacing--double">
 
-    <div class="l-wrap">
-      <a href="" class="o-back-to-link js-toggle" data-remove="gallery-is-active"><span class="o-icon o-icon--prev-caret u-path-fill--white u-icon--xs">{% include '@atoms/icons/icon-caret.twig' %}</span> <span class="u-has-accent u-has-accent--white">{{ article_title }}</span></span></a>
+      <div class="l-wrap">
+        <a href="" class="o-back-to-link js-toggle" data-remove="gallery-is-active"><span class="o-icon o-icon--prev-caret u-path-fill--white u-icon--xs">{% include '@atoms/icons/icon-caret.twig' %}</span> <span class="u-has-accent u-has-accent--white">{{ article_title }}</span></span></a>
+      </div>
+
+      <div class="u-spacing--quad">
+
+        {% for slide in slides %}
+          {% include 'molecules-slide'
+            with {
+              "slides": slide,
+              "index": loop.index,
+              "total": loop.length,
+              "slide_title": slide.slide_title,
+              "img": {
+                "src_s": slide.img.src_s
+              },
+              "credit": slide.credit,
+              "slide_dek": slide.slide_dek
+            }
+          %}
+          {% if loop.index == 1 %}
+            <div class="l-wrap">
+              {% include 'molecules-billboard' %}
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        <span class="o-end-label u-font--secondary-style u-font--xs u-color--gray"><span class="o-icon o-icon--down-arrow u-icon--m">{% include 'atoms-icon-dashed-arrow' %}</span> End</span>
+
+      </div>
+
+      <div class="u-align--center">
+        <a href="" class="o-button c-gallery-overlay__back o-button--c-quaternary js-toggle" data-remove="gallery-is-active">Back to Article</a>
+      </div>
+
     </div>
-
-    <div class="u-spacing--quad">
-
-      {% for slide in slides %}
-        {% include 'molecules-slide'
-          with {
-            "slides": slide,
-            "index": loop.index,
-            "total": loop.length,
-            "slide_title": slide.slide_title,
-            "img": {
-              "src_s": slide.img.src_s
-            },
-            "credit": slide.credit,
-            "slide_dek": slide.slide_dek
-          }
-        %}
-        {% if loop.index == 1 %}
-          <div class="l-wrap">
-            {% include 'molecules-billboard' %}
-          </div>
-        {% endif %}
-      {% endfor %}
-
-      <span class="o-end-label u-font--secondary-style u-font--xs u-color--gray"><span class="o-icon o-icon--down-arrow u-icon--m">{% include 'atoms-icon-dashed-arrow' %}</span> End</span>
-
-    </div>
-
-    <div class="u-align--center">
-      <a href="" class="o-button c-gallery-overlay__back o-button--c-quaternary js-toggle" data-remove="gallery-is-active">Back to Article</a>
-    </div>
-
   </div>
-</div>
+{% if show_active %}
+  </div>
+{% endif %}
