@@ -156,7 +156,13 @@
 
     a {
       margin: 0 $space;
+      padding: 8px 0;
       color: $c-quaternary;
+
+      &:hover {
+        background-color: $c-primary;
+      }
+
       @include media('>large') {
         margin: 0 $space-double 0 0;
       }
