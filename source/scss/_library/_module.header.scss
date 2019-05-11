@@ -348,7 +348,7 @@
 
   &__nypr-logo {
     width: 120px;
-    margin: $space-double auto $space-half;
+    margin: $space-double auto $space;
     path,
     polygon {
       fill: $c-white;
@@ -359,6 +359,13 @@
 
     &__list {
       width: calc(100% + #{$space-double});
+    }
+  }
+
+  &__nypr-linkroll {
+
+    .c-toggle-box__label {
+      font-size: 12px;
     }
   }
 

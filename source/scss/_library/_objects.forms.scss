@@ -147,6 +147,10 @@
   .c-search__button {
     min-width: 60px;
     max-width: 60px;
+
+    path {
+      fill: $c-black;
+    }
   }
 }
 
