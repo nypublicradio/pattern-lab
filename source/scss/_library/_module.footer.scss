@@ -161,6 +161,7 @@
 
       &:hover {
         background-color: $c-primary;
+        color: $c-white;
       }
 
       @include media('>large') {
