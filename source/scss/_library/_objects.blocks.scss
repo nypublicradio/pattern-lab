@@ -17,6 +17,7 @@
   content: "•";
   display: inline-block;
   margin-right: $space-half;
+  margin-left: -$space-quarter;
   color: $c-gray;
   font-size: 18px;
   transform: translateY(.08em);
@@ -170,8 +171,6 @@
  * Block meta
  */
 .c-block-meta {
-  display: flex;
-  align-items: center;
 
   > * + * {
     &:before {
