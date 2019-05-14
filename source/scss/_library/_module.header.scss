@@ -146,6 +146,12 @@
     .c-share-tools__link {
       margin: 0;
 
+      &:hover {
+        path {
+          fill: $c-primary;
+        }
+      }
+
       @include media('<=small') {
         width: $space-double;
       }
