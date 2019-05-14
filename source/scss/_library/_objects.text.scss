@@ -399,7 +399,6 @@ a.o-kicker {
 .o-credit {
   font-size: $font-size-xs;
   line-height: 1.8;
-  display: inline-block;
   @include font-secondary-style;
 
   > a {
