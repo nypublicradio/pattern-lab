@@ -17,6 +17,7 @@
   content: "•";
   display: inline-block;
   margin-right: $space-half;
+  margin-left: -$space-quarter;
   color: $c-gray;
   font-size: 18px;
   transform: translateY(.08em);
@@ -40,7 +41,9 @@
   &__tag {
     color: $c-white;
     background-color: $c-primary;
-    vertical-align: text-top;
+    vertical-align: top;
+    position: relative;
+    top: 1px;
 
     &:hover {
       background-color: $c-tertiary;
@@ -119,9 +122,9 @@
     overflow: hidden;
     margin-bottom: 0;
 
-    img {
-      height: 100px;
-      width: 100px;
+    @include media('>xlarge') {
+      min-width: 150px;
+      max-width: 150px;
     }
   }
 
@@ -168,8 +171,6 @@
  * Block meta
  */
 .c-block-meta {
-  display: flex;
-  align-items: center;
 
   > * + * {
     &:before {

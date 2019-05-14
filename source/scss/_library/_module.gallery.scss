@@ -5,6 +5,7 @@
 .c-gallery-overlay {
   padding: $space-double 0 $space-quad;
   color: $c-white;
+  background-color: $c-dark-bg;
 
   .l-wrap {
     @include media('>medium') {

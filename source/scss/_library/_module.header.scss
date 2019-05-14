@@ -146,6 +146,12 @@
     .c-share-tools__link {
       margin: 0;
 
+      &:hover {
+        path {
+          fill: $c-primary;
+        }
+      }
+
       @include media('<=small') {
         width: $space-double;
       }
@@ -348,7 +354,7 @@
 
   &__nypr-logo {
     width: 120px;
-    margin: $space-double auto $space-half;
+    margin: $space-double auto $space;
     path,
     polygon {
       fill: $c-white;
@@ -362,6 +368,13 @@
     }
   }
 
+  &__nypr-linkroll {
+
+    .c-toggle-box__label {
+      font-size: 12px;
+    }
+  }
+
   &__copyright {
     p {
       line-height: 2.5;
@@ -371,6 +384,15 @@
   &__terms-links {
     display: flex;
     justify-content: space-between;
+    a {
+      color: $c-quaternary;
+      padding: 8px 0;
+
+      &:hover {
+        background-color: $c-primary;
+        color: $c-white;
+      }
+    }
   }
 }
 

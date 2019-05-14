@@ -3,7 +3,7 @@
   <div class="c-side-menu__group">
 
     <div class="c-side-menu__branding">
-      {% include '@atoms/images/gothamist-logo.twig' %}
+      <a href="/">{% include '@atoms/images/gothamist-logo.twig' %}</a>
     </div>
 
     {%
@@ -47,7 +47,7 @@
         include '@atoms/buttons/button.twig'
         with {
           "button_text": "Send a Story Idea",
-          "button_classes": "c-side-menu__send-story o-button--quaternary u-full-width"
+          "button_classes": "c-side-menu__send-story o-button--c-quaternary u-full-width"
         }
       %}
     </div>

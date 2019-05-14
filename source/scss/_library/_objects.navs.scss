@@ -18,7 +18,7 @@
     height: 2px;
     display: block;
     left: 50%;
-    width: 14px;
+    width: 17px;
     transform: translateX(-50%);
   }
 
@@ -141,10 +141,11 @@
  * Primary navigation (side)
  */
 .c-primary-nav--side {
-  margin-bottom: $space-double;
+  padding-top: $space-half;
+  margin-bottom: $space-triple;
 
   .c-primary-nav__item {
-    margin-top: $space;
+    margin-top: $space-and-half;
   }
 
   .c-primary-nav__link {

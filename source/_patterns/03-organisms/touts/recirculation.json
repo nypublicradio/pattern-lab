@@ -5,7 +5,7 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=360"
+            "src": "https://picsum.photos/150/150?image=360"
           }
         },
         "kicker": "Lifestyle",
@@ -17,7 +17,7 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=310"
+            "src": "https://picsum.photos/150/150?image=310"
           }
         },
         "kicker": "Arts & Ent",
@@ -29,7 +29,7 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/100/100?image=325"
+            "src": "https://picsum.photos/150/150?image=325"
           }
         },
         "kicker": "Food",
