@@ -470,9 +470,15 @@ a.o-kicker {
   }
 
   .u-has-accent {
-    padding-bottom: 0;
-    line-height: 1.5;
+    line-height: 1.6;
+    display: inline;
+    background-image: linear-gradient(to right, transparent 55%, $c-white 45%);
     background-position: left bottom 2px;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
+    box-decoration-break: clone;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
