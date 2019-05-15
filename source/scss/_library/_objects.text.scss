@@ -454,15 +454,24 @@ a.o-kicker {
  */
 .o-back-to-link {
   font-size: $font-size-s-m;
-  display: inline-flex;
-  align-items: flex-start;
   margin-left: -$space-quarter;
+  padding-left: $space-double;
+  position: relative;
+  display: block;
 
   .o-icon--prev-caret {
     margin: 6px $space-quarter 0 0;
     transform: rotate(90deg);
     min-width: 20px;
+    left: 0;
+    top: 4px;
+    position: absolute;
+  }
 
+  .u-has-accent {
+    padding-bottom: 0;
+    line-height: 1.5;
+    background-position: left bottom 2px;
   }
 }
 

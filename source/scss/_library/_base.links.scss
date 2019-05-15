@@ -13,9 +13,11 @@ a {
 
 .u-has-accent,
 .o-rte-text .u-has-accent {
-  display: inline-block;
   padding-bottom: 3px;
-  border-bottom: 2px dotted $c-body-color;
+  background-image: linear-gradient(to right, transparent 55%, $c-body-color 45%);
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 6px 2px;
   box-decoration-break: clone;
 
   &:hover {
@@ -25,27 +27,27 @@ a {
 
   &--neutral {
     color: $c-body-color;
-    border-bottom-color: $c-body-color;
+    background-image: linear-gradient(to right, transparent 55%, $c-body-color 45%);
   }
 
   &--primary {
     color: $c-primary;
-    border-bottom-color: $c-primary;
+    background-image: linear-gradient(to right, transparent 55%, $c-primary 45%);
   }
 
   &--quaternary {
     color: $c-quaternary;
-    border-bottom-color: $c-quaternary;
+    background-image: linear-gradient(to right, transparent 55%, $c-quaternary 45%);
   }
 
   &--white {
     color: $c-white;
-    border-bottom-color: $c-white;
+    background-image: linear-gradient(to right, transparent 55%, $c-white 45%);
   }
 
   &--secondary {
     color: $c-secondary;
-    border-bottom-color: $c-secondary;
+    background-image: linear-gradient(to right, transparent 55%, $c-secondary 45%);
 
     &:hover {
       path {
