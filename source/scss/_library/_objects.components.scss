@@ -16,11 +16,12 @@
       bottom: -22px;
       right: 0;
       position: absolute;
-      width: 15px;
-      height: 15px;
       background-color: $c-white;
-      transform: rotate(-45deg);
-      display: none;
+      opacity: 0;
+      transform: translateY(20px) rotate(-45deg);
+      transition: none;
+      width: 0;
+      height: 0;
     }
   }
 
@@ -29,19 +30,22 @@
   }
 
   &__content {
-    display: none;
     position: absolute;
     width: 100%;
     right: -$space-half;
     top: $space-double;
     padding: $space;
     background-color: $c-white;
-    z-index: $z-index-toggle-box-content;
+    opacity: 0;
+    z-index: $z-index-vanish;
+    transform: scale(.85);
+    transform-origin: left center;
+    transition: all .2s ease-out;
 
     @include media('>medium') {
       right: auto;
       left: 50%;
-      transform: translate(-50%);
+      transform: scale(.85) translate(-50%);
     }
   }
 
@@ -57,11 +61,21 @@
 .c-toggle-box.this-is-active {
 
   .c-toggle-box__label:before {
-    display: block;
+    opacity: 1;
+    transform: translateY(0) rotate(-45deg);
+    transition: transform .1s ease-out .15s, opacity .15s ease-out .15s;
+    width: 15px;
+    height: 15px;
   }
 
   .c-toggle-box__content {
-    display: block;
+    opacity: 1;
+    transform: scale(1);
+    z-index: $z-index-toggle-box-content;
+
+    @include media('>medium') {
+      transform: scale(1) translate(-50%);
+    }
   }
 }
 
