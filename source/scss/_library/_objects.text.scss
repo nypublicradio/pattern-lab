@@ -402,8 +402,9 @@ a.o-kicker {
   line-height: 1.8;
   @include font-secondary-style;
 
-  > a {
+  a {
     padding-bottom: 0;
+    display: inline;
   }
 }
 
