@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    { },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/600/400?image=159"
+        }
+      },
+      "rubric": "This is my list rubric"
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/600/400?image=152"
+        }
+      },
+      "rubric": false
+    },
+    {
+      "block_media": {
+        "img": {
+          "src": "https://picsum.photos/600/400?image=201"
+        }
+      },
+      "rubric": "This is my list rubric"
+    },
+    { },
+    { },
+    { }
+  ]
+}
