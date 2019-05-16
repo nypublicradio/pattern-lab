@@ -8,12 +8,6 @@
     {% include '@atoms/images/picture.twig' %}
   </div>
 
-  {% block gallery_credit %}
-    {% if gallery_credit %}
-      {% include 'molecules-credit' %}
-    {% endif %}
-  {% endblock %}
-
   {% block bottom_caption %}
     {% include '@molecules/article/caption.twig' %}
   {% endblock %}

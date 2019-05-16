@@ -405,10 +405,12 @@ a.o-kicker {
 .o-credit {
   font-size: $font-size-xs;
   line-height: 1.8;
+  margin-left: $space-quarter;
   @include font-secondary-style;
 
-  > a {
+  a {
     padding-bottom: 0;
+    display: inline;
   }
 }
 
@@ -459,15 +461,30 @@ a.o-kicker {
  */
 .o-back-to-link {
   font-size: $font-size-s-m;
-  display: inline-flex;
-  align-items: flex-start;
   margin-left: -$space-quarter;
+  padding-left: $space-double;
+  position: relative;
+  display: block;
 
   .o-icon--prev-caret {
     margin: 6px $space-quarter 0 0;
     transform: rotate(90deg);
     min-width: 20px;
+    left: 0;
+    top: 4px;
+    position: absolute;
+  }
 
+  .u-has-accent {
+    line-height: 1.6;
+    display: inline;
+    background-image: linear-gradient(to right, transparent 55%, $c-white 45%);
+    background-position: left bottom 2px;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
+    box-decoration-break: clone;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 

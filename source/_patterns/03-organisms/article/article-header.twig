@@ -1,7 +1,11 @@
 <header class="c-article__header u-spacing--and-half l-container">
 
   <div class="l-container l-container--12col u-spacing--and-half">
-    {% include 'molecules-breadcrumb' %}
+
+    {% if breadcrumbs %}
+      {% include 'molecules-breadcrumb' %}
+    {% endif %}
+
     {%
       include 'atoms-headline'
       with {
@@ -22,10 +26,12 @@
         {% include 'molecules-share-tools' %}
       </div>
 
-      {% if is_gallery %}
-        {% include 'molecules-lead-gallery' %}
-      {% else %}
-        {% include 'molecules-lead' %}
+      {% if img %}
+        {% if is_gallery %}
+          {% include 'molecules-lead-gallery' %}
+        {% else %}
+          {% include 'molecules-lead' %}
+        {% endif %}
       {% endif %}
     </div>
 
