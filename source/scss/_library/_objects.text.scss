@@ -400,6 +400,7 @@ a.o-kicker {
 .o-credit {
   font-size: $font-size-xs;
   line-height: 1.8;
+  margin-left: $space-quarter;
   @include font-secondary-style;
 
   a {

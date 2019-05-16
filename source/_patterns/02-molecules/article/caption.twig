@@ -1,20 +1,18 @@
 <figcaption class="o-caption {{ caption_classes }}">
 
-  {% block caption %}
+  {% block caption_block %}
     {% if caption %}
       {% if caption_arrow %}
         <span class="o-icon o-icon--dashed-arrow u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span>
       {% endif %}
 
       <div class="o-caption__text">
-        <span>{{ caption }}</span>
-
+        {{ caption }}
         {% block figcaption_credit %}
           {% if figcaption_credit %}
             {% include 'molecules-credit' %}
           {% endif %}
         {% endblock %}
-
       </div>
     {% endif %}
   {% endblock %}

@@ -31,10 +31,6 @@
     background-color: $c-octonary;
   }
 
-  .o-credit {
-    padding: 0 $space $space-half;
-    color: $c-gray--dark;
-  }
   .o-caption {
     padding: 0 $space $space;
 
@@ -45,14 +41,15 @@
     }
   }
 
+  .o-icon--dashed-arrow {
+    margin-top: 2px;
+  }
+
   &__title {
     font-size: $font-size-m;
   }
 
   &__caption {
-    display: flex;
-    align-items: center;
-
     p {
       font-size: $font-size-s;
     }
