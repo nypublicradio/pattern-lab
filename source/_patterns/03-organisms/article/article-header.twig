@@ -26,10 +26,12 @@
         {% include 'molecules-share-tools' %}
       </div>
 
-      {% if is_gallery %}
-        {% include 'molecules-lead-gallery' %}
-      {% else %}
-        {% include 'molecules-lead' %}
+      {% if img %}
+        {% if is_gallery %}
+          {% include 'molecules-lead-gallery' %}
+        {% else %}
+          {% include 'molecules-lead' %}
+        {% endif %}
       {% endif %}
     </div>
 

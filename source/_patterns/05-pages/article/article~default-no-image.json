@@ -10,11 +10,7 @@
 
   "break_m": false,
   "break_l": false,
-  "img": {
-    "src_s": "https://cl.ly/6fd97b989c0e/download/mobile@3x.jpg",
-    "src_m":false,
-    "src_l": false
-  },
+  "img": false,
 
   "breadcrumbs": false,
 
