@@ -103,6 +103,11 @@
 .o-rte-text {
   font-family: $ff-font--secondary;
 
+  // broken markup compat
+  &.c-article__body {
+    @include p;
+  }
+
   > dl dd,
   > dl dt,
   > ol li,
