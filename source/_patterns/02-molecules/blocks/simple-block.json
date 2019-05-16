@@ -1,0 +1,22 @@
+{
+  "block_media": {
+    "img": {
+      "src": "https://picsum.photos/600/430?image=250",
+      "alt": "My Media"
+    }
+  },
+
+  "block_object": {
+    "kicker": "Food"
+  },
+
+  "rubric": false,
+
+  "block_title": false,
+
+  "block_dek": "The building housing the White Horse Tavern, a historic, no-fuss dive located at 567 Hudson Street in Greenwich Village.",
+
+  "block_meta": {
+    "author": "Paula Mejia"
+  }
+}
