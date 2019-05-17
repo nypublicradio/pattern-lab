@@ -18,6 +18,8 @@
   opacity: 0;
   transform: translateY(40px);
   transition: all 1.5s $hard-ease-in .2s;
+  position: relative;
+  z-index: $z-index-article-gallery-slide;
 
   @for $i from 1 through 5 {
     &:nth-child(#{$i}) {

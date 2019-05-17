@@ -13,34 +13,6 @@
 }
 
 /**
- * Recirculation
- */
-.c-recirc-tout {
-  padding: $space-double 0;
-
-  @include media('>medium') {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  &__col1 {
-    margin-bottom: $space-triple;
-    @include media('>medium') {
-      margin-bottom: 0;
-      width: calc(56% - #{$space});
-    }
-  }
-
-  &__col2 {
-    @include media('>medium') {
-      width: calc(44% - #{$space});
-    }
-  }
-}
-
-
-/**
  * Block group
  */
 .c-block-group {
@@ -67,7 +39,7 @@
   }
 
   // With ad
-  &--with-ad {
+  &--right-rail {
     @include media('<=medium') {
       display: flex;
       flex-wrap: wrap;
@@ -86,6 +58,10 @@
     .c-block-group__col1 {
       width: 100%;
       padding: 0;
+
+      @include media('>medium') {
+        padding: 0; // override base style
+      }
 
       > .c-block {
         margin-bottom: $space-triple;
@@ -115,6 +91,26 @@
       @include media('>small') {
         margin-bottom: 0;
         max-width: calc(50% - #{$space-half});
+      }
+    }
+  }
+
+  &--offset {
+    padding: $space-double 0;
+
+    .c-block-group__col1 {
+      margin-bottom: $space-triple;
+
+      @include media('>medium') {
+        padding-right: 0;
+        margin-bottom: 0;
+        width: calc(56% - #{$space});
+      }
+    }
+
+    .c-block-group__col2 {
+      @include media('>medium') {
+        width: calc(44% - #{$space});
       }
     }
   }
@@ -374,4 +370,3 @@
     }
   }
 }
-

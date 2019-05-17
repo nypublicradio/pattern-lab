@@ -4,7 +4,7 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/360/240?image=160"
+            "src": "https://cl.ly/e97cdf973633/download/mobile@2x.jpg"
           }
         },
         "kicker": "Food",
@@ -18,10 +18,10 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/360/240?image=161"
+            "src": "https://cl.ly/6fd97b989c0e/download/mobile@3x.jpg"
           }
         },
-        "kicker": "Lifestyle",
+        "kicker": false,
         "block_title": "The 14 Best New Burgers In NYC",
         "block_dek": "It's been three years since we last wolfed our way through mountains of meat in search of the best burgers in town.",
         "block_meta": {
@@ -44,10 +44,10 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/360/240?image=163"
+            "src": "https://cl.ly/d9daac75e7a3/download/group-12@3x.png"
           }
         },
-        "kicker": "Food",
+        "kicker": "Arts & Entertainment",
         "block_title": "Scotch Egg Burgers & Juicy Lucys Top This Year's Annual Burger Week",
         "block_dek": "The annual Burger Week festivities commence on May 1st, the start of a week's worth of special burger collaborations and events.",
         "comment_count": "11",
@@ -59,10 +59,10 @@
       {
         "block_media": {
           "img": {
-            "src": "https://picsum.photos/360/240?image=164"
+            "src": "https://cl.ly/09ddb4738245/download/mobile@2x.png"
           }
         },
-        "kicker": "Arts & Entertainment",
+        "kicker": "News",
         "block_title": "Jackson Hole Shutters After 42 Years ",
         "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
         "block_meta": {

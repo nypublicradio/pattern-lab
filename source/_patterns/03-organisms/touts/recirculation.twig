@@ -1,13 +1,13 @@
-<section class="c-recirc-tout o-section">
+<section class="c-block-group c-block-group--offset o-section">
 
-  <div class="c-recirc-tout__col1 u-spacing--and-half">
+  <div class="c-block-group__col1 u-spacing--and-half">
     <h2 class="o-section__heading o-bg-text-accent">Recent Stories</h2>
     {% block recirc_list %}
       {% include '@molecules/lists/block-list.twig' with recirc_list %}
     {% endblock %}
   </div>
 
-  <div class="c-recirc-tout__col2 u-spacing--and-half">
+  <div class="c-block-group__col2 u-spacing--and-half">
     <h2 class="o-section__heading o-bg-text-accent">Featured Story</h2>
     {% block recirc_block %}
       {% include '@molecules/blocks/block.twig' with recirc_block %}

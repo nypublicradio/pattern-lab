@@ -235,6 +235,11 @@
   border: 2px dashed $c-gray;
   text-align: center;
 
+  &__wrap {
+    overflow: hidden;
+    position: relative;
+  }
+
   @include media('<=medium') {
     width: 100vw;
     padding: $space-and-half $space-double;
@@ -257,23 +262,39 @@
     }
   }
 
+  ul {
+    margin-left: -5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   &__item {
     display: inline-block;
+    margin-bottom: $space-half;
+    flex-grow: 1;
+    flex-basis: auto;
+    position: relative;
+    padding: 0 1em;
 
-    + * {
-      &:before {
-        content: "•";
-        display: inline-block;
-        margin: 0 $space;
-        color: $c-gray;
-      }
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: $c-gray;
+      left: 0;
+      top: calc(50% - 2px);
+      width: 3px;
+      height: 3px;
+      display: block;
+      border-radius: 50%;
     }
   }
 
   &__link {
     font-size: $font-size-s-m;
-    padding-bottom: 0;
     font-weight: 600;
+    padding-bottom: 0;
 
     @include media('<=medium') {
       margin-bottom: $space-half;
