@@ -118,10 +118,10 @@
 
 .c-home {
   &__sections {
-    padding-top: $space-triple;
+    padding-top: $space-double;
 
     @include media('>medium') {
-      padding-top: $space-quad;
+      padding-top: $space-triple;
     }
 
     .c-donate-tout--static {
