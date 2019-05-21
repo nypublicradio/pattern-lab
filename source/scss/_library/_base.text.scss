@@ -26,13 +26,13 @@ b {
  */
 blockquote {
   margin-left: ($col-width + $gutter) + px;
+  @include border-accent(bottom, left);
   p {
     font-family: $ff-font--primary;
     font-size: $font-size-m;
     line-height: 1.35;
     margin: $space-double 0;
     padding: $space-half $space;
-    @include border-accent(bottom, left);
   }
 }
 
