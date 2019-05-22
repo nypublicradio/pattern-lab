@@ -121,7 +121,10 @@
     padding-top: $space-double;
 
     @include media('>medium') {
-      padding-top: $space-triple;
+
+      &:not(.u-section-spacing--wide) {
+        padding-top: $space-triple;
+      }
     }
 
     .c-donate-tout--static {
