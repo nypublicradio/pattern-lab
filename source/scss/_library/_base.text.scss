@@ -25,14 +25,11 @@ b {
  * Blockquote
  */
 blockquote {
-  margin-left: ($col-width + $gutter) + px;
+  margin-left: $space-double;
   @include border-accent(bottom, left);
   p {
-    font-family: $ff-font--primary;
-    font-size: $font-size-m;
-    line-height: 1.35;
     margin: $space-double 0;
-    padding: $space-half $space;
+    padding: $space-half $space-and-half;
   }
 }
 
