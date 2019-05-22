@@ -32,6 +32,14 @@
       }
     }
   }
+
+  &__read-more {
+    padding-top: $space;
+
+    @include media('>medium') {
+      padding-top: $space-double;
+    }
+  }
 }
 
 

@@ -207,9 +207,8 @@
   margin-bottom: $space-triple + 10px;
 
   @include media('<=medium') {
-    padding: $space-double $space-and-half;
-    margin-right: -$space;
-    margin-left: -6px;
+    padding: $space-and-half;
+    margin-left: -2px;
   }
 
   &:before {
@@ -237,7 +236,7 @@
   }
 
   &__media {
-    padding: $space $space-and-half $space;
+    padding: $space;
 
     @include media('>small', '<=medium') {
       padding: 0;
