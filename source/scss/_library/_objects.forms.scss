@@ -108,6 +108,10 @@
   .c-search__button {
     opacity: 1;
     transition: opacity .1s ease-out;
+
+    path {
+      fill: $c-black;
+    }
   }
 }
 
