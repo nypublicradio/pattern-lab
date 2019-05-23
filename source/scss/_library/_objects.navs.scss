@@ -232,8 +232,9 @@
  */
 .c-read-more-nav {
   padding: $space-and-half $space;
-  border: 2px dashed $c-gray;
   text-align: center;
+  border-top: 2px dashed $c-gray;
+  border-bottom: 2px dashed $c-gray;
 
   &__wrap {
     overflow: hidden;
@@ -241,7 +242,6 @@
   }
 
   @include media('<=medium') {
-    width: 100vw;
     padding: $space-and-half $space-double;
   }
 
@@ -250,6 +250,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    border: 2px dashed $c-gray;
   }
 
   &__label {

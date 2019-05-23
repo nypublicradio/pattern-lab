@@ -7,6 +7,14 @@
   // Header with full stacked logo
   &--emphasis {
 
+    .c-main-header__ad-unit {
+      padding-bottom: $space-half;
+
+      @include media('>medium') {
+        padding-bottom: 30px;
+      }
+    }
+
     .c-main-header__branding {
       width: 110px;
       position: relative;

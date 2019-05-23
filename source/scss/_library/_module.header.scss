@@ -293,13 +293,14 @@
 
   &__group {
     padding: $space-and-half;
+
     &:not(:last-child) {
       @include border-accent(right, center, rgba($c-gray, .2));
     }
 
     @include media('>medium') {
-      padding-left: $space-quad;
-      padding-right: $space-quad;
+      padding-left: 75px;
+      padding-right: 75px;
     }
   }
 
@@ -342,8 +343,16 @@
   }
 
   &__donate {
-    width: calc(100% - #{$space});
+    width: 100%;
     margin-bottom: $space;
+  }
+
+  &__donate,
+  .c-side-menu__send-story,
+  .c-search--side {
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__send-story {
