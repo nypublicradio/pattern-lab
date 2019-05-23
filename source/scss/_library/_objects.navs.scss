@@ -18,7 +18,7 @@
     height: 2px;
     display: block;
     left: 50%;
-    width: 17px;
+    width: 18px;
     transform: translateX(-50%);
   }
 
@@ -37,12 +37,14 @@
     transform: translate(-50%, 6px);
   }
 
-  &:hover {
-    .o-menu-toggle__line,
-    .o-menu-toggle__line:before,
-    .o-menu-toggle__line:after {
-      background-color: $c-primary;
-      transition: background-color .2s ease-out;
+  @media (pointer: fine) {
+    &:hover {
+      .o-menu-toggle__line,
+      .o-menu-toggle__line:before,
+      .o-menu-toggle__line:after {
+        background-color: $c-primary;
+        transition: background-color .2s ease-out;
+      }
     }
   }
 }
