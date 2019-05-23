@@ -6,9 +6,10 @@
 
   &__heading {
     font-size: $font-size-l;
-    display: inline-block;
+    display: inline;
     padding-bottom: $space-half;
     margin-left: -$space-half;
+    background-position: center bottom .5em;
   }
 }
 
