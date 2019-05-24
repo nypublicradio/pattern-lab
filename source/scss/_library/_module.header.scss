@@ -96,6 +96,7 @@
     color: $c-white;
     font-weight: normal;
     line-height: 1.2;
+    letter-spacing: 1px;
     padding: 0 $space-double 0 $space;
 
     @include media('>medium') {
