@@ -5,7 +5,9 @@
     {
       "slide_title": "Mercado Little Spain",
       "img": {
-        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-mobile.jpeg"
+        "break_m": "700",
+        "src_s": "http://picsum.photos/700/400?image=122",
+        "src_m": "http://picsum.photos/1200/600?image=124"
       },
       "credit": "Scott Lynch / Gothamist",
       "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
@@ -13,7 +15,9 @@
     {
       "slide_title": "Fuku",
       "img": {
-        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/4d5380661hyfood-1-jpg-mobile.jpeg"
+        "break_m": "700",
+        "src_s": "http://picsum.photos/700/400?image=127",
+        "src_m": "http://picsum.photos/1200/800?image=126"
       },
       "credit": "Scott Lynch / Gothamist",
       "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
@@ -29,7 +33,9 @@
     {
       "slide_title": "Queensyard",
       "img": {
-        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/b491fd14chyfood-10-jpg-mobile.jpeg"
+        "break_m": "700",
+        "src_s": "http://picsum.photos/700/600?image=137",
+        "src_m": "http://picsum.photos/700/800?image=136"
       },
       "credit": "Scott Lynch / Gothamist",
       "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
