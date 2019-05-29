@@ -33,6 +33,13 @@
     }
   }
 
+  &__body {
+
+    .twitter-tweet p {
+      word-break: break-word;
+    }
+  }
+
   &__read-more {
     padding-top: $space;
 
