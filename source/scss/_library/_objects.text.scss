@@ -348,6 +348,12 @@
   font-family: $ff-font--monospace;
   font-size: $font-size-xs;
 }
+
+.o-kicker--sponsored {
+  background-color: $c-sponsor-color;
+  color: $c-white;
+}
+
 a.o-kicker {
   box-decoration-break: clone;
   &:hover {
