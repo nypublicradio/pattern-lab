@@ -15,7 +15,7 @@
       }
     }
 
-    .c-main-header__branding {
+    &:not(.out-of-viewport) .c-main-header__branding {
       width: 110px;
       position: relative;
       bottom: -$space;
