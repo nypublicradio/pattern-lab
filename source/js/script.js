@@ -42,12 +42,16 @@
     }, 1000);
   }
 
-  // Adjust the height of the side menu depending on the header ad unit size.
-  $(window).resize(resizeFrame).resize();
+  // Adjust the height of the side menu depending on the header ad unit size
+  // and scroll position.
   function resizeFrame() {
-    var headerHeight = $('.c-main-header__ad-unit').height();
-    $('.c-main-header--stationary .c-side-menu').css('height', 'calc(100vh - ' + headerHeight + 'px)');
+    var headerHeight = $('.c-main-header__ad-unit').height(),
+        $sideMenu = $('.c-main-header--stationary .c-side-menu'),
+        scrollTopPos = $(document).scrollTop();
+
+    $sideMenu.css('height', 'calc(100vh - ' + (headerHeight - scrollTopPos) + 'px)');
   }
+  $('.c-main-header--stationary .o-menu-toggle').on('click', resizeFrame);
 
   /*
    * Toggle Active Classes

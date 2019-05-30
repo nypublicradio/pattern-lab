@@ -23,6 +23,10 @@ picture,
 picture img {
   display: block;
 }
+picture img {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 figure {
   position: relative;
