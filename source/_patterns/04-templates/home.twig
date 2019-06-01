@@ -10,7 +10,14 @@
       }
     %}
   </div>
+
   <div class="c-home__sections u-section-spacing--wide l-container l-container--xl l-wrap u-trigger-floating-header">
+
+    {% if breaking_news %}
+      <div class="l-container l-container--16col">
+        {% include '@molecules/banners/text-banner.twig' %}
+      </div>
+    {% endif %}
 
     {% block featured_blocks_primary %}
       {% include '@organisms/sections/featured-block-list.twig' with featured_blocks_primary %}

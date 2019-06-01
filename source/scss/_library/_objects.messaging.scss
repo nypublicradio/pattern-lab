@@ -1,3 +1,32 @@
 /*------------------------------------*\
     $MESSAGING
 \*------------------------------------*/
+
+/**
+ * Banners
+ */
+.o-text-banner {
+  @include media('>large') {
+    padding-top: $space;
+  }
+
+  &__eyebrow .o-kicker {
+    background-color: $c-gray--dark;
+    color: $c-white;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-m;
+
+    @include media('>large') {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__timestamp {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: $space-half;
+  }
+}

@@ -31,6 +31,7 @@
  * Blocks...............Modular components often consisting of text and media.
  * Cards................Modular components for mainly text and data (card-like).
  * Components...........Themable and modular components for dynamic content.
+ * Messaging............Notifications, banners, errors, etc...
  * Leads................Leading hero image/caption section of a content type.
  * Buttons..............Various button styles and styles.
  * Icons................Icon styles and settings.
@@ -110,6 +111,7 @@ $tests: true;
 @import "objects.blocks";
 @import "objects.cards";
 @import "objects.components";
+@import "objects.messaging";
 @import "objects.leads";
 @import "objects.buttons";
 @import "objects.icons";
