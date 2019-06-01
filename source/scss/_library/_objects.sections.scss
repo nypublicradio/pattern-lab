@@ -121,7 +121,7 @@
   &__sections {
     padding-top: $space-double;
 
-    .c-featured-blocks {
+    .o-box-banner + .c-featured-blocks {
       margin-top: 0;
     }
 
