@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 /**
- * Banners
+ * Text only banner message
  */
 .o-text-banner {
   @include media('>large') {
@@ -28,5 +28,58 @@
     display: inline-block;
     vertical-align: text-bottom;
     margin-right: $space-half;
+  }
+}
+
+
+/**
+ * Boxed in banner
+ */
+.o-box-banner {
+  padding: $space $space-and-half $space-and-half;
+  text-align: center;
+  display: block;
+
+  @include media('>large') {
+    display: flex;
+  }
+
+  &--title-only {
+    display: block;
+    padding: $space-and-half;
+
+    .o-box-banner__title {
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
+  &.this-is-active {
+    display: none;
+  }
+
+  &__close {
+    position: absolute;
+    right: $space-half;
+    top: $space-half;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-s-m;
+
+    @include media('>large') {
+      font-size: $font-size-m;
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  &__group {
+    @include media('>large') {
+      min-width: 73%;
+      padding-left: $space-triple;
+      text-align: left;
+    }
   }
 }

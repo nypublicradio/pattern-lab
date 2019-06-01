@@ -549,6 +549,13 @@ a.o-kicker {
   &:after {
     z-index: -1;
   }
+
+  // Quinary background color
+  &--quinary {
+    &:after {
+      background-color: $c-quinary;
+    }
+  }
 }
 
 
