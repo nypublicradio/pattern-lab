@@ -249,24 +249,16 @@
       padding: 0;
       margin-right: $space-and-half;
     }
-  }
 
-  .c-newsletter-form__field-group {
-    max-width: 424px;
-  }
-
-  .c-newsletter-form__terms {
-    padding-left: $space-double;
-
-    .o-checkbox {
-      background-color: $c-primary;
-      width: 22px;
-      height: 22px;
+    @include media('>xlarge') {
+      max-width: 250px;
+      min-width: 250px;
     }
   }
 
-  .c-newsletter-form__button:hover {
-    background-color: $c-quaternary;
+  &__text {
+    @include media('>medium') {
+      padding-top: $space;
+    }
   }
-
 }
