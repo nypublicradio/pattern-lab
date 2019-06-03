@@ -25,13 +25,13 @@
 \*------------------------------------*/
 
 // 3:2 ratio
-.u-img-ratio--3x2 {
+[class*=u-img-ratio] {
   position: relative;
+  background-color: #f0eeea;
 
   &:before {
     content: '';
     display: block;
-    padding-top: (2 / 3) * 100%; // height divided by width
     width: 100%;
   }
 
@@ -50,5 +50,12 @@
     margin: auto;
 
     object-fit: contain;
+  }
+
+}
+
+.u-img-ratio--3x2 {
+  &:before {
+    padding-top: (2 / 3) * 100%; // height divided by width
   }
 }
