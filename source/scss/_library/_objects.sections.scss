@@ -126,11 +126,7 @@
     }
 
     .o-box-banner {
-      margin-bottom: 30px;
-
-      @include media('>medium') {
-        margin-bottom: 50px;
-      }
+      margin-bottom: 50px;
     }
 
     @include media('>medium') {

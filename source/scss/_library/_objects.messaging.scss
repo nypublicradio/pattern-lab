@@ -81,11 +81,40 @@
     }
   }
 
+  &__title-link {
+    &:hover {
+      color: $c-body-color;
+      background-color: transparent;
+      background-image: linear-gradient(to right, $c-body-color, $c-body-color)
+    }
+  }
+
   &__group {
     @include media('>large') {
       min-width: 73%;
       padding-left: $space-triple;
       text-align: left;
+    }
+  }
+
+  &__dek {
+    p {
+      line-height: 1.45;
+
+      @include media('<=medium') {
+        font-size: $font-size-s;
+      }
+    }
+
+    a {
+      border-bottom-color: $c-body-color;
+      color: $c-body-color;
+
+      &:hover {
+        color: $c-body-color;
+        background-color: transparent;
+        border-bottom-style: solid;
+      }
     }
   }
 }
