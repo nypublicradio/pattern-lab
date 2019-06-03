@@ -1,1 +1,1 @@
-<a href="" class="o-kicker">{{ kicker }}</a>
+<{% if not remove_link %}a href=""{% else %}span{% endif %} class="o-kicker">{{ kicker }}</{% if not remove_link %}a{% else %}span{% endif %}>

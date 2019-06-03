@@ -2,7 +2,7 @@
 
   {% if kicker %}
     <div class="o-text-banner__eyebrow">
-      {% include '@atoms/text/kicker.twig' %}
+      {% include '@atoms/text/kicker.twig' with { "remove_link": true } %}
     </div>
   {% endif %}
 

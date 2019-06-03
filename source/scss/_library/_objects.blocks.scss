@@ -2,27 +2,6 @@
     $BLOCKS
 \*------------------------------------*/
 
-
-@mixin block-hover {
-  color: $c-primary;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  // background-image: linear-gradient(to right, $c-primary 50%, transparent 50%);
-  // background-position: left bottom .22em;
-  // background-repeat: repeat-x;
-  // background-size: 12px 2px;
-}
-
-@mixin dot-divider {
-  content: "•";
-  display: inline-block;
-  margin-right: $space-half;
-  margin-left: -$space-quarter;
-  color: $c-gray;
-  font-size: 18px;
-  transform: translateY(.08em);
-}
-
 /**
  * Standard block
  */

@@ -22,6 +22,12 @@
     @include media('>large') {
       font-size: $font-size-xl;
     }
+
+    a {
+      &:hover {
+        @include block-hover;
+      }
+    }
   }
 
   &__timestamp {
