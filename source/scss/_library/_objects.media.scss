@@ -27,7 +27,7 @@
 // 3:2 ratio
 [class*=u-img-ratio] {
   position: relative;
-  background-color: #f0eeea;
+  background-color: $c-gray--light;
 
   &:before {
     content: '';
