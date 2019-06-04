@@ -326,6 +326,7 @@
   background-repeat: no-repeat;
   padding: 0 $space-half;
   box-decoration-break: clone;
+  margin-left: -$space-half;
 
   &--senary {
     background-image: linear-gradient(rgba($c-senary, .2), rgba($c-senary, .2));
@@ -547,6 +548,13 @@ a.o-kicker {
   }
   &:after {
     z-index: -1;
+  }
+
+  // Quinary background color
+  &--quinary {
+    &:after {
+      background-color: $c-quinary;
+    }
   }
 }
 

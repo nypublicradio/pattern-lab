@@ -121,6 +121,14 @@
   &__sections {
     padding-top: $space-double;
 
+    .o-box-banner + .c-featured-blocks {
+      margin-top: 0;
+    }
+
+    .o-box-banner {
+      margin-bottom: 50px;
+    }
+
     @include media('>medium') {
 
       &:not(.u-section-spacing--wide) {

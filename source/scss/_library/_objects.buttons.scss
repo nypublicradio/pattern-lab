@@ -15,7 +15,7 @@ input[type="submit"] {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 20px $space-double 18px;
+  padding: 20px $space-and-half 18px;
   line-height: 22px;
   color: $c-white;
   cursor: pointer;
@@ -29,6 +29,11 @@ input[type="submit"] {
   text-align: center;
   background-color: $c-primary;
   position: relative;
+
+  @include media('>small') {
+    padding-left: $space-double;
+    padding-right: $space-double;
+  }
 
   &:before {
     content: "";

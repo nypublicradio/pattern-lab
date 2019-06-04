@@ -1,3 +1,86 @@
 /*------------------------------------*\
     $MESSAGING
 \*------------------------------------*/
+
+/**
+ * Text only banner message
+ */
+.o-text-banner {
+ @include media('>large') {
+   padding-top: $space;
+ }
+}
+
+/**
+ * Boxed in banner
+ */
+.o-box-banner {
+  padding: $space $space-and-half $space-and-half;
+  text-align: center;
+  display: block;
+
+  @include media('>large') {
+    display: flex;
+    justify-content: center;
+  }
+
+  &.this-is-active {
+    display: none;
+  }
+
+  &__close {
+    position: absolute;
+    right: $space-half;
+    top: $space-half;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-s-m;
+
+    @include media('>large') {
+      font-size: $font-size-m;
+      text-align: right;
+    }
+  }
+
+  &__title > a,
+  &__title-link {
+    @include inline-accent;
+
+    &:hover {
+      color: $c-body-color;
+      background-color: transparent;
+      background-image: linear-gradient(to right, $c-body-color, $c-body-color)
+    }
+  }
+
+  &__group {
+    @include media('>large') {
+      min-width: 73%;
+      padding-left: $space-triple;
+      text-align: left;
+    }
+  }
+
+  &__dek {
+    p {
+      line-height: 1.45;
+
+      @include media('<=medium') {
+        font-size: $font-size-s;
+      }
+    }
+
+    a {
+      border-bottom-color: $c-body-color;
+      color: $c-body-color;
+
+      &:hover {
+        color: $c-body-color;
+        background-color: transparent;
+        border-bottom-style: solid;
+      }
+    }
+  }
+}

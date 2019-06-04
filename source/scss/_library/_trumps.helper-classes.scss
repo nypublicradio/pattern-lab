@@ -34,12 +34,12 @@
   background-color: $c-dark-bg;
   color: $c-white;
 
-  a {
-    color: $c-quaternary;
+  a:not(.o-button) {
+    color: $c-white;
     border-bottom-color: $c-white;
 
     &:hover {
-      color: $c-quinary;
+      color: $c-white;
     }
   }
 }
