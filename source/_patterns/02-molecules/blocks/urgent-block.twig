@@ -1,0 +1,17 @@
+{% extends "block.twig" %}
+
+{% set block_classes = "c-block--urgent" %}
+
+{% set block_media = false %}
+{% set remove_link = true %}
+{% set block_meta = false %}
+
+{% block block_dek %}
+  {% include 'molecules-block-meta' with {
+    timestamp: 'Just Now',
+    comment_count: false,
+  } %}
+  <div class="c-block__dek o-rte-text">
+    <p>{{ block_dek }}</p>
+  </div>
+{% endblock %}

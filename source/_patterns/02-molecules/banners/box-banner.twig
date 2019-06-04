@@ -1,8 +1,14 @@
-<div class="o-box-banner u-spacing o-3d-heading {{ not banner_dek and not banner_cta ? 'o-box-banner--title-only' }} {{ banner_classes }}">
+<div class="o-box-banner u-spacing o-3d-heading {{ banner_classes }}">
 
   <button class="o-box-banner__close js-toggle-parent"><span class="o-icon u-icon--xs o-icon--close">{% include '@atoms/icons/icon-close.twig' %}</span></button>
 
-  <h3 class="o-box-banner__title"><a class="o-box-banner__title-link u-has-accent-inline" href="">{{ banner_title }}</a></h3>
+  <h3 class="o-box-banner__title">
+    {% if banner_link %}
+      <a href="">{{ banner_title }}</a>
+    {% else %}
+      {{ banner_title }}
+    {% endif %}
+  </h3>
 
   {% if banner_dek or banner_cta %}
     <div class="o-box-banner__group u-spacing">
