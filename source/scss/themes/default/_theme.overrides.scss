@@ -15,6 +15,12 @@
       }
     }
 
+    .c-primary-nav--top {
+      @include media('>xxlarge') {
+        padding-left: 166px;
+      }
+    }
+
     &:not(.out-of-viewport) .c-main-header__branding {
       width: 110px;
       position: relative;
