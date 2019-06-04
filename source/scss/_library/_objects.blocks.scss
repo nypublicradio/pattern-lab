@@ -87,6 +87,40 @@
   }
 }
 
+.c-block--urgent {
+
+  .c-block__eyebrow > .o-kicker {
+    background-color: $c-gray--dark;
+    color: $c-white;
+  }
+
+  .c-block__title {
+    font-weight: bold;
+    font-size: $font-size-m;
+
+    @include media('>large') {
+      font-size: $font-size-xl;
+    }
+
+    a {
+      color: $c-secondary;
+      &:hover {
+        @include block-hover;
+      }
+    }
+  }
+
+  .c-block__body {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .c-block-meta__timestamp {
+    margin-right: $space-half;
+    color: $c-secondary;
+  }
+}
+
 
 /**
  * Inline blocks (often used in lists)
