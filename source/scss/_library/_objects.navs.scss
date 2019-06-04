@@ -102,6 +102,10 @@
     display: none;
   }
 
+  @include media('>xxlarge') {
+    padding-left: 166px;
+  }
+
   .c-primary-nav__item {
     display: inline-block;
     position: relative;
