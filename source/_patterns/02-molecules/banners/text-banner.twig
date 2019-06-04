@@ -1,23 +1,2 @@
 <div class="o-text-banner u-spacing--half">
-
-  {% if kicker %}
-    <div class="o-text-banner__eyebrow">
-      {% include '@atoms/text/kicker.twig' with { "remove_link": true } %}
-    </div>
-  {% endif %}
-
-  <div class="u-no-space">
-
-    <h3 class="o-text-banner__title"><a class="o-text-banner__title-link" href="">{{ banner_title }}</a></h3>
-
-    <div class="u-spacing--quarter">
-      {% if banner_dek and timestamp %}
-        <div class="o-text-banner__dek o-rte-text">
-          <p><span class="o-text-banner__timestamp u-font--secondary-style u-font--xs u-color--secondary">{{ timestamp }}</span> {{ banner_dek }}</p>
-        </div>
-      {% endif %}
-    </div>
-
-  </div>
-
 </div>
