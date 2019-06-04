@@ -71,7 +71,10 @@
     }
   }
 
+  &__title > a,
   &__title-link {
+    @include inline-accent;
+
     &:hover {
       color: $c-body-color;
       background-color: transparent;
