@@ -48,16 +48,7 @@
 
   @include media('>large') {
     display: flex;
-  }
-
-  &--title-only {
-    display: block;
-    padding: $space-and-half;
-
-    .o-box-banner__title {
-      margin-top: 0;
-      text-align: center;
-    }
+    justify-content: center;
   }
 
   &.this-is-active {
@@ -76,7 +67,6 @@
 
     @include media('>large') {
       font-size: $font-size-m;
-      width: 100%;
       text-align: right;
     }
   }
