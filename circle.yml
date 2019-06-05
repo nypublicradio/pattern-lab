@@ -71,7 +71,7 @@ jobs:
       - run:
           name: Install Node Dependencies
           command: |
-            sudo apt-get update && apt-get install php php-mbstring
+            sudo apt-get update && sudo apt-get install php php-mbstring
             ./scripts/install_composer.sh
 
             [ -d ./node_modules ] || npm install
