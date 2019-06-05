@@ -1,4 +1,5 @@
 ---
+version: 2
 
 templates:
 
@@ -58,7 +59,7 @@ templates:
             env | sed -n "s/^${ENV}_/export /p" >> .env
             source .env
 
-            gulp ship-sass
+            ./node_modules/gulp/bin/gulp.js ship-sass
 
 jobs:
   build:
