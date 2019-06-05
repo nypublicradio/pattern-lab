@@ -6,10 +6,11 @@
  * Text only banner message
  */
 .o-text-banner {
- @include media('>large') {
-   padding-top: $space;
- }
+  @include media('>large') {
+    padding-top: $space;
+  }
 }
+
 
 /**
  * Boxed in banner
@@ -47,11 +48,12 @@
   &__title > a,
   &__title-link {
     @include inline-accent;
+    transition: none;
 
     &:hover {
-      color: $c-body-color;
+      color: $c-tertiary;
       background-color: transparent;
-      background-image: linear-gradient(to right, $c-body-color, $c-body-color)
+      background-image: linear-gradient(to right, transparent 55%, $c-tertiary 45%);
     }
   }
 
@@ -77,9 +79,9 @@
       color: $c-body-color;
 
       &:hover {
-        color: $c-body-color;
+        color: $c-tertiary;
         background-color: transparent;
-        border-bottom-style: solid;
+        border-bottom-color: $c-tertiary;
       }
     }
   }

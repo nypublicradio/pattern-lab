@@ -58,3 +58,24 @@
   font-size: 18px;
   transform: translateY(.08em);
 }
+
+
+// Used for line wrapping text links.
+@mixin inline-accent {
+  line-height: 1.6;
+  display: inline;
+  background-image: linear-gradient(to right, transparent 55%, $c-body-color 45%);
+  background-position: left bottom .13em;
+  background-repeat: repeat-x;
+  background-size: 4px 2px;
+  box-decoration-break: clone;
+  padding-bottom: 0;
+  border-bottom: none;
+  box-decoration-break: clone;
+  color: $c-body-color;
+
+  &:hover {
+    color: $c-white;
+    background-color: $c-primary;
+  }
+}

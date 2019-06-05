@@ -97,6 +97,7 @@
   .c-block__title {
     font-weight: bold;
     font-size: $font-size-m;
+    line-height: 1.15;
 
     @include media('>large') {
       font-size: $font-size-xl;
@@ -118,6 +119,7 @@
   .c-block-meta__timestamp {
     margin-right: $space-half;
     color: $c-secondary;
+    vertical-align: top;
   }
 }
 

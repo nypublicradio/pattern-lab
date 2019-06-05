@@ -7,11 +7,14 @@
 {% set block_meta = false %}
 
 {% block block_dek %}
-  {% include 'molecules-block-meta' with {
-    timestamp: 'Just Now',
-    comment_count: false,
-  } %}
+  {%
+    include 'molecules-block-meta'
+    with {
+      timestamp: 'Just Now',
+      comment_count: false,
+    }
+  %}
   <div class="c-block__dek o-rte-text">
-    <p>{{ block_dek }}</p>
+    <p>{{ urgent_block_dek }}</p>
   </div>
 {% endblock %}
