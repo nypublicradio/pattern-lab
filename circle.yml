@@ -71,11 +71,18 @@ jobs:
       - run:
           name: Install Node Dependencies
           command: |
+            sudo apt-get update && apt-get install php php-mbstring
+            ./scripts/install_composer.sh
+
             [ -d ./node_modules ] || npm install
+            php composer.phar install
+            ./node_modules/gulp/bin/gulp.js build-theme
+
       - save_cache:
           <<: *cache
           paths:
             - node_modules
+            - public
 
   deploy_static_demo:
     <<: *deploy_static
