@@ -47,6 +47,7 @@ var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
 var minify = require('gulp-minify');
 var concat = require('gulp-concat');
+var awspublish = require('gulp-awspublish');
 
 // Helper functions.
 function isDirectory(dir) {
@@ -163,6 +164,28 @@ gulp.task('lint:sass', function () {
 });
 
 /**
+ * Ship compiled CSS to an S3 bucket
+ */
+gulp.task('ship-sass', function() {
+  const publisher = awspublish.create({
+    region: process.env.AWS_REGION,
+    params: {
+      Bucket: process.env.SASS_AWS_BUCKET,
+    }
+  });
+
+  const headers = {
+    'Cache-Control': 'max-age=120,public',
+  };
+
+  gulp
+    .src(`${config.sass.destDir}/themes/default/*.css`)
+    .pipe(awspublish.gzip({ ext: "" }))
+    .pipe(publisher.publish(headers))
+    .pipe(awspublish.reporter());
+})
+
+/**
  * Gulp default task.
  */
 gulp.task('default', function () {
@@ -171,4 +194,8 @@ gulp.task('default', function () {
 
 gulp.task('production', function () {
   runSequence('sass', 'scripts');
+});
+
+gulp.task('ship', function() {
+  runSequence('sass', 'ship-sass');
 });
