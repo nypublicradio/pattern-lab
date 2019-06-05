@@ -15,7 +15,7 @@
       }
     }
 
-    .c-primary-nav--top {
+    &:not(.out-of-viewport) .c-primary-nav--top {
       @include media('>xxlarge') {
         padding-left: 166px;
       }
