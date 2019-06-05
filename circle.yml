@@ -1,0 +1,100 @@
+---
+
+templates:
+
+  # Cache Keys:
+  #############################################################################
+  cache: &cache
+    key: v1-{{ checksum "circle.yml" }}-{{ checksum "package.json" }}
+
+  # Environments:
+  #############################################################################
+  demo: &demo
+    environment:
+      ENV: DEMO
+  prod: &prod
+    environment:
+      ENV: PROD
+
+  # Filters:
+  #############################################################################
+  filter_all: &filter_all
+    filters:
+      tags:
+        only: /.*/
+  filter_demo: &filter_demo
+    filters:
+      branches:
+        only: master
+      tags:
+        only: demo
+  filter_prod: &filter_prod
+    filters:
+      tags:
+        only: /^v[0-9]+\.[0-9]+\.[0-9]+/
+      branches:
+        ignore: /.*/
+
+    # Executors:
+  #############################################################################
+  executor_node: &executor_node
+    docker:
+      - image: circleci/node:8-browsers
+        environment:
+          TERM: xterm
+          JOBS: 2
+
+  # Job Templates:
+  #############################################################################
+  deploy_static: &deploy_static  
+    <<: *executor_node
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *cache
+      - run:
+          name: Gulp ship-sass
+          command: |
+            env | sed -n "s/^${ENV}_/export /p" >> .env
+            source .env
+
+            gulp ship-sass
+
+jobs:
+  build:
+    <<: *executor_node
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *cache
+      - run:
+          name: Install Node Dependencies
+          command: |
+            [ -d ./node_modules ] || npm install
+      - save_cache:
+          <<: *cache
+          paths:
+            - node_modules
+
+  deploy_static_demo:
+    <<: *deploy_static
+    <<: *demo
+
+  deploy_static_prod:
+    <<: *deploy_static
+    <<: *prod
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build:
+          <<: *filter_all
+      - deploy_static_demo:
+          <<: *filter_demo
+          requires:
+            - build
+      - deploy_static_prod:
+          <<: *filter_prod
+          requires:
+            - build
