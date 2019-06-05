@@ -48,6 +48,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minify = require('gulp-minify');
 var concat = require('gulp-concat');
 var awspublish = require('gulp-awspublish');
+var rename = require('gulp-rename');
 
 // Helper functions.
 function isDirectory(dir) {
@@ -180,6 +181,9 @@ gulp.task('ship-sass', function() {
 
   gulp
     .src(`${config.sass.destDir}/themes/default/*`)
+    .pipe(rename({
+      dirname: "assets",
+    }))
     .pipe(awspublish.gzip({ ext: "" }))
     .pipe(publisher.publish(headers))
     .pipe(awspublish.reporter());
