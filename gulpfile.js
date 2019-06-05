@@ -49,6 +49,7 @@ var minify = require('gulp-minify');
 var concat = require('gulp-concat');
 var awspublish = require('gulp-awspublish');
 var rename = require('gulp-rename');
+var cloudfront = require('gulp-cloudfront-invalidate-aws-publish');
 
 // Helper functions.
 function isDirectory(dir) {
@@ -179,6 +180,10 @@ gulp.task('ship-sass', function() {
     'Cache-Control': 'max-age=120,public',
   };
 
+  const cfSettings = {
+    distribution: process.env.CLOUDFRONT_ID,
+  }
+
   gulp
     .src(`${config.sass.destDir}/themes/default/*`)
     .pipe(rename({
@@ -186,6 +191,7 @@ gulp.task('ship-sass', function() {
     }))
     .pipe(awspublish.gzip({ ext: "" }))
     .pipe(publisher.publish(headers))
+    .pipe(cloudfront(cfSettings))
     .pipe(awspublish.reporter());
 })
 
