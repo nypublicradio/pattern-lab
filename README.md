@@ -64,3 +64,14 @@ _For a larger list of `gulp` commands, see the [gulp file](gulpfile.js)_
 
 - Host name: `nypr.test`. (this is what Browsersync uses to proxy the localhost
 server)
+
+## Deployments
+We use circleci to handle automated deployments. The configuration is in the [circle.yml](https://github.com/nypublicradio/pattern-lab/blob/master/circle.yml) file. 
+At a high level, whenever a commit is made to master, the `public` site is built and the resulting `/public/css/themes/default/default.css` file is shipped to the gothamist-web-client's DEMO static asset S3 bucket.
+To deploy to the PROD bucket, simply make a new github release (we follow semantic versioning) and the automated workflow will trigger.
+
+This works by using the `gulp ship-sass` task (See the code [here](https://github.com/nypublicradio/pattern-lab/blob/master/gulpfile.js#L171-L196)).
+
+Making commits to branches will trigger the build step of the automated deployment, but not the deploy step.
+This allows you to see if your changes compile and build properly before merging to master.
+
