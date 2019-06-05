@@ -179,7 +179,7 @@ gulp.task('ship-sass', function() {
   };
 
   gulp
-    .src(`${config.sass.destDir}/themes/default/*.css`)
+    .src(`${config.sass.destDir}/themes/default/*`)
     .pipe(awspublish.gzip({ ext: "" }))
     .pipe(publisher.publish(headers))
     .pipe(awspublish.reporter());
