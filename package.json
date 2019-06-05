@@ -21,6 +21,8 @@
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-awspublish": "^4.0.0",
+    "gulp-cloudfront-invalidate": "^0.1.5",
     "gulp-concat": "^2.6.1",
     "gulp-minify": "^3.1.0",
     "gulp-run": "^1.7.1",
