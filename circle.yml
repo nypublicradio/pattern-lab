@@ -53,6 +53,8 @@ templates:
       - checkout
       - restore_cache:
           <<: *cache
+      - attach_workspace:
+          at: .
       - run:
           name: Gulp ship-sass
           command: |
@@ -82,6 +84,9 @@ jobs:
           <<: *cache
           paths:
             - node_modules
+      - persist_to_workspace:
+          root: .
+          paths:
             - public
 
   deploy_static_demo:
