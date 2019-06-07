@@ -13,22 +13,20 @@
       "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
     },
     {
-      "slide_title": "Fuku",
-      "break_m": "700",
+      "slide_title": false,
       "img": {
-        "src_s": "https://picsum.photos/700/400?image=127",
-        "src_m": "https://picsum.photos/1200/800?image=126"
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/6/4/c269ad0bc2002a-jpg-web_gallery.jpeg"
       },
       "credit": "Scott Lynch / Gothamist",
-      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+      "slide_dek": false
     },
     {
-      "slide_title": "Inside the Shops & Restaurants at Hudson Yards",
+      "slide_title": false,
       "img": {
         "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/fad663e0chyfood-22-jpg-mobile.jpeg"
       },
       "credit": "Scott Lynch / Gothamist",
-      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+      "slide_dek": "Lorem ipsum <a href=\"\">dolor sit amet</a>, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
     },
     {
       "slide_title": "Queensyard",
