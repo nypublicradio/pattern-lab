@@ -21,6 +21,7 @@
   position: relative;
   z-index: $z-index-article-gallery-slide;
   pointer-events: none;
+  padding-bottom: $space-half;
 
   &__header,
   &__content {
