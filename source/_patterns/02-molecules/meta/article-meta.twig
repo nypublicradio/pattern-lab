@@ -2,6 +2,6 @@
   {% include 'molecules-byline' %}
   <div class="c-article__meta-group">
     {% include 'molecules-published-date' %} &bull;
-    <a href="" class="u-has-accent u-has-accent--secondary">24 Comments</a> {% if is_gallery %} &bull; <a href="" class="u-has-accent u-has-accent--secondary js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">16 Photos <span class="o-icon o-icon--gallery u-icon--xs">{% include '@atoms/icons/icon-gallery.twig' %}</span></a> {% endif %}
+    <a href="" class="u-has-accent u-has-accent--secondary">24 <span class="is-vishidden">Comments</span> <span class="o-icon o-icon--comment u-icon--xs">{% include '@atoms/icons/icon-comment.twig' %}</span></a> {% if is_gallery %} &bull; <a href="" class="u-has-accent u-has-accent--secondary js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">16 <span class="is-vishidden">Photos</span> <span class="o-icon o-icon--gallery u-icon--xs">{% include '@atoms/icons/icon-gallery.twig' %}</span></a> {% endif %}
   </div>
 </div>
