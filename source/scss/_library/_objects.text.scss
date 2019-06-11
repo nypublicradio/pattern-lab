@@ -123,6 +123,10 @@
       color: $c-white;
       background-color: $c-primary;
     }
+
+    &:visited {
+      color: $c-link-color--visited;
+    }
   }
 
   > h1,
