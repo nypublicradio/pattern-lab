@@ -9,7 +9,6 @@
 .o-figure__image {
   border: 2px solid $c-black;
   margin-bottom: $space-half;
-  cursor: pointer;
 
   img {
     width: 100%;
@@ -17,6 +16,7 @@
 
   .c-lead-gallery & {
     margin-bottom: $space;
+    cursor: pointer;
   }
 }
 
