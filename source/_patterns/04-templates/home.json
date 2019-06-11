@@ -39,7 +39,7 @@
             "src": "https://cl.ly/4d200182a36d/download/image-figure@3x.jpg"
           }
         },
-        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-audio",
         "kicker": "Food",
         "block_title": "The 14 Best New Burgers In NYC",
         "block_meta": {
@@ -52,6 +52,7 @@
             "src": "https://picsum.photos/150/150?image=360"
           }
         },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-video",
         "kicker": "Lifestyle",
         "block_title": "The 13 Best Avocado Dishes In NYC",
         "comment_count": "90",
