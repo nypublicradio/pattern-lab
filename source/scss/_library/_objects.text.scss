@@ -353,6 +353,10 @@
   font-family: $ff-font--monospace;
   font-size: $font-size-xs;
 }
+.o-tag,
+.o-kicker {
+  font-size: $font-size-xxs;
+}
 
 .o-kicker--sponsored {
   background-color: $c-sponsor-color;
