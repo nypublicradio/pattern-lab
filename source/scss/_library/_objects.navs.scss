@@ -90,6 +90,14 @@
       background-color: $c-white;
     }
   }
+
+  &.c-main-header--stationary {
+    .o-menu-toggle {
+      position: fixed;
+      right: $space;
+      top: $space;
+    }
+  }
 }
 
 
