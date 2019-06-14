@@ -5,7 +5,6 @@
     "author": false
   },
   "block_section_1": {
-    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -16,6 +15,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
         "kicker": "News",
         "block_title": "The Best Of Gothamist 2018",
+        "block_dek": "The building housing the White Horse Tavern, a historic, no-fuss dive located at 567 Hudson Street in Greenwich Village.",
         "comment_count": "77",
         "block_meta": {
           "timestamp": "2 hours ago"
@@ -29,6 +29,7 @@
         },
         "kicker": "Arts & Entertainment",
         "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_dek": "Morrissey is doing a Broadway residency, Magic Mike is getting a Broadway adaptation, and now, the music of Britney Spears",
         "block_meta": {
           "timestamp": "Just Now"
         }
@@ -42,6 +43,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-audio",
         "kicker": "Food",
         "block_title": "The 14 Best New Burgers In NYC",
+        "block_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magni sequi obcaecati officia quasi numquam nam voluptas.",
         "block_meta": {
           "timestamp": "1 hour ago"
         }
@@ -55,6 +57,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-video",
         "kicker": "Lifestyle",
         "block_title": "The 13 Best Avocado Dishes In NYC",
+        "block_dek": "Consectetur adipisicing elit. Ducimus magni sequi obcaecati officia quasi numquam nam voluptas.",
         "comment_count": "90",
         "block_meta": {
           "timestamp": "2 hours ago"
@@ -68,6 +71,7 @@
         },
         "kicker": "Arts & Ent",
         "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_dek": "LEolor sit amet, consectetur adipisicing elit. Ducimus magni sequi obcaecati officia quasi numquam.",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -81,6 +85,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
         "kicker": "Food",
         "block_title": "The 14 Best New Burgers In NYC",
+        "block_dek": "Sit amet, consectetur adipisicing elit. Ducimus magni sequi obcaecati officia quasi numquam nam voluptas.",
         "comment_count": "51",
         "block_meta": {
           "timestamp": "3 hours ago"
@@ -94,6 +99,7 @@
         },
         "kicker": "Lifestyle",
         "block_title": "The 13 Best Avocado Dishes In NYC",
+        "block_dek": "Dolor sit amet, consectetur adipisicing elit. Ducimus magni sequi obcaecati officia quasi numquam nam voluptas.",
         "block_meta": {
           "timestamp": "4 hours ago"
         }
@@ -102,7 +108,6 @@
   },
 
   "block_section_2": {
-    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -112,6 +117,7 @@
         },
         "kicker": "News",
         "block_title": "NY Nurses Say A Strike Is Needed To Keep Patients Safe",
+        "block_dek": "Consectetur adipisicing elit. Ducimus magni sequi obcaecati officia quasi numquam nam voluptas.",
         "comment_count": "87",
         "block_meta": {
           "timestamp": "2 hours ago"
@@ -126,6 +132,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
         "kicker": "Arts & Ent",
         "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_dek": "Beatae et est quas eveniet veritatis dignissimos!",
         "block_meta": {
           "timestamp": "3 days ago"
         }
@@ -139,6 +146,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
         "kicker": "Food",
         "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
+        "block_dek": "Aliquid labore consequatur velit fugiat dicta libero quod voluptatibus eligendi? Beatae et est quas eveniet veritatis dignissimos!",
         "comment_count": "17",
         "block_meta": {
           "timestamp": "2 hours ago"
@@ -152,6 +160,7 @@
         },
         "kicker": "Lifestyle",
         "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
+        "block_dek": "Labore consequatur velit fugiat dicta libero quod voluptatibus eligendi? Beatae et est quas eveniet veritatis dignissimos!",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -164,6 +173,7 @@
         },
         "kicker": "Arts & Ent",
         "block_title": "NY's Marijuana Legalization Push Is In Jeopardy",
+        "block_dek": "Fugiat dicta libero quod voluptatibus eligendi? Beatae et est quas eveniet veritatis dignissimos!",
         "comment_count": "56",
         "block_meta": {
           "timestamp": "2 hours ago"
@@ -178,6 +188,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
         "kicker": "Food",
         "block_title": "Vessel Changes Terms & Conditions After Extreme Photo Policy Controversy, Lawyers Still Find It 'Troubling'",
+        "block_dek": "Laboriosam, aliquid labore consequatur velit fugiat dicta libero quod voluptatibus eligendi?",
         "block_meta": {
           "timestamp": "4 hours ago"
         }
@@ -186,7 +197,6 @@
   },
 
   "block_section_3": {
-    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -197,6 +207,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
         "kicker": "News",
         "block_title": "City Councilmembers Propose $100,000 Fine For 'Hideous' LED Billboard Boats",
+        "block_dek": "Exercitationem laboriosam, aliquid labore consequatur velit fugiat dicta libero quod voluptatibus eligendi!",
         "comment_count": "35",
         "block_meta": {
           "timestamp": "2 hours ago"
@@ -210,6 +221,7 @@
         },
         "kicker": "Arts & Ent",
         "block_title": "Mueller Report Summary Changes Nobody's Mind",
+        "block_dek": "Aliquid labore consequatur velit fugiat dicta libero quod voluptatibus eligendi? Beatae et est quas eveniet!",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -222,6 +234,7 @@
         },
         "kicker": "News",
         "block_title": "'No Collusion!': Trump Supporters Rally Outside Trump Tower As Attorney General Reviews Mueller Report",
+        "block_dek": "Celit fugiat dicta libero quod voluptatibus eligendi? Beatae et est quas eveniet veritatis.",
         "comment_count": "22",
         "block_meta": {
           "timestamp": "3 hours ago"
@@ -235,6 +248,7 @@
         },
         "kicker": "Lifestyle",
         "block_title": "LES And Chinatown Community Groups Sue City Over Two Bridges ",
+        "block_dek": "Voluptatibus eligendi? Beatae et est quas eveniet veritatis dignissimos!",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -248,6 +262,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Arts & Ent",
         "block_title": "Fairway's Cashierless App Can't Trust New Yorkers Because Of 'Diversity,' Fired Rep Says",
+        "block_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem magnam hic laborum inventore.",
         "block_meta": {
           "timestamp": "2 days ago"
         }
@@ -260,6 +275,7 @@
         },
         "kicker": "Food",
         "block_title": "Behold, NYC's Old Subway Cars At The Bottom Of The Ocean",
+        "block_dek": "Consectetur adipisicing elit. Fuga quidem magnam hic laborum inventore, cupiditate voluptatibustem dolore doloremque vel vitae non.",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -275,21 +291,20 @@
           "src_s": "https://picsum.photos/500/400?image=67",
           "src_m": "https://picsum.photos/700/460?image=98",
           "src_l": false
-        },
-        "block_object": {
-          "kicker": "Arts & Entertainment"
-        },
-        "block_title": "Brooklyn Landlord Wants To Install Facial Recognition Tech At Rent-Stabilized Complex",
-        "block_dek": "A roughly 700-unit rent-stabilized complex, raising alarm among tenants. Lorem Ipsum Dolor maxiumus latinus writingus wrappingum textium.",
-        "block_meta": {
-          "author": "Paula Mejia"
         }
+      },
+      "block_object": {
+        "kicker": "Arts & Entertainment"
+      },
+      "block_title": "Brooklyn Landlord Wants To Install Facial Recognition Tech At Rent-Stabilized Complex",
+      "block_dek": "A roughly 700-unit rent-stabilized complex, raising alarm among tenants. Lorem Ipsum Dolor maxiumus latinus writingus wrappingum textium.",
+      "block_meta": {
+        "author": "Paula Mejia"
       }
     }
   },
 
   "block_section_4": {
-    "block_dek": false,
     "blocks": [
       {
         "block_media": {
@@ -299,6 +314,7 @@
         },
         "kicker": "News",
         "block_title": "West Village Locals Hold Rally And Irish Wake For The White Horse Tavern",
+        "block_dek": "Rnventore, cupiditate voluptatibus iusto quod at nam temporibus deserunt voluptatem ex libero dolore doloremque vel vitae non.",
         "comment_count": "87",
         "block_meta": {
            "timestamp": "Just now"
@@ -313,6 +329,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Arts & Entertainment",
         "block_title": "Ask A Native New Yorker: Why Do New Yorkers Complain So Much?",
+        "block_dek": "Luod at nam temporibus deserunt voluptatem ex libero dolore doloremque vel vitae non.",
         "block_meta": {
           "timestamp": "1 hour ago"
         }
@@ -325,6 +342,7 @@
         },
         "kicker": "News",
         "block_title": "'UPDATE: LGBTQ+ Center Cancels Right-Wing Event Amid Uproar ",
+        "block_dek": "Supiditate voluptatibus iusto quod at nam temporibus deserunt voluptatem ex libero dolore doloremque vel vitae non.",
         "block_meta": {
           "timestamp": "3 hours ago"
         }
@@ -338,6 +356,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Lifestyle",
         "block_title": "Meet The Brooklyn Man Who Has A Mug Shot Museum In His Apartment",
+        "block_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem magnam hic laborum inventore, cupiditate voluptatibus.",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -351,6 +370,7 @@
         "block_title_classes": "c-block__title--has-icon c-block__title--is-outbound-link",
         "kicker": "Arts & Ent",
         "block_title": "Meet The Brooklyn Man Who Has A Mug Shot Museum In His Apartment",
+        "block_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem magnam hic laborum inventore, cupiditate voluptatibus.",
         "comment_count": "33",
         "block_meta": {
           "timestamp": "2 days ago"
@@ -364,6 +384,7 @@
         },
         "kicker": "Food",
         "block_title": "De Blasio's Attempt To Pour More Money Into Ferries Blocked For Being 'Inexplicable'",
+        "block_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem magnam hic laborum inventore, cupiditate voluptatibus.",
         "block_meta": {
           "timestamp": "2 hours ago"
         }
@@ -372,7 +393,6 @@
   },
 
   "featured_blocks_primary": {
-    "block_dek": false,
     "comment_count": "23",
     "featured_list": {
       "blocks": [

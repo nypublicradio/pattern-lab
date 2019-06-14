@@ -30,6 +30,8 @@
   }
 
   .o-ad__label {
+    color: $c-gray--light;
+
     @include media('<=small') {
       display: none;
     }

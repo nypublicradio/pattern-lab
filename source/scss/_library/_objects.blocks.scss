@@ -157,6 +157,7 @@
 
   .c-block__title {
     font-size: $font-size-s-m;
+    line-height: 1.1;
   }
 
   .c-block__object {
@@ -203,6 +204,11 @@
     &:before {
       @include dot-divider;
     }
+  }
+
+  &__timestamp,
+  &__comments {
+    vertical-align: middle;
   }
 
   &__comments {
