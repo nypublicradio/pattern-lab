@@ -89,7 +89,7 @@
   });
 
   // Close side menu when other things are clicked outside the menu.
-  $('body, .c-content-overlay, .o-menu-toggle.side-menu-is-active').on('click', function(e){
+  $('body, .c-content-overlay, .o-menu-toggle.side-menu-is-active, .c-side-menu .o-menu-toggle').on('click', function(e) {
     $('.side-menu-is-active').removeClass('side-menu-is-active');
     sideMenuScrollTop();
   });

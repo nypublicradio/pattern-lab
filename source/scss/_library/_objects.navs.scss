@@ -91,11 +91,18 @@
     }
   }
 
-  &.c-main-header--stationary {
-    .o-menu-toggle {
-      position: fixed;
-      left: $space;
-      top: $space;
+  .c-menu-toggle {
+    display: none;
+  }
+
+  .c-side-menu {
+    .c-menu-toggle {
+      display: block;
+      position: absolute;
+      right: $space-quarter;
+      top: $space-quarter;
+      bottom: auto;
+      left: auto;
     }
   }
 }

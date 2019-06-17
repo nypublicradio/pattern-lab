@@ -284,6 +284,14 @@
     left: -500px;
   }
 
+
+  .c-menu-toggle {
+    display: none;
+    + * {
+      margin-left: 0;
+    }
+  }
+
   &__group {
     padding: $space-and-half;
 
