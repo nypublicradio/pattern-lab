@@ -61,3 +61,16 @@
     transform: translateY(3px);
   }
 }
+
+// Bounce left to right.
+@keyframes bounce-horiz {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+}
