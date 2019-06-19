@@ -42,17 +42,6 @@
     }, 1000);
   }
 
-  // Adjust the height of the side menu depending on the header ad unit size
-  // and scroll position.
-  function resizeFrame() {
-    var headerHeight = $('.c-main-header__ad-unit').height(),
-        $sideMenu = $('.c-main-header--stationary .c-side-menu'),
-        scrollTopPos = $(document).scrollTop();
-
-    $sideMenu.css('height', 'calc(100vh - ' + (headerHeight - scrollTopPos) + 'px)');
-  }
-  $('.c-main-header--stationary .o-menu-toggle').on('click', resizeFrame);
-
   /*
    * Toggle Active Classes
    *
@@ -100,7 +89,7 @@
   });
 
   // Close side menu when other things are clicked outside the menu.
-  $('body, .c-content-overlay, .o-menu-toggle.side-menu-is-active').on('click', function(e){
+  $('body, .c-content-overlay, .o-menu-toggle.side-menu-is-active, .c-side-menu .o-menu-toggle').on('click', function(e) {
     $('.side-menu-is-active').removeClass('side-menu-is-active');
     sideMenuScrollTop();
   });

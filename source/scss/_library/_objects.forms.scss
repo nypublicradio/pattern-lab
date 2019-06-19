@@ -248,6 +248,12 @@
     width: 60px;
     height: 60px;
     padding: 0;
+
+    &:hover {
+      .o-icon--newsletter-form {
+        animation: bounce-horiz .8s 0s ease-out infinite;
+      }
+    }
   }
 
   .c-newsletter-form__button {

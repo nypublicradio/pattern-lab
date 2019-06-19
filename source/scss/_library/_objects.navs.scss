@@ -90,6 +90,21 @@
       background-color: $c-white;
     }
   }
+
+  .c-menu-toggle {
+    display: none;
+  }
+
+  .c-side-menu {
+    .c-menu-toggle {
+      display: block;
+      position: absolute;
+      right: $space-quarter;
+      top: $space-quarter;
+      bottom: auto;
+      left: auto;
+    }
+  }
 }
 
 

@@ -14,7 +14,6 @@
 
   &__ad-unit {
     position: relative;
-    z-index: $z-index-header-ad;
     background-color: $c-dark-bg;
     text-align: center;
 
@@ -43,8 +42,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
     height: $heading-height + px;
+    position: relative;
 
     @include media('>xsmall') {
       padding: $space-half $space-half $space-half $space-double;
@@ -168,10 +167,6 @@
   &--article,
   &--gallery {
 
-    .c-side-menu {
-      height: 100vh !important; // For prototype purposes to override an inline style
-    }
-
     .c-main-header__branding path {
       @include media('<=medium') {
         display: none;
@@ -215,10 +210,6 @@
 
   &.is-visible {
     transform: translateY(#{$heading-height + $space-half});
-  }
-
-  .c-side-menu {
-    height: 100vh;
   }
 }
 
@@ -272,7 +263,7 @@
  * Side menu
  */
 .c-side-menu {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: $c-heading-bgcolor;
   left: -100%;
@@ -281,8 +272,7 @@
   padding-bottom: $space-double;
   transition: transform .3s $hard-ease-in;
   overflow: auto;
-  height: calc(100vh - #{$heading-height}px);
-  //height: 100vh;
+  height: 100vh;
 
   @include media('>small') {
     max-width: 360px;
@@ -292,6 +282,14 @@
   @include media('>medium') {
     max-width: 500px;
     left: -500px;
+  }
+
+
+  .c-menu-toggle {
+    display: none;
+    + * {
+      margin-left: 0;
+    }
   }
 
   &__group {
