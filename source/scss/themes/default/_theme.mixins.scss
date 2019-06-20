@@ -49,13 +49,15 @@
   // background-size: 12px 2px;
 }
 
-@mixin dot-divider {
+@mixin dot-divider(
+  $font-size: 18px,
+) {
   content: "•";
   display: inline-block;
   margin-right: $space-half;
   margin-left: -$space-quarter;
   color: $c-gray;
-  font-size: 18px;
+  font-size: $font-size;
   transform: translateY(.08em);
 }
 
