@@ -256,16 +256,6 @@ $author-media-width-l: 360;
     }
   }
 
-  &__role {
-
-    &:after {
-      @include media('>small') {
-        @include dot-divider;
-        margin: 0 $space-half;
-      }
-    }
-  }
-
   &__social {
 
     @include media('>small') {
@@ -278,6 +268,14 @@ $author-media-width-l: 360;
   }
 
   &__details {
+    &:before {
+      @include media('>small') {
+        @include dot-divider($font-size: 24px);
+        line-height: 1;
+        margin: 0 $space-half;
+      }
+    }
+
     @include media('<=small') {
       position: absolute;
       right: 0;
