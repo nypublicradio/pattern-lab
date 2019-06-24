@@ -9,7 +9,7 @@
         <a href="" class="o-back-to-link js-toggle" data-remove="gallery-is-active"><span class="o-icon o-icon--prev-caret u-path-fill--white u-icon--xs">{% include '@atoms/icons/icon-caret.twig' %}</span> <span class="u-has-accent u-has-accent--white">{{ article_title }}</span></span></a>
       </div>
 
-      <div class="u-spacing--quad">
+      <div class="u-spacing--quad c-slides">
 
         {% for slide in slides %}
           {% include 'molecules-slide'
@@ -34,7 +34,7 @@
           {% endif %}
         {% endfor %}
 
-        <span class="o-end-label u-font--secondary-style u-font--xs u-color--gray"><span class="o-icon o-icon--down-arrow u-icon--m">{% include 'atoms-icon-dashed-arrow' %}</span> End</span>
+        <span class="o-end-label c-gallery-end-label u-font--secondary-style u-font--xs u-color--gray"><span class="o-icon o-icon--down-arrow u-icon--m">{% include 'atoms-icon-dashed-arrow' %}</span> End</span>
 
       </div>
 
