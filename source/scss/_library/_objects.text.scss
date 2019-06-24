@@ -521,6 +521,15 @@ a.o-kicker {
   }
 }
 
+.c-gallery-end-label {
+  flex-basis: 100%;
+
+  > .o-icon--down-arrow {
+    display: block;
+    margin: 0 auto $space-half;
+  }
+}
+
 
 /**
  * 3D box effect for headings
