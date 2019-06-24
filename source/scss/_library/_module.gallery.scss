@@ -7,6 +7,12 @@
   color: $c-white;
   background-color: $c-dark-bg;
 
+  .o-rte-text {
+    a:visited {
+      color: $c-white;
+    }
+  }
+
   .l-wrap {
     @include media('>medium') {
       padding: 0;
@@ -14,6 +20,11 @@
   }
 }
 
+.c-slides {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .c-slide {
   opacity: 0;
   transform: translateY(40px);
@@ -26,6 +37,15 @@
   &__header,
   &__content {
     pointer-events: auto;
+  }
+
+  &__header.l-container--content,
+  &__meta.l-container--content {
+    max-width: none;
+    @include media('<=xxlarge') {
+      padding-left: $space;
+      padding-right: $space;
+    }
   }
 
   @for $i from 1 through 5 {
@@ -50,11 +70,21 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    .c-toggle-box .c-toggle-box__content {
+      @include media('<=xxlarge') {
+        left: $space;
+      }
+    }
   }
 }
 
 // Gallery is active
 .gallery-is-active {
+
+  &.c-main {
+    position: relative;
+  }
 
   // Hide the article floating header when in the gallery overlay
   .c-main-header--article {
