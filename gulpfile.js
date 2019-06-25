@@ -50,6 +50,7 @@ var concat = require('gulp-concat');
 var awspublish = require('gulp-awspublish');
 var rename = require('gulp-rename');
 var cloudfront = require('gulp-cloudfront-invalidate-aws-publish');
+var pxtorem = require('gulp-pxtorem');
 
 // Helper functions.
 function isDirectory(dir) {
@@ -114,6 +115,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())
     .pipe(sass(config.sass.options).on('error', sass.logError))
     .pipe(autoprefixer())
+    .pipe(pxtorem())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.sass.destDir))
     .pipe(browserSync.stream({match: '**/*.css'}));
