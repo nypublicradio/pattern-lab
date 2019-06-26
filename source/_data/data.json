@@ -49,6 +49,7 @@
   "has_reddit": true,
   "has_email": true,
   "has_facebook": true,
+  "has_print": true,
 
   "breadcrumbs": [
     {
