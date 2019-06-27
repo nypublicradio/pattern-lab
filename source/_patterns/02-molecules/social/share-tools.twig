@@ -8,10 +8,9 @@
     {% if has_instagram %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-instagram.twig' %}</a>{% endif %}
     {% if has_reddit %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-reddit.twig' %}</a>{% endif %}
     {% if has_email %}<a href="" class="c-share-tools__link o-icon">{% include '@atoms/icons/icon-email.twig' %}</a>{% endif %}
+    {#
+      Testing adding the print button back.
+      {% if has_print %}<a href="" class="c-share-tools__link c-share-tools__link--print o-icon">{% include '@atoms/icons/icon-print.twig' %}</a>{% endif %}
+    #}
   </div>
-  {#
-    <div class="c-share-tools__extra">
-      <a href="" class="c-share-tools__link"><span class="o-icon u-icon--xs">{% include '@atoms/icons/icon-email.twig' %}</span></a>
-    </div>
-  #}
 </div>

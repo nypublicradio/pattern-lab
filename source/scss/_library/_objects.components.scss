@@ -155,7 +155,6 @@
     padding: 5px;
     margin: 0 4px;
 
-
     @include media('>small') {
       width: 40px;
     }
@@ -196,14 +195,6 @@
     }
   }
 
-
-  &:not(&--vertical) {
-    .c-share-tools__link {
-    }
-    .c-share-tools__group {
-    }
-  }
-
   &--vertical {
     .c-share-tools__group {
       flex-wrap: wrap;
@@ -212,28 +203,21 @@
     .c-share-tools__link {
       flex-basis: 100%;
       margin: 4px 0;
-    }
-  }
 
-  &__extra {
+      &--print {
 
-    @include media('<=medium') {
-      display: inline-block;
-      padding-left: $space-half;
-      margin-left: $space-half;
-      background-image: linear-gradient(to bottom, transparent 50%, $c-gray 50%);
-      background-position: left center;
-      background-size: 1px 16px;
-      background-repeat: repeat-y;
-    }
+        @include media('>medium') {
+          margin-bottom: 10px;
+          background-image: linear-gradient(to right, transparent 50%, $c-gray 50%);
+          background-position: center top;
+          background-size: 16px 1px;
+          background-repeat: repeat-x;
+        }
 
-    @include media('>medium') {
-      margin-top: $space-half;
-      padding-top: $space-half;
-      background-image: linear-gradient(to right, transparent 50%, $c-gray 50%);
-      background-position: center top;
-      background-size: 16px 1px;
-      background-repeat: repeat-x;
+        svg {
+          margin-top: 10px;
+        }
+      }
     }
   }
 }
