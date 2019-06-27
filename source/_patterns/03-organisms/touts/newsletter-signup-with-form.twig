@@ -1,0 +1,21 @@
+{% extends 'newsletter-signup.twig' %}
+
+{% block newsletter_content %}
+  <form action="" class="c-newsletter-tout__form u-spacing">
+    <div class="c-newsletter-form__field-group">
+      <label for="newsletter" class="is-vishidden">Newsletter signup</label>
+      <input required name="newsletter" type="email" class="c-newsletter-form__input" placeholder="your@email.com">
+      <button type="submit" class="o-button c-newsletter-form__button">
+        <span class="c-newsletter-form__submit-icon o-icon o-icon--newsletter-form">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span>
+        <span class="is-vishidden">Submit email</span>
+      </button>
+    </div>
+
+    <div class="c-newsletter-form__terms">
+      <label class="c-newsletter-form__terms-checkbox">
+        <input class="o-checkbox" type="checkbox" checked>
+        <p class="u-font--xs">By submitting your information, you're agreeing to receive communications from New York Public Radio in accordance with our Terms</p>
+      </label>
+    </div>
+  </form>
+{% endblock %}

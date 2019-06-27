@@ -99,6 +99,10 @@
   }
 }
 
+
+/**
+ * Urgent block banner
+ */
 .c-block--urgent {
 
   .c-block__eyebrow > .o-kicker {
@@ -123,15 +127,20 @@
     }
   }
 
-  .c-block__body {
-    display: flex;
-    align-items: flex-end;
+  .c-block-meta {
+    display: inline-block;
+    float: left;
+  }
+
+  .c-block__dek {
+    display: inline;
   }
 
   .c-block-meta__timestamp {
     margin-right: $space-half;
     color: $c-secondary;
-    vertical-align: top;
+    display: inline-block;
+    margin-bottom: -5px;
   }
 }
 

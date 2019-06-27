@@ -63,11 +63,6 @@
   }
 
   &__slogan {
-
-    @include media('<=xlarge') {
-      text-align: center;
-    }
-
     p {
       color: $c-white;
       font-size: 14px; // Not in the type scale

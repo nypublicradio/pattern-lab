@@ -249,7 +249,7 @@
     height: 60px;
     padding: 0;
 
-    &:hover {
+    &:hover:not(:focus) {
       .o-icon--newsletter-form {
         animation: bounce-horiz .8s 0s ease-out infinite;
       }
