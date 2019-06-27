@@ -25,13 +25,15 @@
         </div>
       </div>
 
-      {%
-        include '@atoms/buttons/button.twig'
-        with {
-          "button_classes": "o-button--extra",
-          "button_text": "Stay Informed"
-        }
-      %}
+      {% block newsletter_content %}
+        {%
+          include '@atoms/buttons/button.twig'
+          with {
+            "button_classes": "o-button--extra",
+            "button_text": "Stay Informed"
+          }
+        %}
+      {% endblock %}
 
     </div>
 
