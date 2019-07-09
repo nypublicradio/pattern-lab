@@ -426,14 +426,6 @@ a.o-kicker {
   a {
     padding-bottom: 0;
     display: inline;
-    color: $c-white;
-    border-bottom: 2px dotted $c-white;
-
-    &:hover {
-      color: $c-white;
-      background-color: $c-primary;
-    }
-
   }
 }
 

@@ -7,6 +7,18 @@
   color: $c-white;
   background-color: $c-dark-bg;
 
+  .o-credit {
+    a {
+      color: $c-white;
+      border-bottom: 2px dotted $c-white;
+
+      &:hover {
+        color: $c-white;
+        background-color: $c-primary;
+      }
+    }
+  }
+
   .o-rte-text {
     a:visited {
       color: $c-white;
@@ -18,6 +30,8 @@
       padding: 0;
     }
   }
+
+
 }
 
 .c-slides {
