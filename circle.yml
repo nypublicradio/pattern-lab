@@ -16,6 +16,9 @@ templates:
   prod: &prod
     environment:
       ENV: PROD
+  wagtail: &wagtail
+    envrionment:
+      ENV: WAGTAIL
 
   # Filters:
   #############################################################################
@@ -89,6 +92,10 @@ jobs:
           paths:
             - public
 
+  deploy_static_wagtail:
+    <<: *deploy_static
+    <<: *wagtail
+
   deploy_static_demo:
     <<: *deploy_static
     <<: *demo
@@ -104,6 +111,10 @@ workflows:
       - build:
           <<: *filter_all
       - deploy_static_demo:
+          <<: *filter_demo
+          requires:
+            - build
+      - deploy_static_wagtail:
           <<: *filter_demo
           requires:
             - build
