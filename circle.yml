@@ -17,7 +17,7 @@ templates:
     environment:
       ENV: PROD
   wagtail: &wagtail
-    envrionment:
+    environment:
       ENV: WAGTAIL
 
   # Filters:
