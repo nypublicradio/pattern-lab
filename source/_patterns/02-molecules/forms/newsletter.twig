@@ -1,4 +1,4 @@
-<form class="c-newsletter-form {{ has_error ? 'o-form-error' }} {{ form_submitted ? 'o-form-submitted' }}" action="">
+<form novalidate class="c-newsletter-form {{ has_error ? 'o-form-error' }} {{ form_submitted ? 'o-form-submitted' }}" action="">
 
   <div class="c-newsletter-form__graphic">
     {% include '@atoms/icons/icon-party-confetti.twig' %}
@@ -18,7 +18,7 @@
     <div class="c-newsletter-form__field-wrap">
       <div class="c-newsletter-form__field-group {{ has_error ? 'has-error' }}">
         <label for="newsletter" class="is-vishidden">Newsletter signup</label>
-        <input name="newsletter" type="email" class="c-newsletter-form__input" placeholder="your@email.com">
+        <input required name="newsletter" type="email" class="c-newsletter-form__input" placeholder="your@email.com">
         <button type="submit" class="o-button o-button--c-quaternary c-newsletter-form__button">
           <span class="c-newsletter-form__submit-icon o-icon o-icon--newsletter-form">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span>
           <span class="is-vishidden">Submit email</span>
