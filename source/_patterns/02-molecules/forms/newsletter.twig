@@ -24,11 +24,13 @@
           <span class="is-vishidden">Submit email</span>
         </button>
       </div>
+
       {% if has_error %}
         <div class="o-error-message">
           <p>Invalid entry. Please enter a valid email address. Wrapping text looks like this.</p>
         </div>
       {% endif %}
+
     </div>
 
     <div class="c-newsletter-form__terms">
@@ -48,11 +50,9 @@
     {% endif %}
 
     {% if form_submitted %}
-
       <div class="c-newsletter-form__thanks o-confirm-message">
         <p><strong>You're in!</strong><br><span class="u-font--s">Thanks for subscribing.</span></p>
       </div>
-
     {% endif %}
 
   </div>
