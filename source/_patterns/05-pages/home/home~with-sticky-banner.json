@@ -1,0 +1,7 @@
+{
+  "sticky_banner": {
+    "include()": {
+      "pattern": "molecules-box-banner-sticky"
+    }
+  }
+}
