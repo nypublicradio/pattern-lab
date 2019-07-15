@@ -4,5 +4,7 @@
   "banner_dek": "A coalition of community groups are <a href=\"\">suing the city</a> to stop a multi-billion dollar mega development of four high-rise towers that some locals fear will greatly.",
   "banner_cta": true,
   "banner_link": true,
-  "button_text": "Got it, Thanks."
+  "banner_cta": {
+    "button_text": "Got it, Thanks."
+  }
 }

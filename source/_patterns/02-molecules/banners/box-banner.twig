@@ -22,9 +22,11 @@
         {% endif %}
 
         {% if banner_cta %}
-          <div class="o-box-banner__cta">
-            {% include '@atoms/buttons/button.twig' %}
-          </div>
+          {% block banner_cta %}
+            <div class="o-box-banner__cta">
+              {% include '@atoms/buttons/button.twig' with banner_cta %}
+            </div>
+          {% endblock %}
         {% endif %}
 
       </div>
