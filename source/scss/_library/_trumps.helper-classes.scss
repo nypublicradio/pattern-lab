@@ -34,6 +34,10 @@
   background-color: $c-dark-bg;
   @include reversed-out-text;
 
+  &:after {
+    background-color: $c-dark-bg;
+  }
+
   input[type=radio]:checked,
   input[type=checkbox]:checked {
     border-color: rgba($c-gray, .3);
