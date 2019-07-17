@@ -1,4 +1,4 @@
-<form class="c-newsletter-form" action="">
+<form novalidate class="c-newsletter-form {{ has_error ? 'o-form-error' }} {{ form_submitted ? 'o-form-submitted' }}" action="">
 
   <div class="c-newsletter-form__graphic">
     {% include '@atoms/icons/icon-party-confetti.twig' %}
@@ -6,25 +6,54 @@
 
   <div class="c-newsletter-form__inner u-spacing">
 
+    {% if form_submitted %}
+      <div class="o-confirm-hide">
+    {% endif %}
+
     <div class="c-newsletter-form__text">
-      <p><span class="c-newsletter-form__icon o-icon o-icon--newsletter-form u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span> Sign up for our newsletter! Share your email address to get our top stories each day.</p>
+      <p><span class="c-newsletter-form__icon o-icon o-icon--newsletter-form u-icon--s">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span> <strong>Sign up for our newsletter!</strong><br>
+      Share your email address to get our top stories each day.</p>
     </div>
 
-    <div class="c-newsletter-form__field-group">
-      <label for="newsletter" class="is-vishidden">Newsletter signup</label>
-      <input required name="newsletter" type="email" class="c-newsletter-form__input" placeholder="your@email.com">
-      <button type="submit" class="o-button o-button--c-quaternary c-newsletter-form__button">
-        <span class="c-newsletter-form__submit-icon o-icon o-icon--newsletter-form">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span>
-        <span class="is-vishidden">Submit email</span>
-      </button>
+    <div class="c-newsletter-form__field-wrap">
+      <div class="c-newsletter-form__field-group {{ has_error ? 'has-error' }}">
+        <label for="newsletter" class="is-vishidden">Newsletter signup</label>
+        <input required name="newsletter" type="email" class="c-newsletter-form__input" placeholder="your@email.com">
+        <button type="submit" class="o-button o-button--c-quaternary c-newsletter-form__button">
+          <span class="c-newsletter-form__submit-icon o-icon o-icon--newsletter-form">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span>
+          <span class="is-vishidden">Submit email</span>
+        </button>
+      </div>
+
+      {% if has_error %}
+        <div class="o-error-message">
+          <p>Invalid entry. Please enter a valid email address. Wrapping text looks like this.</p>
+        </div>
+      {% endif %}
+
     </div>
 
     <div class="c-newsletter-form__terms">
       <label class="c-newsletter-form__terms-checkbox">
         <input class="o-checkbox" type="checkbox" checked>
         <p class="u-font--xs">By submitting your information, you're agreeing to receive communications from New York Public Radio in accordance with our Terms</p>
+        {% if has_error %}
+          <div class="o-error-message">
+            <p>Must be checked.</p>
+          </div>
+        {% endif %}
       </label>
     </div>
+
+    {% if form_submitted %}
+      </div>
+    {% endif %}
+
+    {% if form_submitted %}
+      <div class="c-newsletter-form__thanks o-confirm-message">
+        <p><strong>You're in!</strong><br><span class="u-font--s">Thanks for subscribing.</span></p>
+      </div>
+    {% endif %}
 
   </div>
 

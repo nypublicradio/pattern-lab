@@ -13,6 +13,39 @@
   border-color: $c-valid !important;
 }
 
+.o-error-message {
+  padding: 2px 0;
+
+  p {
+    font-size: $font-size-xs;
+    font-weight: bold;
+    line-height: 1.3;
+    color: $c-error;
+  }
+}
+
+.o-form-error {
+  .o-button {
+    opacity: .5;
+  }
+}
+
+div.o-confirm-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+
+  p {
+    line-height: 1.3;
+  }
+}
+
+.o-confirm-hide {
+  visibility: hidden;
+}
+
 /**
  * Search entry
  */

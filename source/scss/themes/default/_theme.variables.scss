@@ -27,7 +27,7 @@ $article-content-width: 634;
  */
 $c-brick-red: #9c1e14;
 $c-fireengine-red: #de1e3d;
-$c-reddish-orange: #f25917;
+$c-reddish-orange: #de5e36;
 $c-banana-yellow: #ffc400;
 $c-taxicab-yellow: #e3d54a;
 $c-dusk-blue: #244c84;
@@ -56,7 +56,7 @@ $c-white: #ffffff;
 /**
  * Default Colors
  */
-$c-error: #f00;
+$c-error: $c-brick-red;
 $c-valid: #089e00;
 $c-warning: #fff664;
 $c-information: #000db5;
