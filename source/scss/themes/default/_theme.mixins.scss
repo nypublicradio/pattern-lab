@@ -63,21 +63,50 @@
 
 
 // Used for line wrapping text links.
-@mixin inline-accent {
-  line-height: 1.6;
-  display: inline;
-  background-image: linear-gradient(to right, transparent 55%, $c-body-color 45%);
+@mixin inline-accent(
+  $text-color: $c-body-color,
+  $underline-color: $c-body-color,
+  $hover-underline-color: $c-primary,
+  $hover-bg-color: $c-primary,
+  $hover-text-color: $c-white,
+) {
+  color: $text-color;
+  background-image: linear-gradient(to right, transparent 55%, $underline-color 45%);
   background-position: left bottom .13em;
   background-repeat: repeat-x;
   background-size: 4px 2px;
   box-decoration-break: clone;
   padding-bottom: 0;
   border-bottom: none;
+  line-height: 1.6;
+  display: inline;
   box-decoration-break: clone;
-  color: $c-body-color;
 
   &:hover {
+    color: $hover-text-color;
+    background-image: linear-gradient(to right, transparent 55%, $hover-underline-color 45%);
+
+    @if $hover-bg-color {
+      background-color: $hover-bg-color;
+    }
+    @else {
+      background-color: transparent;
+    }
+  }
+}
+
+// Consistent styles for reversed out text and links.
+@mixin reversed-out-text {
+  color: $c-white;
+
+  p a,
+  a:not(.o-button) {
     color: $c-white;
-    background-color: $c-primary;
+    border-bottom-color: $c-white;
+
+    &:hover {
+      color: $c-white;
+      background-color: $c-primary;
+    }
   }
 }

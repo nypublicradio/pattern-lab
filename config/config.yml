@@ -54,7 +54,7 @@ twigTagExt: tag.php
 twigTestExt: test.php
 plugins:
     dataTransform:
-        enabled: false
+        enabled: true
         verbose: false
     dataInheritance:
         enabled: true
