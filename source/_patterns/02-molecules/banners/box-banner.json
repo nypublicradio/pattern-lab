@@ -1,7 +1,10 @@
 {
-  "banner_classes": "o-3d-heading--quinary",
+  "banner_classes": "o-3d-heading o-3d-heading--quinary",
   "banner_title": "Long Wrapping Linked Headline Goes Here Now.",
   "banner_dek": "A coalition of community groups are <a href=\"\">suing the city</a> to stop a multi-billion dollar mega development of four high-rise towers that some locals fear will greatly.",
   "banner_cta": true,
-  "banner_link": true
+  "banner_link": true,
+  "banner_cta": {
+    "button_text": "Got it, Thanks."
+  }
 }

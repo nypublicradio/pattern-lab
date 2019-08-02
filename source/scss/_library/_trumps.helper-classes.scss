@@ -32,16 +32,7 @@
  */
 .u-reversed-out {
   background-color: $c-dark-bg;
-  color: $c-white;
-
-  a:not(.o-button) {
-    color: $c-white;
-    border-bottom-color: $c-white;
-
-    &:hover {
-      color: $c-white;
-    }
-  }
+  @include reversed-out-text;
 
   input[type=radio]:checked,
   input[type=checkbox]:checked {

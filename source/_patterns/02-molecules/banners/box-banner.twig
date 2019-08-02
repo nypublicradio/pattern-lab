@@ -1,36 +1,37 @@
-<div class="o-box-banner u-spacing o-3d-heading {{ banner_classes }}">
+<div class="o-box-banner u-spacing {{ banner_classes }}">
 
   <button class="o-box-banner__close js-toggle-parent"><span class="o-icon u-icon--xs o-icon--close">{% include '@atoms/icons/icon-close.twig' %}</span></button>
 
-  <h3 class="o-box-banner__title u-space--top">
-    {% if banner_link %}
-      <a href="">{{ banner_title }}</a>
-    {% else %}
-      {{ banner_title }}
+  <div class="o-box-banner__inner l-container l-container--16col">
+
+    <h3 class="o-box-banner__title">
+      {% if banner_link %}
+        <a href="">{{ banner_title }}</a>
+      {% else %}
+        {{ banner_title }}
+      {% endif %}
+    </h3>
+
+    {% if banner_dek or banner_cta %}
+      <div class="o-box-banner__group u-spacing">
+
+        {% if banner_dek %}
+          <div class="o-box-banner__dek o-rte-text">
+            <p>{{ banner_dek }}</p>
+          </div>
+        {% endif %}
+
+        {% if banner_cta %}
+          {% block banner_cta %}
+            <div class="o-box-banner__cta">
+              {% include '@atoms/buttons/button.twig' with banner_cta %}
+            </div>
+          {% endblock %}
+        {% endif %}
+
+      </div>
     {% endif %}
-  </h3>
 
-  {% if banner_dek or banner_cta %}
-    <div class="o-box-banner__group u-spacing">
-
-      {% if banner_dek %}
-        <div class="o-box-banner__dek o-rte-text">
-          <p>{{ banner_dek }}</p>
-        </div>
-      {% endif %}
-
-      {% if banner_cta %}
-        <div class="o-box-banner__cta">
-          {%
-            include '@atoms/buttons/button.twig'
-            with {
-              "button_text": "Got it, Thanks."
-            }
-          %}
-        </div>
-      {% endif %}
-
-     </div>
-  {% endif %}
+  </div>
 
 </div>
