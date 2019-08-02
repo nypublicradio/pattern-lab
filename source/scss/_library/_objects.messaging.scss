@@ -83,6 +83,26 @@
     }
   }
 
+  &--no-desc {
+    .o-box-banner__title {
+      margin-bottom: $space;
+
+      @include media('>large') {
+        padding-right: $space-triple;
+        text-align: left;
+        margin-bottom: 0;
+        max-width: 75%;
+      }
+    }
+    .o-box-banner__group {
+      @include media('>large') {
+        min-width: 0;
+        padding-left: 0;
+        text-align: left;
+      }
+    }
+  }
+
   &--sticky {
     position: fixed;
     width: 100%;
