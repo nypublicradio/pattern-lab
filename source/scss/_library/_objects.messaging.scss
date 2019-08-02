@@ -89,7 +89,8 @@
 
       @include media('>large') {
         padding-right: $space-triple;
-        text-align: left;
+        text-align: right;
+        margin-top: -4px;
         margin-bottom: 0;
         max-width: 75%;
       }
