@@ -7,7 +7,8 @@
  * Contact/sent tip
  */
 .c-contact-tout {
-  padding: $space $space-and-half;
+  padding: $space-and-half;
+  width: 100%;
 }
 
 
@@ -28,6 +29,21 @@
   transform: translateX(0);
   transition: transform .2s $hard-ease-in;
   box-shadow: 0 0 10px rgba($c-black, .2);
+  border: 3px solid $c-black;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: $c-quinary;
+    left: -3px;
+    top: -3px;
+    width: 120px;
+    height: 90px;
+
+    @include media('>xlarge') {
+      height: 120px;
+    }
+  }
 
   &.is-active {
     transform: translateX(-#{($col-width * 15) + ($gutter * 13) + $space});
@@ -52,6 +68,7 @@
     }
 
     p {
+      position: relative;
       @include media('>xlarge') {
         width: calc(65% - #{$space});
       }
@@ -72,7 +89,7 @@
     height: 133px;
     position: relative;
     margin-left: -55px;
-    margin-top: -85px;
+    margin-top: -95px;
     margin-right: $space-half;
     float: left;
     path {
@@ -102,6 +119,12 @@
     max-width: none;
     position: static;
     max-width: none;
+    border-left: none;
+    border-right: none;
+
+    &:before {
+      display: none;
+    }
 
     @include media('>xlarge') {
       margin-top: 0;
@@ -122,8 +145,25 @@
       margin-top: -105px;
       margin-left: -30px;
 
+      &:before {
+        content: "";
+        position: absolute;
+        background-color: $c-quinary;
+        left: -3px;
+        top: 70px;
+        width: 120px;
+        height: 10px;
+        z-index: -1;
+      }
+
       @include media('>xlarge') {
         margin-top: -40px;
+
+        &:before {
+          top: 21px;
+          width: 87px;
+          left: 26px;
+        }
       }
     }
 
