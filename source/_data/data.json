@@ -51,6 +51,12 @@
   "has_facebook": true,
   "has_print": true,
 
+  "breadcrumbs": [
+    {
+      "kicker": "News"
+    }
+  ],
+
   "tags": [
     {
       "kicker": "Bronx"
