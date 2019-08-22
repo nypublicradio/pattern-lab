@@ -59,6 +59,19 @@
       width: 970px;
     }
   }
+
+  // Sponsored ad
+  &--sponsored {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: $space;
+
+    .o-ad__label {
+      width: auto;
+      margin: 0 5px 2px 0;
+    }
+  }
 }
 
 .annotation-tip {
