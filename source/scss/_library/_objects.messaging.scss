@@ -3,16 +3,6 @@
 \*------------------------------------*/
 
 /**
- * Text only banner message
- */
-.o-text-banner {
-  @include media('>large') {
-    padding-top: $space;
-  }
-}
-
-
-/**
  * Boxed in banner
  */
 .o-box-banner {
