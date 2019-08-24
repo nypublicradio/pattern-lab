@@ -283,6 +283,7 @@
 .o-pullquote {
   margin: auto ($col-width + $gutter) + px $space-triple;
   text-align: center;
+  background: none;
 
   p {
     font-weight: bold;
@@ -294,6 +295,7 @@
 
     span {
       quotes: "\201C""\201D""\2018""\2019";
+      background-position: bottom;
 
       &:before,
       &:after {
@@ -356,6 +358,13 @@
 .o-tag,
 .o-kicker {
   font-size: $font-size-xxs;
+}
+.o-tag {
+  &--sponsored {
+    color: $c-white;
+    font-weight: normal;
+    background-color: $c-sponsor-color;
+  }
 }
 
 .o-kicker--sponsored {

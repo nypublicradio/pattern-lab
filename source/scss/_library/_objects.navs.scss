@@ -211,6 +211,7 @@
  */
 .o-breadcrumbs {
   position: relative;
+  display: flex;
 
   &:before {
     content: "";
@@ -221,14 +222,17 @@
     top: calc(50% + 1px);
     @include border-accent;
   }
+}
+.o-breadcrumb {
+  position: relative;
+  z-index: $z-index-breadcrumb;
 
-  .o-breadcrumb {
-    position: relative;
-    z-index: $z-index-breadcrumb;
+  + * {
+    margin-left: $space;
+  }
 
-    + * {
-      margin-left: $space;
-    }
+  &.o-tag--sponsored {
+    margin-left: auto;
   }
 }
 

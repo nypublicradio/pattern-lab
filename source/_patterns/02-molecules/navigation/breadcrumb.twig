@@ -2,4 +2,7 @@
   {% for breadcrumb in breadcrumbs %}
     <a class="o-breadcrumb" href="">{{ breadcrumb.kicker }}</a>
   {% endfor %}
+  {% if is_sponsored %}
+    <a class="o-breadcrumb o-tag--sponsored" href="">Sponsored</a>
+  {% endif %}
 </div>
