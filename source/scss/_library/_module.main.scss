@@ -8,17 +8,24 @@
 }
 
 .c-welcome-page {
+  background-color: $c-black;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  max-width: 670px;
-  padding: 30px;
-  margin: 0 auto;
+  align-items: center;
+  background-image: url(/images/radial-assets/bg-texture.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: $space;
+
   &__logo {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 430px;
+    min-height: 430px;
+    width: 100%;
+    height: 100%;
   }
 }
 
