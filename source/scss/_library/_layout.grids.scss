@@ -90,7 +90,7 @@
   &--4up {
     grid-template-columns: repeat(minmax(200px, 1fr));
 
-    @include media('>small') {
+    @include media('>xsmall') {
       grid-template-columns: repeat(2, 1fr);
     }
 
