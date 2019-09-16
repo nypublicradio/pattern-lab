@@ -27,6 +27,21 @@
     width: 100%;
     height: 100%;
   }
+
+  &__start {
+    display: block;
+    width: 40px;
+    transform: translateY(0) rotate(90deg);
+    bottom: $space-double;
+    left: calc(50% - 10px);
+    fill: $c-white;
+    position: absolute;
+    transition: transform .3s ease-in-out;
+
+    &:hover {
+      transform: translateY(4px) rotate(90deg);
+    }
+  }
 }
 
 /**
@@ -100,7 +115,7 @@
  * Style Guide
  */
 .c-style-guide {
-  padding-bottom: 100px;
+  padding: $space-quad 0;
 }
 
 .o-sg-section {
