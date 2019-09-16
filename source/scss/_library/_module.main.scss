@@ -94,3 +94,87 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/**
+ * Style Guide
+ */
+.c-style-guide {
+  padding-bottom: 100px;
+}
+
+.o-sg-section {
+  &__content {
+    p {
+      font-size: $font-size-s;
+    }
+  }
+}
+
+.c-swatch {
+  border: $border-style-thick;
+
+  &__color {
+    height: 150px;
+    position: relative;
+  }
+
+  &-a11y {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 7px 2px 0;
+    display: flex;
+
+    &__item {
+      margin-left: $space-quarter;
+      text-align: center;
+      width: 25px;
+    }
+
+    &__letter {
+      text-transform: uppercase;
+      font-size: $font-size-l;
+      display: inline-block;
+      padding: 0 4px;
+      line-height: 1;
+      color: $c-white;
+
+      &--bg {
+        background-color: $c-white;
+      }
+    }
+
+    &__check {
+      background-color: $c-white;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      position: relative;
+
+      svg {
+        min-width: 14px;
+        min-height: 14px;
+        left: 1px;
+        bottom: 1px;
+        display: block;
+        position: absolute;
+        fill: $c-gray--dark;
+      }
+    }
+  }
+
+  &__details {
+    padding: $space;
+  }
+}
+
+.c-color-bars {
+  border: $border-style-thick;
+}
+.c-color-bar {
+  padding: $space;
+  display: flex;
+  justify-content: space-between;
+}
+

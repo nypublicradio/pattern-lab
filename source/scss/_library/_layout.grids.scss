@@ -6,10 +6,11 @@
   display: grid;
   grid-template-rows: auto;
   grid-column-gap: $space;
-  grid-row-gap: $space*4;
+  grid-row-gap: $space;
 
   @include media('>large') {
-    grid-column-gap: $space*2;
+    grid-column-gap: $space-and-half;
+    grid-row-gap: $space-and-half;
   }
 
   @media all and (-ms-high-contrast:none) {
