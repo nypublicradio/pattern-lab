@@ -440,6 +440,8 @@ a.o-kicker {
   margin: $space-double auto;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: $z-index-to-top;
 
   // Temporary until i can get the real icon
   .o-icon--up-arrow {
