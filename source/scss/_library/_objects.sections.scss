@@ -114,14 +114,7 @@
   }
 }
 
-// Homepage structure:
-//
-// banners (breaking news, product marketing)
-// content-top
-// tout (donation ask)
-// content-bottom
-
-.c-home__banners {
+.c-banners {
   padding-top: $space-double;
 
   .l-container:only-child {
@@ -133,9 +126,7 @@
   }
 }
 
-// .c-home__content-top {
-
-// }
+// .c-home__content-top {}
 
 .c-home__tout {
   padding-top: $space-double;
