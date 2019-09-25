@@ -11,13 +11,13 @@
     %}
   </div>
 
-  <div class="c-home__banners u-section-spacing--wide l-container l-container--xl l-wrap u-trigger-floating-header">
+  <div class="c-banners u-section-spacing--wide l-container l-container--xl l-wrap u-trigger-floating-header">
     {% if marketing_banner %}
       {% include '@molecules/banners/box-banner.twig' %}
     {% endif %}
 
     {% if breaking_news %}
-      <div class="l-container l-container--16col">
+      <div class="c-banners__breaking-news l-container l-container--16col">
         {% include '@molecules/banners/text-banner.twig' %}
       </div>
     {% endif %}

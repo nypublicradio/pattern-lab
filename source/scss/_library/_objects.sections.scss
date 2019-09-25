@@ -117,7 +117,7 @@
 .c-banners {
   padding-top: $space-double;
 
-  .l-container:only-child {
+  .c-banners__breaking-news:last-child {
     margin-bottom: $space-double;
   }
 
@@ -126,7 +126,12 @@
   }
 }
 
-// .c-home__content-top {}
+/**
+ * Homepage structure:
+ *  - content-top
+ *  - tout (donation ask)
+ *  - content-bottom
+ */
 
 .c-home__tout {
   padding-top: $space-double;
