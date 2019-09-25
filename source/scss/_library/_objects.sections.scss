@@ -114,32 +114,43 @@
   }
 }
 
-.c-home {
-  &__sections {
-    padding-top: $space-double;
+.c-banners {
+  padding-top: $space-double;
 
-    .o-box-banner + .c-featured-blocks {
-      margin-top: 0;
-    }
+  .c-banners__breaking-news:last-child {
+    margin-bottom: $space-double;
+  }
 
-    .o-box-banner {
-      margin-bottom: 50px;
-    }
+  .o-box-banner {
+    margin-bottom: 50px;
+  }
+}
 
-    @include media('>medium') {
+/**
+ * Homepage structure:
+ *  - content-top
+ *  - tout (donation ask)
+ *  - content-bottom
+ */
 
-      &:not(.u-section-spacing--wide) {
-        padding-top: $space-triple;
-      }
-    }
+.c-home__tout {
+  padding-top: $space-double;
 
-    .c-donate-tout--static {
-      @include media('<=medium') {
-        margin-top: 70px;
-      }
+  .c-donate-tout--static {
+    @include media('<=medium') {
+      margin-top: 70px;
     }
   }
 }
+
+.c-home__content-bottom {
+  padding-top: $space-double;
+
+  @include media('>medium') {
+    padding-top: $space-triple;
+  }
+}
+
 
 
 /**
