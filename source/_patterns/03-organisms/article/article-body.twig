@@ -1,3 +1,18 @@
+{% if is_sponsored %}
+  <div class="l-container l-container--10col">
+    {% include 'molecules-sponsored'
+      with {
+        "ad_label": "With Contributions by",
+        "ad_sponsored_classes": "",
+        "ad_assets": [
+          { "ad_src": "https://d.pr/i/zcCsQF+" },
+          { "ad_src": "https://d.pr/i/ldiYmM+" },
+          { "ad_src": "https://d.pr/i/Nx0eXB+" }
+        ]
+      } %}
+  </div>
+{% endif %}
+
 <div class="c-article__body o-rte-text u-spacing l-container--content">
   {{ article_body | raw }}
 </div>

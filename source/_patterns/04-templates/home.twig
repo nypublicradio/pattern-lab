@@ -11,17 +11,19 @@
     %}
   </div>
 
-  <div class="c-home__sections u-section-spacing--wide l-container l-container--xl l-wrap u-trigger-floating-header">
-
+  <div class="c-banners u-section-spacing--wide l-container l-container--xl l-wrap u-trigger-floating-header">
     {% if marketing_banner %}
       {% include '@molecules/banners/box-banner.twig' %}
     {% endif %}
 
     {% if breaking_news %}
-      <div class="l-container l-container--16col">
+      <div class="c-banners__breaking-news l-container l-container--16col">
         {% include '@molecules/banners/text-banner.twig' %}
       </div>
     {% endif %}
+  </div>
+
+  <div class="c-home__content-top u-section-spacing--wide l-container l-container--xl l-wrap">
 
     {% block featured_blocks_primary %}
       {% include '@organisms/sections/featured-block-list.twig' with featured_blocks_primary %}
@@ -61,11 +63,11 @@
 
   </div>
 
-  <div class="c-home__sections">
+  <div class="c-home__tout">
     {% include 'organisms-donate' with { "donate_classes": "c-donate-tout--static" } %}
   </div>
 
-  <div class="c-home__sections u-spacing--quad l-container l-wrap">
+  <div class="c-home__content-bottom u-spacing--quad l-container l-wrap">
 
     <div class="l-container l-container--14col u-spacing--triple">
       {% block block_section_4 %}
