@@ -1,0 +1,6 @@
+<div class="o-ad-sponsored {{ ad_sponsored_classes }}">
+  <span class="o-ad__label u-font--secondary-style u-font--xs">{{ ad_label }}</span>
+  {% for item in ad_assets %}
+    <div class="o-ad-sponsored__unit"><a href=""><img src="{{ item.ad_src }}" alt=""></a></div>
+  {% endfor %}
+</div>

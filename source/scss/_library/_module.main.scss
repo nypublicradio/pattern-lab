@@ -61,15 +61,44 @@
   }
 
   // Sponsored ad
-  &--sponsored {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: $space;
+  &-sponsored {
 
     .o-ad__label {
-      width: auto;
-      margin: 0 5px 2px 0;
+      display: block;
+      text-align: left;
+      margin-bottom: $space-half;
+
+      @include media('>medium') {
+        margin-bottom: $space;
+      }
+    }
+
+    &__unit {
+      display: inline-block;
+      margin-right: $space-and-half;
+      margin-bottom: $space;
+      vertical-align: middle;
+      max-width: 160px;
+
+      @include media('>medium') {
+        margin-right: $space-double;
+      }
+    }
+
+    &--inline {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: $space;
+
+      .o-ad-sponsored__unit {
+        margin: 0;
+      }
+
+      .o-ad__label {
+        width: auto;
+        margin: 0 5px 2px 0;
+      }
     }
   }
 }
