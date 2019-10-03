@@ -225,6 +225,7 @@
 }
 .o-breadcrumb {
   position: relative;
+  display: inline-block;
   z-index: $z-index-breadcrumb;
 
   + * {
