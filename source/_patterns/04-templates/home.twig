@@ -11,17 +11,19 @@
     %}
   </div>
 
-  <div class="c-banners u-section-spacing--wide l-container l-container--xl l-wrap u-trigger-floating-header">
-    {% if marketing_banner %}
-      {% include '@molecules/banners/box-banner.twig' %}
-    {% endif %}
+  {% if marketing_banner or breaking_news %}
+    <div class="c-banners u-section-spacing--wide l-container l-container--xl l-wrap u-trigger-floating-header">
+      {% if marketing_banner %}
+        {% include '@molecules/banners/box-banner.twig' %}
+      {% endif %}
 
-    {% if breaking_news %}
-      <div class="c-banners__breaking-news l-container l-container--16col">
-        {% include '@molecules/banners/text-banner.twig' %}
-      </div>
-    {% endif %}
-  </div>
+      {% if breaking_news %}
+        <div class="c-banners__breaking-news l-container l-container--16col">
+          {% include '@molecules/banners/text-banner.twig' %}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
 
   <div class="c-home__content-top u-section-spacing--wide l-container l-container--xl l-wrap">
 
