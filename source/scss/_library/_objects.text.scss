@@ -381,7 +381,7 @@ a.o-kicker {
 }
 
 .o-tag,
-.o-breadcrumb {
+a.o-breadcrumb {
   display: inline-block;
   &:hover {
     background-color: $c-primary;

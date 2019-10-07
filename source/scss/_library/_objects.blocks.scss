@@ -116,7 +116,7 @@
     line-height: 1.15;
 
     @include media('>large') {
-      font-size: $font-size-xl;
+      font-size: $font-size-l;
     }
 
     a {
