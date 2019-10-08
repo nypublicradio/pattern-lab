@@ -4,6 +4,13 @@
 
 .c-article {
 
+  &__header .u-has-accent,
+  &__body a,
+  &__footer .o-rte-text a {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+
   &__header {
     padding-top: $space-double;
 
@@ -34,7 +41,6 @@
   }
 
   &__body {
-
     .twitter-tweet p {
       word-break: break-word;
     }
