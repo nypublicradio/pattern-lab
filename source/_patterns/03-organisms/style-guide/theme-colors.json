@@ -1,0 +1,105 @@
+{
+  "primary_colors": [
+    {
+      "color_priority": "Primary",
+      "color_name": "reddish-orange",
+      "color_value": "#de5e36"
+    },
+    {
+      "color_priority": "Secondary",
+      "color_name": "brick-red",
+      "color_value": "#9c1e14"
+    },
+    {
+      "color_priority": "Tertiary",
+      "color_name": "fireengine-red / WNYC Red",
+      "color_value": "#de1e3d"
+    }
+  ],
+
+  "secondary_colors": [
+    {
+      "color_priority": "Quaternary",
+      "color_name": "banana-yellow",
+      "color_value": "#ffc400"
+    },
+    {
+      "color_priority": "Quinary",
+      "color_name": "taxi-cab-yellow",
+      "color_value": "#e3d54a"
+    },
+    {
+      "color_priority": "Senary",
+      "color_name": "denim-blue",
+      "color_value": "#244c84"
+    },
+    {
+      "color_priority": "sponsored",
+      "color_name": false,
+      "color_value": "#924db1"
+    },
+    {
+      "color_priority": "Septenary",
+      "color_name": "brown-grey",
+      "color_value": "#939393"
+    },
+    {
+      "color_priority": "Octonary",
+      "color_name": "dirty-salmon",
+      "color_value": "#f0eeea"
+    }
+  ],
+
+  "neutral_colors": [
+    {
+      "color_name": "white",
+      "color_value": "#ffffff"
+    },
+    {
+      "color_name": "grey-light",
+      "color_value": "#f3f3f3"
+    },
+    {
+      "color_name": "grey",
+      "color_value": "#afafaf",
+      "is_reversed_out": true
+    },
+    {
+      "color_name": "grey-dark",
+      "color_value": "#333333",
+      "is_reversed_out": true
+    },
+    {
+      "color_name": "black",
+      "color_value": "#000000",
+      "is_reversed_out": true
+    }
+  ],
+
+  "default_colors": [
+    {
+      "color_name": "error / brick-red",
+      "color_value": "#9c1e14",
+      "is_reversed_out": true
+    },
+    {
+      "color_name": "valid",
+      "color_value": "#089e00",
+      "is_reversed_out": true
+    },
+    {
+      "color_name": "warning",
+      "color_value": "#fff664"
+    },
+    {
+      "color_name": "information",
+      "color_value": "#000db5",
+      "is_reversed_out": true
+    },
+    {
+      "color_name": "overlay",
+      "color_value": "rgba(0, 0, 0, 0.8)",
+      "is_reversed_out": true
+    }
+  ]
+}
