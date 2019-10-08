@@ -3,7 +3,6 @@
 \*------------------------------------*/
 
 .c-article {
-  height: 100%;
 
   &__header {
     padding-top: $space-double;
@@ -151,8 +150,7 @@
 
   .c-article {
     overflow: hidden;
-    height: 0;
-    transition: height .0s linear .5s;
+    height: 100%;
   }
 
   .c-article__donate {

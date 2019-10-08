@@ -6,11 +6,10 @@
   display: grid;
   grid-template-rows: auto;
   grid-column-gap: $space;
-  grid-row-gap: $space;
+  grid-row-gap: $space*4;
 
   @include media('>large') {
-    grid-column-gap: $space-and-half;
-    grid-row-gap: $space-and-half;
+    grid-column-gap: $space*2;
   }
 
   @media all and (-ms-high-contrast:none) {
@@ -90,7 +89,7 @@
   &--4up {
     grid-template-columns: repeat(minmax(200px, 1fr));
 
-    @include media('>xsmall') {
+    @include media('>small') {
       grid-template-columns: repeat(2, 1fr);
     }
 
