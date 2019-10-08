@@ -1,0 +1,28 @@
+<section class="o-sg-section o-sg-section__colors u-spacing--quad">
+  <div class="u-spacing--double">
+    <header class="o-sg-section__header l-container--content u-spacing">
+      <h2 class="o-sg-section__heading">Typography</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </header>
+    <div class="o-sg-section__content u-spacing--and-half l-container l-container--14col">
+      <div class="l-grid l-grid--3up">
+        {% for item in primary_fonts %}
+          <div class="c-font-block o-3d-heading">
+            <div class="c-font-block__inner">
+              <div class="c-font-block__content">
+                <div class="c-font-block__content--top u-spacing">
+                  <span class="u-font--secondary-style u-font--xxs">{{ item.tier }} Font</span>
+                  <div class="c-font-block__free-type {{ item.font_class }}">{{ item.free_type }}</div>
+                </div>
+                <div class="c-font-block__content--bottom">
+                  <span class="u-font--xs">{{ item.type_info }}</span>
+                </div>
+              </div>
+              <div class="c-font-block__letter {{ item.font_class }}">{{ item.letter }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

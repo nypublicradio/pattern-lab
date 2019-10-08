@@ -8,17 +8,39 @@
 }
 
 .c-welcome-page {
+  background-color: $c-black;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  max-width: 670px;
-  padding: 30px;
-  margin: 0 auto;
+  align-items: center;
+  background-image: url(/images/radial-assets/bg-texture.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: $space;
+
   &__logo {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 430px;
+    min-height: 430px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__start {
+    display: block;
+    width: 40px;
+    transform: translateY(0) rotate(90deg);
+    bottom: $space-double;
+    left: calc(50% - 10px);
+    fill: $c-white;
+    position: absolute;
+    transition: transform .3s ease-in-out;
+
+    &:hover {
+      transform: translateY(4px) rotate(90deg);
+    }
   }
 }
 
@@ -115,4 +137,120 @@
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
+}
+
+
+/**
+ * Style Guide
+ */
+.c-style-guide {
+  padding: $space-quad 0;
+}
+
+.o-sg-section {
+  &__content {
+    p {
+      font-size: $font-size-s;
+    }
+  }
+}
+
+.c-swatch {
+  border: $border-style-thick;
+
+  &__color {
+    height: 150px;
+    position: relative;
+  }
+
+  &-a11y {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 7px 2px 0;
+    display: flex;
+
+    &__item {
+      margin-left: $space-quarter;
+      text-align: center;
+      width: 25px;
+    }
+
+    &__letter {
+      text-transform: uppercase;
+      font-size: $font-size-l;
+      display: inline-block;
+      padding: 0 4px;
+      line-height: 1;
+      color: $c-white;
+
+      &--bg {
+        background-color: $c-white;
+      }
+    }
+
+    &__check {
+      background-color: $c-white;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      position: relative;
+
+      svg {
+        min-width: 14px;
+        min-height: 14px;
+        left: 1px;
+        bottom: 1px;
+        display: block;
+        position: absolute;
+        fill: $c-gray--dark;
+      }
+    }
+  }
+
+  &__details {
+    padding: $space;
+  }
+}
+
+.c-color-bars {
+  border: $border-style-thick;
+}
+.c-color-bar {
+  padding: $space;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Typography
+.c-font-block {
+  width: 100%;
+
+  &__inner {
+    padding: $space;
+    display: flex;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  &__free-type {
+    font-size: $font-size-xxl;
+    line-height: 1;
+    margin-bottom: $space-double;
+  }
+
+  &__letter {
+    font-size: 117px;
+    line-height: .8;
+    align-self: flex-end;
+    text-align: right;
+    width: 100%;
+    max-width: 95px;
+    min-width: 95px;
+  }
 }
