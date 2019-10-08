@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 .c-article {
+  height: 100%;
 
   &__header .u-has-accent,
   &__body a,
@@ -156,7 +157,8 @@
 
   .c-article {
     overflow: hidden;
-    height: 100%;
+    height: 0;
+    transition: height .0s linear .5s;
   }
 
   .c-article__donate {
