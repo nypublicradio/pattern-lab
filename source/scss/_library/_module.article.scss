@@ -3,7 +3,13 @@
 \*------------------------------------*/
 
 .c-article {
-  height: 100%;
+
+  &__header .u-has-accent,
+  &__body a,
+  &__footer .o-rte-text a {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
 
   &__header {
     padding-top: $space-double;
@@ -35,7 +41,6 @@
   }
 
   &__body {
-
     .twitter-tweet p {
       word-break: break-word;
     }
@@ -151,8 +156,7 @@
 
   .c-article {
     overflow: hidden;
-    height: 0;
-    transition: height .0s linear .5s;
+    height: 100%;
   }
 
   .c-article__donate {
