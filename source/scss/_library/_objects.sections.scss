@@ -382,7 +382,26 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+}
 
+
+/**
+ * Author listing pages
+ */
+.c-author-listing {
+  @include media('>medium') {
+    padding-top: $space;
+  }
+
+  &:before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: $space-triple;
+    @include border-accent;
+  }
 }
 
 
@@ -390,6 +409,7 @@
  * Basic "flat" pages
  */
 .c-basic {
+
   &__header {
     padding: $space 0;
     position: relative;
@@ -401,6 +421,12 @@
       width: 100%;
       height: 1px;
       @include border-accent;
+    }
+  }
+
+  &__heading {
+    @include media('<=medium') {
+      font-size: $font-size-xl;
     }
   }
 }
