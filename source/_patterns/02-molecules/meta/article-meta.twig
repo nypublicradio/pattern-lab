@@ -1,5 +1,7 @@
 <div class="c-article__meta u-spacing--half u-font--secondary-style u-font--xxs">
-  {% include 'molecules-byline' %}
+  {% if not is_sponsored %}
+    {% include 'molecules-byline' %}
+  {% endif %}
   <div class="c-article__meta-group">
     {% include 'molecules-published-date' %} &bull;
     <a href="" class="u-has-accent u-has-accent--secondary">24 <span class="is-vishidden">Comments</span> <span class="o-icon o-icon--comment u-icon--xs">{% include '@atoms/icons/icon-comment.twig' %}</span></a> {% if is_gallery %} &bull; <a href="" class="u-has-accent u-has-accent--secondary js-toggle js-gallery-toggle" data-toggled="c-main" data-prefix="gallery">16 <span class="is-vishidden">Photos</span> <span class="o-icon o-icon--gallery u-icon--xs">{% include '@atoms/icons/icon-gallery.twig' %}</span></a> {% endif %}
