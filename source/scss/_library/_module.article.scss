@@ -5,6 +5,19 @@
 .c-article {
   height: 100%;
 
+  &__header .u-has-accent,
+  &__body a,
+  &__body .u-has-accent,
+  &__footer .o-rte-text a {
+    text-decoration: underline;
+    text-underline-position: under;
+    border-bottom: none;
+
+    &:hover {
+      text-decoration-color: $c-link-color;
+    }
+  }
+
   &__header {
     padding-top: $space-double;
 
@@ -35,7 +48,6 @@
   }
 
   &__body {
-
     .twitter-tweet p {
       word-break: break-word;
     }
@@ -55,7 +67,6 @@
  * Share tools
  */
 .c-article__share {
-
   @include media('<=medium') {
     background: none;
     margin-bottom: $space-and-half;
@@ -77,13 +88,12 @@
 .c-related-content {
   padding: $space-quarter 0 $space-half $space;
 }
-.c-article__related {
 
+.c-article__related {
   a {
     font-family: $ff-font--primary;
     display: inline;
-    line-height: 1.85;
-    padding-bottom: 0;
+    line-height: 1.35;
   }
 
   &--small-screens {
