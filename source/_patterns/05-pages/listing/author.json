@@ -1,0 +1,88 @@
+{
+  "block_section_1": {
+    "blocks": [
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=56"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "News",
+        "block_title": "You Can Suggest A New Name For Hudson Yards' 'Vessel'",
+        "block_dek": "It appears that the East Village's venerable Bake Shop may just be renovating.",
+        "block_meta": {
+          "timestamp": "3 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=57"
+          }
+        },
+        "kicker": "Food",
+        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_dek": "Asking strangers for a favor is incredibly unpleasant.",
+        "block_meta": {
+          "timestamp": "3 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=58"
+          }
+        },
+        "kicker": "News",
+        "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
+        "block_dek": "The versatile avocado remains a menu mainstay all over the city.",
+        "comment_count": "17",
+        "block_meta": {
+          "timestamp": "2 weeks ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=61"
+          }
+        },
+        "kicker": "News",
+        "block_title": "Video Showing NYPD Violently Arresting Delivery Worker Contradicts Police Account",
+        "block_dek": "A bouncer at a Queens bar was attacked, police say.",
+        "block_meta": {
+          "timestamp": "March 4, 2019"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=22"
+          }
+        },
+        "block_title_classes": "c-block__title--has-icon c-block__title--is-gallery",
+        "kicker": "Food",
+        "block_title": "Hey, Don't Deface The William Wegman Weimaraner Subway Mosaics",
+        "block_dek": "Asking strangers for a favor is incredibly unpleasant.",
+        "block_meta": {
+          "timestamp": "3 days ago"
+        }
+      },
+      {
+        "block_media": {
+          "img": {
+            "src": "https://picsum.photos/360/240?image=33"
+          }
+        },
+        "kicker": "News",
+        "block_title": "How Bad Is NYC's Vacant Storefront Problem? Council Wants To Know",
+        "block_dek": "The versatile avocado remains a menu mainstay all over the city.",
+        "comment_count": "17",
+        "block_meta": {
+          "timestamp": "2 weeks ago"
+        }
+      }
+    ]
+  }
+}

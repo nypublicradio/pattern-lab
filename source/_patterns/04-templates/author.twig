@@ -1,0 +1,49 @@
+{% extends "main.twig" %}
+{% block main %}
+
+  <div class="c-floating-header">
+    {%
+      include 'organisms-header'
+      with {
+        "has_ad": false
+      }
+    %}
+  </div>
+
+  <div class="c-author-listing c-listing__sections u-section-spacing l-container l-container--14col l-wrap">
+
+    <header class="c-author-listing__header u-trigger-floating-header l-container l-container--10col u-spacing--and-half">
+      {% include 'molecules-author-block-mini' %}
+      <div class="c-author-listing__bio o-rte-text u-spacing">
+        <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
+      </div>
+      <div><a href="" class="u-font--secondary-style u-font--xxs u-color--black o-text-with-icon"><span class="o-icon o-icon--dashed-arrow u-icon--s u-path-fill--primary u-rotate--180">{% include '@atoms/icons/icon-dashed-arrow.twig' %}</span> <strong>View All Staff</strong></a></div>
+    </header>
+
+    <div class="u-spacing--quad">
+
+      {% block block_section_1 %}
+        <section class="c-listing__section o-section u-spacing--and-half">
+          <header class="u-spacing--quarter">
+            <p class="u-font--secondary-style u-font--xxs">178 Results</p>
+            <h2 class="o-section__heading o-bg-text-accent">Stories by Christopher</h2>
+          </header>
+          {% include '@molecules/lists/block-list-large.twig' with block_section_1 %}
+        </section>
+      {% endblock %}
+
+      <div class="u-align-center">
+        {%
+          include '@atoms/buttons/button.twig'
+          with {
+            "button_text": "More Results",
+            "button_classes": "o-button--c-quaternary o-button--extra"
+          }
+        %}
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

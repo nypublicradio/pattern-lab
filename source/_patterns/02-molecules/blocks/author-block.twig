@@ -1,17 +1,14 @@
 <div class="c-author-block {{ author_block_classes }}">
 
   {% block author_block_meta %}
-    <div class="c-author-block__meta u-spacing--half">
+    <div class="c-author-block__meta u-spacing--quarter">
 
       <h3 class="c-author-block__title c-block__title">{{ author_block_title }}</h3>
 
       <div class="c-author-block__info">
         {% if author_block_role %}
-          <span class="c-author-block__role u-font--secondary-style u-color--gray u-font--xs"><strong>{{ author_block_role }}</strong></span>
+          <span class="c-author-block__role u-font--secondary-style u-color--gray u-font--xxs">{{ author_block_role }}</span>
         {% endif %}
-        <span class="c-author-block__details">
-          <a href="" class="u-font--secondary-style u-has-accent u-has-accent--secondary u-font--xs">Articles</a>
-        </span>
       </div>
 
       <div class="c-author-block__social">
@@ -20,7 +17,8 @@
           with {
             "has_instagram": true,
             "has_facebook": false,
-            "has_reddit": false
+            "has_reddit": false,
+            "has_website": true
           }
         %}
       </div>
@@ -42,7 +40,7 @@
       {% if author_block_dek %}
         <div class="c-author-block__dek o-rte-text u-spacing js-clamp--3">
           {{ author_block_dek }}
-          <button class="c-author-block__dek-toggle js-toggle-parent o-text-with-icon u-font--secondary-style u-has-accent u-has-accent--secondary u-font--xs">Read&nbsp;<span class="u-active--on">More</span><span class="u-active--off">Less</span><span class="o-icon o-icon--caret">{% include '@atoms/icons/icon-caret.twig' %}</span></button>
+          <button class="c-author-block__dek-toggle js-toggle-parent o-text-with-icon u-font--secondary-style u-has-accent u-has-accent--secondary u-font--xxs">Read More</button>
         </div>
       {% endif %}
 

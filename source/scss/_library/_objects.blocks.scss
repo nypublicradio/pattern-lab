@@ -269,6 +269,7 @@ $author-media-width-l: 360;
   }
 
   &__social {
+    padding-top: $space-half;
 
     @include media('>small') {
       margin-left: -$space-half;
@@ -276,6 +277,9 @@ $author-media-width-l: 360;
     }
     .c-share-tools__link {
       margin-right: $space-half;
+    }
+    .c-share-tools__text-link {
+      margin: 0 $space-half;
     }
   }
 
@@ -355,6 +359,70 @@ $author-media-width-l: 360;
 
       .o-icon {
         transform: rotate(180deg);
+      }
+    }
+  }
+
+  // Mini version (user on Author listing pages)
+  &--mini {
+    overflow: visible;
+    padding: $space-and-half $space;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    @include media('>small') {
+      padding: $space-double $space-and-half;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+    }
+
+    .c-author-block__media {
+      border-radius: 50%;
+      overflow: hidden;
+
+      @include media('<=small') {
+        width: 70px;
+        height: 70px;
+      }
+
+      @include media('>small') {
+        min-width: 120px;
+        max-width: 120px;
+        min-height: 120px;
+        max-height: 120px;
+        margin-right: $space-and-half;
+      }
+    }
+
+    .c-author-block__meta {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      position: static;
+    }
+
+    .c-author-block__social {
+      padding-top: 4px;
+      margin-bottom: 0;
+    }
+
+    .c-author-block__title {
+      line-height: 1;
+
+      @include media('<=small') {
+        position: absolute;
+        right: $space;
+        top: $space-double;
+        width: calc(100% - 70px - #{$space-triple});
+      }
+
+      @include media('>small') {
+        font-size: $font-size-xl;
+      }
+      @include media('>large') {
+        font-size: $font-size-xxl;
       }
     }
   }

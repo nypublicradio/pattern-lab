@@ -405,7 +405,6 @@ a.o-breadcrumb {
  * Caption & credit (used in leads and figures)
  */
 .o-caption {
-
   p,
   &__text {
     font-size: 14px; // Not in type scale
@@ -551,10 +550,6 @@ a.o-breadcrumb {
   background-color: $c-white;
   left: 10px;
   margin-right: $space;
-
-  @include media('<=medium') {
-    font-size: $font-size-xl;
-  }
 
   &:before,
   &:after {
