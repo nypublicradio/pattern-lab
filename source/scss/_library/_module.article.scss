@@ -9,12 +9,20 @@
   &__body a,
   &__body .u-has-accent,
   &__footer .o-rte-text a {
-    text-decoration: underline;
-    text-underline-position: under;
-    border-bottom: none;
+    //text-decoration: underline;
+    //text-underline-position: under;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 2px;
+  }
 
-    &:hover {
-      text-decoration-color: $c-link-color;
+  &__related {
+    .u-has-accent {
+      border: none;
+      background-image: linear-gradient($c-link-color, $c-link-color);
+      background-repeat: no-repeat;
+      background-position: left 0 bottom 4px;
+      background-size: 100% 1px;
     }
   }
 
@@ -93,7 +101,7 @@
   a {
     font-family: $ff-font--primary;
     display: inline;
-    line-height: 1.35;
+    line-height: 1.4;
   }
 
   &--small-screens {
