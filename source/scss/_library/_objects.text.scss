@@ -286,17 +286,25 @@
  * Pullquote (beefed up blockquote)
  */
 .o-pullquote {
-  margin: auto ($col-width + $gutter) + px $space-triple;
+  margin: auto $space;
   text-align: center;
   background: none;
 
+  @include media('>medium') {
+    margin: auto ($col-width + $gutter) + px $space-triple;
+  }
+
   p {
     font-weight: bold;
-    font-size: $font-size-xl;
+    font-size: $font-size-l;
     line-height: 1.05;
     background: none;
     margin: $space 0 0;
     display: inline-block;
+
+    @include media('>medium') {
+      font-size: $font-size-xl;
+    }
 
     span {
       quotes: "\201C""\201D""\2018""\2019";
