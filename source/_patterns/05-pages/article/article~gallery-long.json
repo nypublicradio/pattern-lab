@@ -1,0 +1,247 @@
+{
+  "is_gallery": true,
+  "headline": "Mega-Guide: All The Food And Drink At The Huge Hudson Yards Mall",
+  "time_string": "March 15, 2019 1:40PM",
+  "show_active": false,
+  "byline": {
+    "author": "Scott Lynch"
+  },
+  "kicker": "Food",
+
+  "img": {
+    "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-mobile.jpeg"
+  },
+
+  "breadcrumbs": [
+    {
+      "kicker": "Food"
+    }
+  ],
+
+  "caption": "Mercado Little Spain",
+  "credit": "Scott Lynch / Gothamist",
+
+  "tags": [
+    {
+      "kicker": "Hudson Yards"
+    },
+    {
+      "kicker": "Hudson Yards Restaurants"
+    }
+  ],
+
+  "article_title": "Mega-Guide: All The Food And Drink At The Huge Hudson Yards Mall",
+  "show_active": true,
+  "slides": [
+    {
+      "slide_title": "Mercado Little Spain",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Kawi",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/aafe3208chyfood-6-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Inside the Shops & Restaurants at Hudson Yards",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/fad663e0chyfood-22-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum <a href=\"\">dolor sit amet</a>, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Queensyard",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/b491fd14chyfood-10-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "William Greenberg Desserts",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/e5af859e8hyfood-13-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Estiatorio Milos",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/566a41a87hyfood-8-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Mercado Little Spain",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/a07a13c19hyfood-16-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Van Leeuwen",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/0deeafb38hyfood-2-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Belcampo",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/c9ecd5a83hyfood-20-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Kith Treats",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/877797bd0hyfood-24-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Hudson Yards Grill",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/535e28953hyfood-5-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Shake Shack",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/04b99e707hyfood-4-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Peach Mart",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/4931d8788hyfood-7-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Mercado Little Spain",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/df594e893hyfood-14-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Kawi",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/aafe3208chyfood-6-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Inside the Shops & Restaurants at Hudson Yards",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/fad663e0chyfood-22-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum <a href=\"\">dolor sit amet</a>, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Queensyard",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/b491fd14chyfood-10-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "William Greenberg Desserts",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/e5af859e8hyfood-13-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Estiatorio Milos",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/566a41a87hyfood-8-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Mercado Little Spain",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/a07a13c19hyfood-16-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Van Leeuwen",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/0deeafb38hyfood-2-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Belcampo",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/c9ecd5a83hyfood-20-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Kith Treats",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/877797bd0hyfood-24-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Hudson Yards Grill",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/535e28953hyfood-5-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Shake Shack",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/04b99e707hyfood-4-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    },
+    {
+      "slide_title": "Peach Mart",
+      "img": {
+        "src_s": "https://cmsplatypus.gothamist.com/gothamistgallery/2019/3/15/4931d8788hyfood-7-jpg-mobile.jpeg"
+      },
+      "credit": "Scott Lynch / Gothamist",
+      "slide_dek": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum debitis quia porro possimus, aliquid laudantium fuga nemo deleniti, voluptate quae veniam cupiditate ipsa quisquam asperiores vero sint doloribus! Officia, laudantium."
+    }
+  ],
+
+  "article_body": "<p>\"Wanna go to the mall to get something to eat?\" is not a thing you used to ever say or hear in this great city of ours. But in NYC, the only constant is change, and what was once a strictly-suburban approach to eating out has become somewhat normalized with the likes of the Time Warner Center and Brookfield Place—not to mention dozens of food courts and markets scattered everywhere. Now the real estate developer Related Cos. is going all in on this format <a href=http://gothamist.com/2019/03/14/hudson_yards_guide_2019.php>at Hudson Yards</a>.<div class=\"c-article__related c-article__related--small-screens\"> <div class=\"c-related-content u-spacing u-border-accent u-border-accent--left\"> <h3 class=\"c-related-content__heading u-font--secondary-style u-font--xs\">Related</h3> <ul class=\"c-related-content__list u-spacing\"> <li><a href=\"\" class=\"u-has-accent u-has-accent--secondary u-font--s\">Urban Organics Wants to Fix Food</a></li><li><a href=\"\" class=\"u-has-accent u-has-accent--secondary u-font--s\">The Best Cycling Gear We Tested This Year</a></li><li><a href=\"\" class=\"u-has-accent u-has-accent--secondary u-font--s\">The Biomechatronic Man</a></li></ul></div></div><p>Starting today, the laboriously-named <em>Shops and Restaurants at Hudson Yards</em> flings open its many doors with more than 20 different restaurants, cafes, bars, and snack shops starting service throughout the seven-story, 750,000-square foot behemoth. Here's a look at everything you need to know, starting from street level and working our way up.<p><strong>FIRST FLOOR</strong><br>Perhaps the biggest news of the whole shebang is <strong><a href=https://www.littlespain.com/ >Mercado Little Spain</a></strong>, the first-ever restaurant in New York City from international superstars José Andres (these days almost as famous for his humanitarian work as for his empire of tapas spots), and Ferran and Albert Adrià, the modernist brothers behind El Bulli.<p>The shorthand way of describing this 35,000-square-foot monster is \"Eataly, but Spain,\" with about 15 different areas for eating and drinking. There's a churros kiosk, and one dedicated entirely to patatas bravas. There's a jamón y queso station, a raw bar, and a place to get cocas, which are grilled flatbreads with toppings. There are also lots of desserts, including pastries, helado, xuixos (deep-fried and stuffed with cream) and the best flan you'll find anywhere in the city.<div><center><blockquote class=instagram-media data-instgrm-captioned data-instgrm-permalink=\"https://www.instagram.com/p/BvAeFyYBiuW/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"data-instgrm-version=10 style=\"background:#fff;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,.5),0 1px 10px 0 rgba(0,0,0,.15);margin:1px;max-width:540px;min-width:326px;padding:0;width:99.375%;width:-webkit-calc(100% - 2px);width:calc(100% - 2px)\"><div style=padding:16px><a href=\"https://www.instagram.com/p/BvAeFyYBiuW/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"style=\"background:#fff;line-height:0;padding:0 0;text-align:center;text-decoration:none;width:100%\"target=_blank><div style=display:flex;flex-direction:row;align-items:center><div style=background-color:#f4f4f4;border-radius:50%;flex-grow:0;height:40px;margin-right:14px;width:40px></div><div style=display:flex;flex-direction:column;flex-grow:1;justify-content:center><div style=background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:100px></div><div style=background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;width:60px></div></div></div><div style=\"padding:19% 0\"></div><div style=\"display:block;height:60px;margin:0 auto 16px;width:210px\"><svg version=1 viewbox=\"0 0 840 300\"width=210 xmlns=https://www.w3.org/2000/svg><path d=\"M65 49c-16 7-34 26-40 50-7 31 23 44 25 39 3-5-5-6-7-22-2-21 7-43 19-53 3-2 2 0 2 5v102c0 21-1 28-3 35-1 7-4 11-2 13s12-3 17-10c7-9 9-20 10-32v-51-68c0-5-14-11-21-8m575 102c0 11-3 20-6 26-6 12-18 16-23-1-3-10-4-26-1-39 2-13 8-23 17-22 10 0 14 13 13 36zm-162 70c0 19-3 35-9 40-9 7-21 1-19-12 2-12 13-25 28-40v12zm-2-70c-1 10-4 20-6 26-6 12-19 16-24-1-4-12-3-28-1-37 2-13 8-24 18-24 9 0 14 10 13 36zm-94-1c-1 11-3 20-6 27-7 12-19 16-24-1-4-13-3-30-1-39 2-14 8-23 18-22 9 0 14 13 13 35zm430 13c-2 0-3 3-4 7-3 14-6 17-10 17-5 0-9-7-10-21v-52c0-4-1-8-12-12-5-2-12-4-15 4a209 209 0 0 0-15 50c-1-6-2-17-2-41-1-4-1-8-7-11-3-2-13-6-16-2s-7 13-11 25l-5 15v-34c0-4-2-5-3-5l-12-3c-4 0-5 2-5 5v58c-2 11-8 25-15 25s-10-6-10-33l1-34v-13c0-3-6-5-9-5l-7-1c-2 0-4 2-4 4v4c-4-6-10-9-13-10-10-3-21-1-29 10-6 9-10 19-11 33-2 11-1 22 1 31-3 10-7 14-12 14-7 0-12-11-11-31 0-13 3-22 6-35 1-6 0-8-3-11-2-3-7-4-13-3l-19 4 1-4c2-15-14-14-19-9-3 3-5 6-6 12-1 9 7 13 7 13a139 139 0 0 1-24 51 1390 1390 0 0 1 0-54l1-12c0-3-2-4-5-5l-9-2c-5-1-7 2-7 4v4c-4-6-9-9-13-10-10-3-21-1-29 10-6 9-10 21-11 33v29c-1 8-6 16-11 16-7 0-10-6-10-33v-34l1-13c0-3-6-5-9-5l-8-1c-2 0-4 2-4 4v4c-4-6-9-9-13-10-10-3-20-1-28 10-6 7-10 15-12 33l-1 15c-2 12-11 27-19 27-4 0-8-9-8-27l1-62h27c3 0 6-12 3-13l-16-1-13-1 1-25c0-2-3-4-4-4l-11-3c-5-1-8 0-8 4l-1 27-21-1c-4 0-8 16-3 16l23 1-1 46v3c-3 19-16 29-16 29 3-12-3-22-13-30l-20-15s5-4 9-14c3-7 3-14-4-16-12-3-22 6-25 16-3 7-2 13 3 18l1 2-10 18c-9 15-15 28-21 28-4 0-4-13-4-24l2-41c0-5-3-8-7-11-3-2-8-5-11-5-5 0-19 1-33 39l-5 14 1-46-2-3c-2-1-8-4-14-4-2 0-3 1-3 4l-1 72 1 15 2 6 5 3c2 0 12 2 13-2 0-5 0-10 6-30 8-30 20-45 25-50h2l-2 38c-1 37 6 44 16 44 7 0 18-7 29-26l19-32 11 11c9 8 12 16 10 24-2 6-7 12-17 6l-7-5h-6c-3 3-6 6-7 11-1 4 3 6 8 8 4 2 12 3 17 4 21 0 37-10 49-38 2 24 11 37 26 37 10 0 20-13 25-26 1 6 3 10 6 14 11 19 34 15 46-1l4-7c1 15 13 20 20 20 8 0 16-3 21-16l3 4c11 19 34 15 46-1l1-2v10l-10 9c-18 16-31 29-32 43-2 18 13 25 24 26 12 1 22-6 29-15 5-8 9-25 9-43l-1-25a200 200 0 0 0 38-66h14c2 0 2 0 2 2s-9 34-1 55c5 15 17 19 24 19 8 0 16-6 20-15l1 3c12 19 35 15 46-1l4-7c3 16 15 20 22 20s14-3 19-16l1 12 4 3c7 2 13 1 16 1 2-1 3-2 3-6 1-9 0-25 3-36 5-20 9-27 11-31 2-2 3-2 3 0l2 35c1 13 3 21 5 23 4 7 8 8 12 8 3 0 8-1 8-5 0-3 0-16 5-35 3-13 8-24 10-28a252 252 0 0 0 3 52c5 21 18 23 23 23 11 0 19-7 22-28 0-5-1-9-4-9\"fill=#262626 /></svg></div><div style=padding-top:8px><div style=color:#3897f0;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:550;line-height:18px>View this post on Instagram</div></div><div style=\"padding:12.5% 0\"></div><div style=display:flex;flex-direction:row;margin-bottom:14px;align-items:center><div><div style=\"background-color:#f4f4f4;border-radius:50%;height:12.5px;width:12.5px;transform:translateX(0) translateY(7px)\"></div><div style=\"background-color:#f4f4f4;height:12.5px;transform:rotate(-45deg) translateX(3px) translateY(1px);width:12.5px;flex-grow:0;margin-right:14px;margin-left:2px\"></div><div style=\"background-color:#f4f4f4;border-radius:50%;height:12.5px;width:12.5px;transform:translateX(9px) translateY(-18px)\"></div></div><div style=margin-left:8px><div style=background-color:#f4f4f4;border-radius:50%;flex-grow:0;height:20px;width:20px></div><div style=\"width:0;height:0;border-top:2px solid transparent;border-left:6px solid #f4f4f4;border-bottom:2px solid transparent;transform:translateX(16px) translateY(-4px) rotate(30deg)\"></div></div><div style=margin-left:auto><div style=\"width:0;border-top:8px solid #f4f4f4;border-right:8px solid transparent;transform:translateY(16px)\"></div><div style=background-color:#f4f4f4;flex-grow:0;height:12px;width:16px;transform:translateY(-4px)></div><div style=\"width:0;height:0;border-top:8px solid #f4f4f4;border-left:8px solid transparent;transform:translateY(-4px) translateX(8px)\"></div></div></div></a><p style=\"margin:8px 0 0 0;padding:0 4px\"><a href=\"https://www.instagram.com/p/BvAeFyYBiuW/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"style=color:#000;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:17px;text-decoration:none;word-wrap:break-word target=_blank>Tomorrow we’ll open doors at 4pm for a soft opening. Come preview our space and visit our bravas and churros kiosks and our Colmado retail shop, or stop by #BarCelona for a limited drink menu. Keep following us for updates on our rolling openings!</a><p style=\"color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;line-height:17px;margin-bottom:0;margin-top:8px;overflow:hidden;padding:8px 0 7px;text-align:center;text-overflow:ellipsis;white-space:nowrap\">A post shared by <a href=\"https://www.instagram.com/littlespain/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"style=color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:17px target=_blank>Mercado Little Spain</a> (@littlespain) on <time datetime=2019-03-14T23:34:42+00:00 style=font-family:Arial,sans-serif;font-size:14px;line-height:17px>Mar 14, 2019 at 4:34pm PDT</time></div></blockquote><script async src=//www.instagram.com/embed.js></script></center></div><p>One full-service restaurant, Leña, will offer a host of meats and paella, cooked over a wood fire; another, called Mar, will emphasize seafood. And the biggest crowds will likely be found at Diner, an all-day casual affair with home-style Spanish dishes. A cocktail bar and a Colmado selling Spanish goods are also on site. This place enormous and busy but smartly laid out. It's also a ton of fun. Multiple visits are obviously required here, and a separate entrance right on 29th Street make it easy to do just that.<div class=\"o-ad o-ad--300x250\"><img src=\"https://s0.2mdn.net/4195138/02192019-110636158-VEP-529_300x250_R1.jpg\" alt=\"\"><span class=\"o-ad__label u-font--secondary-style u-font--xs u-color--gray\">Advertisement</span></div><p>Your other nourishment option on Level 1 is the <strong>Teak Tearoom</strong>, located within <a href=https://theconservatorynyc.com/ >The Conservatory</a> (basically a clothing and wellness boutique with \"an aesthetic of luxe minimalism\"), which pours tea by day and tequila at night.<p><strong>SECOND FLOOR</strong><br>David Chang is all over the mall, beginning on Level 2 with a compact but cleverly-designed outpost of his <strong><a href=https://eatfuku.com/ >Fuku</a></strong> fried chicken mini-chain. In addition to the fast-food restaurant's usual assortment of chicken pieces, spicy bird sandwiches, cheesy bread, chef-y sides and slushies, there are four \"snacks\" exclusive to this branch, as well as an enormous, off-menu <a href=https://www.instagram.com/p/Bu-KQj-Bm-d/ >Bucket of Bird</a> that costs $35 and can feed at least four people. Sit at the counter by the big front window and watch the passing parade of shoppers.<p>For something sweet after Fuku's fiery chicken, grab a blended-to-order cup of soft serve ice cream (breakfast cereal is involved) at <a href=\"https://www.instagram.com/kithtreats/?hl=en\"><strong>Kith Treats</strong></a>, which fronts Snark Park, the mall's \"immersive installation\" created by the design firm Snarkitecture. There's a <strong><a href=https://bluebottlecoffee.com/ >Blue Bottle</a></strong> coffee nearby as well. Or, for something juicier, there's small booth called <a href=https://www.hudsonyardsnewyork.com/food-drink/drug-store><strong>The Drug Store</strong></a>, making pre-bottled beverages with \"functional properties\" from all-natural ingredients.<p>Residents of the Hudson Yards compound (and there will be a lot those, with some 4,000 apartments planned) will likely appreciate the inclusion of a big new <a href=https://www.citarella.com/content/citarella-gourmet-market-hudson-yards><strong>Citarella</strong></a>, complete with wine and liquor store The upscale grocer also offers a dine-in option here, with a menu of prepared foods, plus seafood like steamed lobsters and a raw bar.<p><strong>THIRD FLOOR</strong><br>A slick-looking new branch of Upper East Side kosher mainstay <strong><a href=https://wmgreenbergdesserts.com/ >William Greenberg Desserts</a></strong>--home of the <a href=http://gothamist.com/2017/03/23/best_cookies_2017.php>city's best Black and White cookie</a>, among other delights--is now open on Level 3. A new <a href=https://vanleeuwenicecream.com/ ><strong>Van Leeuwen</strong></a> is right next door, where they'll be scooping a full assortment of the chain's sometimes vegan, always delicious ice cream. As a bonus, the Hudson Yards parlor will debut Van Leeuwen's spring specials two weeks before any of their other shops, and there's an exclusive flavor here as well, called Off the Rails and featuring vegan chocolate ice cream with peanut butter cups, pretzels, marshmallow and caramel swirls. <strong><a href=https://bluestonelane.com/ >Bluestone Lane</a></strong> is the third floor's coffee purveyor.<p><strong>FOURTH FLOOR</strong><br>The mall's fancier restaurants really start coming into play the higher you go. Well, slightly fancier: the most exciting opening on Level 4 is probably Anya Fernald's Northern California import, <a href=https://belcampo.com/restaurant/nyc-hudson-yards><strong>Belcampo Meat Co</strong></a>, known for its humane, organic, sustainable, farm-to-slaughterhouse-to-butcher-to-table operation. The Belcampo here is a counter service spot, with lots of white tiles, light wood, and seating for about 80, including a row of comfortable-looking booths. The menu features four burgers (from a messy $12 double stack to a $28 dry-aged beauty), bone both on tap, roast chicken, duck confit, steak frites, lamb shwarma, an array of sausages... you get the idea. It's a meat restaurant.<div class=\"o-ad o-ad--300x250\"><img src=\"https://tpc.googlesyndication.com/simgad/6680528810969334436\" alt=\"\"><span class=\"o-ad__label u-font--secondary-style u-font--xs u-color--gray\">Advertisement</span></div><p>For a full-service experience up on four you can choose between <a href=https://www.queensyardnyc.com/ ><strong>Queensyard</strong></a>, the second NYC restaurant from the D&D London hospitality group (the first was Bluebird, in the Time Warner Center, also owned by Related Cos.); and Hudson Yards Grill, which is run by the one-time chef at Windows on the World, Michael Lomonaco, who also has a Time Warner Center eatery, Porter House Grill.<div><center><blockquote class=instagram-media data-instgrm-captioned data-instgrm-permalink=\"https://www.instagram.com/p/BvCDIUNHHP9/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"data-instgrm-version=10 style=\"background:#fff;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,.5),0 1px 10px 0 rgba(0,0,0,.15);margin:1px;max-width:540px;min-width:326px;padding:0;width:99.375%;width:-webkit-calc(100% - 2px);width:calc(100% - 2px)\"><div style=padding:16px><a href=\"https://www.instagram.com/p/BvCDIUNHHP9/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"style=\"background:#fff;line-height:0;padding:0 0;text-align:center;text-decoration:none;width:100%\"target=_blank><div style=display:flex;flex-direction:row;align-items:center><div style=background-color:#f4f4f4;border-radius:50%;flex-grow:0;height:40px;margin-right:14px;width:40px></div><div style=display:flex;flex-direction:column;flex-grow:1;justify-content:center><div style=background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:100px></div><div style=background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;width:60px></div></div></div><div style=\"padding:19% 0\"></div><div style=\"display:block;height:60px;margin:0 auto 16px;width:210px\"><svg version=1 viewbox=\"0 0 840 300\"width=210 xmlns=https://www.w3.org/2000/svg><path d=\"M65 49c-16 7-34 26-40 50-7 31 23 44 25 39 3-5-5-6-7-22-2-21 7-43 19-53 3-2 2 0 2 5v102c0 21-1 28-3 35-1 7-4 11-2 13s12-3 17-10c7-9 9-20 10-32v-51-68c0-5-14-11-21-8m575 102c0 11-3 20-6 26-6 12-18 16-23-1-3-10-4-26-1-39 2-13 8-23 17-22 10 0 14 13 13 36zm-162 70c0 19-3 35-9 40-9 7-21 1-19-12 2-12 13-25 28-40v12zm-2-70c-1 10-4 20-6 26-6 12-19 16-24-1-4-12-3-28-1-37 2-13 8-24 18-24 9 0 14 10 13 36zm-94-1c-1 11-3 20-6 27-7 12-19 16-24-1-4-13-3-30-1-39 2-14 8-23 18-22 9 0 14 13 13 35zm430 13c-2 0-3 3-4 7-3 14-6 17-10 17-5 0-9-7-10-21v-52c0-4-1-8-12-12-5-2-12-4-15 4a209 209 0 0 0-15 50c-1-6-2-17-2-41-1-4-1-8-7-11-3-2-13-6-16-2s-7 13-11 25l-5 15v-34c0-4-2-5-3-5l-12-3c-4 0-5 2-5 5v58c-2 11-8 25-15 25s-10-6-10-33l1-34v-13c0-3-6-5-9-5l-7-1c-2 0-4 2-4 4v4c-4-6-10-9-13-10-10-3-21-1-29 10-6 9-10 19-11 33-2 11-1 22 1 31-3 10-7 14-12 14-7 0-12-11-11-31 0-13 3-22 6-35 1-6 0-8-3-11-2-3-7-4-13-3l-19 4 1-4c2-15-14-14-19-9-3 3-5 6-6 12-1 9 7 13 7 13a139 139 0 0 1-24 51 1390 1390 0 0 1 0-54l1-12c0-3-2-4-5-5l-9-2c-5-1-7 2-7 4v4c-4-6-9-9-13-10-10-3-21-1-29 10-6 9-10 21-11 33v29c-1 8-6 16-11 16-7 0-10-6-10-33v-34l1-13c0-3-6-5-9-5l-8-1c-2 0-4 2-4 4v4c-4-6-9-9-13-10-10-3-20-1-28 10-6 7-10 15-12 33l-1 15c-2 12-11 27-19 27-4 0-8-9-8-27l1-62h27c3 0 6-12 3-13l-16-1-13-1 1-25c0-2-3-4-4-4l-11-3c-5-1-8 0-8 4l-1 27-21-1c-4 0-8 16-3 16l23 1-1 46v3c-3 19-16 29-16 29 3-12-3-22-13-30l-20-15s5-4 9-14c3-7 3-14-4-16-12-3-22 6-25 16-3 7-2 13 3 18l1 2-10 18c-9 15-15 28-21 28-4 0-4-13-4-24l2-41c0-5-3-8-7-11-3-2-8-5-11-5-5 0-19 1-33 39l-5 14 1-46-2-3c-2-1-8-4-14-4-2 0-3 1-3 4l-1 72 1 15 2 6 5 3c2 0 12 2 13-2 0-5 0-10 6-30 8-30 20-45 25-50h2l-2 38c-1 37 6 44 16 44 7 0 18-7 29-26l19-32 11 11c9 8 12 16 10 24-2 6-7 12-17 6l-7-5h-6c-3 3-6 6-7 11-1 4 3 6 8 8 4 2 12 3 17 4 21 0 37-10 49-38 2 24 11 37 26 37 10 0 20-13 25-26 1 6 3 10 6 14 11 19 34 15 46-1l4-7c1 15 13 20 20 20 8 0 16-3 21-16l3 4c11 19 34 15 46-1l1-2v10l-10 9c-18 16-31 29-32 43-2 18 13 25 24 26 12 1 22-6 29-15 5-8 9-25 9-43l-1-25a200 200 0 0 0 38-66h14c2 0 2 0 2 2s-9 34-1 55c5 15 17 19 24 19 8 0 16-6 20-15l1 3c12 19 35 15 46-1l4-7c3 16 15 20 22 20s14-3 19-16l1 12 4 3c7 2 13 1 16 1 2-1 3-2 3-6 1-9 0-25 3-36 5-20 9-27 11-31 2-2 3-2 3 0l2 35c1 13 3 21 5 23 4 7 8 8 12 8 3 0 8-1 8-5 0-3 0-16 5-35 3-13 8-24 10-28a252 252 0 0 0 3 52c5 21 18 23 23 23 11 0 19-7 22-28 0-5-1-9-4-9\"fill=#262626 /></svg></div><div style=padding-top:8px><div style=color:#3897f0;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:550;line-height:18px>View this post on Instagram</div></div><div style=\"padding:12.5% 0\"></div><div style=display:flex;flex-direction:row;margin-bottom:14px;align-items:center><div><div style=\"background-color:#f4f4f4;border-radius:50%;height:12.5px;width:12.5px;transform:translateX(0) translateY(7px)\"></div><div style=\"background-color:#f4f4f4;height:12.5px;transform:rotate(-45deg) translateX(3px) translateY(1px);width:12.5px;flex-grow:0;margin-right:14px;margin-left:2px\"></div><div style=\"background-color:#f4f4f4;border-radius:50%;height:12.5px;width:12.5px;transform:translateX(9px) translateY(-18px)\"></div></div><div style=margin-left:8px><div style=background-color:#f4f4f4;border-radius:50%;flex-grow:0;height:20px;width:20px></div><div style=\"width:0;height:0;border-top:2px solid transparent;border-left:6px solid #f4f4f4;border-bottom:2px solid transparent;transform:translateX(16px) translateY(-4px) rotate(30deg)\"></div></div><div style=margin-left:auto><div style=\"width:0;border-top:8px solid #f4f4f4;border-right:8px solid transparent;transform:translateY(16px)\"></div><div style=background-color:#f4f4f4;flex-grow:0;height:12px;width:16px;transform:translateY(-4px)></div><div style=\"width:0;height:0;border-top:8px solid #f4f4f4;border-left:8px solid transparent;transform:translateY(-4px) translateX(8px)\"></div></div></div></a><p style=\"margin:8px 0 0 0;padding:0 4px\"><a href=\"https://www.instagram.com/p/BvCDIUNHHP9/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"style=color:#000;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:17px;text-decoration:none;word-wrap:break-word target=_blank>Views from @queensyardnyc 📸 Hudson Yards is now officially open for business! Make sure to stop by and grab a bite of Chef Owen Sullivan’s Grilled Cheddar and Truffle Toastie before walking The Vessel. #hudsonyards #queensyard</a><p style=\"color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;line-height:17px;margin-bottom:0;margin-top:8px;overflow:hidden;padding:8px 0 7px;text-align:center;text-overflow:ellipsis;white-space:nowrap\">A post shared by <a href=\"https://www.instagram.com/quinnpr_/?utm_source=ig_embed&utm_medium=loading&utm_campaign=embed_loading_state_script\"style=color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:17px target=_blank>Quinn</a> (@quinnpr_) on <time datetime=2019-03-15T14:17:36+00:00 style=font-family:Arial,sans-serif;font-size:14px;line-height:17px>Mar 15, 2019 at 7:17am PDT</time></div></blockquote><script async src=//www.instagram.com/embed.js></script></center></div><p>Queensyard is a bit sprawling, but the main dining room can accommodate 110, and there are actual windows here, looking out at the public art piece \"Vessel.\" The menu features such British fare such as Beef and Marrow Pie and Venison Scotch Eggs, and there's a martini cart roaming the floor. <strong><a href=https://www.hudsonyardsnewyork.com/food-drink/hudson-yards-grill>Hudson Grill</a></strong> is possibly the largest sit-down restaurant on the site, seating 275 and serving a something-for-everyone menu of steaks, grilled pizza, sushi rolls, burgers and sandwiches, salads and \"bowls.\"<p>You want more burgers on four? <strong><a href=https://www.shakeshack.com/location/hudson-yards-ny/ >Shake Shack</a></strong> will be happy to hook you up. With Chick'n Bites, too. And, as is custom at each of the chain's shops, there are Hudson Yards exclusive concretes, including Going Yard, with vanilla custard, salted caramel, and chocolate brownies. There's also a <strong><a href=https://www.li-lacchocolates.com/ >Li-Lac Chocolates</a></strong> up here (my how you've grown, tiny Christopher Street shop!), and a <strong><a href=https://www.dylanscandybar.com/ >Dylan's Candy Bar</a></strong>. <a href=https://www.jacksstirbrew.com/ ><strong>Jack Stir Brew Coffee</strong></a> handles the caffeinated beverage duties, with vegan snacks from Divya's Kitchen,<p><strong>FIFTH FLOOR</strong><br>Here's where David Chang and crew really make their mark, with a pair of spots that are equally playful and determined not to pander to the crowd. The sit-down restaurant is called <strong><a href=https://kawi.momofuku.com/ >Kawi</a></strong>, and the kitchen is run by Eunjo Park, who combines her fine-dining experience (at Daniel, Ko, and Per Se in NYC and Gaon in Korea) with childhood memories and a sharp sense of fun for a menu unlike any other in town. It’s only open for lunch at first, but with dishes like the superb housemade kimbop (with are rice-cake rolls stuffed with things like candied anchovy) and raw cockles with chilis, this place cries out for a midday adventure from wherever you are.<p>The other Chang-empire joint is <strong><a href=https://www.hudsonyardsnewyork.com/food-drink/peach-mart>Peach Mart</a></strong>, a wild riff on both Asian and American convenience stores. You can get bags of chips, gummies, and even sundries, but it’s the grab-and-go prepackaged sandwiches (soft white bread, crusts cut off) in varieties like Spicy Tuna, Chicken Katsu, and Potato Salad that are the real draw. There are simpler versions Park's Kimbap available here too.<p>Perhaps the luxuriously elegant restaurant in the entire complex is the bi-level Greek seafood temple <strong><a href=https://www.hudsonyardsnewyork.com/food-drink/estiatorio-milos>Estiatorio Milos</a></strong>, from Costas Spiliadis. As previously reported, Gothamist’s Ben Yakas calls the uptown Milos home to “the best upscale Greek food in NYC, and possibly the world”, and while we haven't tried the food here yet, the dining room is lovely with spectacular views out onto the Shed and Vessel. There's also an outdoor terrace, which will obviously be a coveted perch come spring.<div class=\"o-ad o-ad--300x250\"><img src=\"https://s0.2mdn.net/4406736/5-AOT-FY18-Web-Banner-unReal-Grand-Canyon-300x250.jpg\" alt=\"\"><span class=\"o-ad__label u-font--secondary-style u-font--xs u-color--gray\">Advertisement</span></div><p><strong><a href=https://www.wildinknyc.com/ >Wild Ink</a></strong>, from another London restaurant group, Rhubarb, is right nearby, with snaking banquettes, big windows, and an Asian-fusion type menu from Peter Jin and one-time Momofuku Ssam chef Tien Ho. Finally on five we have Thomas Keller's <a href=https://www.takroomnyc.com/ ><strong>TAK Room</strong></a>, which is probably far too expensive for you and me, but is a big opportunity for the recently-disparaged Per Se chef to get back on top of the restaurant world.<p>There are also three places to eat and drink within the enormous <a href=https://www.neimanmarcus.com/c/nm-neiman-marcus-new-york-hudson-yards-cat68850746>Neiman Marcus</a> on floors five, six, and seven: the casual <strong>Cooks and Merchants</strong>, the boozy <strong>Bar Stanley</strong>, and the department store's signature <strong>Zodiac Room</strong>."
+}

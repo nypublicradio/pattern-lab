@@ -506,6 +506,12 @@ a.o-breadcrumb {
     position: absolute;
   }
 
+  .u-path-fill--white {
+    path {
+      fill: $c-white;
+    }
+  }
+
   .u-has-accent {
     line-height: 1.6;
     display: inline;
