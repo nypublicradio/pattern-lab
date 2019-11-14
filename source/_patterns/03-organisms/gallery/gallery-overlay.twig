@@ -29,14 +29,7 @@
           %}
           <div class="u-flex-wrap-break"></div>
 
-          {% if loop.index is divisible by(3) and loop.index <= 6 %}
-            <div class="l-wrap">
-              {% include 'molecules-billboard' %}
-            </div>
-          {% endif %}
-
-          {# Ad requirements for greater than 10 total items #}
-          {% if loop.length > 10 and loop.index > 10 and loop.index is divisible by(6) %}
+          {% if loop.index is divisible by(6) or loop.index == 3 %}
             <div class="l-wrap">
               {% include 'molecules-billboard' %}
             </div>
