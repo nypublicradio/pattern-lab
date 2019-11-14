@@ -507,7 +507,7 @@ a.o-breadcrumb {
   }
 
   .u-path-fill--white {
-    path {
+    svg * {
       fill: $c-white;
     }
   }
