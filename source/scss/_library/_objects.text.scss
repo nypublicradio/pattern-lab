@@ -247,9 +247,16 @@
         color: $c-secondary;
         font-size: $font-size-l;
         position: absolute;
-        left: -$space-double;
+        left: -58px;
         top: -.4em;
         font-family: $ff-font--secondary;
+        width: 50px;
+        text-align: right;
+
+        @include media('<=large') {
+          font-size: $font-size-m;
+          top: -.3em;
+        }
       }
 
       > ol {
