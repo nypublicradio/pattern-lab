@@ -25,6 +25,10 @@
     }
   }
 
+  .o-ad__label {
+    color: $c-octonary;
+  }
+
   .l-wrap {
     @include media('>medium') {
       padding: 0;
