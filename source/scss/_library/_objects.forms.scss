@@ -338,7 +338,7 @@ div.o-confirm-message {
     border: none;
 
     input {
-      border: 3px solid rgb(var(--color-border-standard));
+      border: 3px solid $c-gray--dark;
       height: 40px;
       font-size: 12px;
 
@@ -348,13 +348,9 @@ div.o-confirm-message {
     }
   }
 
-  .o-button {
-    background-color: rgb(var(--color-form-button));
-  }
-
   input[type=checkbox] {
-    background-color: rgb(var(--color-form-button));
-    border: rgb(var(--color-form-button));
+    background-color: $c-reddish-orange;
+    border: $c-reddish-orange;
   }
 
   .c-newsletter-form__button {
