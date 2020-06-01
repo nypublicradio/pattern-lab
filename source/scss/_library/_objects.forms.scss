@@ -340,9 +340,10 @@ div.o-confirm-message {
     input {
       border: 3px solid $c-gray--dark;
       height: 40px;
+      font-size: 12px;
 
       &::placeholder {
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
